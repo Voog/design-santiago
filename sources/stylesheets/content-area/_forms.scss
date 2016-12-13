@@ -1,0 +1,233 @@
+//==============================================================================
+// "Form" type content area.
+//==============================================================================
+// scss-lint:disable SelectorFormat
+.content-area {
+  .form,
+  form {
+    clear: both;
+  }
+}
+
+.edy-fe-field,
+.form_field {
+  margin-bottom: 20px;
+}
+
+.edy-fe-label,
+.form_field_label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.form_field label {
+  display: block;
+}
+
+.form_field_textfield,
+.form_field_textarea {
+  width: 30%;
+  padding: 4px 7px 2px;
+  font-family: inherit;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  color: rgba($color-primary, 1);
+  background-color: rgba($color-white, 1);
+  border-color: rgba($color-primary, .05);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+  outline: none;
+  opacity: .87;
+  box-sizing: border-box;
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select,
+.form_field .jq-select {
+  max-width: 100%;
+}
+
+.form_field_textarea {
+  .comment-form & {
+    height: 35px;
+    min-height: 35px;
+    resize: none;
+  }
+}
+
+.form_field_size_small {
+  width: 280px;
+}
+
+.form_field_size_medium {
+  width: 420px;
+}
+
+.form_field_size_large {
+  width: 100%;
+}
+
+.form_error,
+.form_notice {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.form_error {
+  color: $color-error;
+}
+
+.form_notice {
+  color: $color-success;
+}
+
+.form_field_error {
+  display: none;
+}
+
+.form_field_with_errors {
+  input,
+  textarea {
+    background-color: rgba($color-error, .2);
+  }
+}
+
+.form_submit {
+  input {
+    display: inline-block;
+    padding: 8px 15px 9px;
+    font-family: inherit;
+    font-size: em(18px);
+    line-height: 1.4;
+    color: $color-white;
+    background-color: $color-secondary;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    -webkit-appearance: none;
+
+    &:hover {
+      background-color: rgba($color-secondary, .75);
+    }
+
+    [data-state--view-mode="publicmode"] & {
+      cursor: pointer;
+    }
+  }
+}
+
+.form_field_required {
+  .form_field_label {
+    &::after {
+      content: '*';
+    }
+  }
+}
+
+// Custom checkboxes and radio buttons
+label {
+  cursor: pointer;
+
+  &::before {
+    display: none;
+    content: url('../images/ico-check.png');
+  }
+
+  .form_field_checkbox,
+  .form_field_radio {
+    display: none;
+    // display: inline-block\9;
+  }
+
+  .form_field_checkbox {
+    + .form_control_indicator {
+      // scss-lint:disable NestingDepth
+      &::before {
+        background: rgba($color-white, 1);
+        border-color: rgba($color-primary, 1);
+        border-style: solid;
+        border-width: 1px;
+
+        .form_field_with_errors & {
+          border-color: rgba($color-error, .5);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &:checked {
+      // scss-lint:disable NestingDepth
+      + .form_control_indicator {
+        &::before {
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color-primary, 1);
+          background-position: left bottom;
+          background-repeat: no-repeat;
+          border-style: none;
+
+          .backgroundsize & {
+            background-image: url('../images/ico-check.png');
+            background-size: 17px 19px;
+          }
+
+          .no-backgroundsize & {
+            background-image: url('../images/ico-check-small.png');
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  .form_field_radio {
+    + .form_control_indicator {
+      // scss-lint:disable NestingDepth
+      &::before {
+        width: 9px;
+        height: 9px;
+        border-color: rgba($color-white, 1);
+        border-style: solid;
+        border-width: 3px;
+        outline-color: rgba($color-primary, 1);
+        outline-style: solid;
+        outline-width: 1px;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &:checked {
+      // scss-lint:disable NestingDepth
+      + .form_control_indicator {
+        &::before {
+          background-color: rgba($color-primary, 1);
+          opacity: .84;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  .form_control_indicator {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    // display: none\9;
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 15px;
+      height: 15px;
+      content: '';
+    }
+  }
+}
+// scss-lint:enable SelectorFormat

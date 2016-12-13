@@ -1,0 +1,21 @@
+// =============================================================================
+// FONTS
+//
+// Font faces
+// =============================================================================
+//@include font-face('Orator', '../assets/orator-regular', 400);
+//@include font-face('Orator', '../assets/orator-regular-italic', 400, italic);
+//@include font-face('Orator', '../assets/orator-bold', 700);
+
+// =============================================================================
+// Font families
+// =============================================================================
+$font-family-primary: 'Raleway', sans-serif;
+
+// =============================================================================
+// Font sizes
+// =============================================================================
+$font-size-footer: 20px;
+
+// TODO: Remove when optimizing blog listing view.
+$base-font-size: 18px;

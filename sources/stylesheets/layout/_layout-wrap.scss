@@ -1,0 +1,21 @@
+// =============================================================================
+// LAYOUT WRAP
+// =============================================================================
+.layout-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  [data-state--menu-main="closed"] & {
+    left: 0;
+    transition-duration: 200ms;
+    transition-property: left;
+  }
+
+  [data-state--menu-main="open"] & {
+    left: -205px;
+    transition-duration: 200ms;
+    transition-property: left;
+  }
+}

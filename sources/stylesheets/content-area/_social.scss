@@ -1,0 +1,17 @@
+.content-area {
+  .edy-content-social-button {
+    &:hover {
+      // scss-lint:disable NestingDepth
+      .layout-footer & {
+        opacity: .8;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    .layout-footer & {
+      display: inline-block;
+      color: $color-primary;
+    }
+
+  }
+}

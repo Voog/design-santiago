@@ -1,0 +1,62 @@
+// CUSTOM MIXINS
+// Comment out the "_mixins.scss" partial in the "main.scss" file if not used.
+// HYPHENATE
+// Hyphenate
+@mixin hyphenate($boolean: true) {
+  @if $boolean == true {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+  } @else {
+    hyphens: none;
+    word-break: normal;
+    word-wrap: normal;
+  }
+}
+
+// BUTTON ELEMENT RESET
+@mixin button {
+  margin: 0;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+}
+
+@mixin input-ios-reset {
+  appearance: none;
+  border-radius: 0;
+}
+
+@mixin inherit-font {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+    content: '';
+  }
+
+  > .aspect-ratio-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

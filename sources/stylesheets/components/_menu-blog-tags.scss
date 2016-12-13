@@ -1,0 +1,22 @@
+.menu-blog-tags {
+  .blog-tags-ico {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+    fill: currentColor;
+  }
+
+  .menu {
+    display: inline-block;
+    max-width: calc(100% - 23px);
+    vertical-align: top;
+  }
+
+  .menu-item {
+    a {
+      font-size: 14px;
+    }
+  }
+}

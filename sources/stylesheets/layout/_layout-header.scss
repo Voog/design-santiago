@@ -1,0 +1,64 @@
+.layout-header {
+  max-width: $width-layout-wrap;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    padding-top: 75px;
+    margin-right: $margin-horizontal-layout-wrap;
+    margin-left: $margin-horizontal-layout-wrap;
+    text-align: center;
+  }
+
+  &__container {
+    @media screen and (max-width: $mobile) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  //&__title {
+  //}
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &__logo {
+    height: auto;
+    max-width: 150px;
+  }
+
+  &__menu-toggle {
+    &:focus {
+      outline: 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin-right: -15px;
+
+      .hamburger-inner {
+        // scss-lint:disable NestingDepth
+        &,
+        &::before,
+        &::after {
+          background-color: $color-secondary;
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+
+    @media screen and (min-width: $mobile + 1) {
+      display: none;
+    }
+  }
+}

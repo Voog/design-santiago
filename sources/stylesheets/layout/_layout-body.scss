@@ -1,0 +1,44 @@
+.layout-body {
+  flex-grow: 1;
+  width: 100%;
+  max-width: $width-layout-wrap;
+  margin-right: $margin-horizontal-layout-wrap;
+  margin-left: $margin-horizontal-layout-wrap;
+  box-sizing: border-box;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    margin-top: 60px;
+  }
+
+  &--wide {
+    max-width: 1400px;
+  }
+
+  &--narrow {
+    max-width: 960px;
+  }
+
+  &--thin {
+    max-width: 800px;
+  }
+
+  &--small-padded {
+    @media screen and (max-width: $mobile) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &--padded {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media screen and (max-width: $mobile) {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.layout-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 60px;
+  background-color: $color-grey;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: $width-layout-wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: $margin-horizontal-layout-wrap;
+    margin-left: $margin-horizontal-layout-wrap;
+
+    @media screen and (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__section {
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $tablet + 1) {
+
+    }
+
+    &--wide {
+      flex-grow: 1;
+    }
+
+    &--voog-reference {
+      @media screen and (max-width: $tablet) {
+        order: 3;
+      }
+    }
+
+    &--body {
+      @media screen and (max-width: $tablet) {
+        order: 1;
+      }
+    }
+
+    &--social-media {
+      position: relative;
+      top: 6px;
+
+      @media screen and (max-width: $tablet) {
+        order: 2;
+      }
+    }
+  }
+
+  .separated {
+    @media screen and (max-width: $mobile) {
+      display: block;
+    }
+
+    @media screen and (min-width: $mobile + 1) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}

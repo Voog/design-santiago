@@ -1,0 +1,51 @@
+// =============================================================================
+// MAIN STYLSEHEET
+//
+// Uncomment the partials you want to use in your template and comment out those
+// that you don't need.
+// =============================================================================
+
+// 3RD PARTY COMPONENTS
+@import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+// TODO: Restore if breakpoint will be used.
+//@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+//@import '../../node_modules/hamburgers/dist/hamburgers.css';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+// Mixins
+@import 'mixins/general';
+
+// VARIABLES
+@import 'variables/widths';
+@import 'variables/margins';
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'variables/breakpoints';
+
+// BASE
+@import 'layout/layout-root';
+@import 'layout/layout-wrap';
+@import 'layout/layout-container';
+@import 'layout/layout-header';
+@import 'layout/layout-body';
+@import 'layout/layout-footer';
+
+// COMPONENTS
+@import 'components/menu-main';
+@import 'components/menu-blog-tags';
+@import 'components/product-details';
+@import 'components/shops-container';
+@import 'components/shop-item';
+@import 'components/ecommerce';
+
+// MODULES
+@import 'modules/states';
+@import 'modules/buttons';
+@import 'modules/voog-reference';
+
+// CONTENT AREAS
+@import 'content-area/container';
+@import 'content-area/blog-article';
+@import 'content-area/text';
+@import 'content-area/forms';
+@import 'content-area/social';

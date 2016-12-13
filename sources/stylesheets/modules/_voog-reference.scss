@@ -1,0 +1,17 @@
+.voog-reference {
+  font-family: $font-family-primary;
+
+  // This can't be written in BEM
+  a {
+    color: $color-voog-reference;
+    text-decoration: none;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 10px;
+    }
+
+    @media screen and (min-width: $tablet + 1) {
+      font-size: 12px;
+    }
+  }
+}
