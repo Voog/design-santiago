@@ -6,245 +6,245 @@
   "author": "",
   "layouts": [
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/common_page.tpl",
+      "title": "Common page",
       "layout_name": "common_page",
-      "title": "Common page"
-    },
-    {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "front_page",
-      "title": "Front page"
+      "file": "layouts/common_page.tpl"
     },
     {
+      "title": "Front page",
+      "layout_name": "front_page",
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl"
+    },
+    {
+      "title": "Blog & News",
+      "layout_name": "blog___news",
       "content_type": "blog",
       "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "blog___news",
-      "title": "Blog & News"
+      "file": "layouts/blog___news.tpl"
     },
     {
+      "title": "Blog article",
+      "layout_name": "blog_article",
       "content_type": "blog_article",
       "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
-      "title": "Blog article"
+      "file": "layouts/blog_article.tpl"
     },
     {
-      "content_type": "elements",
-      "component": false,
-      "file": "layouts/shops_listing.tpl",
-      "layout_name": "shops_listing",
-      "title": "Shops listing"
-    },
-    {
-      "content_type": "elements",
-      "component": false,
-      "file": "layouts/products_listing.tpl",
+      "title": "Products listing",
       "layout_name": "products_listing",
-      "title": "Products listing"
+      "content_type": "elements",
+      "component": false,
+      "file": "layouts/products_listing.tpl"
     },
     {
-      "content_type": "element",
+      "title": "Shops listing",
+      "layout_name": "shops_listing",
+      "content_type": "elements",
       "component": false,
-      "file": "layouts/shop_details.tpl",
+      "file": "layouts/shops_listing.tpl"
+    },
+    {
+      "title": "Shop details",
       "layout_name": "shop_details",
-      "title": "Shop details"
-    },
-    {
       "content_type": "element",
       "component": false,
-      "file": "layouts/product_details.tpl",
+      "file": "layouts/shop_details.tpl"
+    },
+    {
+      "title": "Product details",
       "layout_name": "product_details",
-      "title": "Product details"
+      "content_type": "element",
+      "component": false,
+      "file": "layouts/product_details.tpl"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-tags.tpl",
-      "layout_name": "blog-listing-tags",
-      "title": "blog-listing-tags"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-tools.tpl",
-      "layout_name": "blog-listing-tools",
-      "title": "blog-listing-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-variables.tpl",
-      "layout_name": "blog-listing-variables",
-      "title": "blog-listing-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/layout-footer.tpl",
-      "layout_name": "layout-footer",
-      "title": "layout-footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/layout-header.tpl",
-      "layout_name": "layout-header",
-      "title": "layout-header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-main.tpl",
-      "layout_name": "menu-main",
-      "title": "menu-main"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-listing-item-add.tpl",
-      "layout_name": "product-listing-item-add",
-      "title": "product-listing-item-add"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-listing-item.tpl",
-      "layout_name": "product-listing-item",
-      "title": "product-listing-item"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-head.tpl",
-      "layout_name": "template-head",
-      "title": "template-head"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-javascripts.tpl",
-      "layout_name": "template-javascripts",
-      "title": "template-javascripts"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-meta.tpl",
-      "layout_name": "template-meta",
-      "title": "template-meta"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-svg-spritesheet.tpl",
-      "layout_name": "template-svg-spritesheet",
-      "title": "template-svg-spritesheet"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-tools.tpl",
-      "layout_name": "template-tools",
-      "title": "template-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-variables.tpl",
-      "layout_name": "template-variables",
-      "title": "template-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-comments.tpl",
-      "layout_name": "blog-article-comments",
-      "title": "blog-article-comments"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-tags.tpl",
-      "layout_name": "blog-article-tags",
-      "title": "blog-article-tags"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-variables.tpl",
-      "layout_name": "blog-article-variables",
-      "title": "blog-article-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article-add.tpl",
+      "title": "blog-listing-article-add",
       "layout_name": "blog-listing-article-add",
-      "title": "blog-listing-article-add"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/blog-listing-article-newer.tpl",
-      "layout_name": "blog-listing-article-newer",
-      "title": "blog-listing-article-newer"
+      "file": "components/blog-listing-article-add.tpl"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article-older.tpl",
+      "title": "blog-listing-article-older",
       "layout_name": "blog-listing-article-older",
-      "title": "blog-listing-article-older"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/blog-listing-article.tpl",
+      "file": "components/blog-listing-article-older.tpl"
+    },
+    {
+      "title": "blog-listing-article",
       "layout_name": "blog-listing-article",
-      "title": "blog-listing-article"
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-listing-article.tpl"
+    },
+    {
+      "title": "blog-listing-tags",
+      "layout_name": "blog-listing-tags",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-listing-tags.tpl"
+    },
+    {
+      "title": "blog-listing-tools",
+      "layout_name": "blog-listing-tools",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-listing-tools.tpl"
+    },
+    {
+      "title": "blog-listing-variables",
+      "layout_name": "blog-listing-variables",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-listing-variables.tpl"
+    },
+    {
+      "title": "layout-footer",
+      "layout_name": "layout-footer",
+      "content_type": "component",
+      "component": true,
+      "file": "components/layout-footer.tpl"
+    },
+    {
+      "title": "layout-header",
+      "layout_name": "layout-header",
+      "content_type": "component",
+      "component": true,
+      "file": "components/layout-header.tpl"
+    },
+    {
+      "title": "menu-main",
+      "layout_name": "menu-main",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-main.tpl"
+    },
+    {
+      "title": "template-head",
+      "layout_name": "template-head",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-head.tpl"
+    },
+    {
+      "title": "template-javascripts",
+      "layout_name": "template-javascripts",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-javascripts.tpl"
+    },
+    {
+      "title": "template-meta",
+      "layout_name": "template-meta",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl"
+    },
+    {
+      "title": "template-svg-spritesheet",
+      "layout_name": "template-svg-spritesheet",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-svg-spritesheet.tpl"
+    },
+    {
+      "title": "template-tools",
+      "layout_name": "template-tools",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-tools.tpl"
+    },
+    {
+      "title": "template-variables",
+      "layout_name": "template-variables",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl"
+    },
+    {
+      "title": "blog-article-variables",
+      "layout_name": "blog-article-variables",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-variables.tpl"
+    },
+    {
+      "title": "blog-article-comments",
+      "layout_name": "blog-article-comments",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-comments.tpl"
+    },
+    {
+      "title": "product-listing-item-add",
+      "layout_name": "product-listing-item-add",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-listing-item-add.tpl"
+    },
+    {
+      "title": "product-listing-item",
+      "layout_name": "product-listing-item",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-listing-item.tpl"
+    },
+    {
+      "title": "blog-article-tags",
+      "layout_name": "blog-article-tags",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-tags.tpl"
+    },
+    {
+      "title": "blog-listing-article-newer",
+      "layout_name": "blog-listing-article-newer",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-listing-article-newer.tpl"
     }
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-shopping-cart.svg",
-      "kind": "assets",
-      "filename": "ico-shopping-cart.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/logo-tuul.png",
-      "kind": "images",
-      "filename": "logo-tuul.png"
-    },
-    {
-      "content_type": "text/javascript",
-      "file": "javascripts/main.js",
-      "kind": "javascript",
-      "filename": "main.js"
-    },
-    {
-      "content_type": "text/javascript",
-      "file": "javascripts/main.min.js",
-      "kind": "javascript",
-      "filename": "main.min.js"
-    },
-    {
-      "content_type": "text/css",
+      "kind": "stylesheet",
+      "filename": "main.css",
       "file": "stylesheets/main.css",
-      "kind": "stylesheet",
-      "filename": "main.css"
+      "content_type": "text/css"
     },
     {
-      "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
       "kind": "stylesheet",
-      "filename": "main.min.css"
+      "filename": "main.min.css",
+      "file": "stylesheets/main.min.css",
+      "content_type": "text/css"
+    },
+    {
+      "kind": "javascript",
+      "filename": "main.js",
+      "file": "javascripts/main.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "main.min.js",
+      "file": "javascripts/main.min.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "image",
+      "filename": "logo-tuul.png",
+      "file": "images/logo-tuul.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "asset",
+      "filename": "ico-shopping-cart.svg",
+      "file": "assets/ico-shopping-cart.svg",
+      "content_type": "unknown/unknown"
     }
   ]
 }
