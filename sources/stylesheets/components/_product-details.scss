@@ -33,6 +33,7 @@
     margin-top: 0;
     margin-bottom: 0;
     color: $color-primary;
+    font-feature-settings: 'lnum';
 
     @media screen and (max-width: $mobile) {
       font-size: em(36px, $base-font-size);
