@@ -31,6 +31,7 @@
 .blog-article-newer {
   color: $color-primary;
   text-decoration: none;
+  font-feature-settings: 'lnum';
 
   .blog-listing-page & {
     padding-top: 25px;
