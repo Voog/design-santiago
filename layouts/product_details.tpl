@@ -23,9 +23,9 @@
           <div class="product-details__body">
             <h2 class="product-details__title">{% editable element.title %}</h2>
 
-            {% unless element.price == 0 or element.price == "" %}
+            {% if editmode or element.price != "" %}
               <div class="product-details__price">{% editable element.price %}€</div>
-            {% endunless %}
+            {% endif %}
 
             {% if article.new_record? %}
               <div class="product-details__buy-btn">
