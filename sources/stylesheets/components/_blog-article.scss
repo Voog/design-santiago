@@ -41,6 +41,7 @@
 
   &__excerpt {
     @extend %text;
+    margin-bottom: em(20px, $base-font-size);
   }
 
   &__body {

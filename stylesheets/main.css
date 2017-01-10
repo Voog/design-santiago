@@ -2011,6 +2011,9 @@ label .form_control_indicator::before {
   font-size: 1em;
   line-height: 1.7;
 }
+.blog-article__excerpt {
+  margin-bottom: 1.11111em;
+}
 
 .product-details {
   font-family: "Raleway", sans-serif;
