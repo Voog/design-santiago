@@ -30,22 +30,23 @@
 @import 'layout/layout-body';
 @import 'layout/layout-footer';
 
-// COMPONENTS
-@import 'components/menu-main';
-@import 'components/menu-blog-tags';
-@import 'components/product-details';
-@import 'components/shops-container';
-@import 'components/shop-item';
-@import 'components/ecommerce';
-
-// MODULES
-@import 'modules/states';
-@import 'modules/buttons';
-@import 'modules/voog-reference';
-
 // CONTENT AREAS
 @import 'content-area/container';
 @import 'content-area/blog-article';
 @import 'content-area/text';
 @import 'content-area/forms';
 @import 'content-area/social';
+
+// MODULES
+@import 'modules/states';
+@import 'modules/buttons';
+@import 'modules/voog-reference';
+
+// COMPONENTS
+@import 'components/menu-main';
+@import 'components/menu-blog-tags';
+@import 'components/blog-article';
+@import 'components/product-details';
+@import 'components/shops-container';
+@import 'components/shop-item';
+@import 'components/ecommerce';

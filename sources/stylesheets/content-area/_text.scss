@@ -118,6 +118,9 @@
 
 
   p {
+    font-size: em(18px, $base-font-size);
+
+    // TODO: Convert to em mixin
     // scss-lint:disable SelectorFormat
     .feature__body & {
       margin-top: .6em;
@@ -223,6 +226,7 @@
     font-family: inherit;
     font-size: em(18px);
     line-height: 1.4;
+    // TODO: LINT SCSS
     outline: 0;
     -webkit-appearance: none;
     background-color: $color-secondary;

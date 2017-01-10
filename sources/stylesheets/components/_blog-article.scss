@@ -1,0 +1,49 @@
+.blog-article {
+  margin-bottom: em(40px, $base-font-size);
+  font-size: rem($base-font-size);
+
+  &__header {
+    margin-bottom: em(20px, $base-font-size);
+    font-family: $font-family-primary;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: em(27px, $base-font-size);
+    color: $color-secondary;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__date {
+    font-size: em(13px, $base-font-size);
+    opacity: .5;
+  }
+
+  //&__content {
+  //}
+
+  %text {
+    font-family: $font-family-primary;
+    font-size: em(18px, $base-font-size);
+    line-height: 1.7;
+  }
+
+  &__excerpt {
+    @extend %text;
+  }
+
+  &__body {
+    @extend %text;
+  }
+}
