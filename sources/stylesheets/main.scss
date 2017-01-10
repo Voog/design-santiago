@@ -7,8 +7,8 @@
 
 // 3RD PARTY COMPONENTS
 @import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
-// TODO: Restore if breakpoint will be used.
-//@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+// TODO: Check if that can be optimized.
 //@import '../../node_modules/hamburgers/dist/hamburgers.css';
 @import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 

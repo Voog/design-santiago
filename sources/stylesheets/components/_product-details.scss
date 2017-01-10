@@ -1,14 +1,14 @@
 .product-details {
   font-family: $font-family-primary;
 
-  @media screen and (min-width: $mobile + 1) {
+  @include breakpoint($medium-start) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
 
   &__image-container {
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       flex-grow: 1;
       max-width: 520px;
       margin-right: 40px;
@@ -19,7 +19,7 @@
     width: 100%;
     height: auto;
 
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       margin-bottom: 25px;
     }
   }
@@ -35,11 +35,11 @@
     color: $color-primary;
     font-feature-settings: 'lnum';
 
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: em(36px, $base-font-size);
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: 40px;
       font-weight: 400;
       line-height: 1.5;
@@ -52,11 +52,11 @@
     color: $color-price-product-details;
     font-feature-settings: 'lnum';
 
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: em(36px, $base-font-size);
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: 40px;
     }
   }

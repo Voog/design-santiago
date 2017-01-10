@@ -1,7 +1,7 @@
 .shop-item {
   font-family: $font-family-primary;
 
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -13,11 +13,11 @@
   &__section {
     box-sizing: border-box;
 
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       display: block;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       padding: 30px 10px;
       vertical-align: top;
       border-bottom-color: $color-grey;
@@ -40,28 +40,28 @@
       word-break: break-word;
       word-wrap: break-word;
 
-      @media screen and (max-width: $mobile) {
+      @include breakpoint(max-width $medium-end) {
         font-size: em(30px, $base-font-size);
       }
 
-      @media screen and (min-width: $mobile + 1) {
+      @include breakpoint($medium-start) {
         font-size: em(40px, $base-font-size);
       }
     }
 
     &--location {
-      @media screen and (max-width: $mobile) {
+      @include breakpoint(max-width $medium-end) {
         margin-top: 10px;
         margin-bottom: 10px;
       }
 
-      @media screen and (min-width: $mobile + 1) {
+      @include breakpoint($medium-start) {
         width: 18.3%;
       }
     }
 
     &--details {
-      @media screen and (min-width: $mobile + 1) {
+      @include breakpoint($medium-start) {
         width: 25.3%;
       }
     }

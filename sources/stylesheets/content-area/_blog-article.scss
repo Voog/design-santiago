@@ -38,22 +38,23 @@
     padding-bottom: 25px;
     box-sizing: border-box;
 
-    @media screen and (max-width: $nano) {
+    @include breakpoint(max-width $nano-end) {
       display: block;
     }
 
-    @media screen and (min-width: $nano + 1) {
+    @include breakpoint($nano-start) {
       display: inline-block;
       vertical-align: top;
     }
 
-    @media screen and (min-width: $nano + 1) and (max-width: $mobile) {
+    @include breakpoint(($nano-start) ($medium-end)) {
+      background-color: red;
       width: 50%;
       padding-right: 10px;
       padding-left: 10px;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       width: 33.3%;
       min-width: 213px;
       padding-right: 4.65%;
@@ -84,11 +85,11 @@
   padding-right: 20px;
   padding-left: 20px;
 
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     margin-top: 30px;
   }
 
-  @media screen and (min-width: $mobile + 1) {
+  @include breakpoint($medium-start) {
     margin-top: 100px;
   }
 }
@@ -106,11 +107,11 @@
   opacity: 1;
   stroke: $color-white;
 
-  @media screen and (min-width: $micro + 1) {
+  @include breakpoint($micro-start) {
     min-width: 42px;
   }
 
-  @media screen and (min-width: $tiny + 1) {
+  @include breakpoint($small-start) {
     max-width: 82px;
     min-width: 62px;
   }
@@ -220,23 +221,23 @@
       border-radius: 100%;
     }
 
-    @media screen and (max-width: $nano) {
+    @include breakpoint(max-width $nano-end) {
       font-size: 16px;
     }
 
-    @media screen and (min-width: $nano + 1) {
+    @include breakpoint($nano-start) {
       font-size: 13px;
     }
 
-    @media screen and (min-width: $micro + 1) {
+    @include breakpoint($micro-start) {
       font-size: 16px;
     }
 
-    @media screen and (min-width: $tiny + 1) {
+    @include breakpoint($small-start) {
       font-size: 23px;
     }
 
-    @media screen and (min-width: $tablet + 1) {
+    @include breakpoint($large-start) {
       font-size: 40px;
     }
 
@@ -268,11 +269,11 @@
     }
 
     .edy-img-drop-area-placeholder {
-      @media screen and (max-width: $mobile) {
+      @include breakpoint(max-width $medium-end) {
         font-size: 13px;
       }
 
-      @media screen and (min-width: $mobile + 1) {
+      @include breakpoint($medium-start) {
         font-size: $base-font-size;
       }
     }
@@ -345,38 +346,34 @@
 
   .blog-listing-page & {
     font-weight: 400;
-
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-      font-weight: 100;
-    }
   }
 
   .blog-article-newer & {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: 13px;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: $base-font-size;
     }
   }
 
   .blog-article-older & {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: $base-font-size;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: 30px;
     }
   }
 
   .blog-article-page & {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: 32px;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: 50px;
     }
   }
@@ -393,10 +390,6 @@
   color: rgba($color-primary, 1);
   text-transform: uppercase;
   opacity: .5;
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-    font-weight: 100;
-  }
 
   .blog-article-page & {
     display: block;
@@ -417,7 +410,7 @@
 }
 
 .article-nav-inner {
-  @media screen and (min-width: $mobile + 1) {
+  @include breakpoint($medium-start) {
     display: flex;
   }
 }
@@ -441,7 +434,7 @@
 
   &:nth-child(2) {
     &::before {
-      @media screen and (max-width: $mobile) {
+      @include breakpoint(max-width $medium-end) {
         position: absolute;
         top: 0;
         right: 0;
@@ -457,35 +450,35 @@
     }
   }
 
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     text-align: center;
   }
 }
 
 .article-nav-link-half {
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     text-align: center;
   }
 
-  @media screen and (min-width: $mobile + 1) {
+  @include breakpoint($medium-start) {
     padding-bottom: 33px;
   }
 
   &:first-child {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       padding-bottom: 33px;
     }
   }
 }
 
 .article-nav-link-older {
-  @media screen and (min-width: $mobile) {
+  @include breakpoint($medium-end) {
     padding-right: 20px;
   }
 }
 
 .article-nav-link-newer {
-  @media screen and (min-width: $mobile) {
+  @include breakpoint($medium-end) {
     padding-left: 20px;
     text-align: right;
   }
@@ -546,10 +539,6 @@
 
   .comment-author {
     font-weight: 600;
-
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-      font-weight: 400;
-    }
   }
 
   .comment-body {

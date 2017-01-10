@@ -6,11 +6,11 @@
     color: $color-voog-reference;
     text-decoration: none;
 
-    @media screen and (max-width: $tablet) {
+    @include breakpoint(max-width $large-end) {
       font-size: 10px;
     }
 
-    @media screen and (min-width: $tablet + 1) {
+    @include breakpoint($large-start) {
       font-size: 12px;
     }
   }

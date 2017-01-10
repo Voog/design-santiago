@@ -1,15 +1,15 @@
 .shops-container {
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     display: block;
   }
 
-  @media screen and (min-width: $mobile) {
+  @include breakpoint($medium-end) {
     width: 100%;
     margin-top: 30px;
   }
 
   &__body {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       display: block;
     }
   }

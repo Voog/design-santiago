@@ -7,7 +7,7 @@
   font-family: $font-family-primary;
   list-style-type: none;
 
-  @media screen and (max-width: $mobile) {
+  @include breakpoint(max-width $medium-end) {
     position: fixed;
     top: -45px;
     bottom: 0;
@@ -20,7 +20,7 @@
   }
 
   [data-state--menu-main="closed"] & {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       right: -205px;
       transition-duration: 200ms;
       transition-property: right;
@@ -28,7 +28,7 @@
   }
 
   [data-state--menu-main="open"] & {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       right: 0;
       transition-duration: 200ms;
       transition-property: right;
@@ -36,11 +36,11 @@
   }
 
   &__item {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       display: block;
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       display: inline-block;
     }
 
@@ -53,13 +53,13 @@
       border-bottom-style: solid;
       border-bottom-width: 2px;
 
-      @media screen and (max-width: $mobile) {
+      @include breakpoint(max-width $medium-end) {
         padding-top: 5px;
         padding-bottom: 5px;
         font-size: em(18);
       }
 
-      @media screen and (min-width: $mobile + 1) {
+      @include breakpoint($medium-start) {
         padding-bottom: 10px;
         margin-right: 25px;
         margin-left: 25px;
@@ -67,7 +67,7 @@
       }
 
       &:hover {
-        @media screen and (min-width: $mobile + 1) {
+        @include breakpoint($medium-start) {
           border-bottom-color: rgba($color-primary, .75);
         }
       }
@@ -77,11 +77,11 @@
     &--selected {
       // scss-lint:disable NestingDepth
       a {
-        @media screen and (max-width: $mobile) {
+        @include breakpoint(max-width $medium-end) {
           font-weight: 700;
         }
 
-        @media screen and (min-width: $mobile + 1) {
+        @include breakpoint($medium-start) {
           border-bottom-color: $color-primary;
           border-bottom-style: solid;
           border-bottom-width: 2px;

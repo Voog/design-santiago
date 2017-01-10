@@ -57,61 +57,61 @@
   }
 
   h1 {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: em(40px, $base-font-size);
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: em(50px, $base-font-size);
     }
   }
 
   h2 {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: em(30px, $base-font-size);
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: em(40px, $base-font-size);
     }
   }
 
   h3 {
-    @media screen and (max-width: $mobile) {
+    @include breakpoint(max-width $medium-end) {
       font-size: em(25px, $base-font-size);
     }
 
-    @media screen and (min-width: $mobile + 1) {
+    @include breakpoint($medium-start) {
       font-size: em(30px, $base-font-size);
     }
   }
 
   //h4 {
-  //  @media screen and (max-width: $mobile) {
+  //  @include breakpoint(max-width $medium-end) {
   //    font-size: em(20px, $base-font-size);
   //  }
   //
-  //  @media screen and (min-width: $mobile + 1) {
+  //  @include breakpoint($medium-start) {
   //    font-size: em(25px, $base-font-size);
   //  }
   //}
   //
   //h5 {
-  //  @media screen and (max-width: $mobile) {
+  //  @include breakpoint(max-width $medium-end) {
   //    font-size: em(18px, $base-font-size);
   //  }
   //
-  //  @media screen and (min-width: $mobile + 1) {
+  //  @include breakpoint($medium-start) {
   //    font-size: em(23px, $base-font-size);
   //  }
   //}
   //
   //h6 {
-  //  @media screen and (max-width: $mobile) {
+  //  @include breakpoint(max-width $medium-end) {
   //    font-size: em(1px, $base-font-size);
   //  }
   //
-  //  @media screen and (min-width: $mobile + 1) {
+  //  @include breakpoint($medium-start) {
   //    font-size: em(20px, $base-font-size);
   //  }
   //}

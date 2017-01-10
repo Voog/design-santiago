@@ -1,10 +1,17 @@
 // =============================================================================
 // MEDIA QUERY BREAKPOINTS
 // =============================================================================
-// TODO: Convert media queries to breakpoint lubrary format.
-$tablet: 1024px;
-$mobile: 640px;
-$small: 380px;
-$tiny: 340px;
-$micro: 290px;
-$nano: 240px;
+$large-end: 1024px;
+$large-start: $large-end + 1px; // 1025px
+
+$medium-end: 640px;
+$medium-start: $medium-end + 1px; // 641px
+
+$small-end: 340px;
+$small-start: $small-end + 1px; // 341px
+
+$micro-end: 290px;
+$micro-start: $micro-end + 1px; // 291px
+
+$nano-end: 240px;
+$nano-start: $nano-end + 1px; // 241px
