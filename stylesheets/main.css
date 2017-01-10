@@ -1605,7 +1605,8 @@
 .content-area blockquote {
   padding-left: 20px;
   margin: 20px 40px 20px 0;
-  border-left: 2px solid;
+  border-left-style: solid;
+  border-left-width: 2px;
 }
 .content-area iframe {
   max-width: 100%;
