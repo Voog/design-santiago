@@ -1,27 +1,27 @@
 {% include "product-list-item-variables" %}
 
 {% if editmode %}
-  <div class="content-item-box {{ item_image_state }} js-content-item-box" data-item-type="page" data-item-id="{{ menu_level.page_id }}">
-    <div class="item-top js-bg-picker-area">
-      <button class="btn bg-picker-btn js-bg-picker-btn" data-bg-key="image" data-bg-picture-boolean="true" data-bg-color-boolean="false" data-bg-image="{{ menu_level.image.for-width-680.url }}" data-bg-target-width="680"></button>
+  <div class="content-item content-item--list-item" data-setting--bg-picker-component="parent" data-state--image-presence="{{ item_image_presence }}" data-setting--content-item-type="page" data-setting--content-item-id="{{ menu_level.page_id }}">
+    <div class="content-item__cover-image" data-setting--bg-picker-component="area">
+      <button class="btn btn--hover-toggleable btn--editor" data-setting--bg-picker-component="toggler" data-setting--bg-picker-key="image" data-setting--bg-picker-image-editor="true" data-setting--bg-picker-color-editor="false" data-setting--bg-picker-target-width="680" data-bg-image="{{ menu_level.image.for-width-680.url }}"></button>
 
-      <button class="btn bg-crop-btn {% if item_image_orientation == "image-square" or menu_level.image == nil %}is-hidden{% else %}is-visible{% endif %} js-toggle-crop-state">
+      <button class="btn btn--hover-toggleable btn--toggler" data-state--display="{% if item_image_orientation == "image-square" or menu_level.image == nil %}none{% else %}block{% endif %}" data-behavior="toggle-crop-state">
         <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#ico-toggle"></use>
         </svg>
       </button>
 
-      <div class="top-inner aspect-ratio-inner image-drop-area {{ item_image_orientation }} {{ item_image_crop_state }} js-img-drop-area" data-image="{{ menu_level.image.for-width-680.url }}"></div>
+      <div class="content-item__cover-image-inner content-item__cover-image--drop-area js-img-drop-area" data-setting--image-orientation="{{ item_image_orientation }}" data-setting--image-crop-state="{{ item_image_crop_state }}" data-image="{{ menu_level.image.for-width-680.url }}" data-aspect-ratio="inner"></div>
     </div>
 
-    <h2 class="item-title">
-      <a class="item-link" href="{{ menu_level.url }}">{{ menu_level.title }}</a>
+    <h2 class="content-item__title">
+      <a class="content-item__link" href="{{ menu_level.url }}">{{ menu_level.title }}</a>
     </h2>
   </div>
 {% else %}
-  <a class="content-item-box {{ item_image_state }} js-content-item-box" href="{{ menu_level.url }}">
-    <div class="item-top">
-      <div class="top-inner aspect-ratio-inner">
+  <a class="content-item content-item--list-item {{ item_image_state }} js-content-item" href="{{ menu_level.url }}">
+    <div class="content-item__cover-image">
+      <div class="content-item__cover-image-inner">
         {% if menu_level.image %}
           <div class="loader js-loader"></div>
           <img class="item-image {{ item_image_orientation }} {{ item_image_crop_state }} js-lazyload" data-original="{{ menu_level.image.for-width-680.url }}">

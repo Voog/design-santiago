@@ -1,19 +1,14 @@
 // =============================================================================
 // CONTENT ITEM
 // =============================================================================
-// TODO: Convert to BEM layout block.
-.content-item-boxes {
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: 0;
-}
-
 // TODO: Convert to BEM component block.
-.content-item-box {
+.content-item {
+  font-family: $font-family-primary;
+  font-size: rem($base-font-size);
   color: rgba($color-primary, .8);
   text-decoration: none;
 
-  .item-list-page & {
+  &--list-item {
     padding-top: 15px;
     padding-bottom: 15px;
     box-sizing: border-box;
@@ -41,328 +36,378 @@
     }
   }
 
-  .content-illustrations & {
-    margin-bottom: 40px;
-  }
-
-  .top-inner {
-    opacity: 1;
-  }
-
-  &:nth-child(odd) {
-    @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-right: 10px;
-    }
-  }
-
-  &:nth-child(even) {
-    @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-left: 10px;
-    }
-  }
-
-  &:hover {
-    .top-inner {
-      // scss-lint:disable NestingDepth
-      .editmode &,
-      .item-list-page & {
-        opacity: .8;
-      }
-      // scss-lint:enable NestingDepth
-    }
-  }
-}
-
-.content-items {
-  padding-right: 20px;
-  padding-left: 20px;
-
-  @include breakpoint(max-width $medium) {
-    margin-top: 30px;
-  }
-
-  @include breakpoint ($medium-up) {
-    margin-top: 100px;
-  }
-}
-
-.content-item {
-  margin-bottom: 15px;
-}
-
-.item-top {
-  @include aspect-ratio(1, 1);
-
-  &:hover {
-    .btn {
-      opacity: 1;
-    }
-  }
-
-  .btn {
-    padding: 0;
-    background-color: rgba($color-science-blue, .3);
-    border: 0;
-    opacity: 0;
-    transition: background-color .5s, opacity .5s;
+  &__cover-image {
+    @include aspect-ratio(1, 1);
 
     &:hover {
-      background-color: rgba($color-science-blue, 1);
-    }
-  }
-
-  .bg-picker-btn {
-    top: 0;
-    left: 0;
-  }
-
-  .bg-crop-btn {
-    @include size(45px);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 9;
-    margin-top: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    border-radius: 100%;
-    fill: rgba($color-white, 1);
-
-    &.is-visible {
-      display: block;
-    }
-
-    &.is-hidden {
-      display: none;
-    }
-  }
-
-  .top-inner {
-    @include hyphenate;
-    display: flex !important; // scss-lint:disable ImportantRule
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    line-height: 1.2;
-    text-align: center;
-
-    .publicmode & {
-      overflow: hidden;
-
-      // scss-lint:disable SelectorDepth, NestingDepth
-      .image-landscape {
-        &.not-cropped {
-          width: 100%;
-          height: auto;
-          max-width: 100%;
-        }
-
-        &.is-cropped {
-          width: auto;
-          height: 100%;
-        }
+      .btn--hover-toggleable {
+        opacity: 1;
       }
-
-      .image-portrait {
-        &.not-cropped {
-          width: auto;
-          height: 100%;
-          max-height: 100%;
-        }
-
-        &.is-cropped {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .image-square {
-        width: 100%;
-        height: auto;
-      }
-      // scss-lint:enable SelectorDepth, NestingDepth
-    }
-
-    .with-image & {
-      background-color: rgba($color-white, 1);
-    }
-
-    .without-image & {
-      border-color: rgba($color-primary, .1);
-      border-style: solid;
-      border-width: 1px;
-    }
-
-    @include breakpoint(max-width $xx-small) {
-      font-size: 16px;
-    }
-
-    @include breakpoint($xx-small-up) {
-      font-size: 13px;
-    }
-
-    @include breakpoint($x-small-up) {
-      font-size: 16px;
-    }
-
-    @include breakpoint($small-up) {
-      font-size: 20px;
-    }
-
-    @include breakpoint($large-up) {
-      font-size: 30px;
     }
   }
 
-  .image-drop-area {
-    background-position: center !important; // scss-lint:disable ImportantRule
+  &__cover-image-inner {
     background-repeat: no-repeat;
+  }
 
-    &.not-cropped {
-      background-size: contain;
-    }
+  &__cover-image-placeholder {
+    width: 100%;
+    padding: .5em;
+    box-sizing: border-box;
 
-    &:not(.active) {
-      border-color: rgba($color-primary, .4);
-      border-style: dashed;
-      border-width: 1px;
-
-      // scss-lint:disable NestingDepth
-      &:hover {
-        border-style: solid;
-      }
-      // scss-lint:enable NestingDepth
-    }
-
-    .edy-img-drop-area-placeholder {
+    &.edy-img-drop-area-placeholder {
       @include breakpoint(max-width $medium) {
-        font-size: 13px;
+        font-size: em(13px, $base-font-size);
       }
 
       @include breakpoint ($medium-up) {
-        font-size: $base-font-size;
+        font-size: em(18px, $base-font-size);
       }
     }
   }
-}
 
-.item-image {
-  border: 0;
-
-  .publicmode & {
-    &.is-cropped {
-      position: absolute;
-      top: -100%;
-      right: -100%;
-      bottom: -100%;
-      left: -100%;
-      max-width: none;
-      margin: auto;
-    }
-  }
-
-  .item-list-page & {
-    display: block;
-  }
-}
-
-
-.item-placeholder {
-  width: 100%;
-  padding: .5em;
-  box-sizing: border-box;
-}
-
-.item-title {
-  @include hyphenate;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.2;
-  text-align: center;
-
-  .item-link {
-    color: inherit;
-    text-decoration: none;
-
-    .content-item-box & {
-      display: block;
-    }
-  }
-
-  .item-list-page & {
-    font-weight: 400;
-  }
-
-  .content-item-box & {
-    @include breakpoint(max-width $medium) {
-      font-size: 13px;
-    }
-
-    @include breakpoint ($medium-up) {
-      font-size: $base-font-size;
-    }
-  }
-
-  .content-item & {
-    @include breakpoint(max-width $medium) {
-      font-size: $base-font-size;
-    }
-
-    @include breakpoint ($medium-up) {
-      font-size: 30px;
-    }
-  }
-
-  .blog-article-page & {
-    @include breakpoint(max-width $medium) {
-      font-size: 32px;
-    }
-
-    @include breakpoint ($medium-up) {
-      font-size: 50px;
-    }
-  }
-
-  .content-item-box > & {
+  &__title {
+    @include hyphenate;
     margin-top: 20px;
     margin-bottom: 5px;
-  }
-}
+    font-weight: 400;
+    line-height: 1.2;
 
-.content-illustrations {
-  font-size: 0;
-
-  .content-item-box {
-    padding-right: 0;
-  }
-
-  @include breakpoint ($medium-up) {
-    flex: 1;
-    max-width: 520px;
-    margin-right: 40px;
-  }
-}
-
-.content-item-title {
-  text-align: left;
-}
-
-.content-body-inner {
-  .item-page & {
     @include breakpoint(max-width $medium) {
-      padding-top: 40px;
+      font-size: em(13px, $base-font-size);
     }
 
     @include breakpoint ($medium-up) {
-      flex: 1;
+      font-size: em(18px, $base-font-size);
     }
   }
-}
 
-.items-body {
-  padding-top: 40px;
-
-  @include breakpoint ($medium-up) {
-    display: flex;
+  &__link {
+    color: inherit;
+    text-decoration: none;
   }
 }
+
+
+//
+//  .content-illustrations & {
+//    margin-bottom: 40px;
+//  }
+//
+//  .top-inner {
+//    opacity: 1;
+//  }
+//
+//  &:nth-child(odd) {
+//    @include breakpoint(($xx-small-up) (max-width $medium)) {
+//      padding-right: 10px;
+//    }
+//  }
+//
+//  &:nth-child(even) {
+//    @include breakpoint(($xx-small-up) (max-width $medium)) {
+//      padding-left: 10px;
+//    }
+//  }
+//
+//  &:hover {
+//    .top-inner {
+//      // scss-lint:disable NestingDepth
+//      .editmode &,
+//      .item-list-page & {
+//        opacity: .8;
+//      }
+//      // scss-lint:enable NestingDepth
+//    }
+//  }
+//}
+//
+//.content-items {
+//  padding-right: 20px;
+//  padding-left: 20px;
+//
+//  @include breakpoint(max-width $medium) {
+//    margin-top: 30px;
+//  }
+//
+//  @include breakpoint ($medium-up) {
+//    margin-top: 100px;
+//  }
+//}
+//
+//.content-item {
+//  margin-bottom: 15px;
+//}
+//
+//.item-top {
+//  @include aspect-ratio(1, 1);
+//
+//  &:hover {
+//    .btn {
+//      opacity: 1;
+//    }
+//  }
+//
+//  .btn {
+//    padding: 0;
+//    background-color: rgba($color-science-blue, .3);
+//    border: 0;
+//    opacity: 0;
+//    transition: background-color .5s, opacity .5s;
+//
+//    &:hover {
+//      background-color: rgba($color-science-blue, 1);
+//    }
+//  }
+//
+//  .bg-picker-btn {
+//    top: 0;
+//    left: 0;
+//  }
+//
+//  .bg-crop-btn {
+//    @include size(45px);
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    z-index: 9;
+//    margin-top: 10px;
+//    margin-right: 10px;
+//    cursor: pointer;
+//    border-radius: 100%;
+//    fill: rgba($color-white, 1);
+//
+//    &.is-visible {
+//      display: block;
+//    }
+//
+//    &.is-hidden {
+//      display: none;
+//    }
+//  }
+//
+//  .top-inner {
+//    @include hyphenate;
+//    display: flex !important; // scss-lint:disable ImportantRule
+//    align-items: center;
+//    justify-content: center;
+//    font-weight: 300;
+//    line-height: 1.2;
+//    text-align: center;
+//
+//    .publicmode & {
+//      overflow: hidden;
+//
+//      // scss-lint:disable SelectorDepth, NestingDepth
+//      .image-landscape {
+//        &.not-cropped {
+//          width: 100%;
+//          height: auto;
+//          max-width: 100%;
+//        }
+//
+//        &.is-cropped {
+//          width: auto;
+//          height: 100%;
+//        }
+//      }
+//
+//      .image-portrait {
+//        &.not-cropped {
+//          width: auto;
+//          height: 100%;
+//          max-height: 100%;
+//        }
+//
+//        &.is-cropped {
+//          width: 100%;
+//          height: auto;
+//        }
+//      }
+//
+//      .image-square {
+//        width: 100%;
+//        height: auto;
+//      }
+//      // scss-lint:enable SelectorDepth, NestingDepth
+//    }
+//
+//    .with-image & {
+//      background-color: rgba($color-white, 1);
+//    }
+//
+//    .without-image & {
+//      border-color: rgba($color-primary, .1);
+//      border-style: solid;
+//      border-width: 1px;
+//    }
+//
+//    @include breakpoint(max-width $xx-small) {
+//      font-size: 16px;
+//    }
+//
+//    @include breakpoint($xx-small-up) {
+//      font-size: 13px;
+//    }
+//
+//    @include breakpoint($x-small-up) {
+//      font-size: 16px;
+//    }
+//
+//    @include breakpoint($small-up) {
+//      font-size: 20px;
+//    }
+//
+//    @include breakpoint($large-up) {
+//      font-size: 30px;
+//    }
+//  }
+//
+//  .image-drop-area {
+//    background-position: center !important; // scss-lint:disable ImportantRule
+//    background-repeat: no-repeat;
+//
+//    &.not-cropped {
+//      background-size: contain;
+//    }
+//
+//    &:not(.active) {
+//      border-color: rgba($color-primary, .4);
+//      border-style: dashed;
+//      border-width: 1px;
+//
+//      // scss-lint:disable NestingDepth
+//      &:hover {
+//        border-style: solid;
+//      }
+//      // scss-lint:enable NestingDepth
+//    }
+//
+//    .edy-img-drop-area-placeholder {
+//      @include breakpoint(max-width $medium) {
+//        font-size: 13px;
+//      }
+//
+//      @include breakpoint ($medium-up) {
+//        font-size: $base-font-size;
+//      }
+//    }
+//  }
+//}
+//
+//.item-image {
+//  border: 0;
+//
+//  .publicmode & {
+//    &.is-cropped {
+//      position: absolute;
+//      top: -100%;
+//      right: -100%;
+//      bottom: -100%;
+//      left: -100%;
+//      max-width: none;
+//      margin: auto;
+//    }
+//  }
+//
+//  .item-list-page & {
+//    display: block;
+//  }
+//}
+//
+//
+
+//
+//.item-title {
+//  @include hyphenate;
+//  margin-top: 0;
+//  margin-bottom: 0;
+//  line-height: 1.2;
+//  text-align: center;
+//
+//  .item-link {
+//    color: inherit;
+//    text-decoration: none;
+//
+//    .content-item & {
+//      display: block;
+//    }
+//  }
+//
+//  .item-list-page & {
+//    font-weight: 400;
+//  }
+//
+//  .content-item & {
+//    @include breakpoint(max-width $medium) {
+//      font-size: 13px;
+//    }
+//
+//    @include breakpoint ($medium-up) {
+//      font-size: $base-font-size;
+//    }
+//  }
+//
+//  .content-item & {
+//    @include breakpoint(max-width $medium) {
+//      font-size: $base-font-size;
+//    }
+//
+//    @include breakpoint ($medium-up) {
+//      font-size: 30px;
+//    }
+//  }
+//
+//  .blog-article-page & {
+//    @include breakpoint(max-width $medium) {
+//      font-size: 32px;
+//    }
+//
+//    @include breakpoint ($medium-up) {
+//      font-size: 50px;
+//    }
+//  }
+//
+//  .content-item > & {
+//    margin-top: 20px;
+//    margin-bottom: 5px;
+//  }
+//}
+//
+//.content-illustrations {
+//  font-size: 0;
+//
+//  .content-item {
+//    padding-right: 0;
+//  }
+//
+//  @include breakpoint ($medium-up) {
+//    flex: 1;
+//    max-width: 520px;
+//    margin-right: 40px;
+//  }
+//}
+//
+//.content-item-title {
+//  text-align: left;
+//}
+//
+//.content-body-inner {
+//  .item-page & {
+//    @include breakpoint(max-width $medium) {
+//      padding-top: 40px;
+//    }
+//
+//    @include breakpoint ($medium-up) {
+//      flex: 1;
+//    }
+//  }
+//}
+//
+//.items-body {
+//  padding-top: 40px;
+//
+//  @include breakpoint ($medium-up) {
+//    display: flex;
+//  }
+//}

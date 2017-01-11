@@ -52,7 +52,7 @@
     content: '';
   }
 
-  > .aspect-ratio-inner {
+  > [data-aspect-ratio="inner"] {
     position: absolute;
     top: 0;
     right: 0;

@@ -1,21 +1,21 @@
 {% capture dont_render %}
   {% unless page.image %}
-    {% assign page_image_state = "without-image" %}
+    {% assign item_image_presence = false %}
   {% else %}
-    {% assign page_image_state = "with-image" %}
+    {% assign item_image_presence = true %}
 
     {% if page.image.width > page.image.height %}
-      {% assign page_image_orientation = "image-landscape" %}
+      {% assign item_image_orientation = "landscape" %}
     {% elsif page.image.width == page.image.height %}
-      {% assign page_image_orientation = "image-square" %}
+      {% assign item_image_orientation = "square" %}
     {% else %}
-      {% assign page_image_orientation = "image-portrait" %}
+      {% assign item_image_orientation = "portrait" %}
     {% endif %}
 
     {% if page.data.image_crop_state %}
-      {% assign page_image_crop_state = page.data.image_crop_state %}
+      {% assign item_image_crop_state = page.data.image_crop_state %}
     {% else %}
-      {% assign page_image_crop_state = "not-cropped" %}
+      {% assign item_image_crop_state = false %}
     {% endif %}
   {% endunless %}
 {% endcapture %}
