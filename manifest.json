@@ -34,34 +34,6 @@
       "file": "layouts/blog_article.tpl"
     },
     {
-      "title": "Products listing",
-      "layout_name": "products_listing",
-      "content_type": "elements",
-      "component": false,
-      "file": "layouts/products_listing.tpl"
-    },
-    {
-      "title": "Shops listing",
-      "layout_name": "shops_listing",
-      "content_type": "elements",
-      "component": false,
-      "file": "layouts/shops_listing.tpl"
-    },
-    {
-      "title": "Shop details",
-      "layout_name": "shop_details",
-      "content_type": "element",
-      "component": false,
-      "file": "layouts/shop_details.tpl"
-    },
-    {
-      "title": "Product details",
-      "layout_name": "product_details",
-      "content_type": "element",
-      "component": false,
-      "file": "layouts/product_details.tpl"
-    },
-    {
       "title": "blog-listing-article-add",
       "layout_name": "blog-listing-article-add",
       "content_type": "component",

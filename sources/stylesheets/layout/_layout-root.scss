@@ -3,8 +3,5 @@
 // =============================================================================
 .layout-root {
   font-size: $em-base;
-}
-
-.layout-wrap {
-  margin: 0;
+  font-feature-settings: 'lnum';
 }

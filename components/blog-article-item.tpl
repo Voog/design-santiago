@@ -12,10 +12,14 @@
   </header>
 
   <div class="blog-article__content" data-search-indexing-allowed="true">
-    <div class="blog-article__excerpt content-area">{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
+    <div class="blog-article__excerpt">
+      <div class="content-area content-area--font-unformatted">{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
+    </div>
 
     {% unless list_item %}
-      <div class="blog-article__body content-area">{% if list_item %}{{ article.body }}{% else %}{% editable article.body %}{% endif %}</div>
+      <div class="blog-article__body">
+        <div class="content-area content-area--font-unformatted">{% if list_item %}{{ article.body }}{% else %}{% editable article.body %}{% endif %}</div>
+      </div>
     {% endunless %}
   </div>
 </article>

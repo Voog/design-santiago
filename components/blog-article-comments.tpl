@@ -1,3 +1,4 @@
+{% comment %}TODO: Connvert to BEM and cleanup.{% endcomment %}
 <section id="article-comments" class="article-comments inner content-area">
   <h2 class="comments-title">{{ "replies" | lcc: article.comments_count }}</h2>
 

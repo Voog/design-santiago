@@ -31,7 +31,6 @@
 .blog-article-newer {
   color: $color-primary;
   text-decoration: none;
-  font-feature-settings: 'lnum';
 
   .blog-listing-page & {
     padding-top: 25px;
@@ -333,7 +332,6 @@
     color: $color-price-products-listing;
     text-align: right;
     visibility: hidden;
-    font-feature-settings: 'lnum';
   }
 
   .article-link {

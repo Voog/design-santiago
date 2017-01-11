@@ -1,4 +1,5 @@
 // TODO: Remove ".root & {}" from selectors when stylesheet location in DOM is improved.
+// TODO: Add non-BEM element comments
 .edy-checkout-button-visible {
   .root & {
     padding-top: 0;
@@ -8,7 +9,6 @@
 .edy-ecommerce-modal {
   .root & {
     font-family: $font-family-primary;
-    font-feature-settings: 'lnum';
   }
 
   .edy-ecommerce-modal-wrapper {
