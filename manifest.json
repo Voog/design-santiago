@@ -34,48 +34,6 @@
       "file": "layouts/blog_article.tpl"
     },
     {
-      "title": "blog-listing-article-add",
-      "layout_name": "blog-listing-article-add",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article-add.tpl"
-    },
-    {
-      "title": "blog-listing-article-older",
-      "layout_name": "blog-listing-article-older",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article-older.tpl"
-    },
-    {
-      "title": "blog-listing-article",
-      "layout_name": "blog-listing-article",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article.tpl"
-    },
-    {
-      "title": "blog-listing-tags",
-      "layout_name": "blog-listing-tags",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-tags.tpl"
-    },
-    {
-      "title": "blog-listing-tools",
-      "layout_name": "blog-listing-tools",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-tools.tpl"
-    },
-    {
-      "title": "blog-listing-variables",
-      "layout_name": "blog-listing-variables",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-variables.tpl"
-    },
-    {
       "title": "layout-footer",
       "layout_name": "layout-footer",
       "content_type": "component",
@@ -132,41 +90,6 @@
       "file": "components/template-variables.tpl"
     },
     {
-      "title": "blog-article-variables",
-      "layout_name": "blog-article-variables",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-variables.tpl"
-    },
-    {
-      "title": "blog-article-comments",
-      "layout_name": "blog-article-comments",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-comments.tpl"
-    },
-    {
-      "title": "blog-article-tags",
-      "layout_name": "blog-article-tags",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-tags.tpl"
-    },
-    {
-      "title": "blog-listing-article-newer",
-      "layout_name": "blog-listing-article-newer",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-listing-article-newer.tpl"
-    },
-    {
-      "title": "blog-article-item",
-      "layout_name": "blog-article-item",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-item.tpl"
-    },
-    {
       "title": "Product list",
       "layout_name": "product_list",
       "content_type": "page",
@@ -214,6 +137,13 @@
       "content_type": "page",
       "component": false,
       "file": "layouts/product.tpl"
+    },
+    {
+      "title": "blog-article-item",
+      "layout_name": "blog-article-item",
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-item.tpl"
     }
   ],
   "assets": [
@@ -236,22 +166,22 @@
       "content_type": "text/javascript"
     },
     {
-      "kind": "javascript",
-      "filename": "main.min.js",
+      "content_type": "application/javascript",
+      "kind": "javascripts",
       "file": "javascripts/main.min.js",
-      "content_type": "text/javascript"
+      "filename": "main.min.js"
     },
     {
-      "kind": "image",
-      "filename": "logo-tuul.png",
+      "content_type": "image/png",
+      "kind": "images",
       "file": "images/logo-tuul.png",
-      "content_type": "image/png"
+      "filename": "logo-tuul.png"
     },
     {
-      "kind": "asset",
-      "filename": "ico-shopping-cart.svg",
+      "content_type": "image/svg+xml",
+      "kind": "assets",
       "file": "assets/ico-shopping-cart.svg",
-      "content_type": "unknown/unknown"
+      "filename": "ico-shopping-cart.svg"
     }
   ]
 }

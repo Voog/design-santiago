@@ -8,6 +8,8 @@
   </head>
 
   <body class="layout-container item-page">
+    {% include "template-svg-spritesheet" %}
+
     <div class="layout-wrap">
       {% include "layout-header" %}
 
@@ -67,5 +69,7 @@
 
     {% include "template-javascripts" %}
     {% include "content-item-tools" %}
+
+    <script>template.initItemsPage();</script>
   </body>
 </html>

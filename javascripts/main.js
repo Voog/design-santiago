@@ -10841,6 +10841,13 @@ return jQuery;
   // };
 
   // ===========================================================================
+  // Sets functions that will be initiated on items layouts.
+  // ===========================================================================
+  var initItemsPage = function() {
+    bindContentItemImageLazyload();
+  };
+
+  // ===========================================================================
   // Sets functions that will be initiated globally.
   // ===========================================================================
   var init = function() {
@@ -10860,9 +10867,11 @@ return jQuery;
     // initArticlePage: initArticlePage,
     // initCommonPage: initCommonPage,
     // initFrontPage: initFrontPage,
+    initItemsPage: initItemsPage,
     bindContentItemBgPickers: bindContentItemBgPickers,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
+    bindContentItemImageLazyload: bindContentItemImageLazyload,
     bindRootItemSettings: bindRootItemSettings
 
     // Initiations for specific functions.

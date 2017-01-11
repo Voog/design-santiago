@@ -7,10 +7,12 @@
   </head>
 
   <body class="layout-container item-list-page">
+    {% include "template-svg-spritesheet" %}
+
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow layout-body--padded">
+      <main class="layout-body layout-body--wide layout-body--small-padded">
         {% include "product-breadcrumbs" %}
 
         <section class="content-item-boxes">
@@ -49,5 +51,7 @@
 
     {% include "template-javascripts" %}
     {% include "content-item-tools" %}
+
+    <script>template.initItemsPage();</script>
   </body>
 </html>

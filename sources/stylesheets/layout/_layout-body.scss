@@ -26,19 +26,19 @@
     max-width: 800px;
   }
 
-  &--small-padded {
-    @include breakpoint(max-width $medium) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-  }
-
   &--padded {
     padding-right: 20px;
     padding-left: 20px;
 
     @include breakpoint(max-width $medium) {
       margin-top: 30px;
+    }
+  }
+
+  &--small-padded {
+    @include breakpoint(max-width $xx-small) {
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 }
