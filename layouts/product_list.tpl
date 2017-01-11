@@ -6,16 +6,14 @@
     {% include "template-head" %}
   </head>
 
-  <body class="layout-container">
-    {% include "template-svg-spritesheet" %}
-
+  <body class="layout-container item-list-page">
     <div class="layout-wrap">
       {% include "layout-header" %}
 
       <main class="layout-body layout-body--narrow layout-body--padded">
         {% include "product-breadcrumbs" %}
 
-        <section class="layout-content-items">
+        <section class="content-item-boxes">
           {% if site.root_item.selected? %}
             {% for level_1 in site.visible_menuitems_with_data %}
               {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
