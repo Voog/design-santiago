@@ -18,7 +18,7 @@
 
       {% include "layout-footer" %}
     </div>
+
     {% include "template-javascripts" %}
-    {% include "template-tools" %}
   </body>
 </html>

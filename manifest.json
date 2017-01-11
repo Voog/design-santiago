@@ -125,13 +125,6 @@
       "file": "components/template-svg-spritesheet.tpl"
     },
     {
-      "title": "template-tools",
-      "layout_name": "template-tools",
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-tools.tpl"
-    },
-    {
       "title": "template-variables",
       "layout_name": "template-variables",
       "content_type": "component",
@@ -153,20 +146,6 @@
       "file": "components/blog-article-comments.tpl"
     },
     {
-      "title": "product-listing-item-add",
-      "layout_name": "product-listing-item-add",
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-listing-item-add.tpl"
-    },
-    {
-      "title": "product-listing-item",
-      "layout_name": "product-listing-item",
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-listing-item.tpl"
-    },
-    {
       "title": "blog-article-tags",
       "layout_name": "blog-article-tags",
       "content_type": "component",
@@ -186,6 +165,48 @@
       "content_type": "component",
       "component": true,
       "file": "components/blog-article-item.tpl"
+    },
+    {
+      "title": "Product list",
+      "layout_name": "product_list",
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl"
+    },
+    {
+      "title": "content-item-tools",
+      "layout_name": "content-item-tools",
+      "content_type": "component",
+      "component": true,
+      "file": "components/content-item-tools.tpl"
+    },
+    {
+      "title": "product-breadcrumbs",
+      "layout_name": "product-breadcrumbs",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-breadcrumbs.tpl"
+    },
+    {
+      "title": "product-variables",
+      "layout_name": "product-variables",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-variables.tpl"
+    },
+    {
+      "title": "product-list-item",
+      "layout_name": "product-list-item",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-item.tpl"
+    },
+    {
+      "title": "product-list-item-variables",
+      "layout_name": "product-list-item-variables",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-item-variables.tpl"
     }
   ],
   "assets": [
