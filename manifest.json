@@ -207,6 +207,13 @@
       "content_type": "component",
       "component": true,
       "file": "components/product-list-item-variables.tpl"
+    },
+    {
+      "title": "Product",
+      "layout_name": "product",
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product.tpl"
     }
   ],
   "assets": [

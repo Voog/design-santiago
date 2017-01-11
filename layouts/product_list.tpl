@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
-{% include "product-variables" %}
 
 <html class="root" lang="{{ page.language_code }}" data-state--view-mode="{{ view_mode }}" data-state--menu-main="closed">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
   </head>
 
-  <body class="layout-container">
+  <body class="layout-container item-list-page">
     <div class="layout-wrap">
       {% include "layout-header" %}
 

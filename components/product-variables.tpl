@@ -1,7 +1,21 @@
 {% capture dont_render %}
-  {% comment %}Product related layouts variables.{% endcomment %}
-  {% assign product_list_layout = "Product list" %}
-  {% assign product_layout = "Product" %}
+  {% unless page.image %}
+    {% assign page_image_state = "without-image" %}
+  {% else %}
+    {% assign page_image_state = "with-image" %}
 
-  {% assign show_product_related_pages_in_main_menu = site.data.settings_root_item.show_product_related_pages_in_main_menu %}
+    {% if page.image.width > page.image.height %}
+      {% assign page_image_orientation = "image-landscape" %}
+    {% elsif page.image.width == page.image.height %}
+      {% assign page_image_orientation = "image-square" %}
+    {% else %}
+      {% assign page_image_orientation = "image-portrait" %}
+    {% endif %}
+
+    {% if page.data.image_crop_state %}
+      {% assign page_image_crop_state = page.data.image_crop_state %}
+    {% else %}
+      {% assign page_image_crop_state = "not-cropped" %}
+    {% endif %}
+  {% endunless %}
 {% endcapture %}
