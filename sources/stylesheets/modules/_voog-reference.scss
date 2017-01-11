@@ -6,11 +6,11 @@
     color: $color-voog-reference;
     text-decoration: none;
 
-    @include breakpoint(max-width $large-end) {
+    @include breakpoint(max-width $large) {
       font-size: 10px;
     }
 
-    @include breakpoint($large-start) {
+    @include breakpoint($large-up) {
       font-size: 12px;
     }
   }

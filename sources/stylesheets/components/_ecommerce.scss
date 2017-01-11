@@ -91,19 +91,19 @@
     background-size: 34px 28px;
     border-width: 0;
 
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       position: absolute;
       top: 27px;
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       top: 20px;
       right: 20px;
     }
   }
 
   [data-state--menu-main="closed"] & {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       right: 70px;
       transition-duration: 200ms;
       transition-property: right;
@@ -111,7 +111,7 @@
   }
 
   [data-state--menu-main="open"] & {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       right: 270px;
       transition-duration: 200ms;
       transition-property: right;
@@ -169,7 +169,7 @@
     &:first-child {
       // scss-lint:disable NestingDepth
       .root & {
-        @include breakpoint($medium-start) {
+        @include breakpoint($medium-up) {
           padding-left: 60px;
         }
       }

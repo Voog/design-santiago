@@ -1,17 +1,22 @@
 // =============================================================================
 // MEDIA QUERY BREAKPOINTS
 // =============================================================================
-$large-end: 1024px;
-$large-start: $large-end + 1px; // 1025px
+$large: 1024px;
+$large-down: $large - 1px;
+$large-up: $large + 1px;
 
-$medium-end: 640px;
-$medium-start: $medium-end + 1px; // 641px
+$medium: 640px;
+$medium-down: $medium - 1px;
+$medium-up: $medium + 1px;
 
-$small-end: 340px;
-$small-start: $small-end + 1px; // 341px
+$small: 320px;
+$small-down: $small - 1px;
+$small-up: $small + 1px;
 
-$micro-end: 290px;
-$micro-start: $micro-end + 1px; // 291px
+$x-small: 290px;
+$x-small-down: $x-small - 1px;
+$x-small-up: $x-small + 1px;
 
-$nano-end: 240px;
-$nano-start: $nano-end + 1px; // 241px
+$xx-small: 240px;
+$xx-small-down: $xx-small - 1px;
+$xx-small-up: $xx-small + 1px;

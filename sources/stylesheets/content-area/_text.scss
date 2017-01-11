@@ -57,61 +57,61 @@
   }
 
   h1 {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       font-size: em(40px, $base-font-size);
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       font-size: em(50px, $base-font-size);
     }
   }
 
   h2 {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       font-size: em(30px, $base-font-size);
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       font-size: em(40px, $base-font-size);
     }
   }
 
   h3 {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       font-size: em(25px, $base-font-size);
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       font-size: em(30px, $base-font-size);
     }
   }
 
   //h4 {
-  //  @include breakpoint(max-width $medium-end) {
+  //  @include breakpoint(max-width $medium) {
   //    font-size: em(20px, $base-font-size);
   //  }
   //
-  //  @include breakpoint($medium-start) {
+  //  @include breakpoint($medium-up) {
   //    font-size: em(25px, $base-font-size);
   //  }
   //}
   //
   //h5 {
-  //  @include breakpoint(max-width $medium-end) {
+  //  @include breakpoint(max-width $medium) {
   //    font-size: em(18px, $base-font-size);
   //  }
   //
-  //  @include breakpoint($medium-start) {
+  //  @include breakpoint($medium-up) {
   //    font-size: em(23px, $base-font-size);
   //  }
   //}
   //
   //h6 {
-  //  @include breakpoint(max-width $medium-end) {
+  //  @include breakpoint(max-width $medium) {
   //    font-size: em(1px, $base-font-size);
   //  }
   //
-  //  @include breakpoint($medium-start) {
+  //  @include breakpoint($medium-up) {
   //    font-size: em(20px, $base-font-size);
   //  }
   //}

@@ -13,18 +13,18 @@
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
 
-    @include breakpoint(max-width $large-end) {
+    @include breakpoint(max-width $large) {
       flex-wrap: wrap;
     }
   }
 
   &__section {
-    @include breakpoint(max-width $large-end) {
+    @include breakpoint(max-width $large) {
       width: 100%;
       text-align: center;
     }
 
-    @include breakpoint($large-start) {
+    @include breakpoint($large-up) {
 
     }
 
@@ -33,13 +33,13 @@
     }
 
     &--voog-reference {
-      @include breakpoint(max-width $large-end) {
+      @include breakpoint(max-width $large) {
         order: 3;
       }
     }
 
     &--body {
-      @include breakpoint(max-width $large-end) {
+      @include breakpoint(max-width $large) {
         order: 1;
       }
     }
@@ -48,18 +48,18 @@
       position: relative;
       top: 6px;
 
-      @include breakpoint(max-width $large-end) {
+      @include breakpoint(max-width $large) {
         order: 2;
       }
     }
   }
 
   .separated {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       display: block;
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       margin-right: 20px;
       margin-left: 20px;
     }

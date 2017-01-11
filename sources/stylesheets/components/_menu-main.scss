@@ -7,7 +7,7 @@
   font-family: $font-family-primary;
   list-style-type: none;
 
-  @include breakpoint(max-width $medium-end) {
+  @include breakpoint(max-width $medium) {
     position: fixed;
     top: -45px;
     bottom: 0;
@@ -20,7 +20,7 @@
   }
 
   [data-state--menu-main="closed"] & {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       right: -205px;
       transition-duration: 200ms;
       transition-property: right;
@@ -28,7 +28,7 @@
   }
 
   [data-state--menu-main="open"] & {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       right: 0;
       transition-duration: 200ms;
       transition-property: right;
@@ -36,11 +36,11 @@
   }
 
   &__item {
-    @include breakpoint(max-width $medium-end) {
+    @include breakpoint(max-width $medium) {
       display: block;
     }
 
-    @include breakpoint($medium-start) {
+    @include breakpoint($medium-up) {
       display: inline-block;
     }
 
@@ -53,13 +53,13 @@
       border-bottom-style: solid;
       border-bottom-width: 2px;
 
-      @include breakpoint(max-width $medium-end) {
+      @include breakpoint(max-width $medium) {
         padding-top: 5px;
         padding-bottom: 5px;
         font-size: em(18);
       }
 
-      @include breakpoint($medium-start) {
+      @include breakpoint($medium-up) {
         padding-bottom: 10px;
         margin-right: 25px;
         margin-left: 25px;
@@ -67,7 +67,7 @@
       }
 
       &:hover {
-        @include breakpoint($medium-start) {
+        @include breakpoint($medium-up) {
           border-bottom-color: rgba($color-primary, .75);
         }
       }
@@ -77,11 +77,11 @@
     &--selected {
       // scss-lint:disable NestingDepth
       a {
-        @include breakpoint(max-width $medium-end) {
+        @include breakpoint(max-width $medium) {
           font-weight: 700;
         }
 
-        @include breakpoint($medium-start) {
+        @include breakpoint($medium-up) {
           border-bottom-color: $color-primary;
           border-bottom-style: solid;
           border-bottom-width: 2px;
