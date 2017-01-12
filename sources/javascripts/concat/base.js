@@ -69,6 +69,13 @@
   };
 
   // ===========================================================================
+  // Resizes form textarea if user adds/removes a line in textarea.
+  // ===========================================================================
+  var autoResizeFormTextArea = function() {
+    $('[data-init="auto-resize"]').textareaAutoSize();
+  };
+
+  // ===========================================================================
   // Scrolls to the form if submit failed or succeeded (to show the error
   // messages or success notice to the user).
   // ===========================================================================
@@ -404,6 +411,7 @@
   // ===========================================================================
   var init = function() {
     bindInterfaceButtons();
+    autoResizeFormTextArea();
     focusFormMessages();
     removeFormInputErrorHighlight();
 

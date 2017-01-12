@@ -54,6 +54,7 @@ module.exports = function(grunt) {
         src: [
           'node_modules/jquery/dist/jquery.js',
           'node_modules/jquery-lazyload/jquery.lazyload.js',
+          'node_modules/textarea-autosize/dist/jquery.textarea_autosize.js',
           'sources/javascripts/concat/*.js'
         ],
         dest: 'javascripts/main.js'
