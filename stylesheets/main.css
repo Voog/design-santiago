@@ -1596,6 +1596,105 @@ label .form_control_indicator::before {
   margin-bottom: 1.11111em;
 }
 
+.article-nav {
+  position: relative;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  font-family: "Raleway", sans-serif;
+}
+.article-nav::before, .article-nav::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  opacity: .2;
+}
+.article-nav::before {
+  border-top-color: currentColor;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.article-nav::after {
+  border-bottom-color: currentColor;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.article-nav__inner {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 641px) {
+  .article-nav__inner {
+    display: flex;
+  }
+}
+.article-nav__link {
+  position: relative;
+  display: block;
+  flex: 1;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  color: currentColor;
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .article-nav__link {
+    text-align: center;
+  }
+}
+.article-nav__link:hover .article-nav__direction {
+  opacity: 1;
+}
+.article-nav__link:hover .article-nav__title {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .article-nav__link:nth-child(2)::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-top-color: currentColor;
+    border-top-style: solid;
+    border-top-width: 1px;
+    content: '';
+    opacity: .2;
+  }
+}
+@media (max-width: 640px) {
+  .article-nav__link--half {
+    text-align: center;
+  }
+}
+@media (min-width: 641px) {
+  .article-nav__link--older {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 641px) {
+  .article-nav__link--newer {
+    padding-left: 20px;
+    text-align: right;
+  }
+}
+.article-nav__direction {
+  font-size: 0.72222em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .3;
+}
+.article-nav__title {
+  margin-top: 6px;
+  font-size: 1em;
+  opacity: .7;
+}
+
 .comments {
   max-width: 700px;
   margin-right: auto;

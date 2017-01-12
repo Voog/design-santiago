@@ -1,0 +1,122 @@
+.article-nav {
+  position: relative;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  font-family: $font-family-primary;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    opacity: .2;
+  }
+
+  &::before {
+    border-top-color: currentColor;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  &::after {
+    border-bottom-color: currentColor;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint($medium-up) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    flex: 1;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    color: currentColor;
+    text-decoration: none;
+
+    @include breakpoint(max-width $medium) {
+      text-align: center;
+    }
+
+    &:hover {
+      // This can't be written in BEM.
+      // scss-lint:disable NestingDepth, SelectorFormat
+      .article-nav__direction {
+        opacity: 1;
+      }
+
+      .article-nav__title {
+        opacity: 1;
+      }
+      // scss-lint:enable NestingDepth, SelectorFormat
+    }
+
+    &:nth-child(2) {
+      // scss-lint:disable NestingDepth
+      &::before {
+        @include breakpoint(max-width $medium) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          border-top-color: currentColor;
+          border-top-style: solid;
+          border-top-width: 1px;
+          content: '';
+          opacity: .2;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &--half {
+      @include breakpoint(max-width $medium) {
+        text-align: center;
+      }
+    }
+
+    //&--full {
+    //}
+
+    &--older {
+      @include breakpoint($medium-up) {
+        padding-right: 20px;
+      }
+    }
+
+    &--newer {
+      @include breakpoint($medium-up) {
+        padding-left: 20px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__direction {
+    font-size: em(13px, $base-font-size);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    opacity: .3;
+  }
+
+  &__title {
+    margin-top: 6px;
+    font-size: em(18px, $base-font-size);
+    opacity: .7;
+  }
+}
