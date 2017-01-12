@@ -10504,6 +10504,22 @@ return jQuery;
         $html.attr('data-state--menu-main', 'open');
       }
   	});
+
+    // Toggles blog article comments author fields.
+    $('[data-behavior="toggle-comment-form-fields"]')
+      .on('focus', function() {
+        $('[data-js-selector="comment-form-details"]').attr('data-state--display', 'block');
+      })
+      .on('blur', function() {
+        if ($('[data-js-selector="comment-body"]').val().length === 0 && $('[data-js-selector="comment-form-name"]').val().length === 0 && $('[data-js-selector="comment-form-email"]').val().length === 0) {
+          setTimeout(function() {
+            if (!$(document.activeElement).is('[data-js-class="comment-field"]')) {
+              $('[data-js-selector="comment-form-details"]').attr('data-state--display', 'none');
+            }
+          }, 0);
+        }
+      })
+    ;
   };
 
   // ===========================================================================

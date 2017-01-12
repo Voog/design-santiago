@@ -12,6 +12,8 @@
 
       <main class="layout-body layout-body--narrow layout-body--padded">
         {% include "blog-article-item" %}
+
+        {% include "blog-article-comments" %}
       </main>
 
       {% include "layout-footer" %}

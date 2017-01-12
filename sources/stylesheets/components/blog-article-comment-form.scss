@@ -1,0 +1,37 @@
+.article-comment-form {
+  font-size: rem($base-font-size);
+
+  //&__details {
+  //}
+
+  &__inputs {
+    font-size: 0;
+  }
+
+  &__field {
+    &--inline {
+      display: inline-block;
+      width: calc(50% - 10px);
+      margin-top: 5px;
+      vertical-align: top;
+
+      // scss-lint:disable NestingDepth
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &__btn {
+      font-size: em(18px, $base-font-size);
+    }
+  }
+
+  &__btns {
+    margin-top: 20px;
+  }
+}
