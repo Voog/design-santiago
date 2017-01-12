@@ -1,0 +1,96 @@
+// Product list menu
+.menu-breadcrumbs {
+  font-family: $font-family-primary;
+  font-size: rem($base-font-size);
+
+  @include breakpoint(max-width $xx-small) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include breakpoint(($xx-small-up) (max-width $medium)) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @include breakpoint(max-width $medium) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  @include breakpoint($medium-up) {
+    padding-right: 4.65%;
+    padding-left: 4.65%;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__separator {
+    opacity: .5;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &--selected {
+      // This can't be written in BEM.
+      // scss-lint:disable NestingDepth
+      a {
+        font-weight: 400;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &:not(&--current) {
+      // This can't be written in BEM.
+      // scss-lint:disable NestingDepth
+      a {
+        opacity: .5;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &--current {
+      // This can't be written in BEM.
+      // scss-lint:disable NestingDepth
+      a {
+        font-weight: 500;
+        color: $color-primary;
+        opacity: 1;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &--cms {
+      margin-right: 10px;
+
+      // scss-lint:disable NestingDepth
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    a {
+      display: block;
+      color: $color-primary;
+      text-decoration: none;
+
+      @include breakpoint(max-width $medium) {
+        font-size: em(14px, $base-font-size);
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: em(18px, $base-font-size);
+      }
+    }
+  }
+}
