@@ -1352,7 +1352,7 @@ label .form_control_indicator::before {
 }
 
 .layout-footer .content-area .edy-content-social-button:hover {
-  opacity: .8;
+  opacity: .75;
 }
 .layout-footer .content-area .edy-content-social-button {
   display: inline-block;
@@ -1519,7 +1519,7 @@ label .form_control_indicator::before {
   opacity: .5;
 }
 .menu-breadcrumbs__item:not(.menu-breadcrumbs__item--current) a:hover {
-  opacity: .8;
+  opacity: .75;
 }
 .menu-breadcrumbs__item--current a {
   font-weight: 500;
@@ -1611,7 +1611,7 @@ label .form_control_indicator::before {
   left: 0;
   display: block;
   content: '';
-  opacity: .2;
+  opacity: .25;
 }
 .article-nav::before {
   border-top-color: currentColor;
@@ -1664,7 +1664,7 @@ label .form_control_indicator::before {
     border-top-style: solid;
     border-top-width: 1px;
     content: '';
-    opacity: .2;
+    opacity: .25;
   }
 }
 @media (max-width: 640px) {
@@ -1692,7 +1692,7 @@ label .form_control_indicator::before {
 .article-nav__title {
   margin-top: 6px;
   font-size: 1em;
-  opacity: .7;
+  opacity: .75;
 }
 
 .comments {
@@ -1750,11 +1750,53 @@ label .form_control_indicator::before {
 }
 .comment-list__date {
   font-style: italic;
-  opacity: .6;
+  opacity: .5;
 }
 .comment-list__body {
   margin-top: 10px;
   font-size: 0.88889em;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: 40px;
+}
+[data-state--view-mode="editmode"] .tags {
+  position: relative;
+}
+.tags__ico {
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: currentColor;
+}
+[data-state--view-mode="editmode"] .tags__ico {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+[data-state--view-mode="publicmode"] .tags__ico {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.tags .edy-tageditor {
+  flex-grow: 1;
+}
+
+.tags-nav {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+}
+.tags-nav__item {
+  display: inline-block;
+}
+.tags-nav__link {
+  color: inherit;
+  text-decoration: none;
+}
+.tags-nav__link:hover {
+  opacity: .75;
 }
 
 .content-item-boxes {
@@ -1814,7 +1856,7 @@ label .form_control_indicator::before {
   }
 }
 [data-state--view-mode="editmode"] .content-item-box:hover .top-inner, .item-list-page .content-item-box:hover .top-inner {
-  opacity: .8;
+  opacity: .75;
 }
 
 .content-items {

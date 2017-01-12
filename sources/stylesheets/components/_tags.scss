@@ -1,0 +1,29 @@
+.tags {
+  display: flex;
+  margin-bottom: 40px;
+
+  [data-state--view-mode="editmode"] & {
+    position: relative;
+  }
+
+  &__ico {
+    flex-shrink: 0;
+    margin-right: 10px;
+    fill: currentColor;
+
+    [data-state--view-mode="editmode"] & {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    [data-state--view-mode="publicmode"] & {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+
+  // This can't be written in BEM.
+  .edy-tageditor {
+    flex-grow: 1;
+  }
+}

@@ -14,7 +14,7 @@
     left: 0;
     display: block;
     content: '';
-    opacity: .2;
+    opacity: .25;
   }
 
   &::before {
@@ -78,7 +78,7 @@
           border-top-style: solid;
           border-top-width: 1px;
           content: '';
-          opacity: .2;
+          opacity: .25;
         }
       }
       // scss-lint:enable NestingDepth
@@ -117,6 +117,6 @@
   &__title {
     margin-top: 6px;
     font-size: em(18px, $base-font-size);
-    opacity: .7;
+    opacity: .75;
   }
 }

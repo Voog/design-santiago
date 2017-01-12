@@ -2,7 +2,7 @@
 {% include "template-variables" %}
 {% include "product-variables" %}
 
-<html class="root" lang="{{ page.language_code }}" data-state--view-mode="{{ view_mode }}" data-state--menu-main="closed">
+<html class="layout-root" lang="{{ page.language_code }}" data-state--view-mode="{{ view_mode }}" data-state--menu-main="closed">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
   </head>
