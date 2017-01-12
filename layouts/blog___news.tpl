@@ -12,7 +12,7 @@
 
       <main class="layout-body layout-body--narrow layout-body--padded">
         {% for article in articles %}
-          {% include "blog-article-item" list_item: true %}
+          {% include "blog-article" list_item: true %}
         {% endfor %}
       </main>
 

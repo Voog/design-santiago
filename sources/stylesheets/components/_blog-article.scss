@@ -1,4 +1,4 @@
-.blog-article {
+.article {
   font-size: rem($base-font-size);
 
   @include breakpoint(max-width $medium) {

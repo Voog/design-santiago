@@ -10526,13 +10526,6 @@ return jQuery;
   };
 
   // ===========================================================================
-  // Function to detect if current page is article.
-  // ===========================================================================
-  var blogArticlePage = function() {
-    return $('body').hasClass('blog-article-page');
-  };
-
-  // ===========================================================================
   // Bind site buttons functionality.
   // ===========================================================================
   var bindInterfaceButtons = function() {
