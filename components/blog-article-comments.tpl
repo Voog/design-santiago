@@ -1,5 +1,5 @@
-<section id="article-comments" class="article-comments inner content-area">
-  <h2 class="article-comments__title">{{ "replies" | lcc: article.comments_count }}</h2>
+<section id="comments" class="comments inner content-area">
+  <h2 class="comments__title">{{ "replies" | lcc: article.comments_count }}</h2>
 
   <div class="comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
     {% commentform %}
@@ -28,19 +28,19 @@
   </div>
 
   {% if article.comments_count > 0 %}
-    <div class="comments-list">
+    <div class="comment-list">
       {% for comment in article.comments %}
-        <div class="comment edy-site-blog-comment">
+        <div class="comment-list__item edy-site-blog-comment">
 
-          <div class="comment-meta">
-            <span class="comment-author">{{ comment.author }}</span>
-            <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
+          <div class="comment-list__meta">
+            <span class="comment-list__author">{{ comment.author }}</span>
+            <span class="comment-list__date">{{ comment.created_at | format_date: "long" }}</span>
             {% if editmode %}
-              <span class="comment-delete">{% removebutton %}</span>
+              <span class="comment-list__delete">{% removebutton %}</span>
             {% endif %}
           </div>
 
-          <div class="comment-body">{{ comment.body_html }}</div>
+          <div class="comment-list__body">{{ comment.body_html }}</div>
         </div>
       {% endfor %}
     </div>

@@ -44,8 +44,12 @@
 // COMPONENTS
 @import 'components/menu-main';
 @import 'components/menu-breadcrumbs';
+
 @import 'components/blog-article';
-@import 'components/blog-article-comments';
-@import 'components/blog-comment-form';
+
+@import 'components/comments';
+@import 'components/comment-form';
+@import 'components/comment-list';
+
 @import 'components/content-item';
 @import 'components/ecommerce';

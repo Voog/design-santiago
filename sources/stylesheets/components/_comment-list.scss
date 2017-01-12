@@ -1,0 +1,30 @@
+.comment-list {
+  font-size: rem($base-font-size);
+
+  &__item {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba($color-primary, .05);
+  }
+
+  &__meta {
+    font-size: em(14px, $base-font-size);
+  }
+
+  &__author {
+    font-weight: 600;
+  }
+
+  &__date {
+    font-style: italic;
+    opacity: .6;
+  }
+
+  //&__delete {
+  //}
+
+  &__body {
+    margin-top: 10px;
+    font-size: em(16px, $base-font-size);
+  }
+}

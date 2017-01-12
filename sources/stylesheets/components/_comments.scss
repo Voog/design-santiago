@@ -1,24 +1,14 @@
-.article-comments {
+.comments {
   max-width: 700px;
   margin-right: auto;
   margin-bottom: 50px;
   margin-left: auto;
+  font-size: rem($base-font-size);
 
   &__title {
     margin-bottom: 55px;
+    font-size: em(18px, $base-font-size);
     font-weight: 400;
     text-align: center;
-  }
-
-  .comment {
-    margin-top: 30px;
-  }
-
-  .comment-author {
-    font-weight: 600;
-  }
-
-  .comment-body {
-    margin-top: 10px;
   }
 }
