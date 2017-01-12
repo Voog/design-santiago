@@ -1551,8 +1551,17 @@ label .form_control_indicator::before {
 }
 
 .blog-article {
-  margin-bottom: 2.22222em;
   font-size: 1.125rem;
+}
+@media (max-width: 640px) {
+  .blog-article {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 641px) {
+  .blog-article {
+    margin-bottom: 80px;
+  }
 }
 .blog-article__header {
   margin-bottom: 1.11111em;

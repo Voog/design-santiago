@@ -1,6 +1,13 @@
 .blog-article {
-  margin-bottom: em(40px, $base-font-size);
   font-size: rem($base-font-size);
+
+  @include breakpoint(max-width $medium) {
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint($medium-up) {
+    margin-bottom: 80px;
+  }
 
   &__header {
     margin-bottom: em(20px, $base-font-size);
