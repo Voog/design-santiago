@@ -1774,7 +1774,7 @@ label .form_control_indicator::before {
   padding-bottom: 5px;
 }
 [data-state--view-mode="publicmode"] .tags__ico {
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 2px;
 }
 .tags .edy-tageditor {
@@ -1786,17 +1786,26 @@ label .form_control_indicator::before {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 0.875rem;
 }
 .tags-nav__item {
   display: inline-block;
+  font-size: 0;
+}
+.tags-nav__item--separated::after {
+  font-size: 0.875rem;
+  content: ',';
 }
 .tags-nav__link {
+  font-size: 0.875rem;
   color: inherit;
   text-decoration: none;
+  opacity: .5;
 }
 .tags-nav__link:hover {
   opacity: .75;
+}
+.tags-nav__link--current {
+  opacity: 1;
 }
 
 .content-item-boxes {

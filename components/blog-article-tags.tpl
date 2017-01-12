@@ -14,8 +14,8 @@
 
     <ul class="tags-nav">
       {% for tag in article.tags %}
-        <li class="tags-nav__item">
-          <a class="tags-nav__link" href="/{{ article.page.path_with_lang }}/tagged/{{ tag.path }}">{{ tag.name }}{% unless forloop.last %},{% endunless %}</a>
+        <li class="tags-nav__item{% unless forloop.last %} tags-nav__item--separated{% endunless %}">
+          <a class="tags-nav__link" href="/{{ article.page.path_with_lang }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
         </li>
       {% endfor %}
     </ul>
