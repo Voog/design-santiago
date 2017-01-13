@@ -1480,6 +1480,7 @@ label .form_control_indicator::before {
   .menu-main__item a {
     padding-bottom: 10px;
     margin-right: 25px;
+    margin-bottom: 10px;
     margin-left: 25px;
     font-size: 1.625em;
     border-bottom-style: solid;
