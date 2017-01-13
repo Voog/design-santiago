@@ -811,6 +811,9 @@
     justify-content: space-between;
   }
 }
+.layout-header__title {
+  flex-grow: 1;
+}
 .layout-header__link {
   text-decoration: none;
 }

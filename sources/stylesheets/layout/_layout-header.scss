@@ -22,8 +22,9 @@
     }
   }
 
-  //&__title {
-  //}
+  &__title {
+    flex-grow: 1;
+  }
 
   &__link {
     text-decoration: none;
