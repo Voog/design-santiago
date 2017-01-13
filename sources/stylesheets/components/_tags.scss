@@ -15,12 +15,12 @@
     margin-right: 10px;
     fill: currentColor;
 
-    [data-state--view-mode="editmode"] & {
-      padding-top: 5px;
+    &--medium-padded {
+      padding-top: 6px;
       padding-bottom: 5px;
     }
 
-    [data-state--view-mode="publicmode"] & {
+    &--small-padded {
       padding-top: 3px;
       padding-bottom: 2px;
     }

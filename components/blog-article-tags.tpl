@@ -1,6 +1,6 @@
 {% if editmode %}
   <div class="tags">
-    <svg class="tags__ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14px" height="14px">
+    <svg class="tags__ico tags__ico--medium-padded" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14px" height="14px">
       <use xlink:href="#ico-tags"></use>
     </svg>
 
@@ -8,7 +8,7 @@
   </div>
 {% elsif article.tags != empty %}
   <nav class="tags">
-    <svg class="tags__ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14px" height="14px">
+    <svg class="tags__ico tags__ico--small-padded" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14px" height="14px">
       <use xlink:href="#ico-tags"></use>
     </svg>
 
