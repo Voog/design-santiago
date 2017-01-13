@@ -48,6 +48,21 @@
       display: inline-block;
     }
 
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a {
+        border-bottom-color: transparent;
+
+        &:hover {
+          @include breakpoint($medium-up) {
+            border-bottom-color: rgba($color-primary, .75);
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     &--selected {
       // scss-lint:disable NestingDepth
@@ -80,21 +95,6 @@
       // scss-lint:disable NestingDepth
       &:hover {
         opacity: .5;
-      }
-      // scss-lint:enable NestingDepth
-    }
-
-    &:not(&--selected) {
-      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-      // scss-lint:disable NestingDepth
-      a {
-        border-bottom-color: transparent;
-
-        &:hover {
-          @include breakpoint($medium-up) {
-            border-bottom-color: rgba($color-primary, .75);
-          }
-        }
       }
       // scss-lint:enable NestingDepth
     }
