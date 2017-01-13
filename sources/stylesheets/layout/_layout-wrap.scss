@@ -9,14 +9,18 @@
   margin: 0;
 
   [data-state--menu-main="closed"] & {
-    left: 0;
-    transition-duration: 200ms;
-    transition-property: left;
+    @include breakpoint(max-width $medium) {
+      left: 0;
+      transition-duration: 200ms;
+      transition-property: left;
+    }
   }
 
   [data-state--menu-main="open"] & {
-    left: -205px;
-    transition-duration: 200ms;
-    transition-property: left;
+    @include breakpoint(max-width $medium) {
+      left: -205px;
+      transition-duration: 200ms;
+      transition-property: left;
+    }
   }
 }

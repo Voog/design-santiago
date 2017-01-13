@@ -2,6 +2,34 @@
   margin-top: 45px;
   font-family: $font-family-primary;
 
+  @include breakpoint(max-width $medium) {
+    position: fixed;
+    top: -45px;
+    bottom: 0;
+    z-index: 1;
+    width: 205px;
+    padding: 30px 20px;
+    background-color: $color-white;
+    box-shadow: 0 0 5px 0 rgba($color-primary, .1);
+    box-sizing: border-box;
+  }
+
+  [data-state--menu-main="closed"] & {
+    @include breakpoint(max-width $medium) {
+      right: -205px;
+      transition-duration: 200ms;
+      transition-property: right;
+    }
+  }
+
+  [data-state--menu-main="open"] & {
+    @include breakpoint(max-width $medium) {
+      right: 0;
+      transition-duration: 200ms;
+      transition-property: right;
+    }
+  }
+
   &__list {
     $whitespace: 0;
 
@@ -9,34 +37,6 @@
     margin-top: $whitespace;
     margin-bottom: $whitespace;
     list-style-type: none;
-
-    @include breakpoint(max-width $medium) {
-      position: fixed;
-      top: -45px;
-      bottom: 0;
-      z-index: 1;
-      width: 205px;
-      padding: 30px 20px;
-      background-color: $color-white;
-      box-shadow: 0 0 5px 0 rgba($color-primary, .1);
-      box-sizing: border-box;
-    }
-
-    [data-state--menu-main="closed"] & {
-      @include breakpoint(max-width $medium) {
-        right: -205px;
-        transition-duration: 200ms;
-        transition-property: right;
-      }
-    }
-
-    [data-state--menu-main="open"] & {
-      @include breakpoint(max-width $medium) {
-        right: 0;
-        transition-duration: 200ms;
-        transition-property: right;
-      }
-    }
   }
 
   &__item {
