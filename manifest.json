@@ -200,6 +200,27 @@
       "content_type": "component",
       "component": true,
       "file": "components/menu-sub.tpl"
+    },
+    {
+      "title": "menu-language-list",
+      "layout_name": "menu-language-list",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-language-list.tpl"
+    },
+    {
+      "title": "menu-language-popover",
+      "layout_name": "menu-language-popover",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-language-popover.tpl"
+    },
+    {
+      "title": "template-tools",
+      "layout_name": "template-tools",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-tools.tpl"
     }
   ],
   "assets": [
@@ -238,6 +259,12 @@
       "kind": "assets",
       "file": "assets/ico-shopping-cart.svg",
       "filename": "ico-shopping-cart.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-flags.svg",
+      "filename": "ico-flags.svg"
     }
   ]
 }

@@ -1,8 +1,6 @@
 {% comment %}[[ TEMPLATE TOOLS RELATED JAVASCRIPT ]]{% endcomment %}
 {% comment %}Adds template specific JS tools.{% endcomment %}
 {% editorjsblock %}
-  <script src="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js"></script>
-
   <script>
     template.bindContentItemBgPickers();
     template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');

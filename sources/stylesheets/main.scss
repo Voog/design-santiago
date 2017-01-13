@@ -42,8 +42,10 @@
 @import 'modules/voog-reference';
 
 // COMPONENTS
+@import 'components/menus'; // TODO: Use only needed parts.
 @import 'components/menu-main';
 @import 'components/menu-sub';
+@import 'components/menu-language';
 @import 'components/menu-breadcrumbs';
 
 @import 'components/article';
