@@ -16,8 +16,6 @@
       </span>
     </button>
 
-    <nav class="menu-main">
-      {% include "menu-main" %}
-    </nav>
+    {% include "menu-main" %}
   </div>
 </header>

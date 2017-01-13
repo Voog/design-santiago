@@ -1,37 +1,41 @@
 .menu-main {
-  $whitespace: 0;
-
-  padding-left: $whitespace;
   margin-top: 45px;
-  margin-bottom: $whitespace;
   font-family: $font-family-primary;
-  list-style-type: none;
 
-  @include breakpoint(max-width $medium) {
-    position: fixed;
-    top: -45px;
-    bottom: 0;
-    z-index: 1;
-    width: 205px;
-    padding: 30px 20px;
-    background-color: $color-white;
-    box-shadow: 0 0 5px 0 rgba($color-primary, .1);
-    box-sizing: border-box;
-  }
+  &__list {
+    $whitespace: 0;
 
-  [data-state--menu-main="closed"] & {
+    padding-left: $whitespace;
+    margin-top: $whitespace;
+    margin-bottom: $whitespace;
+    list-style-type: none;
+
     @include breakpoint(max-width $medium) {
-      right: -205px;
-      transition-duration: 200ms;
-      transition-property: right;
+      position: fixed;
+      top: -45px;
+      bottom: 0;
+      z-index: 1;
+      width: 205px;
+      padding: 30px 20px;
+      background-color: $color-white;
+      box-shadow: 0 0 5px 0 rgba($color-primary, .1);
+      box-sizing: border-box;
     }
-  }
 
-  [data-state--menu-main="open"] & {
-    @include breakpoint(max-width $medium) {
-      right: 0;
-      transition-duration: 200ms;
-      transition-property: right;
+    [data-state--menu-main="closed"] & {
+      @include breakpoint(max-width $medium) {
+        right: -205px;
+        transition-duration: 200ms;
+        transition-property: right;
+      }
+    }
+
+    [data-state--menu-main="open"] & {
+      @include breakpoint(max-width $medium) {
+        right: 0;
+        transition-duration: 200ms;
+        transition-property: right;
+      }
     }
   }
 
@@ -42,35 +46,6 @@
 
     @include breakpoint($medium-up) {
       display: inline-block;
-    }
-
-    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    a {
-      display: block;
-      color: $color-primary;
-      text-decoration: none;
-      border-bottom-color: transparent;
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
-
-      @include breakpoint(max-width $medium) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: em(18);
-      }
-
-      @include breakpoint($medium-up) {
-        padding-bottom: 10px;
-        margin-right: 25px;
-        margin-left: 25px;
-        font-size: em(26);
-      }
-
-      &:hover {
-        @include breakpoint($medium-up) {
-          border-bottom-color: rgba($color-primary, .75);
-        }
-      }
     }
 
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
@@ -93,8 +68,9 @@
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     &--current {
       // scss-lint:disable NestingDepth
-      //a {
-      //}
+      a {
+        border-bottom-color: rgba($color-primary, .75);
+      }
       // scss-lint:enable NestingDepth
     }
 
@@ -106,6 +82,41 @@
         opacity: .5;
       }
       // scss-lint:enable NestingDepth
+    }
+
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      a {
+        border-bottom-color: transparent;
+
+        &:hover {
+          @include breakpoint($medium-up) {
+            border-bottom-color: rgba($color-primary, .75);
+          }
+        }
+      }
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      display: block;
+      color: $color-primary;
+      text-decoration: none;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+
+      @include breakpoint(max-width $medium) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: em(18);
+      }
+
+      @include breakpoint($medium-up) {
+        padding-bottom: 10px;
+        margin-right: 25px;
+        margin-left: 25px;
+        font-size: em(26);
+      }
     }
   }
 }

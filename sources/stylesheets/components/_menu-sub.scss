@@ -1,0 +1,109 @@
+.menu-sub {
+  margin-bottom: 50px;
+  font-size: rem($base-font-size);
+  text-align: center;
+
+  &__list {
+    $whitespace: 0;
+
+    padding-left: $whitespace;
+    margin-top: $whitespace;
+    margin-bottom: $whitespace;
+    font-family: $font-family-primary;
+    list-style-type: none;
+  }
+
+  &__item {
+    @include breakpoint(max-width $medium) {
+      border-bottom-color: rgba($color-primary, .05);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    @include breakpoint($medium-up) {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        opacity: 1;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    //&--current {
+    //  // scss-lint:disable NestingDepth
+    //  a {
+    //  }
+    //  // scss-lint:enable NestingDepth
+    //}
+
+    &--untranslated {
+      opacity: .3;
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        opacity: .5;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &--cms {
+      @include breakpoint(max-width $medium) {
+        padding: 8px 10px 11px;
+      }
+
+      @include breakpoint($medium-up) {
+        margin-right: 10px;
+      }
+
+      // scss-lint:disable NestingDepth
+      &:first-child {
+        @include breakpoint($medium-up) {
+          margin-left: 0;
+        }
+      }
+
+      &:not(:first-child) {
+        @include breakpoint($medium-up) {
+          margin-left: 10px;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a {
+        opacity: .5;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+      @include breakpoint(max-width $medium) {
+        display: block;
+        padding: 10px;
+      }
+
+      @include breakpoint($medium-up) {
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: em(20px, $base-font-size);
+      }
+    }
+  }
+}

@@ -10,9 +10,11 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow layout-body--padded">
-        <div class="content-area">{% content %}</div>
-      </main>
+      <div class="layout-body layout-body--narrow layout-body--padded">
+        {% include "menu-sub" %}
+
+        <main class="content-area">{% content %}</main>
+      </div>
 
       {% include "layout-footer" %}
     </div>

@@ -48,13 +48,6 @@
       "file": "components/layout-header.tpl"
     },
     {
-      "title": "menu-main",
-      "layout_name": "menu-main",
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-main.tpl"
-    },
-    {
       "title": "template-head",
       "layout_name": "template-head",
       "content_type": "component",
@@ -193,6 +186,20 @@
       "content_type": "component",
       "component": true,
       "file": "components/blog-list-tags.tpl"
+    },
+    {
+      "title": "menu-main",
+      "layout_name": "menu-main",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-main.tpl"
+    },
+    {
+      "title": "menu-sub",
+      "layout_name": "menu-sub",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-sub.tpl"
     }
   ],
   "assets": [
