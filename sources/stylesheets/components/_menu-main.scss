@@ -86,6 +86,7 @@
 
     &:not(&--selected) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
       a {
         border-bottom-color: transparent;
 
@@ -95,6 +96,7 @@
           }
         }
       }
+      // scss-lint:enable NestingDepth
     }
 
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
