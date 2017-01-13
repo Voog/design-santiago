@@ -55,6 +55,10 @@
         border-bottom-color: transparent;
 
         &:hover {
+          @include breakpoint(max-width $medium) {
+            opacity: .75;
+          }
+
           @include breakpoint($medium-up) {
             border-bottom-color: rgba($color-primary, .75);
           }
