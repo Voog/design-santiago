@@ -3,11 +3,10 @@
   margin-right: auto;
   margin-bottom: 50px;
   margin-left: auto;
-  font-size: rem($base-font-size);
 
   &__title {
     margin-bottom: 55px;
-    font-size: em(18px, $base-font-size);
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
   }

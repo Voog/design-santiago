@@ -1,7 +1,5 @@
 // Product list menu
 .menu-breadcrumbs {
-  font-size: rem($base-font-size);
-
   @include breakpoint(max-width $xx-small) {
     padding-right: 0;
     padding-left: 0;
@@ -84,11 +82,11 @@
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
-        font-size: em(14px, $base-font-size);
+        font-size: 14px;
       }
 
       @include breakpoint($medium-up) {
-        font-size: em(18px, $base-font-size);
+        font-size: 18px;
       }
     }
   }

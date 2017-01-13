@@ -107,7 +107,7 @@
   }
 
   &__direction {
-    font-size: em(13px, $base-font-size);
+    font-size: 13px;
     letter-spacing: .2em;
     text-transform: uppercase;
     opacity: .25;
@@ -115,7 +115,7 @@
 
   &__title {
     margin-top: 6px;
-    font-size: em(18px, $base-font-size);
+    font-size: 18px;
     opacity: .75;
   }
 }

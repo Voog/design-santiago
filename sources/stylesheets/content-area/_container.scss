@@ -1,17 +1,23 @@
 // Test
 .content-area {
+  font-size: 16px;
   line-height: 1.7;
   color: $color-primary;
 
+  .layout-header__title & { // scss-lint:disable SelectorFormat
+    font-weight: 700;
+    color: $color-secondary;
+
+    @include breakpoint(max-width $medium) {
+      font-size: 50px;
+    }
+
+    @include breakpoint($medium-up) {
+      font-size: 70px;
+    }
+  }
+
   &:empty {
     display: none;
-  }
-
-  &:not(&--font-unformatted) {
-    font-size: rem($base-font-size);
-  }
-
-  .layout-footer & {
-    font-size: rem(16px);
   }
 }

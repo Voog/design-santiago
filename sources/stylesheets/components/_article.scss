@@ -1,6 +1,4 @@
 .article {
-  font-size: rem($base-font-size);
-
   @include breakpoint(max-width $medium) {
     margin-bottom: 40px;
   }
@@ -10,14 +8,14 @@
   }
 
   &__header {
-    margin-bottom: em(20px, $base-font-size);
+    margin-bottom: 20px;
     text-align: center;
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: em(27px, $base-font-size);
+    font-size: 27px;
     color: $color-secondary;
     text-transform: uppercase;
   }
@@ -32,7 +30,7 @@
   }
 
   &__date {
-    font-size: em(13px, $base-font-size);
+    font-size: 13px;
     opacity: .5;
   }
 
@@ -40,13 +38,13 @@
   //}
 
   %text {
-    font-size: em(18px, $base-font-size);
+    font-size: 18px;
     line-height: 1.7;
   }
 
   &__excerpt {
     @extend %text;
-    margin-bottom: em(20px, $base-font-size);
+    margin-bottom: 20px;
   }
 
   &__body {

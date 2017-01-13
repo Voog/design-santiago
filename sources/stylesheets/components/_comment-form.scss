@@ -1,6 +1,4 @@
 .comment-form {
-  font-size: rem($base-font-size);
-
   //&__details {
   //}
 
@@ -27,7 +25,7 @@
     }
 
     &__btn {
-      font-size: em(18px, $base-font-size);
+      font-size: 18px;
     }
   }
 

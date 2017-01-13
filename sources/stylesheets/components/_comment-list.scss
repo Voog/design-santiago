@@ -1,6 +1,4 @@
 .comment-list {
-  font-size: rem($base-font-size);
-
   &__item {
     padding-top: 30px;
     margin-top: 30px;
@@ -8,7 +6,7 @@
   }
 
   &__meta {
-    font-size: em(14px, $base-font-size);
+    font-size: 14px;
   }
 
   &__author {
@@ -25,6 +23,6 @@
 
   &__body {
     margin-top: 10px;
-    font-size: em(16px, $base-font-size);
+    font-size: 16px;
   }
 }
