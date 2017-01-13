@@ -1468,8 +1468,6 @@ label .form_control_indicator::before {
   display: block;
   color: #000;
   text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
 }
 @media (max-width: 640px) {
   .menu-main__item a {
@@ -1484,6 +1482,8 @@ label .form_control_indicator::before {
     margin-right: 25px;
     margin-left: 25px;
     font-size: 1.625em;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
   }
 }
 

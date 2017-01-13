@@ -104,8 +104,6 @@
       display: block;
       color: $color-primary;
       text-decoration: none;
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
 
       @include breakpoint(max-width $medium) {
         padding-top: 5px;
@@ -118,6 +116,8 @@
         margin-right: 25px;
         margin-left: 25px;
         font-size: em(26);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
       }
     }
   }
