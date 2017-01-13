@@ -1764,6 +1764,9 @@ label .form_control_indicator::before {
 [data-state--view-mode="editmode"] .tags {
   position: relative;
 }
+.tags--centered {
+  justify-content: center;
+}
 .tags__ico {
   flex-shrink: 0;
   margin-right: 10px;
