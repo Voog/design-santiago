@@ -1,11 +1,11 @@
 <nav class="menu-main">
   <ul class="menu-main__list" data-sideclick="prevent">
     {% unless site.root_item.hidden? %}
-      {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" untranslated-class="menu-main__item--untranslated" %}
+      {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" %}
     {% endunless %}
 
     {% for level_1 in site.visible_menuitems %}
-      {% menulink level_1 wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" untranslated-class="menu-main__item--untranslated" %}
+      {% menulink level_1 wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" untranslated-class="menu-main__link--untranslated" %}
     {% endfor %}
 
     {% if editmode %}

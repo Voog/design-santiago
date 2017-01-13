@@ -89,16 +89,6 @@
       // scss-lint:enable NestingDepth
     }
 
-    &--untranslated {
-      opacity: .3;
-
-      // scss-lint:disable NestingDepth
-      &:hover {
-        opacity: .5;
-      }
-      // scss-lint:enable NestingDepth
-    }
-
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     a {
       display: block;
@@ -120,6 +110,18 @@
         border-bottom-style: solid;
         border-bottom-width: 2px;
       }
+    }
+  }
+
+  &__link {
+    &--untranslated {
+      opacity: .25;
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        opacity: .5;
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 }

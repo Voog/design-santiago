@@ -28,7 +28,7 @@
     &:not(&--selected) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
       // scss-lint:disable NestingDepth
-      a {
+      a:not(.menu-sub__link--untranslated) {
         opacity: .5;
 
         &:hover {
@@ -54,16 +54,6 @@
     //  }
     //  // scss-lint:enable NestingDepth
     //}
-
-    &--untranslated {
-      opacity: .3;
-
-      // scss-lint:disable NestingDepth
-      &:hover {
-        opacity: .5;
-      }
-      // scss-lint:enable NestingDepth
-    }
 
     &--cms {
       @include breakpoint(max-width $medium) {
@@ -104,6 +94,18 @@
         padding-left: 5px;
         font-size: em(20px, $base-font-size);
       }
+    }
+  }
+
+  &__link {
+    &--untranslated {
+      opacity: .25;
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        opacity: .5;
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 }
