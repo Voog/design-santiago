@@ -14,6 +14,34 @@
   };
 
   // ===========================================================================
+  // Helper function to limit the rate at which a function can fire.
+  // ===========================================================================
+  var debounce = function(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+          args = arguments;
+
+      var later = function() {
+        timeout = null;
+
+        if (!immediate) {
+          func.apply(context, args);
+        }
+      };
+
+      var callNow = immediate && !timeout;
+
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+
+      if (callNow) {
+        func.apply(context, args);
+      }
+    };
+  };
+
+  // ===========================================================================
   // Bind site buttons functionality.
   // ===========================================================================
   var bindInterfaceButtons = function() {
@@ -578,6 +606,6 @@
   // ===========================================================================
   // Initiates global functions.
   // ===========================================================================
-  // initWindowResize();
+  initWindowResize();
   init();
 })(jQuery);

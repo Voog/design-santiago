@@ -4,8 +4,6 @@
 // Gerneral menu styles are located in "general/_menus.scss" partial.
 //==============================================================================
 .menu-language-btn {
-  font-family: $font-family-primary;
-
   .language-menu-mode-popover & {
     @include button;
     display: inline-block;
@@ -78,7 +76,6 @@
 }
 
 .menu-language {
-  font-family: $font-family-primary;
   text-align: right;
 
   &.menu-language-popover {

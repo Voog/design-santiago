@@ -1,6 +1,6 @@
 .menu-main {
   margin-top: 45px;
-  font-family: $font-family-primary;
+  text-align: center;
 
   @include breakpoint(max-width $medium) {
     position: fixed;

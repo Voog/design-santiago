@@ -1,6 +1,5 @@
 // Product list menu
 .menu-breadcrumbs {
-  font-family: $font-family-primary;
   font-size: rem($base-font-size);
 
   @include breakpoint(max-width $xx-small) {

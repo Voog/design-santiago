@@ -17,11 +17,11 @@
       </div>
 
       {% include "layout-footer" %}
-    </div>
 
-    {% if show_language_menu_popover %}
-      {% include "menu-language-popover" %}
-    {% endif %}
+      {% if show_language_menu_popover %}
+        {% include "menu-language-popover" %}
+      {% endif %}
+    </div>
 
     {% include "template-javascripts" %}
     {% include "template-tools" %}

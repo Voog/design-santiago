@@ -3,10 +3,10 @@
     <div class="layout-header__top">
       <div class="layout-header__title">
         {% if editmode %}
-          <div class="content-area">{% editable site.header %}</div>
+          <div class="content-area content-area--font-unformatted">{% editable site.header %}</div>
         {% else %}
           <a class="layout-header__link" href="{{ site.root_item.url }}">
-            <div class="content-area">{{ site.header }}</div>
+            <div class="content-area content-area--font-unformatted">{{ site.header }}</div>
           </a>
         {% endif %}
       </div>

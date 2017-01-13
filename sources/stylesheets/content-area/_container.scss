@@ -8,7 +8,6 @@
   }
 
   &:not(&--font-unformatted) {
-    font-family: $font-family-primary;
     font-size: rem($base-font-size);
   }
 
