@@ -1,3 +1,4 @@
+// TODO: Convert to BEM.
 //==============================================================================
 // LANGUAGE MENU STYLES
 // Gerneral menu styles are located in "general/_menus.scss" partial.
@@ -40,10 +41,6 @@
     &:hover {
       border-color: rgba($color-primary, .3);
     }
-  }
-
-  .header-menu-wide & {
-    margin-left: 24px;
   }
 
   &::before,
@@ -99,16 +96,6 @@
       margin-right: -22px;
     }
 
-    .header-menu-wide & {
-      // scss-lint:disable NestingDepth
-      .language-flags-enabled & {
-        @media screen and (max-width: 1140px) {
-          margin-right: 5px;
-        }
-      }
-      // scss-lint:enable NestingDepth
-    }
-
     .editmode.language-flags-enabled & {
       margin-top: -36px;
     }
@@ -130,22 +117,6 @@
   .menu-public {
     .editmode.language-menu-mode-popover & {
       padding-top: 7px;
-    }
-
-    .header-menu-wide & {
-      // scss-lint:disable NestingDepth, SelectorDepth
-      .editmode.language-menu-mode-list.language-names-disabled & {
-        padding-bottom: 3px;
-      }
-      // scss-lint:enable NestingDepth, SelectorDepth
-    }
-
-    .header-menu-compact & {
-      // scss-lint:disable NestingDepth, SelectorDepth
-      .editmode.language-menu-mode-list.language-names-disabled & {
-        padding-bottom: 2px;
-      }
-      // scss-lint:enable NestingDepth, SelectorDepth
     }
 
     .publicmode.language-menu-mode-list.language-names-disabled & {
