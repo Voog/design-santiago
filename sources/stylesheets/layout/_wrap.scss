@@ -3,25 +3,42 @@
 // =============================================================================
 .layout-wrap {
   position: relative;
+  right: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   font-family: $font-family-primary;
+  transition-duration: .2s;
+  transition-property: right;
 
   [data-state--menu-main="closed"] & {
     @include breakpoint(max-width $medium) {
-      left: 0;
+      right: 0;
       transition-duration: 200ms;
-      transition-property: left;
+      transition-property: right;
     }
   }
 
   [data-state--menu-main="open"] & {
     @include breakpoint(max-width $medium) {
-      left: -205px;
+      right: 205px;
       transition-duration: 200ms;
-      transition-property: left;
+      transition-property: right;
+    }
+  }
+
+  .site-search-opened & {
+    @include breakpoint(max-width $small) {
+      right: 200px;
+    }
+
+    @include breakpoint(($small-up) (max-width $medium)) {
+      right: 50%;
+    }
+
+    @include breakpoint($medium-up) {
+      right: 280px;
     }
   }
 }

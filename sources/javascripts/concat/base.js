@@ -55,8 +55,11 @@
 
         $html.removeClass('menu-language-popover-open');
         $html.attr('data-state--menu-main', 'closed');
+        $html.removeClass('site-search-opened');
 
         $('[data-behavior="toggle-menu-main"]').removeClass('is-active');
+
+        $('.js-search-input').val('');
       }
     });
 
@@ -103,6 +106,29 @@
         }, 300);
       } else if ($html.hasClass('menu-language-popover-open')) {
         positionPopoverMenu('.js-toggle-menu-language', '.js-menu-language-popover');
+      }
+    });
+
+    // Toggles site search.
+    $('.js-toggle-site-search').click(function() {
+      var $html = $('html');
+
+      $html.removeClass('menu-language-popover-open menu-main-opened');
+      $html.toggleClass('site-search-opened');
+
+      if ($html.hasClass('site-search-opened')) {
+        $('.js-search-input').focus();
+      }
+    });
+
+    // Clears site search input.
+    $('.js-clear-search-input').click(function() {
+      var $searchInput = $('.js-search-input');
+
+      if ($searchInput.val().length > 0) {
+        $searchInput.val('').focus();
+      } else {
+        $('html').removeClass('site-search-opened');
       }
     });
   };
@@ -220,6 +246,30 @@
         }
       });
     });
+  };
+
+  // ===========================================================================
+  // Binds site search functionality.
+  // ===========================================================================
+  var bindSiteSearch = function(searchForm, languageCode) {
+    if (searchForm) {
+      var search = new VoogSearch(searchForm, {
+        // Results are lazy-loaded on scroll.
+        // This defines the number of results per query.
+        per_page: 10,
+        // Language code for restricting the search to page language.
+        lang: languageCode,
+        // If given, an DOM element results are rendered inside that element
+        // instead of modal (with scroll lazy load support).
+        resultsContainer: $('.js-voog-search-modal').get(0),
+        // Defines if modal should close on sideclick.
+        sideclick: true,
+        // Mobile checkpoint (adds class "voog-search-mobile-mode" if <= nr).
+        mobileModeWidth: 640,
+        // Updates results on every keypress.
+        updateOnKeypress: true
+      });
+    }
   };
 
   // ===========================================================================
@@ -598,6 +648,7 @@
     // initFrontPage: initFrontPage,
     initItemsPage: initItemsPage,
     bindLanguageMenuSettings: bindLanguageMenuSettings,
+    bindSiteSearch: bindSiteSearch,
     bindContentItemBgPickers: bindContentItemBgPickers,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,

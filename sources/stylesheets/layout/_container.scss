@@ -3,9 +3,12 @@
 // =============================================================================
 .layout-container {
   margin: 0;
-}
 
-// TODO: COnvert to BEM.
-.blog-articles {
-  font-size: 0;
+  .site-search-opened & {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+  }
 }

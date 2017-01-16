@@ -221,6 +221,13 @@
       "content_type": "component",
       "component": true,
       "file": "components/template-tools.tpl"
+    },
+    {
+      "title": "site-search",
+      "layout_name": "site-search",
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-search.tpl"
     }
   ],
   "assets": [
@@ -265,6 +272,12 @@
       "kind": "assets",
       "file": "assets/ico-flags.svg",
       "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/bg-search.svg",
+      "filename": "bg-search.svg"
     }
   ]
 }
