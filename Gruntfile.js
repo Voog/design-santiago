@@ -144,7 +144,8 @@ module.exports = function(grunt) {
       css: {
         files: [
           'sources/stylesheets/*.scss',
-          'sources/stylesheets/*/*.scss'
+          'sources/stylesheets/*/*.scss',
+          'sources/stylesheets/*/*/*.scss'
         ],
         tasks: ['sass:build', 'cssmin:build']
       },

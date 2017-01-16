@@ -12,13 +12,19 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow layout-body--padded">
+      <div class="layout-body layout-body--narrow layout-body--padded">
         {% include "blog-list-tags" %}
 
-        {% for article in articles %}
-          {% include "blog-article" list_item: true %}
-        {% endfor %}
-      </main>
+        {% if editmode %}
+          <div class="btns-container">{% addbutton %}</div>
+        {% endif %}
+
+        <main class="articles-container">
+          {% for article in articles %}
+            {% include "blog-article" list_item: true %}
+          {% endfor %}
+        </main>
+      </div>
 
       {% include "layout-footer" %}
 

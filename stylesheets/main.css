@@ -2762,6 +2762,12 @@ label .form_control_indicator::before {
   }
 }
 
+.btns-container {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .root .edy-checkout-button-visible {
   padding-top: 0;
 }

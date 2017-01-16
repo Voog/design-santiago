@@ -1,5 +1,5 @@
-<section class="comments content-area">
-  <h2 class="comments__title">{{ "replies" | lcc: article.comments_count }}</h2>
+<section class="comments-container content-area">
+  <h2 class="comments-container__title">{{ "replies" | lcc: article.comments_count }}</h2>
 
   {% include "blog-article-comment-form" %}
 
