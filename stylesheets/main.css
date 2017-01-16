@@ -1446,7 +1446,6 @@ label .form_control_indicator::before {
   border-color: rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 1px;
-  border-radius: 3px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
 }
 
@@ -1632,15 +1631,15 @@ label .form_control_indicator::before {
 }
 
 .language-menu-mode-popover .menu-language-btn {
-  margin: 0;
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
   display: inline-block;
   flex-grow: 0;
-  margin-right: -5px;
+  margin: 0 0 0 10px;
+  line-height: 1.3;
   color: #000;
   vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border-style: none;
 }
 .language-menu-mode-popover .menu-language-btn:focus {
   outline: none;
@@ -1655,22 +1654,25 @@ label .form_control_indicator::before {
 .language-flags-enabled .menu-language-btn {
   width: 1px;
   padding: 12px 16px 13px 15px;
+  margin-right: -5px;
   font-size: 0;
 }
 .language-flags-enabled .menu-language-btn:hover {
   opacity: .5;
 }
 .language-flags-disabled .menu-language-btn {
-  padding: 3px 24px 2px 8px;
+  padding: 6px 25px 5px 11px;
   font-family: inherit;
   font-size: 13px;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
   border-width: 1px;
-  border-radius: 12px;
 }
 .language-flags-disabled .menu-language-btn:hover {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.language-flags-disabled.menu-language-popover-open .menu-language-btn {
+  border-color: rgba(0, 0, 0, 0.75);
 }
 .menu-language-btn::before, .menu-language-btn::after {
   top: 5px;
@@ -1679,7 +1681,7 @@ label .form_control_indicator::before {
   left: 5px;
 }
 .menu-language-btn:hover .menu-language-btn-circle {
-  opacity: .6;
+  opacity: .75;
 }
 .menu-language-btn .menu-language-btn-circle {
   right: 9px;
@@ -1689,33 +1691,33 @@ label .form_control_indicator::before {
   position: absolute;
   top: 50%;
   margin-top: -4px;
-  opacity: .3;
+  opacity: .25;
   stroke: #000;
   fill: none;
 }
 .language-menu-mode-list .menu-language-btn-circle {
   display: none;
 }
+.language-flags-disabled.menu-language-popover-open .menu-language-btn-circle {
+  opacity: .75;
+}
 
 .menu-language {
   text-align: right;
 }
-.menu-language.menu-language-popover {
-  margin-right: -1px;
+[data-state--view-mode="publicmode"].language-flags-disabled .menu-language.menu-language-popover {
+  margin-top: -41px;
 }
-.publicmode.language-flags-disabled .menu-language.menu-language-popover {
-  margin-top: -40px;
-}
-.editmode.language-flags-disabled .menu-language.menu-language-popover {
-  margin-top: -32px;
+[data-state--view-mode="editmode"].language-flags-disabled .menu-language.menu-language-popover {
+  margin-top: -53px;
 }
 .language-flags-enabled .menu-language.menu-language-popover {
   margin-right: -22px;
 }
-.editmode.language-flags-enabled .menu-language.menu-language-popover {
-  margin-top: -36px;
+[data-state--view-mode="editmode"].language-flags-enabled .menu-language.menu-language-popover {
+  margin-top: -56px;
 }
-.publicmode.language-flags-enabled .menu-language.menu-language-popover {
+[data-state--view-mode="publicmode"].language-flags-enabled .menu-language.menu-language-popover {
   margin-top: -44px;
 }
 .language-menu-mode-list .menu-language.menu-language-popover {
@@ -1725,13 +1727,13 @@ label .form_control_indicator::before {
   z-index: 10;
   display: block;
 }
-.editmode.language-menu-mode-popover .menu-language .menu-public {
+[data-state--view-mode="editmode"].language-menu-mode-popover .menu-language .menu-public {
   padding-top: 7px;
 }
-.publicmode.language-menu-mode-list.language-names-disabled .menu-language .menu-public {
+[data-state--view-mode="publicmode"].language-menu-mode-list.language-names-disabled .menu-language .menu-public {
   padding-bottom: 2px;
 }
-.publicmode.language-menu-mode-popover .menu-language .menu-public {
+[data-state--view-mode="publicmode"].language-menu-mode-popover .menu-language .menu-public {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1785,7 +1787,7 @@ label .form_control_indicator::before {
   padding-bottom: 15px;
 }
 .language-menu-mode-list .menu-language .menu-item a {
-  opacity: .3;
+  opacity: .25;
 }
 .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
   padding: 5px 30px 5px 3px;

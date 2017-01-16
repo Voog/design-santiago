@@ -51,7 +51,11 @@
     $(document).on('click touchstart', function(event) {
       // TODO: Prevent sidemenu closing.
       if (!$(event.target).closest('[data-sideclick="prevent"]').length) {
-        $('html').attr('data-state--menu-main', 'closed');
+        var $html = $('html');
+
+        $html.removeClass('menu-language-popover-open');
+        $html.attr('data-state--menu-main', 'closed');
+
         $('[data-behavior="toggle-menu-main"]').removeClass('is-active');
       }
     });
