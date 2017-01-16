@@ -12,6 +12,7 @@
     padding-left: 20px;
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
+    box-sizing: border-box;
 
     @include breakpoint(max-width $large) {
       flex-wrap: wrap;
@@ -30,6 +31,17 @@
 
     &--wide {
       flex-grow: 1;
+      margin-right: 20px;
+    }
+
+    &--narrow {
+      @include breakpoint(max-width $large) {
+        order: 2;
+      }
+
+      @include breakpoint($large-up) {
+        min-width: 145px;
+      }
     }
 
     &--voog-reference {
@@ -41,15 +53,6 @@
     &--body {
       @include breakpoint(max-width $large) {
         order: 1;
-      }
-    }
-
-    &--social-media {
-      position: relative;
-      top: 6px;
-
-      @include breakpoint(max-width $large) {
-        order: 2;
       }
     }
   }

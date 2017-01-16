@@ -904,6 +904,7 @@
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  box-sizing: border-box;
 }
 @media (max-width: 1024px) {
   .layout-footer__container {
@@ -918,6 +919,17 @@
 }
 .layout-footer__section--wide {
   flex-grow: 1;
+  margin-right: 20px;
+}
+@media (max-width: 1024px) {
+  .layout-footer__section--narrow {
+    order: 2;
+  }
+}
+@media (min-width: 1025px) {
+  .layout-footer__section--narrow {
+    min-width: 145px;
+  }
 }
 @media (max-width: 1024px) {
   .layout-footer__section--voog-reference {
@@ -927,15 +939,6 @@
 @media (max-width: 1024px) {
   .layout-footer__section--body {
     order: 1;
-  }
-}
-.layout-footer__section--social-media {
-  position: relative;
-  top: 6px;
-}
-@media (max-width: 1024px) {
-  .layout-footer__section--social-media {
-    order: 2;
   }
 }
 @media (max-width: 640px) {
@@ -1383,9 +1386,15 @@ label .form_control_indicator::before {
   display: block;
 }
 
+@media (min-width: 1025px) {
+  .voog-reference {
+    margin-right: 20px;
+  }
+}
 .voog-reference a {
-  color: #b3b3b3;
+  color: #000;
   text-decoration: none;
+  opacity: .25;
 }
 @media (max-width: 1024px) {
   .voog-reference a {
@@ -1396,6 +1405,9 @@ label .form_control_indicator::before {
   .voog-reference a {
     font-size: 12px;
   }
+}
+.voog-reference a:hover {
+  opacity: .5;
 }
 
 .menu {

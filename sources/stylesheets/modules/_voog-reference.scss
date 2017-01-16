@@ -1,8 +1,13 @@
 .voog-reference {
+  @include breakpoint($large-up) {
+    margin-right: 20px;
+  }
+
   // This can't be written in BEM
   a {
-    color: $color-voog-reference;
+    color: $color-primary;
     text-decoration: none;
+    opacity: .25;
 
     @include breakpoint(max-width $large) {
       font-size: 10px;
@@ -10,6 +15,10 @@
 
     @include breakpoint($large-up) {
       font-size: 12px;
+    }
+
+    &:hover {
+      opacity: .5;
     }
   }
 }
