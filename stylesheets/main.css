@@ -815,6 +815,7 @@
 .layout-header__top {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .layout-header__title {
   flex-grow: 1;
