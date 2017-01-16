@@ -23,12 +23,12 @@
 @import 'variables/breakpoints';
 
 // BASE
-@import 'layout/layout-root';
-@import 'layout/layout-wrap';
-@import 'layout/layout-container';
-@import 'layout/layout-header';
-@import 'layout/layout-body';
-@import 'layout/layout-footer';
+@import 'layout/root';
+@import 'layout/wrap';
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
 
 // CONTENT AREAS
 @import 'content-area/container';
