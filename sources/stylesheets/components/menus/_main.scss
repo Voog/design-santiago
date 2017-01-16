@@ -23,11 +23,7 @@
   }
 
   [data-state--menu-main="open"] & {
-    @include breakpoint(max-width $medium) {
-      right: 0;
-      transition-duration: 200ms;
-      transition-property: right;
-    }
+    right: 0;
   }
 
   &__list {

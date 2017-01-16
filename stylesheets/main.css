@@ -1507,12 +1507,8 @@ label .form_control_indicator::before {
     right: -205px;
   }
 }
-@media (max-width: 640px) {
-  [data-state--menu-main="open"] .menu-main {
-    right: 0;
-    transition-duration: 200ms;
-    transition-property: right;
-  }
+[data-state--menu-main="open"] .menu-main {
+  right: 0;
 }
 .menu-main__list {
   padding-left: 0;
