@@ -7,6 +7,8 @@
   </head>
 
   <body class="layout-container">
+    {% include "template-svg-spritesheet" %}
+
     <div class="layout-wrap">
       {% include "layout-header" %}
 

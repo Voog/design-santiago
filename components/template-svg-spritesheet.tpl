@@ -1,3 +1,4 @@
+{% comment %}TODO: Remove unused sprites.{% endcomment %}
 <svg data-state--display="none">
   <defs>
     <symbol id="ico-arrow">
