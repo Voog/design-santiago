@@ -284,6 +284,30 @@
       "kind": "assets",
       "file": "assets/ico-arrow-white.svg",
       "filename": "ico-arrow-white.svg"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check.png",
+      "filename": "check.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check_small.png",
+      "filename": "check_small.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/ico-check-small.png",
+      "filename": "ico-check-small.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/ico-check.png",
+      "filename": "ico-check.png"
     }
   ]
 }
