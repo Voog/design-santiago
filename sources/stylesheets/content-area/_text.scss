@@ -156,8 +156,10 @@
     color: $color-secondary;
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+    &:not(.custom-btn) {
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

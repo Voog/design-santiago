@@ -10793,6 +10793,11 @@ return jQuery;
     }
   };
 
+  var bindCustomTexteditorStyles = function(buttonTranslation) {
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: buttonTranslation, tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  };
+
   // ===========================================================================
   // Wraps content area tables with the parent <div>. (Enables horizontal
   // scrolling if table's width is wider than the content area itself).
@@ -11170,6 +11175,7 @@ return jQuery;
     initItemsPage: initItemsPage,
     bindLanguageMenuSettings: bindLanguageMenuSettings,
     bindSiteSearch: bindSiteSearch,
+    bindCustomTexteditorStyles: bindCustomTexteditorStyles,
     bindContentItemBgPickers: bindContentItemBgPickers,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,

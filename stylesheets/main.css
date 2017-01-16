@@ -1128,7 +1128,7 @@
   color: #ed1c24;
   text-decoration: none;
 }
-.content-area a:hover {
+.content-area a:not(.custom-btn):hover {
   text-decoration: underline;
 }
 .content-area pre,
