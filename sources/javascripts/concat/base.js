@@ -73,6 +73,7 @@
         $html.attr('data-state--menu-main', 'closed');
       } else {
         $html.attr('data-state--menu-main', 'open');
+        $html.removeClass('menu-language-popover-open site-search-opened');
       }
   	});
 
@@ -113,7 +114,8 @@
     $('.js-toggle-site-search').click(function() {
       var $html = $('html');
 
-      $html.removeClass('menu-language-popover-open menu-main-opened');
+      $html.removeClass('menu-language-popover-open');
+      $html.attr('data-state--menu-main', 'closed');
       $html.toggleClass('site-search-opened');
 
       if ($html.hasClass('site-search-opened')) {
