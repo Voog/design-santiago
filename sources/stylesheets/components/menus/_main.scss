@@ -1,6 +1,5 @@
 .menu-main {
   margin-top: 45px;
-  text-align: center;
 
   @include breakpoint(max-width $medium) {
     position: fixed;
@@ -14,6 +13,10 @@
     box-sizing: border-box;
     transition-duration: 200ms;
     transition-property: right;
+  }
+
+  @include breakpoint($medium-up) {
+    text-align: center;
   }
 
   [data-state--menu-main="closed"] & {

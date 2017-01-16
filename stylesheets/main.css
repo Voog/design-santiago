@@ -1485,7 +1485,6 @@ label .form_control_indicator::before {
 
 .menu-main {
   margin-top: 45px;
-  text-align: center;
 }
 @media (max-width: 640px) {
   .menu-main {
@@ -1500,6 +1499,11 @@ label .form_control_indicator::before {
     box-sizing: border-box;
     transition-duration: 200ms;
     transition-property: right;
+  }
+}
+@media (min-width: 641px) {
+  .menu-main {
+    text-align: center;
   }
 }
 @media (max-width: 640px) {
