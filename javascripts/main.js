@@ -10568,8 +10568,8 @@ return jQuery;
     // sideclick functionality. Use the data-sideclick="prevent" on elements
     // that shouldn't trigger the sideclick events.
     $(document).on('click touchstart', function(event) {
-      // TODO: Prevent sidemenu closing.
-      if (!$(event.target).closest('[data-sideclick="prevent"]').length) {
+      // Also supports fallback for disabling sideclick with "js-prevent-sideclick" class (SettingsEditor relies on it).
+      if (!$(event.target).closest('[data-sideclick="prevent"]').length && !$(event.target).closest('.js-prevent-sideclick').length) {
         var $html = $('html');
 
         $html.removeClass('menu-language-popover-open');

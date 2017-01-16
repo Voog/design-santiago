@@ -1,4 +1,4 @@
-<nav class="menu-language menu-language-popover menu-popover js-menu-language-popover js-prevent-sideclick">
+<nav class="menu-language menu-language-popover menu-popover js-menu-language-popover" data-sideclick="prevent">
   <ul class="menu menu-vertical menu-public">
     {% for language in site.languages %}
       <li class="menu-item">
@@ -20,7 +20,7 @@
 
       {% if language_menu_mode == "language-menu-mode-popover" %}
         <li class="menu-item menu-item-cms-settings js-menu-language-settings">
-          <button class="btn btn-js-styled js-menu-language-settings-toggle js-prevent-sideclick"></button>
+          <button class="btn btn-js-styled js-menu-language-settings-toggle" data-sideclick="prevent"></button>
         </li>
       {% endif %}
     </ul>

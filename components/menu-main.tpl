@@ -1,5 +1,5 @@
-<nav class="menu-main">
-  <ul class="menu-main__list" data-sideclick="prevent">
+<nav class="menu-main" data-sideclick="prevent">
+  <ul class="menu-main__list">
     {% unless site.root_item.hidden? %}
       {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" %}
     {% endunless %}
