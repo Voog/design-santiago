@@ -1234,7 +1234,8 @@
 }
 
 .form_field_textfield,
-.form_field_textarea {
+.form_field_textarea,
+.form_field_select {
   width: 30%;
   padding: 4px 7px 2px;
   font-family: inherit;
@@ -1256,6 +1257,23 @@
 .form_field_select,
 .form_field .jq-select {
   max-width: 100%;
+}
+
+.form_field_select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  padding: 5px 7px 4px;
+  font-size: inherit;
+  font-weight: 300;
+  line-height: 1.5;
+  vertical-align: bottom;
+  background-image: url("../assets/ico-arrow-white.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  border-radius: 0;
 }
 
 .comment-form .form_field_textarea {
@@ -2880,6 +2898,8 @@ label .form_control_indicator::before {
 
 .search-input {
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   border-radius: 0;
   font-family: inherit;
   font-size: inherit;

@@ -278,6 +278,12 @@
       "kind": "assets",
       "file": "assets/bg-search.svg",
       "filename": "bg-search.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-arrow-white.svg",
+      "filename": "ico-arrow-white.svg"
     }
   ]
 }
