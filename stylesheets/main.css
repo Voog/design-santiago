@@ -1498,13 +1498,13 @@ label .form_control_indicator::before {
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    transition-duration: 200ms;
+    transition-property: right;
   }
 }
 @media (max-width: 640px) {
   [data-state--menu-main="closed"] .menu-main {
     right: -205px;
-    transition-duration: 200ms;
-    transition-property: right;
   }
 }
 @media (max-width: 640px) {

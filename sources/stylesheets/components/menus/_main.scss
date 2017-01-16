@@ -12,13 +12,13 @@
     background-color: $color-white;
     box-shadow: 0 0 5px 0 rgba($color-primary, .1);
     box-sizing: border-box;
+    transition-duration: 200ms;
+    transition-property: right;
   }
 
   [data-state--menu-main="closed"] & {
     @include breakpoint(max-width $medium) {
       right: -205px;
-      transition-duration: 200ms;
-      transition-property: right;
     }
   }
 

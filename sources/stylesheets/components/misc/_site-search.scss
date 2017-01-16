@@ -73,7 +73,6 @@
     width: 200px;
   }
 
-
   @include breakpoint(($small-up) (max-width $medium)) {
     right: -50%;
     width: 50%;
