@@ -814,6 +814,7 @@
 }
 .layout-header__top {
   display: flex;
+  align-items: center;
 }
 .layout-header__title {
   flex-grow: 1;
