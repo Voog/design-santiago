@@ -6,8 +6,9 @@
     top: -45px;
     bottom: 0;
     z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 205px;
-    padding: 30px 20px;
     background-color: $color-white;
     box-shadow: 0 0 5px 0 rgba($color-primary, .1);
     box-sizing: border-box;
@@ -99,8 +100,7 @@
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px 20px;
         font-size: 18px;
       }
 
@@ -114,7 +114,12 @@
         border-bottom-width: 2px;
       }
     }
+
+    &--cms {
+      padding: 6px 20px;
+    }
   }
+
 
   &__link {
     &--untranslated {

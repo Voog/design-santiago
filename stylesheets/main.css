@@ -740,8 +740,9 @@ label .form_control_indicator::before {
     top: -45px;
     bottom: 0;
     z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 205px;
-    padding: 30px 20px;
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -813,8 +814,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .menu-main__item a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 20px;
     font-size: 18px;
   }
 }
@@ -828,6 +828,9 @@ label .form_control_indicator::before {
     border-bottom-style: solid;
     border-bottom-width: 2px;
   }
+}
+.menu-main__item--cms {
+  padding: 6px 20px;
 }
 .menu-main__link--untranslated {
   opacity: .25;
