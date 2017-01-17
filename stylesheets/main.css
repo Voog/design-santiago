@@ -1803,12 +1803,12 @@ label .form_control_indicator::before {
 }
 .site-search-btn:hover .search-ico, .site-search-opened .site-search-btn .search-ico {
   opacity: .75;
-  fill: #000;
+  fill: #ed1c24;
 }
 
 .search-ico {
   opacity: .5;
-  fill: #000;
+  fill: #ed1c24;
 }
 
 .site-search {
@@ -1881,7 +1881,7 @@ label .form_control_indicator::before {
   margin-bottom: 0;
   font-weight: 500;
   color: #000;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
@@ -1905,7 +1905,7 @@ label .form_control_indicator::before {
   display: none;
 }
 .search-input:focus {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.5);
   outline: none;
 }
 
@@ -1916,7 +1916,7 @@ label .form_control_indicator::before {
   display: none;
   cursor: pointer;
   opacity: .2;
-  fill: #000;
+  fill: #ed1c24;
 }
 .not-empty .search-clear {
   display: block;
