@@ -1,0 +1,87 @@
+.menu-btn {
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  overflow: visible;
+  font: inherit;
+  line-height: .7;
+  color: inherit;
+  text-transform: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  transition-duration: .15s;
+  transition-property: opacity, filter;
+  transition-timing-function: linear;
+
+  @include breakpoint(max-width $medium) {
+    margin-right: -5px;
+  }
+
+  @include breakpoint($medium-up) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: .75;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &__inner {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  &__stripes {
+    top: 50%;
+    display: block;
+    margin-top: -12px;
+
+    &,
+    &::before,
+    &::after {
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background-color: $color-secondary;
+      border-radius: 4px;
+      transition-duration: .15s;
+      transition-property: transform;
+      transition-timing-function: ease;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+    }
+
+    &::before {
+      top: 10px;
+    }
+
+    &::after {
+      top: 20px;
+    }
+
+    [data-state--menu-main="open"] & {
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        opacity: 0;
+        transform: rotate(-45deg) translate3d(-5.71px, -6px, 0);
+      }
+
+      &::after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}

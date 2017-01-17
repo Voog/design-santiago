@@ -45,28 +45,4 @@
     height: auto;
     max-width: 150px;
   }
-
-  &__menu-toggle {
-    &:focus {
-      outline: 0;
-    }
-
-    @include breakpoint(max-width $medium) {
-      margin-right: -15px;
-
-      .hamburger-inner {
-        // scss-lint:disable NestingDepth
-        &,
-        &::before,
-        &::after {
-          background-color: $color-secondary;
-        }
-        // scss-lint:enable NestingDepth
-      }
-    }
-
-    @include breakpoint($medium-up) {
-      display: none;
-    }
-  }
 }

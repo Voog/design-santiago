@@ -18,7 +18,6 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "hamburgers": "^0.7.0",
     "jquery": "^3.1.1",
     "jquery-lazyload": "^1.9.7",
     "textarea-autosize": "^0.4.2"

@@ -24,9 +24,9 @@
 
       {% include "site-search" %}
 
-      <button class="layout-header__menu-toggle hamburger hamburger--slider" data-behavior="toggle-menu-main" data-sideclick="prevent">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
+      <button class="menu-btn" data-behavior="toggle-menu-main" data-sideclick="prevent">
+        <span class="menu-btn__inner">
+          <span class="menu-btn__stripes"></span>
         </span>
       </button>
     </div>

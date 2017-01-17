@@ -8,9 +8,6 @@
 // 3RD PARTY COMPONENTS
 @import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 @import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
-// TODO: Check if that can be optimized.
-//@import '../../node_modules/hamburgers/dist/hamburgers.css';
-@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
 // Mixins
 @import 'mixins/general';
@@ -59,7 +56,8 @@
 @import 'components/tags/tags-container';
 @import 'components/tags/tags-nav';
 
-@import 'components/misc/content-item';
+@import 'components/misc/menu-btn';
 @import 'components/misc/site-search';
+@import 'components/misc/content-item';
 @import 'components/misc/btns-container';
 @import 'components/misc/ecommerce';

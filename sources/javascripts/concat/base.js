@@ -57,16 +57,12 @@
         $html.attr('data-state--menu-main', 'closed');
         $html.removeClass('site-search-opened');
 
-        $('[data-behavior="toggle-menu-main"]').removeClass('is-active');
-
         $('.js-search-input').val('');
       }
     });
 
     // Toggles main menu in mobile view.
   	$('[data-behavior="toggle-menu-main"]').click(function() {
-      $(this).toggleClass('is-active');
-
       var $html = $('html');
 
       if ($html.attr('data-state--menu-main') == 'open') {
