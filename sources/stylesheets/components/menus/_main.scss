@@ -19,13 +19,13 @@
     text-align: center;
   }
 
-  [data-state--menu-main="closed"] & {
+  [data-menu-main-state="closed"] & {
     @include breakpoint(max-width $medium) {
       right: -205px;
     }
   }
 
-  [data-state--menu-main="open"] & {
+  [data-menu-main-state="open"] & {
     right: 0;
   }
 

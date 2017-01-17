@@ -2,7 +2,7 @@
   display: flex;
   margin-bottom: 40px;
 
-  [data-state--view-mode="editmode"] & {
+  [data-view-state="editmode"] & {
     position: relative;
   }
 

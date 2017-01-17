@@ -102,7 +102,7 @@
     }
   }
 
-  [data-state--menu-main="closed"] & {
+  [data-menu-main-state="closed"] & {
     @include breakpoint(max-width $medium) {
       right: 70px;
       transition-duration: 200ms;
@@ -110,7 +110,7 @@
     }
   }
 
-  [data-state--menu-main="open"] & {
+  [data-menu-main-state="open"] & {
     @include breakpoint(max-width $medium) {
       right: 270px;
       transition-duration: 200ms;

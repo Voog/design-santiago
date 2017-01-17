@@ -10573,7 +10573,7 @@ return jQuery;
         var $html = $('html');
 
         $html.removeClass('menu-language-popover-open');
-        $html.attr('data-state--menu-main', 'closed');
+        $html.attr('data-menu-main-state', 'closed');
         $html.removeClass('site-search-opened');
 
         $('.js-search-input').val('');
@@ -10584,10 +10584,10 @@ return jQuery;
   	$('[data-behavior="toggle-menu-main"]').click(function() {
       var $html = $('html');
 
-      if ($html.attr('data-state--menu-main') == 'open') {
-        $html.attr('data-state--menu-main', 'closed');
+      if ($html.attr('data-menu-main-state') == 'open') {
+        $html.attr('data-menu-main-state', 'closed');
       } else {
-        $html.attr('data-state--menu-main', 'open');
+        $html.attr('data-menu-main-state', 'open');
         $html.removeClass('menu-language-popover-open site-search-opened');
       }
   	});
@@ -10595,13 +10595,13 @@ return jQuery;
     // Toggles blog article comments author fields.
     $('[data-behavior="toggle-comment-form-fields"]')
       .on('focus', function() {
-        $('[data-js-selector="comment-form-details"]').attr('data-state--display', 'block');
+        $('#comment-form__details').attr('data-display-state', 'block');
       })
       .on('blur', function() {
-        if ($('[data-js-selector="comment-body"]').val().length === 0 && $('[data-js-selector="comment-form-name"]').val().length === 0 && $('[data-js-selector="comment-form-email"]').val().length === 0) {
+        if ($('#comment-form__body').val().length === 0 && $('#comment-form__name').val().length === 0 && $('#comment-form__email').val().length === 0) {
           setTimeout(function() {
-            if (!$(document.activeElement).is('[data-js-class="comment-field"]')) {
-              $('[data-js-selector="comment-form-details"]').attr('data-state--display', 'none');
+            if (!$(document.activeElement).is('[data-group="comment-field"]')) {
+              $('#comment-form__details').attr('data-display-state', 'none');
             }
           }, 0);
         }
@@ -10630,7 +10630,7 @@ return jQuery;
       var $html = $('html');
 
       $html.removeClass('menu-language-popover-open');
-      $html.attr('data-state--menu-main', 'closed');
+      $html.attr('data-menu-main-state', 'closed');
       $html.toggleClass('site-search-opened');
 
       if ($html.hasClass('site-search-opened')) {

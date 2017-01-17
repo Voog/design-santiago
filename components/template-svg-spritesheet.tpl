@@ -1,5 +1,5 @@
 {% comment %}TODO: Remove unused sprites.{% endcomment %}
-<svg data-state--display="none">
+<svg data-display-state="none">
   <defs>
     <symbol id="ico-arrow">
       <path d="M0.5,0.5 L6.5,6.5"/>

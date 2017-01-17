@@ -128,7 +128,7 @@
       background-color: rgba($color-secondary, .75);
     }
 
-    [data-state--view-mode="publicmode"] & {
+    [data-view-state="publicmode"] & {
       cursor: pointer;
     }
   }

@@ -99,11 +99,11 @@
   text-align: right;
 
   &.menu-language-popover {
-    [data-state--view-mode="publicmode"].language-flags-disabled & {
+    [data-view-state="publicmode"].language-flags-disabled & {
       margin-top: -41px;
     }
 
-    [data-state--view-mode="editmode"].language-flags-disabled & {
+    [data-view-state="editmode"].language-flags-disabled & {
       margin-top: -53px;
     }
 
@@ -111,11 +111,11 @@
       margin-right: -22px;
     }
 
-    [data-state--view-mode="editmode"].language-flags-enabled & {
+    [data-view-state="editmode"].language-flags-enabled & {
       margin-top: -56px;
     }
 
-    [data-state--view-mode="publicmode"].language-flags-enabled & {
+    [data-view-state="publicmode"].language-flags-enabled & {
       margin-top: -44px;
     }
 
@@ -130,15 +130,15 @@
   }
 
   .menu-public {
-    [data-state--view-mode="editmode"].language-menu-mode-popover & {
+    [data-view-state="editmode"].language-menu-mode-popover & {
       padding-top: 7px;
     }
 
-    [data-state--view-mode="publicmode"].language-menu-mode-list.language-names-disabled & {
+    [data-view-state="publicmode"].language-menu-mode-list.language-names-disabled & {
       padding-bottom: 2px;
     }
 
-    [data-state--view-mode="publicmode"].language-menu-mode-popover & {
+    [data-view-state="publicmode"].language-menu-mode-popover & {
       $vertical-padding-publicmode: 15px;
       padding-top: $vertical-padding-publicmode;
       padding-bottom: $vertical-padding-publicmode;

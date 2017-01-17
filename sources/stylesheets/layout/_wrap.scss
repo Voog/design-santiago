@@ -12,7 +12,7 @@
   transition-duration: .2s;
   transition-property: right;
 
-  [data-state--menu-main="closed"] & {
+  [data-menu-main-state="closed"] & {
     @include breakpoint(max-width $medium) {
       right: 0;
       transition-duration: 200ms;
@@ -20,7 +20,7 @@
     }
   }
 
-  [data-state--menu-main="open"] & {
+  [data-menu-main-state="open"] & {
     @include breakpoint(max-width $medium) {
       right: 205px;
       transition-duration: 200ms;

@@ -16,14 +16,14 @@
   transition-property: right;
 }
 @media (max-width: 640px) {
-  [data-state--menu-main="closed"] .layout-wrap {
+  [data-menu-main-state="closed"] .layout-wrap {
     right: 0;
     transition-duration: 200ms;
     transition-property: right;
   }
 }
 @media (max-width: 640px) {
-  [data-state--menu-main="open"] .layout-wrap {
+  [data-menu-main-state="open"] .layout-wrap {
     right: 205px;
     transition-duration: 200ms;
     transition-property: right;
@@ -567,7 +567,7 @@
 .form_submit input:hover {
   background-color: rgba(237, 28, 36, 0.75);
 }
-[data-state--view-mode="publicmode"] .form_submit input {
+[data-view-state="publicmode"] .form_submit input {
   cursor: pointer;
 }
 
@@ -644,11 +644,11 @@ label .form_control_indicator::before {
   color: #000;
 }
 
-[data-state--display='none'] {
+[data-display-state='none'] {
   display: none;
 }
 
-[data-state--display='block'] {
+[data-display-state='block'] {
   display: block;
 }
 
@@ -752,11 +752,11 @@ label .form_control_indicator::before {
   }
 }
 @media (max-width: 640px) {
-  [data-state--menu-main="closed"] .menu-main {
+  [data-menu-main-state="closed"] .menu-main {
     right: -205px;
   }
 }
-[data-state--menu-main="open"] .menu-main {
+[data-menu-main-state="open"] .menu-main {
   right: 0;
 }
 .menu-main__list {
@@ -984,19 +984,19 @@ label .form_control_indicator::before {
 .menu-language {
   text-align: right;
 }
-[data-state--view-mode="publicmode"].language-flags-disabled .menu-language.menu-language-popover {
+[data-view-state="publicmode"].language-flags-disabled .menu-language.menu-language-popover {
   margin-top: -41px;
 }
-[data-state--view-mode="editmode"].language-flags-disabled .menu-language.menu-language-popover {
+[data-view-state="editmode"].language-flags-disabled .menu-language.menu-language-popover {
   margin-top: -53px;
 }
 .language-flags-enabled .menu-language.menu-language-popover {
   margin-right: -22px;
 }
-[data-state--view-mode="editmode"].language-flags-enabled .menu-language.menu-language-popover {
+[data-view-state="editmode"].language-flags-enabled .menu-language.menu-language-popover {
   margin-top: -56px;
 }
-[data-state--view-mode="publicmode"].language-flags-enabled .menu-language.menu-language-popover {
+[data-view-state="publicmode"].language-flags-enabled .menu-language.menu-language-popover {
   margin-top: -44px;
 }
 .language-menu-mode-list .menu-language.menu-language-popover {
@@ -1006,13 +1006,13 @@ label .form_control_indicator::before {
   z-index: 10;
   display: block;
 }
-[data-state--view-mode="editmode"].language-menu-mode-popover .menu-language .menu-public {
+[data-view-state="editmode"].language-menu-mode-popover .menu-language .menu-public {
   padding-top: 7px;
 }
-[data-state--view-mode="publicmode"].language-menu-mode-list.language-names-disabled .menu-language .menu-public {
+[data-view-state="publicmode"].language-menu-mode-list.language-names-disabled .menu-language .menu-public {
   padding-bottom: 2px;
 }
-[data-state--view-mode="publicmode"].language-menu-mode-popover .menu-language .menu-public {
+[data-view-state="publicmode"].language-menu-mode-popover .menu-language .menu-public {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1641,7 +1641,7 @@ label .form_control_indicator::before {
   display: flex;
   margin-bottom: 40px;
 }
-[data-state--view-mode="editmode"] .tags {
+[data-view-state="editmode"] .tags {
   position: relative;
 }
 .tags--centered {
@@ -1753,14 +1753,14 @@ label .form_control_indicator::before {
 .menu-btn__stripes::after {
   top: 20px;
 }
-[data-state--menu-main="open"] .menu-btn__stripes {
+[data-menu-main-state="open"] .menu-btn__stripes {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-[data-state--menu-main="open"] .menu-btn__stripes::before {
+[data-menu-main-state="open"] .menu-btn__stripes::before {
   opacity: 0;
   transform: rotate(-45deg) translate3d(-5.71px, -6px, 0);
 }
-[data-state--menu-main="open"] .menu-btn__stripes::after {
+[data-menu-main-state="open"] .menu-btn__stripes::after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 
@@ -2031,7 +2031,7 @@ label .form_control_indicator::before {
     padding-left: 10px;
   }
 }
-[data-state--view-mode="editmode"] .content-item-box:hover .top-inner, .item-list-page .content-item-box:hover .top-inner {
+[data-view-state="editmode"] .content-item-box:hover .top-inner, .item-list-page .content-item-box:hover .top-inner {
   opacity: .75;
 }
 
@@ -2117,28 +2117,28 @@ label .form_control_indicator::before {
   line-height: 1.2;
   text-align: center;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner {
+[data-view-state="publicmode"] .item-top .top-inner {
   overflow: hidden;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner .image-landscape.not-cropped {
+[data-view-state="publicmode"] .item-top .top-inner .image-landscape.not-cropped {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner .image-landscape.is-cropped {
+[data-view-state="publicmode"] .item-top .top-inner .image-landscape.is-cropped {
   width: auto;
   height: 100%;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner .image-portrait.not-cropped {
+[data-view-state="publicmode"] .item-top .top-inner .image-portrait.not-cropped {
   width: auto;
   height: 100%;
   max-height: 100%;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner .image-portrait.is-cropped {
+[data-view-state="publicmode"] .item-top .top-inner .image-portrait.is-cropped {
   width: 100%;
   height: auto;
 }
-[data-state--view-mode="publicmode"] .item-top .top-inner .image-square {
+[data-view-state="publicmode"] .item-top .top-inner .image-square {
   width: 100%;
   height: auto;
 }
@@ -2204,7 +2204,7 @@ label .form_control_indicator::before {
 .item-image {
   border: 0;
 }
-[data-state--view-mode="publicmode"] .item-image.is-cropped {
+[data-view-state="publicmode"] .item-image.is-cropped {
   position: absolute;
   top: -100%;
   right: -100%;
@@ -2389,14 +2389,14 @@ label .form_control_indicator::before {
   }
 }
 @media (max-width: 640px) {
-  [data-state--menu-main="closed"] .edy-ecommerce-shopping-cart-button {
+  [data-menu-main-state="closed"] .edy-ecommerce-shopping-cart-button {
     right: 70px;
     transition-duration: 200ms;
     transition-property: right;
   }
 }
 @media (max-width: 640px) {
-  [data-state--menu-main="open"] .edy-ecommerce-shopping-cart-button {
+  [data-menu-main-state="open"] .edy-ecommerce-shopping-cart-button {
     right: 270px;
     transition-duration: 200ms;
     transition-property: right;
