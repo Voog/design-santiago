@@ -13,6 +13,10 @@
       {% include "layout-header" %}
 
       <div class="layout-body layout-body--narrow layout-body--padded">
+        <section class="layout-body__content-section">
+          <div class="content-area" {{ edy_intro_edit_text }}>{% content %}</div>
+        </section>
+
         {% include "blog-list-tags" %}
 
         {% if editmode %}

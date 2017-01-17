@@ -143,6 +143,9 @@
     padding-left: 20px;
   }
 }
+.layout-body__content-section {
+  margin-bottom: 40px;
+}
 
 .layout-footer {
   padding-top: 60px;

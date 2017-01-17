@@ -13,7 +13,7 @@
         <li class="menu-main__item menu-main__item--cms">{% menubtn site.hidden_menuitems %}</li>
       {% endif %}
 
-      <li class="menu-main__item menu-main__item--cms">{% menuadd %}</li>
+      <li class="menu-main__item menu-main__item--cms" {{ edy_intro_add_page }}>{% menuadd %}</li>
     {% endif %}
   </ul>
 </nav>

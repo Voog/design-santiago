@@ -13,7 +13,7 @@
       {% include "layout-header" %}
 
       <main class="layout-body layout-body--padded">
-        <div class="content-area">{% content %}</div>
+        <section class="content-area" {{ edy_intro_edit_text }}>{% content %}</section>
       </main>
 
       {% include "layout-footer" %}

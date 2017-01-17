@@ -13,7 +13,7 @@
 
   <div class="article__content" data-search-indexing-allowed="true">
     <div class="article__excerpt">
-      <div class="content-area">{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
+      <div class="content-area"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
     </div>
 
     {% unless list_item %}
