@@ -378,7 +378,6 @@
       timeout: 30000,
       error: function(data) {
         $contentItemBox.removeClass('not-loaded is-loaded with-error').addClass('with-error');
-        // $contentItemBox.find('.js-loader').html('Error: Try again!');
       }
     });
   };
