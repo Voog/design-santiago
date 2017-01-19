@@ -152,9 +152,9 @@
 }
 
 .layout-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 32px;
   background-color: #f7f7f7;
 }
 .layout-footer__container {
@@ -180,7 +180,7 @@
 }
 .layout-footer__section--wide {
   flex-grow: 1;
-  margin-right: 20px;
+  margin-right: 24px;
 }
 @media (max-width: 1024px) {
   .layout-footer__section--narrow {
@@ -209,8 +209,8 @@
 }
 @media (min-width: 641px) {
   .layout-footer .separated {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 24px;
+    margin-left: 24px;
   }
 }
 
@@ -722,12 +722,14 @@ label .form_control_indicator::before {
   content: '';
 }
 
-.layout-footer .content-area .edy-content-social-button:hover {
-  opacity: .75;
-}
-.layout-footer .content-area .edy-content-social-button {
+.content-area .edy-content-social-button {
   display: inline-block;
-  color: #000;
+  line-height: 0;
+  color: #ed1c24;
+  vertical-align: middle;
+}
+.content-area .edy-content-social-button:hover {
+  opacity: .75;
 }
 
 [data-display-state='none'] {

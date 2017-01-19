@@ -1,7 +1,7 @@
 .layout-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 32px;
   background-color: $color-grey;
 
   &__container {
@@ -31,7 +31,7 @@
 
     &--wide {
       flex-grow: 1;
-      margin-right: 20px;
+      margin-right: 24px;
     }
 
     &--narrow {
@@ -63,8 +63,8 @@
     }
 
     @include breakpoint($medium-up) {
-      margin-right: 20px;
-      margin-left: 20px;
+      margin-right: 24px;
+      margin-left: 24px;
     }
   }
 }

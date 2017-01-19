@@ -1,17 +1,12 @@
 .content-area {
   .edy-content-social-button {
+    display: inline-block;
+    line-height: 0;
+    color: $color-secondary;
+    vertical-align: middle;
+
     &:hover {
-      // scss-lint:disable NestingDepth
-      .layout-footer & {
-        opacity: .75;
-      }
-      // scss-lint:enable NestingDepth
+      opacity: .75;
     }
-
-    .layout-footer & {
-      display: inline-block;
-      color: $color-primary;
-    }
-
   }
 }
