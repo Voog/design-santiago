@@ -776,9 +776,6 @@ label .form_control_indicator::before {
 .menu-horizontal > .menu-item {
   display: inline-block;
 }
-.menu-horizontal .menu-item {
-  opacity: .8;
-}
 .page-content .menu-horizontal .menu-item:hover {
   opacity: 1;
 }
@@ -1123,13 +1120,13 @@ label .form_control_indicator::before {
   right: 4px;
 }
 .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::after {
-  top: 6px;
+  top: 4px;
 }
 .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::after {
   top: 3px;
 }
 .menu-language .menu-item a:hover, .language-menu-mode-list .menu-language .menu-item a:hover {
-  opacity: .5;
+  opacity: .75;
 }
 .language-menu-mode-list .menu-language .menu-item a.selected {
   opacity: 1;
@@ -1154,7 +1151,7 @@ label .form_control_indicator::before {
   padding-bottom: 11.5px;
 }
 .language-menu-mode-list .menu-language .menu-item a {
-  opacity: .25;
+  opacity: .5;
 }
 .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
   padding: 5px 30px 5px 3px;
@@ -1171,7 +1168,7 @@ label .form_control_indicator::before {
 .language-names-disabled.language-flags-enabled .menu-language .menu-language-name {
   display: none;
 }
-.menu-language .menu-cms {
+.language-menu-mode-popover .menu-language .menu-cms {
   padding-bottom: 8px;
 }
 .language-menu-mode-list.language-flags-enabled .menu-language .menu-cms li {
