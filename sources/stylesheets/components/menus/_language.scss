@@ -41,7 +41,7 @@
   }
 
   .language-flags-disabled & {
-    padding: 6px 25px 5px 11px;
+    padding: 8px 24px 7px 8px;
     font-family: inherit;
     font-size: 12px;
     border-color: rgba($color-primary, .25);
@@ -74,20 +74,27 @@
   }
 
   .menu-language-btn-circle {
-    right: 9px;
+    right: 8px;
   }
 }
 
 .menu-language-btn-circle {
   position: absolute;
   top: 50%;
-  margin-top: -4px;
   opacity: .25;
   stroke: $color-primary;
   fill: none;
 
   .language-menu-mode-list & {
     display: none;
+  }
+
+  .language-menu-mode-popover.language-flags-disabled & {
+    margin-top: -4px;
+  }
+
+  .language-menu-mode-popover.language-flags-enabled & {
+    margin-top: -5px;
   }
 
   .language-flags-disabled.menu-language-popover-open & {
@@ -100,23 +107,25 @@
 
   &.menu-language-popover {
     [data-view-state="publicmode"].language-flags-disabled & {
-      margin-top: -41px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-right: -1px;
     }
 
-    [data-view-state="editmode"].language-flags-disabled & {
-      margin-top: -53px;
-    }
-
-    .language-flags-enabled & {
-      margin-right: -22px;
+    .language-flags-disabled & {
+      margin-top: -36px;
     }
 
     [data-view-state="editmode"].language-flags-enabled & {
-      margin-top: -56px;
+      margin-top: -33px;
+      margin-right: -20px;
     }
 
     [data-view-state="publicmode"].language-flags-enabled & {
-      margin-top: -44px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      margin-top: -29px;
+      margin-right: -21px;
     }
 
     .language-menu-mode-list & {
@@ -131,18 +140,18 @@
 
   .menu-public {
     [data-view-state="editmode"].language-menu-mode-popover & {
-      padding-top: 7px;
+      padding-top: 8px;
     }
 
     [data-view-state="publicmode"].language-menu-mode-list.language-names-disabled & {
       padding-bottom: 2px;
     }
 
-    [data-view-state="publicmode"].language-menu-mode-popover & {
-      $vertical-padding-publicmode: 15px;
-      padding-top: $vertical-padding-publicmode;
-      padding-bottom: $vertical-padding-publicmode;
-    }
+    //[data-view-state="publicmode"].language-menu-mode-popover & {
+    //  $vertical-padding-publicmode: 8px;
+    //  padding-top: $vertical-padding-publicmode;
+    //  padding-bottom: $vertical-padding-publicmode;
+    //}
   }
 
   .menu-item {
@@ -151,7 +160,6 @@
     .language-menu-mode-list.language-flags-enabled & {
       vertical-align: middle;
     }
-
     a {
       display: block;
       font-size: 12px;
@@ -163,8 +171,8 @@
       &::after {
         // scss-lint:disable SelectorDepth
         .language-menu-mode-popover.language-flags-enabled & {
-          top: 8px;
-          right: 26px;
+          top: 4px;
+          right: 24px;
         }
         // scss-lint:enable SelectorDepth
 
@@ -206,22 +214,23 @@
 
       // scss-lint:disable SelectorDepth
       .language-menu-mode-popover.language-flags-enabled & {
-        padding-right: 58px;
-        padding-left: 6px;
+        padding-left: 8px;
       }
 
       .language-menu-mode-popover.language-flags-disabled & {
-        padding: 3px 25px;
+        padding: 4px 24px;
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-enabled & {
-        padding-top: 6px;
-        padding-bottom: 6px;
+        padding-top: 5px;
+        padding-right: 53px;
+        padding-bottom: 5px;
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-disabled & {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 11.5px;
+        padding-right: 45px;
+        padding-bottom: 11.5px;
       }
 
       .language-menu-mode-list & {
@@ -244,7 +253,7 @@
     }
 
     .menu-language-btn-circle {
-      right: 9px;
+      right: 8px;
     }
   }
 
@@ -255,7 +264,7 @@
   }
 
   .menu-cms {
-    margin-right: 10px;
+    padding-bottom: 8px;
 
     li {
       // scss-lint:disable NestingDepth
@@ -266,14 +275,13 @@
       }
 
       .language-menu-mode-popover & {
-        padding-right: 16px;
-        padding-bottom: 9px;
-        padding-left: 16px;
+        padding: 4px 14px;
       }
 
-      .language-flags-disabled & {
-        padding-top: 3px;
-      }
+      // TODO: Remove
+      //.language-flags-disabled & {
+      //  padding-top: 3px 15px;
+      //}
 
       // scss-lint:enable NestingDepth
       // scss-lint:enable SelectorDepth
