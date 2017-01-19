@@ -9,11 +9,11 @@
     color: $color-secondary;
 
     @include breakpoint(max-width $medium) {
-      font-size: 50px;
+      font-size: 52px;
     }
 
     @include breakpoint($medium-up) {
-      font-size: 70px;
+      font-size: 72px;
     }
   }
 

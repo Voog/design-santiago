@@ -82,11 +82,11 @@
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       @include breakpoint($medium-up) {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
   }

@@ -101,7 +101,7 @@
 
       @include breakpoint(max-width $medium) {
         padding: 5px 20px;
-        font-size: 18px;
+        font-size: 20px;
       }
 
       @include breakpoint($medium-up) {

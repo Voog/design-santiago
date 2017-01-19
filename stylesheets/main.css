@@ -5,7 +5,6 @@
 || Demo page available at http://santiago.voog.com
 ============================================================================= */
 .layout-root {
-  font-size: 16px;
   font-feature-settings: 'lnum';
 }
 
@@ -226,12 +225,12 @@
 }
 @media (max-width: 640px) {
   .layout-header__title .content-area {
-    font-size: 50px;
+    font-size: 52px;
   }
 }
 @media (min-width: 641px) {
   .layout-header__title .content-area {
-    font-size: 70px;
+    font-size: 72px;
   }
 }
 .content-area:empty {
@@ -311,36 +310,66 @@
 }
 @media (max-width: 640px) {
   .content-area h1 {
-    font-size: 50px;
+    font-size: 48px;
   }
 }
 @media (min-width: 641px) {
   .content-area h1 {
-    font-size: 70px;
+    font-size: 72px;
   }
 }
 @media (max-width: 640px) {
   .content-area h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 @media (min-width: 641px) {
   .content-area h2 {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 @media (max-width: 640px) {
   .content-area h3 {
-    font-size: 25px;
+    font-size: 28px;
   }
 }
 @media (min-width: 641px) {
   .content-area h3 {
-    font-size: 30px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .content-area h4 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 641px) {
+  .content-area h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 640px) {
+  .content-area h5 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 641px) {
+  .content-area h5 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .content-area h6 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 641px) {
+  .content-area h6 {
+    font-size: 20px;
   }
 }
 .content-area p {
-  font-size: 18px;
+  font-size: 20px;
 }
 .content-area ul,
 .content-area ol,
@@ -375,7 +404,7 @@
 .content-area pre,
 .content-area code {
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 .content-area pre {
@@ -412,7 +441,7 @@
   display: inline-block;
   padding: 8px 15px 9px;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
   outline: 0;
   -webkit-appearance: none;
@@ -493,7 +522,7 @@
   width: 30%;
   padding: 4px 7px 2px;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   color: black;
   background-color: white;
@@ -575,7 +604,7 @@
   display: inline-block;
   padding: 8px 15px 9px;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
   color: #fff;
   background-color: #ed1c24;
@@ -679,19 +708,10 @@ label .form_control_indicator::before {
   }
 }
 .voog-reference a {
+  font-size: 12px;
   color: #000;
   text-decoration: none;
   opacity: .25;
-}
-@media (max-width: 1024px) {
-  .voog-reference a {
-    font-size: 10px;
-  }
-}
-@media (min-width: 1025px) {
-  .voog-reference a {
-    font-size: 12px;
-  }
 }
 .voog-reference a:hover {
   opacity: .5;
@@ -713,7 +733,7 @@ label .form_control_indicator::before {
 
 .page-content .menu-horizontal {
   padding-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .menu-horizontal > .menu-item {
   display: inline-block;
@@ -833,7 +853,7 @@ label .form_control_indicator::before {
 @media (max-width: 640px) {
   .menu-main__item a {
     padding: 5px 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 641px) {
@@ -966,7 +986,7 @@ label .form_control_indicator::before {
 .language-flags-disabled .menu-language-btn {
   padding: 6px 25px 5px 11px;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 12px;
   border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
   border-width: 1px;
@@ -1048,7 +1068,7 @@ label .form_control_indicator::before {
 }
 .menu-language .menu-item a {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   color: #000;
   text-decoration: none;
 }
@@ -1156,7 +1176,7 @@ label .form_control_indicator::before {
 .ico-flags::after {
   padding-top: 3px;
   padding-bottom: 3px;
-  font-size: 9px;
+  font-size: 8px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -1459,12 +1479,12 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .menu-breadcrumbs__item a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 641px) {
   .menu-breadcrumbs__item a {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -1485,7 +1505,7 @@ label .form_control_indicator::before {
 .article__title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 27px;
+  font-size: 28px;
   color: #ed1c24;
   text-transform: uppercase;
 }
@@ -1497,11 +1517,11 @@ label .form_control_indicator::before {
   text-decoration: underline;
 }
 .article__date {
-  font-size: 13px;
+  font-size: 12px;
   opacity: .5;
 }
 .article .article__excerpt, .article .article__body {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
 }
 .article__excerpt {
@@ -1595,14 +1615,14 @@ label .form_control_indicator::before {
   }
 }
 .article-nav__direction {
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: .2em;
   text-transform: uppercase;
   opacity: .25;
 }
 .article-nav__title {
   margin-top: 6px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: .75;
 }
 
@@ -1614,7 +1634,7 @@ label .form_control_indicator::before {
 }
 .comments__title {
   margin-bottom: 55px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
@@ -1635,7 +1655,7 @@ label .form_control_indicator::before {
   margin-left: 10px;
 }
 .comment-form__field__btn {
-  font-size: 18px;
+  font-size: 20px;
 }
 .comment-form__btns {
   margin-top: 20px;
@@ -1647,7 +1667,7 @@ label .form_control_indicator::before {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .comment-list__meta {
-  font-size: 14px;
+  font-size: 16px;
 }
 .comment-list__author {
   font-weight: 600;
@@ -1698,11 +1718,11 @@ label .form_control_indicator::before {
   font-size: 0;
 }
 .tags-nav__item--separated::after {
-  font-size: 14px;
+  font-size: 16px;
   content: ',';
 }
 .tags-nav__link {
-  font-size: 14px;
+  font-size: 16px;
   color: inherit;
   text-decoration: none;
   opacity: .5;
@@ -1986,7 +2006,7 @@ label .form_control_indicator::before {
   margin-top: 0;
 }
 .voog-search-modal-result h3 a {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #000;
 }
@@ -2181,7 +2201,7 @@ label .form_control_indicator::before {
 }
 @media (min-width: 241px) {
   .item-top .top-inner {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (min-width: 291px) {
@@ -2196,7 +2216,7 @@ label .form_control_indicator::before {
 }
 @media (min-width: 1025px) {
   .item-top .top-inner {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .item-top .image-drop-area {
@@ -2216,12 +2236,12 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .item-top .image-drop-area .edy-img-drop-area-placeholder {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (min-width: 641px) {
   .item-top .image-drop-area .edy-img-drop-area-placeholder {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -2267,22 +2287,22 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .content-item-box .item-title {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (min-width: 641px) {
   .content-item-box .item-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 640px) {
   .content-item .item-title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 641px) {
   .content-item .item-title {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 @media (max-width: 640px) {
@@ -2292,7 +2312,7 @@ label .form_control_indicator::before {
 }
 @media (min-width: 641px) {
   .blog-article-page .item-title {
-    font-size: 50px;
+    font-size: 52px;
   }
 }
 .content-item-box > .item-title {
@@ -2432,7 +2452,7 @@ label .form_control_indicator::before {
 
 .root .edy-ecommerce-product-count {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .root .edy-ecommerce-shopping-cart-button-flash {
@@ -2440,7 +2460,7 @@ label .form_control_indicator::before {
 }
 
 .root .edy-ecommerce-form-reveal-field {
-  font-size: 18px;
+  font-size: 20px;
   color: #ed1c24;
 }
 .root .edy-ecommerce-form-reveal-field:hover {

@@ -196,7 +196,7 @@
     }
 
     @include breakpoint($xx-small-up) {
-      font-size: 13px;
+      font-size: 12px;
     }
 
     @include breakpoint($x-small-up) {
@@ -208,7 +208,7 @@
     }
 
     @include breakpoint($large-up) {
-      font-size: 30px;
+      font-size: 32px;
     }
   }
 
@@ -234,11 +234,11 @@
 
     .edy-img-drop-area-placeholder {
       @include breakpoint(max-width $medium) {
-        font-size: 13px;
+        font-size: 12px;
       }
 
       @include breakpoint ($medium-up) {
-        font-size: $base-font-size;
+        font-size: 20px;
       }
     }
   }
@@ -292,21 +292,21 @@
 
   .content-item-box & {
     @include breakpoint(max-width $medium) {
-      font-size: 13px;
+      font-size: 12px;
     }
 
     @include breakpoint ($medium-up) {
-      font-size: $base-font-size;
+      font-size: 20px;
     }
   }
 
   .content-item & {
     @include breakpoint(max-width $medium) {
-      font-size: $base-font-size;
+      font-size: 20px;
     }
 
     @include breakpoint ($medium-up) {
-      font-size: 30px;
+      font-size: 32px;
     }
   }
 
@@ -316,7 +316,7 @@
     }
 
     @include breakpoint ($medium-up) {
-      font-size: 50px;
+      font-size: 52px;
     }
   }
 
