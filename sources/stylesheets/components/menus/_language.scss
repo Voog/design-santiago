@@ -182,7 +182,7 @@
         }
 
         .language-menu-mode-list.language-flags-enabled.language-names-enabled & {
-          top: 4px;
+          top: 6px;
         }
 
         .language-menu-mode-list.language-flags-enabled.language-names-disabled & {
@@ -195,7 +195,7 @@
         // scss-lint:disable SelectorDepth
         &,
         .language-menu-mode-list & {
-          opacity: .75;
+          opacity: .7;
         }
         // scss-lint:enable SelectorDepth
       }
