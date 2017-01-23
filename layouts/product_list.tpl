@@ -13,7 +13,7 @@
       {% include "layout-header" %}
 
       <main class="layout-body layout-body--wide layout-body--small-padded">
-        {% include "product-breadcrumbs" %}
+        {% include "menu-breadcrumbs" %}
 
         <section class="content-item-boxes">
           {% if site.root_item.selected? %}

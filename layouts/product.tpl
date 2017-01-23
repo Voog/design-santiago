@@ -14,7 +14,7 @@
       {% include "layout-header" %}
 
       <main class="layout-body layout-body--narrow layout-body--padded">
-        {% include "product-breadcrumbs" %}
+        {% include "menu-breadcrumbs" %}
 
         <div class="content-inner items-body" {{ edy_intro_edit_text }}>
           <div class="content-illustrations">

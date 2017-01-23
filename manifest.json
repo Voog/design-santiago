@@ -120,9 +120,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/product-breadcrumbs.tpl",
-      "layout_name": "product-breadcrumbs",
-      "title": "product-breadcrumbs"
+      "file": "components/menu-breadcrumbs.tpl",
+      "layout_name": "menu-breadcrumbs",
+      "title": "menu-breadcrumbs"
     },
     {
       "content_type": "component",
