@@ -96,7 +96,7 @@
   background-color: rgba($color-white, 1);
 
   @include breakpoint(max-width $medium) {
-    padding-top: 24px;
+    padding-top: 14px;
   }
 
   @include breakpoint($medium-up) {
@@ -176,7 +176,7 @@
 
   @include breakpoint(max-width $medium) {
     height: calc(100% - 127px);
-    padding-top: 84px;
+    padding-top: 74px;
   }
 
   @include breakpoint($medium-up) {

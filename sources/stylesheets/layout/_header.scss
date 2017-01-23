@@ -25,9 +25,16 @@
 
   &__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    @include breakpoint(max-width $medium) {
+      align-items: flex-start;
+    }
+
+    @include breakpoint($medium-up) {
+      align-items: center;
+    }
   }
 
   &__title {
