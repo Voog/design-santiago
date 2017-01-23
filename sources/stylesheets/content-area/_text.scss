@@ -264,6 +264,11 @@
     .publicmode & {
       cursor: pointer;
     }
+
+    &.edy-buy-button {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
   }
 
   .edy-positionable-container-center,

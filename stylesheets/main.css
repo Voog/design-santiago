@@ -517,6 +517,10 @@
 .publicmode .content-area .custom-btn {
   cursor: pointer;
 }
+.content-area .custom-btn.edy-buy-button {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .content-area .edy-positionable-container-center,
 .content-area .edy-positionable-container-left-block,
 .content-area .edy-positionable-container-right-block,
