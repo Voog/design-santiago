@@ -26,11 +26,19 @@
   &__top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
   &__title {
-    flex-grow: 1;
+    [data-view-state="editmode"] & {
+      flex-grow: 1;
+    }
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
   }
 
   &__link {
