@@ -33,21 +33,21 @@
   &__inner {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 24px;
+    width: 26px;
+    height: 19px;
   }
 
   &__stripes {
     top: 50%;
     display: block;
-    margin-top: -12px;
+    margin-top: -8px;
 
     &,
     &::before,
     &::after {
       position: absolute;
-      width: 40px;
-      height: 4px;
+      width: 26px;
+      height: 3px;
       background-color: $color-secondary;
       border-radius: 4px;
       transition-duration: .15s;
@@ -62,15 +62,15 @@
     }
 
     &::before {
-      top: 10px;
+      top: 7px;
     }
 
     &::after {
-      top: 20px;
+      top: 14px;
     }
 
     [data-menu-main-state="open"] & {
-      transform: translate3d(0, 10px, 0) rotate(45deg);
+      transform: translate3d(0, 7px, 0) rotate(45deg);
 
       // scss-lint:disable NestingDepth
       &::before {
@@ -79,7 +79,7 @@
       }
 
       &::after {
-        transform: translate3d(0, -20px, 0) rotate(-90deg);
+        transform: translate3d(0, -14px, 0) rotate(-90deg);
       }
       // scss-lint:enable NestingDepth
     }

@@ -1830,18 +1830,18 @@ label .form_control_indicator::before {
 .menu-btn__inner {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 24px;
+  width: 26px;
+  height: 19px;
 }
 .menu-btn__stripes {
   top: 50%;
   display: block;
-  margin-top: -12px;
+  margin-top: -8px;
 }
 .menu-btn__stripes, .menu-btn__stripes::before, .menu-btn__stripes::after {
   position: absolute;
-  width: 40px;
-  height: 4px;
+  width: 26px;
+  height: 3px;
   background-color: #ed1c24;
   border-radius: 4px;
   transition-duration: .15s;
@@ -1853,20 +1853,20 @@ label .form_control_indicator::before {
   content: '';
 }
 .menu-btn__stripes::before {
-  top: 10px;
+  top: 7px;
 }
 .menu-btn__stripes::after {
-  top: 20px;
+  top: 14px;
 }
 [data-menu-main-state="open"] .menu-btn__stripes {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 7px, 0) rotate(45deg);
 }
 [data-menu-main-state="open"] .menu-btn__stripes::before {
   opacity: 0;
   transform: rotate(-45deg) translate3d(-5.71px, -6px, 0);
 }
 [data-menu-main-state="open"] .menu-btn__stripes::after {
-  transform: translate3d(0, -20px, 0) rotate(-90deg);
+  transform: translate3d(0, -14px, 0) rotate(-90deg);
 }
 
 .site-search-btn {
