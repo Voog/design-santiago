@@ -1,5 +1,5 @@
 {% comment %}Convert to BEM{% endcomment %}
-<ul class="menu-breadcrumbs">
+<ul class="menu-breadcrumbs{% if product_list %} menu-breadcrumbs--padded{% endif %}">
   {% for level_1 in site.menuitems %}
     {% if level_1.selected? %}
       {% if level_1.children? %}
