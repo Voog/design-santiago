@@ -1,52 +1,54 @@
-// TODO: Remove ".root & {}" from selectors when stylesheet location in DOM is improved.
-// TODO: Add non-BEM element comments
+// TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
+// These default style overrides can't be written in BEM.
 .edy-checkout-button-visible {
-  .root & {
+  .layout-root & {
     padding-top: 0;
   }
 }
 
 .edy-ecommerce-modal {
-  .root & {
+  .layout-root & {
     font-family: $font-family-primary;
   }
 
   .edy-ecommerce-modal-wrapper {
     a {
-      // scss-lint:disable NestingDepth
-      .root & {
+      // scss-lint:disable NestingDepth, SelectorDepth
+      .layout-root & {
         color: $color-secondary;
       }
 
       &:hover {
-        .root & {
-          opacity: 1;
+        .layout-root & {
           text-decoration: underline;
+          opacity: 1;
         }
       }
-      // scss-lint:enable NestingDepth
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 
   h1 {
-    .root & {
-      font-weight: 400;
-      line-height: 1.3;
+    .layout-root & {
       color: $color-secondary;
     }
   }
 
   h2 {
-    .root & {
+    .layout-root & {
       letter-spacing: 0;
       text-decoration: none;
     }
   }
 
   footer {
+    br {
+      display: none;
+    }
+
     button {
-      // scss-lint:disable NestingDepth
-      .root & {
+      // scss-lint:disable NestingDepth, SelectorDepth
+      .layout-root & {
         display: inline-block;
         font-family: inherit;
         font-size: 20px;
@@ -54,37 +56,38 @@
         color: $color-white;
         cursor: pointer;
         background-color: $color-secondary;
-        border-radius: 3px;
         outline: 0;
         appearance: none;
       }
 
       &:hover {
-        .root & {
+        .layout-root & {
           background-color: rgba($color-secondary, .75);
         }
       }
 
+      &,
       &.-primary {
-        .root & {
-          padding: 8px 15px 9px;
-          border-width: 0;
+        .layout-root & {
+          // TODO: Use some better code than !important.
+          padding: 10px 16px !important; // scss-lint:disable ImportantRule
+          line-height: 1.4 !important; // scss-lint:disable ImportantRule
+          border-width: 0 !important; // scss-lint:disable ImportantRule
         }
       }
-      // scss-lint:enable NestingDepth
-}
-
+      // scss-lint:enable NestingDepth, SelectorDepth
+    }
   }
 }
 
 .edy-ecommerce-shopping-cart-button {
-  .root & {
+  .layout-root & {
     left: auto;
     width: 75px;
     padding: 5px;
     font-size: 0;
-    text-align: right;
     line-height: 1.7;
+    text-align: right;
     background-image: url('../assets/ico-shopping-cart.svg');
     background-position: 5px;
     background-repeat: no-repeat;
@@ -124,89 +127,64 @@
 }
 
 .edy-ecommerce-product-count {
-  .root & {
+  .layout-root & {
     font-family: $font-family-primary;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 .edy-ecommerce-shopping-cart-button-flash {
-  .root & {
+  .layout-root & {
     display: none;
   }
 }
 
 .edy-ecommerce-form-reveal-field {
-  .root & {
-    font-size: 20px;
+  .layout-root & {
+    font-size: 16px;
     color: $color-secondary;
   }
 
   &:hover {
-    .root & {
+    .layout-root & {
       text-decoration: underline;
       opacity: 1;
     }
-  }
-}
-
-.edy-ecommerce-order {
-  .root & {
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 
 .edy-ecommerce-order-table {
   .product-name {
-    .root & {
+    .layout-root & {
       letter-spacing: 0;
       text-transform: none;
     }
   }
+}
 
-  td {
-    &:first-child {
+.edy-ecommerce-styled-select {
+  &.-small,
+  &.-medium {
+    .edy-ecommerce-styled-select-value {
       // scss-lint:disable NestingDepth
-      .root & {
-        @include breakpoint($medium-up) {
-          padding-left: 60px;
-        }
-      }
-      // scss-lint:enable NestingDepth
-    }
-
-    &.actions {
-      // scss-lint:disable NestingDepth
-      .root & {
-        padding-right: 33px;
+      .layout-root & {
+        padding-right: 21px;
       }
       // scss-lint:enable NestingDepth
     }
   }
 }
 
+
 .order-review-back {
-  .root & {
+  .layout-root & {
     color: $color-secondary;
   }
 
   &:hover {
-    .root & {
+    .layout-root & {
       text-decoration: underline;
       opacity: 1;
     }
-  }
-}
-
-
-//TODO: Remove this hotfixes after releasing https://github.com/Edicy/edicy_cms/pull/2012
-.edy-ecommerce-order-table .edy-cart-shipping-method-label {
-  margin-right: 24px;
-}
-
-@include breakpoint(max-width 660px) {
-  .root .edy-ecommerce-order-table .edy-cart-shipping-method-container .edy-ecommerce-styled-select {
-    width: calc(100% - 2px);
   }
 }

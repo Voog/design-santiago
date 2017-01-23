@@ -17,9 +17,11 @@
     }
   }
 
+  // scss-lint:disable SelectorFormat
   .layout-body__content-section & {
     text-align: center;
   }
+  // scss-lint:enable SelectorFormat
 
   &:empty {
     display: none;

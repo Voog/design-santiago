@@ -144,6 +144,26 @@
     line-height: 1.2;
     text-align: center;
 
+    @include breakpoint(max-width $xx-small) {
+      font-size: 16px;
+    }
+
+    @include breakpoint($xx-small-up) {
+      font-size: 12px;
+    }
+
+    @include breakpoint($x-small-up) {
+      font-size: 16px;
+    }
+
+    @include breakpoint($small-up) {
+      font-size: 20px;
+    }
+
+    @include breakpoint($large-up) {
+      font-size: 32px;
+    }
+
     [data-view-state="publicmode"] & {
       overflow: hidden;
 
@@ -189,26 +209,6 @@
       border-color: rgba($color-primary, .1);
       border-style: solid;
       border-width: 1px;
-    }
-
-    @include breakpoint(max-width $xx-small) {
-      font-size: 16px;
-    }
-
-    @include breakpoint($xx-small-up) {
-      font-size: 12px;
-    }
-
-    @include breakpoint($x-small-up) {
-      font-size: 16px;
-    }
-
-    @include breakpoint($small-up) {
-      font-size: 20px;
-    }
-
-    @include breakpoint($large-up) {
-      font-size: 32px;
     }
   }
 

@@ -183,9 +183,11 @@
     text-decoration: none;
 
     &:not(.custom-btn) {
+      // scss-lint:disable NestingDepth
       &:hover {
         text-decoration: underline;
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -246,15 +248,14 @@
 
   .custom-btn {
     display: inline-block;
-    padding: 8px 15px 9px;
+    padding: 10px 16px;
     font-family: inherit;
     font-size: 20px;
     line-height: 1.4;
-    // TODO: LINT SCSS
+    color: $color-white;
+    background-color: $color-secondary;
     outline: 0;
     -webkit-appearance: none;
-    background-color: $color-secondary;
-    color: $color-white;
 
     &:hover {
       background-color: rgba($color-secondary, .75);
