@@ -1789,7 +1789,7 @@ label .form_control_indicator::before {
 .menu-btn {
   display: inline-block;
   padding: 5px;
-  margin: 0;
+  margin: 0 0 0 9px;
   overflow: visible;
   font: inherit;
   line-height: .7;
@@ -1866,7 +1866,7 @@ label .form_control_indicator::before {
   min-width: 32px;
   min-height: 32px;
   padding: 6px 5px 4px;
-  margin: 0 0 0 9px;
+  margin: 0 -5px 0 9px;
   vertical-align: top;
   cursor: pointer;
   background-color: transparent;
@@ -1946,12 +1946,12 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .search-form {
-    padding-top: 43px;
+    padding-top: 24px;
   }
 }
 @media (min-width: 641px) {
   .search-form {
-    padding-top: 89px;
+    padding-top: 68px;
   }
 }
 
@@ -2031,14 +2031,14 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .voog-search-modal {
-    height: calc(100% - 173px);
-    padding-top: 149px;
+    height: calc(100% - 127px);
+    padding-top: 84px;
   }
 }
 @media (min-width: 641px) {
   .voog-search-modal {
-    height: calc(100% - 190px);
-    padding-top: 160px;
+    height: calc(100% - 152px);
+    padding-top: 128px;
   }
 }
 .voog-search-modal.search-results-active {

@@ -7,7 +7,7 @@
   min-width: 32px;
   min-height: 32px;
   padding: 6px 5px 4px;
-  margin: 0 0 0 9px;
+  margin: 0 -5px 0 9px;
   vertical-align: top;
   cursor: pointer;
   background-color: transparent;
@@ -96,11 +96,11 @@
   background-color: rgba($color-white, 1);
 
   @include breakpoint(max-width $medium) {
-    padding-top: 43px;
+    padding-top: 24px;
   }
 
   @include breakpoint($medium-up) {
-    padding-top: 89px;
+    padding-top: 68px;
   }
 }
 
@@ -175,13 +175,13 @@
   -webkit-overflow-scrolling: touch;
 
   @include breakpoint(max-width $medium) {
-    height: calc(100% - 173px);
-    padding-top: 149px;
+    height: calc(100% - 127px);
+    padding-top: 84px;
   }
 
   @include breakpoint($medium-up) {
-    height: calc(100% - 190px);
-    padding-top: 160px;
+    height: calc(100% - 152px);
+    padding-top: 128px;
   }
 
   // Search modal has the following state classes:
