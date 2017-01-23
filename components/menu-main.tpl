@@ -37,13 +37,13 @@
         {% menulink level_1 wrapper-tag="li" wrapper-class="menu-main__item" selected-class="menu-main__item--selected" current-class="menu-main__item--current" untranslated-class="menu-main__link--untranslated" %}
       {% endif %}
     {% endfor %}
-  </ul>
 
-  {% if editmode %}
-    {% if site.hidden_menuitems.size > 0 %}
-      <li class="menu-main__item menu-main__item--cms">{% menubtn site.hidden_menuitems %}</li>
+    {% if editmode %}
+      {% if site.hidden_menuitems.size > 0 %}
+        <li class="menu-main__item menu-main__item--cms">{% menubtn site.hidden_menuitems %}</li>
+      {% endif %}
+
+      <li class="menu-main__item menu-main__item--cms" {{ edy_intro_add_page }}>{% menuadd %}</li>
     {% endif %}
-
-    <li class="menu-main__item menu-main__item--cms" {{ edy_intro_add_page }}>{% menuadd %}</li>
-  {% endif %}
+  </ul>
 </nav>

@@ -434,7 +434,7 @@
   padding-left: 8px;
 }
 .content-area ul {
-  padding-left: 15px;
+  padding-left: 9px;
 }
 .content-area ul li {
   text-indent: -13px;
@@ -636,8 +636,8 @@
 }
 
 .comment-form .form_field_textarea {
-  height: 35px;
-  min-height: 35px;
+  height: 38px;
+  min-height: 38px;
   resize: none;
 }
 
