@@ -94,6 +94,10 @@
       // scss-lint:enable NestingDepth
     }
 
+    &--hidden {
+      display: none;
+    }
+
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     a {
       display: block;

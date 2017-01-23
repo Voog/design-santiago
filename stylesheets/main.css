@@ -908,6 +908,9 @@ label .form_control_indicator::before {
 .menu-main__item--current a {
   border-bottom-color: rgba(0, 0, 0, 0.75);
 }
+.menu-main__item--hidden {
+  display: none;
+}
 .menu-main__item a {
   display: block;
   color: #000;
@@ -1519,6 +1522,9 @@ label .form_control_indicator::before {
   font-weight: 500;
   color: #000;
   opacity: 1;
+}
+.menu-breadcrumbs__item--right-floated {
+  float: right;
 }
 .menu-breadcrumbs__item--cms {
   margin-right: 8px;

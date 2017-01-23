@@ -1,11 +1,19 @@
-{% comment %}Convert to BEM{% endcomment %}
 <ul class="menu-breadcrumbs menu-breadcrumbs--{% if product_list %}padded{% else %}not-padded{% endif %}">
   {% for level_1 in site.menuitems %}
     {% if level_1.selected? %}
+      {% if site.root_item.layout_title == product_list_layout and show_product_related_pages_in_main_menu != true %}
+        {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-breadcrumbs__item" selected-class="menu-breadcrumbs__item--selected" current-class="menu-breadcrumbs__item--current" %}
+        <span class="menu-breadcrumbs__separator">/</span>
+        {% menulink level_1 wrapper-tag="li" wrapper-class="menu-breadcrumbs__item" selected-class="menu-breadcrumbs__item--selected" current-class="menu-breadcrumbs__item--current" %}
+      {% endif %}
+
       {% if level_1.children? %}
         {% for level_2 in level_1.children %}
           {% if level_2.selected? %}
-            {% menulink level_1 wrapper-tag="li" wrapper-class="menu-breadcrumbs__item" selected-class="menu-breadcrumbs__item--selected" current-class="menu-breadcrumbs__item--current" %}
+            {% unless site.root_item.layout_title == product_list_layout and show_product_related_pages_in_main_menu != true %}
+              {% menulink level_1 wrapper-tag="li" wrapper-class="menu-breadcrumbs__item" selected-class="menu-breadcrumbs__item--selected" current-class="menu-breadcrumbs__item--current" %}
+            {% endunless %}
+
             <span class="menu-breadcrumbs__separator">/</span>
             {% menulink level_2 wrapper-tag="li" wrapper-class="menu-breadcrumbs__item" selected-class="menu-breadcrumbs__item--selected" current-class="menu-breadcrumbs__item--current" %}
 
@@ -38,7 +46,7 @@
       {% endunless %}
 
       {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}
-        <li class="menu-breadcrumbs__item float-right">
+        <li class="menu-breadcrumbs__item menu-breadcrumbs__item--right-floated">
           <a class="js-root-item-settings-toggle"></a>
         </li>
       {% endif %}

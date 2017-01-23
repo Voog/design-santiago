@@ -11118,9 +11118,9 @@ return jQuery;
 
         preview: function(data) {
           if (!data.show_product_related_pages_in_main_menu === true) {
-            $('.js-menu-item-products').addClass('is-hidden');
+            $('.js-menu-item-products').addClass('menu-main__item--hidden');
           } else {
-            $('.js-menu-item-products').removeClass('is-hidden');
+            $('.js-menu-item-products').removeClass('menu-main__item--hidden');
           }
         },
 
