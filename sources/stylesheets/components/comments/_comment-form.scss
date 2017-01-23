@@ -10,16 +10,16 @@
     &--inline {
       display: inline-block;
       width: calc(50% - 10px);
-      margin-top: 5px;
+      margin-top: 8px;
       vertical-align: top;
 
       // scss-lint:disable NestingDepth
       &:first-child {
-        margin-right: 10px;
+        margin-right: 8px;
       }
 
       &:last-child {
-        margin-left: 10px;
+        margin-left: 8px;
       }
       // scss-lint:enable NestingDepth
     }
@@ -30,6 +30,6 @@
   }
 
   &__btns {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 }

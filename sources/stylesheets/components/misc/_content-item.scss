@@ -12,8 +12,8 @@
   text-decoration: none;
 
   .item-list-page & {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     box-sizing: border-box;
 
     @include breakpoint(max-width $xx-small) {
@@ -27,8 +27,8 @@
 
     @include breakpoint(($xx-small-up) (max-width $medium)) {
       width: 50%;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 16px;
+      padding-left: 16px;
     }
 
     @include breakpoint ($medium-up) {
@@ -40,7 +40,7 @@
   }
 
   .content-illustrations & {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .top-inner {
@@ -49,13 +49,13 @@
 
   &:nth-child(odd) {
     @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-right: 10px;
+      padding-right: 8px;
     }
   }
 
   &:nth-child(even) {
     @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-left: 10px;
+      padding-left: 8px;
     }
   }
 
@@ -72,20 +72,20 @@
 }
 
 .content-items {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
 
   @include breakpoint(max-width $medium) {
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
   @include breakpoint ($medium-up) {
-    margin-top: 100px;
+    margin-top: 104px;
   }
 }
 
 .content-item {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .item-top {
@@ -120,8 +120,8 @@
     top: 0;
     right: 0;
     z-index: 9;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 8px;
+    margin-right: 8px;
     cursor: pointer;
     border-radius: 100%;
     fill: rgba($color-white, 1);
@@ -321,22 +321,22 @@
   }
 
   .content-item-box > & {
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 24px;
+    margin-bottom: 8px;
   }
 }
 
 .content-illustrations {
   font-size: 0;
 
-  .content-item-box {
-    padding-right: 0;
-  }
-
   @include breakpoint ($medium-up) {
     flex: 1;
     max-width: 520px;
-    margin-right: 40px;
+    margin-right: 32px;
+  }
+
+  .content-item-box {
+    padding-right: 0;
   }
 }
 

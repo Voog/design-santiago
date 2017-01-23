@@ -1,7 +1,7 @@
 .article-nav {
   position: relative;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   margin-left: auto;
 
   &::before,
@@ -41,8 +41,8 @@
     position: relative;
     display: block;
     flex: 1;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: currentColor;
     text-decoration: none;
 
@@ -94,13 +94,13 @@
 
     &--older {
       @include breakpoint($medium-up) {
-        padding-right: 20px;
+        padding-right: 16px;
       }
     }
 
     &--newer {
       @include breakpoint($medium-up) {
-        padding-left: 20px;
+        padding-left: 16px;
         text-align: right;
       }
     }
@@ -114,7 +114,7 @@
   }
 
   &__title {
-    margin-top: 6px;
+    margin-top: 8px;
     font-size: 20px;
     opacity: .75;
   }

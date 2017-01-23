@@ -1,22 +1,17 @@
 // Product list menu
 .menu-breadcrumbs {
-  padding-right: 0;
-  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-  @include breakpoint(max-width $medium) {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  @include breakpoint($medium-up) {
-    margin-top: 0;
-    margin-bottom: 40px;
+  &--not-padded {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &--padded {
     @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 16px;
+      padding-left: 16px;
     }
 
     @include breakpoint($medium-up) {
@@ -66,7 +61,7 @@
     }
 
     &--cms {
-      margin-right: 10px;
+      margin-right: 8px;
 
       // scss-lint:disable NestingDepth
       &:first-child {

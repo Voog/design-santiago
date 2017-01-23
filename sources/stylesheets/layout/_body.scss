@@ -7,11 +7,11 @@
   box-sizing: border-box;
 
   @include breakpoint(max-width $medium) {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   @include breakpoint($medium-up) {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 
   &--wide {
@@ -27,18 +27,18 @@
   }
 
   &--padded {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
 
     @include breakpoint(max-width $medium) {
-      margin-top: 30px;
+      margin-top: 32px;
     }
   }
 
   &--small-padded {
     @include breakpoint(max-width $xx-small) {
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-right: 16px;
+      padding-left: 16px;
     }
   }
 

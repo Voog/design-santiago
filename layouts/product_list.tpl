@@ -12,10 +12,12 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--wide layout-body--small-padded">
+      <div class="layout-body layout-body--wide layout-body--small-padded">
+        <div class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</div>
+
         {% include "menu-breadcrumbs" product_list: true %}
 
-        <section class="content-item-boxes">
+        <main class="content-item-boxes">
           {% if site.root_item.selected? %}
             {% for level_1 in site.visible_menuitems_with_data %}
               {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
@@ -43,8 +45,8 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-        </section>
-      </main>
+        </main>
+      </div>
 
       {% include "layout-footer" %}
 
