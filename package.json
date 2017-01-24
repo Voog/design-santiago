@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "bourbon": "^4.2.7",
     "breakpoint-sass": "^2.7.1",
     "grunt": "^1.0.1",
@@ -18,8 +19,7 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "jquery": "^3.1.1",
-    "jquery-lazyload": "^1.9.7",
-    "textarea-autosize": "^0.4.2"
+    "grunt-exec": "^1.0.1",
+    "grunt-postcss": "^0.8.0"
   }
 }

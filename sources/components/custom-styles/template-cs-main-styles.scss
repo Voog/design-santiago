@@ -1,0 +1,105 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Dependencies
+// =============================================================================
+// 3RD PARTY COMPONENTS
+@import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+// Mixins
+@import '../../stylesheets/mixins/general';
+
+// VARIABLES
+@import '../../stylesheets/variables/widths';
+@import '../../stylesheets/variables/margins';
+@import '../../stylesheets/variables/colors';
+@import '../../stylesheets/variables/fonts';
+@import '../../stylesheets/variables/breakpoints';
+
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+    /* VoogStyle
+      "pathI18n": ["main_styles"],
+      "titleI18n": "maximum_width",
+      "editor": "rangePicker",
+      "min": 600,
+      "max": 2000,
+      "step": 1,
+      "unit": "px",
+      "scope": "global"
+    */
+    --wrap-max-width: 1140px;
+
+    /* VoogStyle
+      "pathI18n": ["main_styles"],
+      "titleI18n": "font",
+      "editor": "listPicker",
+      "list": {{ base_font_set }},
+      "featured": true,
+      "scope": "global"
+    */
+    --main-font-family: #{$font-family-primary};
+
+    /* VoogStyle
+      "pathI18n": ["main_styles", "colors"],
+      "titleI18n": "primary_color",
+      "editor": "colorPicker",
+      "featured": true,
+      "scope": "global",
+      "boundVariables": [
+        "--content-color",
+        "--header-body-color",
+        "--menu-main-color",
+        "--menu-sub-color",
+        "--content-body-color",
+        "--list-color",
+        "--table-text-color",
+        "--article-box-color",
+        "--footer-body-color"
+      ]
+    */
+    --main-color: #{rgba($color-primary, .8)};
+
+    /* VoogStyle
+      "pathI18n": ["main_styles", "colors"],
+      "titleI18n": "secondary_color",
+      "editor": "colorPicker",
+      "featured": true,
+      "scope": "global",
+      "boundVariables": [
+        "--header-body-hover-color",
+        "--headings-title-color",
+        "--headings-heading-color",
+        "--headings-subheading-color",
+        "--content-link-color",
+        "--form-field-color",
+        "--footer-link-color"
+      ]
+    */
+    --secondary-color: #{rgba($color-primary, 1)};
+
+    /* VoogStyle
+      "pathI18n": ["main_styles", "colors"],
+      "titleI18n": "background_color",
+      "editor": "colorPicker",
+      "featured": true,
+      "scope": "global"
+    */
+    --body-background-color: #{rgba($color-primary, .02)};
+
+  // scss-lint:enable Comment, Indentation
+}

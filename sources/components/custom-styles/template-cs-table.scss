@@ -1,0 +1,69 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Dependencies
+// =============================================================================
+// 3RD PARTY COMPONENTS
+@import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+// Mixins
+@import '../../stylesheets/mixins/general';
+
+// VARIABLES
+@import '../../stylesheets/variables/widths';
+@import '../../stylesheets/variables/margins';
+@import '../../stylesheets/variables/colors';
+@import '../../stylesheets/variables/fonts';
+@import '../../stylesheets/variables/breakpoints';
+
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+    "pathI18n": ["table"],
+    "titleI18n": "padding",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 200,
+    "step": 1,
+    "unit": "px",
+    "scope": "global"
+  */
+  --table-padding: 10px;
+
+  /* VoogStyle
+    "pathI18n": ["table"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global"
+  */
+  --table-font-size: 16px;
+
+  /* VoogStyle
+    "pathI18n": ["table"],
+    "titleI18n": "border_style",
+    "editor": "listPicker",
+    "list": {{ base_border_style_set }},
+    "featured": true,
+    "scope": "global"
+  */
+  --table-border-style: solid;
+
+  // scss-lint:enable Comment, Indentation
+}
