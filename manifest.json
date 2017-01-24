@@ -8,20 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/common_page.tpl",
       "layout_name": "common_page",
       "title": "Common page"
@@ -32,6 +18,20 @@
       "file": "layouts/front_page.tpl",
       "layout_name": "front_page",
       "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     },
     {
       "content_type": "blog",
@@ -228,6 +228,20 @@
       "file": "components/template-cs-main-styles.tpl",
       "layout_name": "template-cs-main-styles",
       "title": "template-cs-main-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-menu-main.tpl",
+      "layout_name": "template-cs-menu-main",
+      "title": "template-cs-menu-main"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-menu-sub.tpl",
+      "layout_name": "template-cs-menu-sub",
+      "title": "template-cs-menu-sub"
     },
     {
       "content_type": "component",

@@ -25,9 +25,9 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
+  {% include "template-cs-menu-main" %}
 
 {% comment %}
-  {% include "template-cs-header" %}
   {% include "template-cs-headings" %}
 
   {% if layout_product_list %}

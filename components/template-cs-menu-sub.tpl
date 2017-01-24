@@ -1,17 +1,21 @@
 :root {
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
     "max": 100,
     "unit": "px",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--menu-sub-hover-font-size",
+      "--menu-sub-active-font-size"
+    ]
   */
-  --menu-main__font-size: 28px;
+  --menu-sub-font-size: 13px;
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "font_size",
     "type": "button",
     "editor": "toggleIcon",
@@ -22,13 +26,13 @@
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-font-weight",
-      "--menu-main__active-font-weight"
+      "--menu-sub-hover-font-weight",
+      "--menu-sub-active-font-weight"
     ]
   */
-  --menu-main__font-weight: 400;
+  --menu-sub-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["main_menu", "hover"],
+    "pathI18n": ["header", "sub_menu", "hover"],
     "titleI18n": "font_size",
     "type": "button",
     "editor": "toggleIcon",
@@ -39,12 +43,12 @@
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__active-font-weight"
+      "--menu-sub-active-font-weight"
     ]
   */
-  --menu-main__hover-font-weight: 400;
+  --menu-sub-hover-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["main_menu", "active"],
+    "pathI18n": ["header", "sub_menu", "active"],
     "titleI18n": "font_size",
     "type": "button",
     "editor": "toggleIcon",
@@ -55,9 +59,9 @@
     "icon": "bold",
     "scope": "global"
   */
-  --menu-main__active-font-weight: 400;
+  --menu-sub-active-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -68,13 +72,13 @@
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-font-style",
-      "--menu-main__active-font-style"
+      "--menu-sub-hover-font-style",
+      "--menu-sub-active-font-style"
     ]
   */
-  --menu-main__font-style: normal;
+  --menu-sub-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["main_menu", "hover"],
+    "pathI18n": ["header", "sub_menu", "hover"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -85,12 +89,12 @@
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__active-font-style"
+      "--menu-sub-active-font-style"
     ]
   */
-  --menu-main__hover-font-style: normal;
+  --menu-sub-hover-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["main_menu", "active"],
+    "pathI18n": ["header", "sub_menu", "active"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -101,9 +105,9 @@
     "icon": "italic",
     "scope": "global"
   */
-  --menu-main__active-font-style: normal;
+  --menu-sub-active-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -114,13 +118,13 @@
     "icon": "underline",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-text-decoration",
-      "--menu-main__active-text-decoration"
+      "--menu-sub-hover-text-decoration",
+      "--menu-sub-active-text-decoration"
     ]
   */
-  --menu-main__text-decoration: solid;
+  --menu-sub-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "hover"],
+    "pathI18n": ["header", "sub_menu", "hover"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -131,12 +135,12 @@
     "icon": "underline",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__active-text-decoration"
+      "--menu-sub-active-text-decoration"
     ]
   */
-  --menu-main__hover-text-decoration: none;
+  --menu-sub-hover-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "active"],
+    "pathI18n": ["header", "sub_menu", "active"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -147,9 +151,9 @@
     "icon": "underline",
     "scope": "global"
   */
-  --menu-main__active-text-decoration: none;
+  --menu-sub-active-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -160,13 +164,13 @@
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-text-transform",
-      "--menu-main__active-text-transform"
+      "--menu-sub-hover-text-transform",
+      "--menu-sub-active-text-transform"
     ]
   */
-  --menu-main__text-transform: none;
+  --menu-sub-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "hover"],
+    "pathI18n": ["header", "sub_menu", "hover"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -177,12 +181,12 @@
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__active-text-transform"
+      "--menu-sub-active-text-transform"
     ]
   */
-  --menu-main__hover-text-transform: none;
+  --menu-sub-hover-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "active"],
+    "pathI18n": ["header", "sub_menu", "active"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -193,37 +197,37 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --menu-main__active-text-transform: none;
+  --menu-sub-active-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["main_menu", "normal"],
+    "pathI18n": ["header", "sub_menu", "normal"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-color",
-      "--menu-main__active-color"
+      "--menu-sub-hover-color",
+      "--menu-sub-active-color"
     ]
   */
-  --menu-main__color: #000;
+  --menu-sub-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
-    "pathI18n": ["main_menu", "hover"],
+    "pathI18n": ["header", "sub_menu", "hover"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__active-color"
+      "--menu-sub-active-color"
     ]
   */
-  --menu-main__hover-color: #000;
+  --menu-sub-hover-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
-    "pathI18n": ["main_menu", "active"],
+    "pathI18n": ["header", "sub_menu", "active"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global"
   */
-  --menu-main__active-color: #000;
+  --menu-sub-active-color: rgba(0, 0, 0, 0.8);
 }

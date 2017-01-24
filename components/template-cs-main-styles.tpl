@@ -9,7 +9,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --width-layout-wrap: 1270px;
+  --main__width: 1270px;
   /* VoogStyle
     "pathI18n": ["main_styles"],
     "titleI18n": "font",
@@ -18,7 +18,7 @@
     "featured": true,
     "scope": "global"
   */
-  --font-family-primary: Raleway, sans-serif;
+  --main__font-family: Raleway, sans-serif;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "primary_color",
@@ -28,7 +28,7 @@
     "boundVariables": [
     ]
   */
-  --color-main: #000;
+  --main__color-primary: #000;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "secondary_color",
@@ -38,7 +38,7 @@
     "boundVariables": [
     ]
   */
-  --color-secondary: #ed1c24;
+  --main__color-secondary: #ed1c24;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "background_color",
@@ -46,5 +46,5 @@
     "featured": true,
     "scope": "global"
   */
-  --background-color-layout-wrap: transparent;
+  --main__background-color: transparent;
 }
