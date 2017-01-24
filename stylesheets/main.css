@@ -316,9 +316,6 @@
   line-height: 1.1;
   color: #ed1c24;
 }
-.content-area h1 {
-  text-align: center;
-}
 @media (max-width: 640px) {
   .content-area h1 {
     font-size: 48px;
@@ -338,6 +335,9 @@
   .layout-header__title .content-area h1 {
     font-size: 48px;
   }
+}
+.layout-body .content-area h1 {
+  text-align: center;
 }
 @media (max-width: 640px) {
   .content-area h2 {

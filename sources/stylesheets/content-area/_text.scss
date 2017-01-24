@@ -60,8 +60,6 @@
   }
 
   h1 {
-    text-align: center;
-
     @include breakpoint(max-width $medium) {
       font-size: 48px;
     }
@@ -78,6 +76,10 @@
       @include breakpoint($medium-up) {
         font-size: 48px;
       }
+    }
+
+    .layout-body & {
+      text-align: center;
     }
   }
 
