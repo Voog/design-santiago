@@ -25,17 +25,22 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
+
+{% comment %}
   {% include "template-cs-header" %}
   {% include "template-cs-headings" %}
-  {% if product_list %}
+
+  {% if layout_product_list %}
     {% include "template-cs-blog-list" %}
   {% endif %}
+
   {% include "template-cs-content" %}
   {% include "template-cs-button" %}
   {% include "template-cs-list" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
   {% include "template-cs-footer" %}
+{% endcomment %}
 
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}

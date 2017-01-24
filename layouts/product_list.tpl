@@ -3,7 +3,7 @@
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
-    {% include "template-head" product_list: true %}
+    {% include "template-head" layout_product_list: true %}
   </head>
 
   <body class="layout-container item-list-page">
@@ -15,7 +15,7 @@
       <div class="layout-body">
         <div class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</div>
 
-        {% include "menu-breadcrumbs" product_list: true %}
+        {% include "menu-breadcrumbs" layout_product_list: true %}
 
         <main class="content-item-boxes">
           {% if site.root_item.selected? %}

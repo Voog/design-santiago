@@ -9,7 +9,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --width-layout-wrap: 1270px;
+  --wrap-max-width: 1140px;
   /* VoogStyle
     "pathI18n": ["main_styles"],
     "titleI18n": "font",
@@ -18,7 +18,7 @@
     "featured": true,
     "scope": "global"
   */
-  --font-family-primary: Raleway, sans-serif;
+  --main-font-family: Raleway, sans-serif;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "primary_color",
@@ -26,9 +26,18 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
+      "--content-color",
+      "--header-body-color",
+      "--menu-main-color",
+      "--menu-sub-color",
+      "--content-body-color",
+      "--list-color",
+      "--table-text-color",
+      "--article-box-color",
+      "--footer-body-color"
     ]
   */
-  --color-main: #000;
+  --main-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "secondary_color",
@@ -36,9 +45,16 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
+      "--header-body-hover-color",
+      "--headings-title-color",
+      "--headings-heading-color",
+      "--headings-subheading-color",
+      "--content-link-color",
+      "--form-field-color",
+      "--footer-link-color"
     ]
   */
-  --color-secondary: #ed1c24;
+  --secondary-color: black;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "background_color",
@@ -46,5 +62,5 @@
     "featured": true,
     "scope": "global"
   */
-  --background-color-layout-wrap: transparent;
+  --body-background-color: rgba(0, 0, 0, 0.02);
 }
