@@ -12,6 +12,46 @@
   --menu-main__font-size: 28px;
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
+    "titleI18n": "opacity",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "unit": "",
+    "scope": "global",
+    "boundVariables": [
+      "--menu-main__hover-opacity",
+      "--menu-main__active-opacity"
+    ]
+  */
+  --menu-main__opacity: 1;
+  /* VoogStyle
+    "pathI18n": ["main_menu", "hover"],
+    "titleI18n": "opacity",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "unit": "",
+    "scope": "global",
+    "boundVariables": [
+      "--menu-main__active-opacity"
+    ]
+  */
+  --menu-main__hover-opacity: 1;
+  /* VoogStyle
+    "pathI18n": ["main_menu", "active"],
+    "titleI18n": "opacity",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "unit": "",
+    "scope": "global"
+  */
+  --menu-main__active-opacity: 1;
+  /* VoogStyle
+    "pathI18n": ["main_menu", "normal"],
     "titleI18n": "font_size",
     "type": "button",
     "editor": "toggleIcon",
@@ -108,7 +148,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "underline",
+      "on": "solid",
       "off": "none"
     },
     "icon": "underline",
@@ -125,7 +165,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "underline",
+      "on": "solid",
       "off": "none"
     },
     "icon": "underline",
@@ -141,7 +181,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "underline",
+      "on": "solid",
       "off": "none"
     },
     "icon": "underline",

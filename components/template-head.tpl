@@ -26,6 +26,7 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-menu-main" %}
+  {% include "template-cs-menu-sub" %}
 
 {% comment %}
   {% include "template-cs-headings" %}
