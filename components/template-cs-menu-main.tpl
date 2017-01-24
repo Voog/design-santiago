@@ -24,7 +24,7 @@
       "--menu-main__active-opacity"
     ]
   */
-  --menu-main__opacity: 1;
+  --menu-main__opacity: .5;
   /* VoogStyle
     "pathI18n": ["main_menu", "hover"],
     "titleI18n": "opacity",
@@ -38,7 +38,7 @@
       "--menu-main__active-opacity"
     ]
   */
-  --menu-main__hover-opacity: 1;
+  --menu-main__hover-opacity: .5;
   /* VoogStyle
     "pathI18n": ["main_menu", "active"],
     "titleI18n": "opacity",

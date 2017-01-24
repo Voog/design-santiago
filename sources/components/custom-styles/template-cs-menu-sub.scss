@@ -42,7 +42,7 @@
     "featured": true,
     "scope": "global"
   */
-  --menu-sub__font-size: 28px;
+  --menu-sub__font-size: 20px;
 
   /* VoogStyle
     "pathI18n": ["sub_menu", "normal"],
@@ -58,7 +58,7 @@
       "--menu-sub__active-opacity"
     ]
   */
-  --menu-sub__opacity: 1;
+  --menu-sub__opacity: .5;
 
       /* VoogStyle
         "pathI18n": ["sub_menu", "hover"],
@@ -73,7 +73,7 @@
           "--menu-sub__active-opacity"
         ]
       */
-      --menu-sub__hover-opacity: 1;
+      --menu-sub__hover-opacity: .75;
 
       /* VoogStyle
         "pathI18n": ["sub_menu", "active"],
