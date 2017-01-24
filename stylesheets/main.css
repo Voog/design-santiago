@@ -109,6 +109,7 @@
   align-items: center;
 }
 .layout-header__link {
+  display: block;
   text-decoration: none;
 }
 .layout-header__link:hover {
