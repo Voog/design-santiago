@@ -72,15 +72,19 @@
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
       // scss-lint:disable NestingDepth
       a {
-        border-bottom-color: transparent;
+        opacity: .5;
+
+        @include breakpoint($medium-up) {
+          border-bottom-color: transparent;
+        }
 
         &:hover {
-          @include breakpoint(max-width $medium) {
+          @include breakpoint(max-width $medium-up) {
             opacity: .75;
           }
 
           @include breakpoint($medium-up) {
-            border-bottom-color: rgba($color-primary, .75);
+            border-bottom-color: $color-primary;
           }
         }
       }
@@ -91,14 +95,10 @@
     &--selected {
       // scss-lint:disable NestingDepth
       a {
-        @include breakpoint(max-width $medium) {
-          font-weight: 700;
-        }
+        opacity: 1;
 
         @include breakpoint($medium-up) {
           border-bottom-color: $color-primary;
-          border-bottom-style: solid;
-          border-bottom-width: 2px;
         }
       }
       // scss-lint:enable NestingDepth
