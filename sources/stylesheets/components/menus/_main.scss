@@ -107,9 +107,8 @@
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     &--current {
       // scss-lint:disable NestingDepth
-      a {
-        border-bottom-color: rgba($color-primary, .75);
-      }
+      //a {
+      //}
       // scss-lint:enable NestingDepth
     }
 
