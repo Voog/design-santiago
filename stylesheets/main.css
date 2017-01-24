@@ -1939,7 +1939,7 @@ label .form_control_indicator::before {
 }
 
 .search-ico {
-  opacity: .5;
+  opacity: 1;
   fill: #ed1c24;
 }
 
