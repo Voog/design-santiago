@@ -12,10 +12,8 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <div class="layout-body layout-body--narrow layout-body--padded">
-        <section class="layout-body__content-section">
-          <div class="content-area" {{ edy_intro_edit_text }}>{% content %}</div>
-        </section>
+      <div class="layout-body layout-body--narrow">
+        <div class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</div>
 
         {% include "blog-list-tags" %}
 

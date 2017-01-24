@@ -12,7 +12,7 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <div class="layout-body layout-body--narrow layout-body--padded">
+      <div class="layout-body layout-body--narrow">
         {% include "menu-sub" %}
 
         <main class="content-area" {{ edy_intro_edit_text }}>{% content %}</main>

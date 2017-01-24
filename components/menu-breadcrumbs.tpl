@@ -1,4 +1,4 @@
-<ul class="menu-breadcrumbs menu-breadcrumbs--{% if product_list %}padded{% else %}not-padded{% endif %}">
+<ul class="menu-breadcrumbs">
   {% for level_1 in site.menuitems %}
     {% if level_1.selected? %}
       {% if site.root_item.layout_title == product_list_layout and show_product_related_pages_in_main_menu != true %}

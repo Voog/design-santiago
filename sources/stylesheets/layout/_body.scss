@@ -2,6 +2,7 @@
   flex-grow: 1;
   width: 100%;
   max-width: $width-layout-wrap;
+  margin-top: 32px;
   margin-right: $margin-horizontal-layout-wrap;
   margin-left: $margin-horizontal-layout-wrap;
   box-sizing: border-box;
@@ -14,35 +15,7 @@
     margin-top: 24px;
   }
 
-  &--wide {
-    max-width: 1400px;
-  }
-
   &--narrow {
     max-width: 960px;
-  }
-
-  &--thin {
-    max-width: 800px;
-  }
-
-  &--padded {
-    padding-right: 16px;
-    padding-left: 16px;
-
-    @include breakpoint(max-width $medium) {
-      margin-top: 32px;
-    }
-  }
-
-  &--small-padded {
-    @include breakpoint(max-width $xx-small) {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-  }
-
-  &__content-section {
-    margin-bottom: 40px;
   }
 }

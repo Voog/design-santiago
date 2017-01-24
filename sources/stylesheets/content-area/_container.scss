@@ -13,15 +13,9 @@
     }
 
     @include breakpoint($medium-up) {
-      font-size: 72px;
+      font-size: 48px;
     }
   }
-
-  // scss-lint:disable SelectorFormat
-  .layout-body__content-section & {
-    text-align: center;
-  }
-  // scss-lint:enable SelectorFormat
 
   &:empty {
     display: none;
@@ -33,15 +27,8 @@
       padding-bottom: 24px;
     }
 
-    @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-
     @include breakpoint($medium-up) {
-      padding-right: 4.65%;
       padding-bottom: 48px;
-      padding-left: 4.65%;
     }
   }
 }

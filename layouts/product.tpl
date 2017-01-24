@@ -13,7 +13,7 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow layout-body--padded">
+      <main class="layout-body layout-body--narrow">
         {% include "menu-breadcrumbs" %}
 
         <div class="content-inner items-body" {{ edy_intro_edit_text }}>

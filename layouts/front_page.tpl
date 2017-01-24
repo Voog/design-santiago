@@ -12,7 +12,7 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--padded">
+      <main class="layout-body">
         <section class="content-area" {{ edy_intro_edit_text }}>{% content %}</section>
       </main>
 

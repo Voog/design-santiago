@@ -12,7 +12,7 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <div class="layout-body layout-body--wide layout-body--small-padded">
+      <div class="layout-body">
         <div class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</div>
 
         {% include "menu-breadcrumbs" product_list: true %}

@@ -1,24 +1,9 @@
 // Product list menu
 .menu-breadcrumbs {
+  padding-right: 0;
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-
-  &--not-padded {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  &--padded {
-    @include breakpoint(($xx-small-up) (max-width $medium)) {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-
-    @include breakpoint($medium-up) {
-      padding-right: 4.65%;
-      padding-left: 4.65%;
-    }
-  }
 
   &__separator {
     opacity: .5;
