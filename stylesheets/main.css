@@ -917,6 +917,16 @@ label .form_control_indicator::before {
     display: inline-block;
   }
 }
+@media (min-width: 641px) {
+  .menu-main__item:not(:first-child) a {
+    margin-left: 24px;
+  }
+}
+@media (min-width: 641px) {
+  .menu-main__item:not(:last-child) a {
+    margin-right: 24px;
+  }
+}
 .menu-main__item:not(.menu-main__item--selected) a {
   border-bottom-color: transparent;
 }
@@ -962,9 +972,7 @@ label .form_control_indicator::before {
 @media (min-width: 641px) {
   .menu-main__item a {
     padding-bottom: 8px;
-    margin-right: 24px;
     margin-bottom: 8px;
-    margin-left: 24px;
     font-size: 28px;
     border-bottom-style: solid;
     border-bottom-width: 2px;
