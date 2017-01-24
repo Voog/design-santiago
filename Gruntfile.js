@@ -205,45 +205,46 @@ module.exports = function(grunt) {
     watch: {
       js_copy: {
         files: 'sources/javascripts/copy/*.js',
-        tasks: ['copy:javascripts', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
+        tasks: ['copy:javascripts']
       },
 
       js_concat: {
         files: 'sources/javascripts/concat/*.js',
-        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
+        tasks: ['concat:build', 'uglify:build']
       },
 
       css_main: {
         files: [
           'sources/stylesheets/*.scss',
           'sources/stylesheets/*/*.scss',
+          'sources/stylesheets/*/*/*.scss'
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build']
       },
 
       custom_styles: {
         files: 'sources/components/custom-styles/*.scss',
-        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
+        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']
       },
 
       img_copy: {
         files: 'sources/images/copy/*',
-        tasks: [ 'copy:images', 'exec:kitmanifest', 'exec:kit:images/*']
+        tasks: [ 'copy:images']
       },
 
       img_minify: {
         files: 'sources/images/minify/*',
-        tasks: ['imagemin:build_images', 'exec:kitmanifest', 'exec:kit:images/*']
+        tasks: ['imagemin:build_images']
       },
 
       assets_copy: {
         files: 'sources/assets/copy/*',
-        tasks: ['copy:assets', 'exec:kitmanifest', 'exec:kit:assets/*']
+        tasks: ['copy:assets']
       },
 
       assets_minify: {
         files: 'sources/assets/minify/*',
-        tasks: ['imagemin:build_assets', 'exec:kitmanifest', 'exec:kit:assets/*']
+        tasks: ['imagemin:build_assets']
       },
 
 
