@@ -75,8 +75,10 @@
   }
 
   &--placeholder {
-    height: 0;
-    padding: 0;
+    .item-list-page & {
+      height: 0;
+      padding: 0;
+    }
   }
 }
 

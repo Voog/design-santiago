@@ -2179,7 +2179,7 @@ label .form_control_indicator::before {
 [data-view-state="editmode"] .content-item-box:hover .top-inner, .item-list-page .content-item-box:hover .top-inner {
   opacity: .75;
 }
-.content-item-box--placeholder {
+.item-list-page .content-item-box--placeholder {
   height: 0;
   padding: 0;
 }
