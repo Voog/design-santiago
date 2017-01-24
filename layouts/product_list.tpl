@@ -45,6 +45,8 @@
               {% endif %}
             {% endfor %}
           {% endif %}
+
+          <div class="content-item-box content-item-box--placeholder"></div>
         </main>
       </div>
 
