@@ -67,6 +67,16 @@
     @include breakpoint($medium-up) {
       font-size: 72px;
     }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 32px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 48px;
+      }
+    }
   }
 
   h2 {
@@ -76,6 +86,16 @@
 
     @include breakpoint($medium-up) {
       font-size: 48px;
+    }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 28px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 32px;
+      }
     }
   }
 
@@ -87,6 +107,16 @@
     @include breakpoint($medium-up) {
       font-size: 32px;
     }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 24px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 28px;
+      }
+    }
   }
 
   h4 {
@@ -96,6 +126,16 @@
 
     @include breakpoint($medium-up) {
       font-size: 28px;
+    }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 20px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -107,6 +147,16 @@
     @include breakpoint($medium-up) {
       font-size: 24px;
     }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 16px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 20px;
+      }
+    }
   }
 
   h6 {
@@ -116,6 +166,16 @@
 
     @include breakpoint($medium-up) {
       font-size: 20px;
+    }
+
+    .layout-header__title & { // scss-lint:disable SelectorFormat
+      @include breakpoint(max-width $medium) {
+        font-size: 12px;
+      }
+
+      @include breakpoint($medium-up) {
+        font-size: 16px;
+      }
     }
   }
 
