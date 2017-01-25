@@ -79,10 +79,6 @@
       font-size: 32px;
     }
 
-    @include breakpoint($medium-up) {
-      font-size: 48px;
-    }
-
     .layout-header__title & { // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 28px;
@@ -97,10 +93,6 @@
   h3 {
     @include breakpoint(max-width $medium) {
       font-size: 28px;
-    }
-
-    @include breakpoint($medium-up) {
-      font-size: 32px;
     }
 
     .layout-header__title & { // scss-lint:disable SelectorFormat

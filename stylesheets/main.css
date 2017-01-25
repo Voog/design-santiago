@@ -377,11 +377,6 @@
     font-size: 32px;
   }
 }
-@media (min-width: 641px) {
-  .content-area h2 {
-    font-size: 48px;
-  }
-}
 @media (max-width: 640px) {
   .layout-header__title .content-area h2 {
     font-size: 28px;
@@ -395,11 +390,6 @@
 @media (max-width: 640px) {
   .content-area h3 {
     font-size: 28px;
-  }
-}
-@media (min-width: 641px) {
-  .content-area h3 {
-    font-size: 32px;
   }
 }
 @media (max-width: 640px) {
