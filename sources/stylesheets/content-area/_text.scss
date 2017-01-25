@@ -59,6 +59,10 @@
   }
 
   h1 {
+    @include breakpoint(max-width $medium) {
+      font-size: 48px;
+    }
+
     .layout-header__title & { // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 32px;
