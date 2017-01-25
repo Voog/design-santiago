@@ -241,7 +241,6 @@
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
-    "featured": true,
     "scope": "global",
     "boundVariables": [
       "--menu-main__active-color"
@@ -253,7 +252,6 @@
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
-    "featured": true,
     "scope": "global"
   */
   --menu-main__active-color: #000;
@@ -506,7 +504,6 @@
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
-    "featured": true,
     "scope": "global",
     "boundVariables": [
       "--menu-sub__active-color"
@@ -518,7 +515,6 @@
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
-    "featured": true,
     "scope": "global"
   */
   --menu-sub__active-color: #000;

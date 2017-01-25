@@ -25,8 +25,7 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
-  {% include "template-cs-menu-main" %}
-  {% include "template-cs-menu-sub" %}
+  {% include "template-cs-menus" %}
   {% include "template-cs-headings" %}
 
 {% comment %}

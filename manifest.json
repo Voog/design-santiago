@@ -333,6 +333,13 @@
       "file": "components/blog-article-tags.tpl",
       "layout_name": "blog-article-tags",
       "title": "blog-article-tags"
+    },
+    {
+      "title": "template-cs-menus",
+      "layout_name": "template-cs-menus",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-menus.tpl"
     }
   ],
   "assets": [
