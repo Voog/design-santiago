@@ -182,25 +182,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Executes the Voog Kit toolkit manifest generation and file upload commands.
-    exec: {
-      kitmanifest: {
-        cmd: function(file) {
-          return 'kit manifest';
-        }
-      },
-
-      kit: {
-        cmd: function(file) {
-          if (grunt.option('site')) {
-            return 'kit push -s ' + grunt.option('site') + ' ' + file;
-          } else {
-            return 'kit push ' + file;
-          }
-        }
-      }
-    },
-
     // Watches the project for changes and recompiles the output files.
     watch: {
       js_copy: {
@@ -245,14 +226,6 @@ module.exports = function(grunt) {
       assets_minify: {
         files: 'sources/assets/minify/*',
         tasks: ['imagemin:build_assets']
-      },
-
-
-      voog: {
-        files: ['layouts/*.tpl', 'components/*.tpl'],
-        options: {
-          spawn: false
-        }
       }
     }
   });
@@ -265,21 +238,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
-
-  grunt.event.on('watch', function(action, filepath, target) {
-    if (target == 'voog') {
-      if (action == 'added' || action == 'deleted') {
-        grunt.task.run(['exec:kitmanifest']);
-      }
-      if (grunt.file.exists('.voog')) {
-        if (action != 'deleted') {
-          grunt.task.run(['exec:kit:' + filepath]);
-        }
-      }
-    }
-  });
 };

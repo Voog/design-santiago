@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^6.6.1",
+    "autoprefixer": "^6.7.0",
     "bourbon": "^4.2.7",
     "breakpoint-sass": "^2.7.1",
     "grunt": "^1.0.1",
@@ -19,7 +19,6 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-exec": "^1.0.1",
     "grunt-postcss": "^0.8.0"
   }
 }
