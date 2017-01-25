@@ -24,3 +24,63 @@
 @import '../../stylesheets/variables/colors';
 @import '../../stylesheets/variables/fonts';
 @import '../../stylesheets/variables/breakpoints';
+
+// =============================================================================
+// Menu main
+// =============================================================================
+.menu-main {
+  &__item {
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-main__font-style);
+        font-weight: var(--menu-main__font-weight);
+        color: var(--menu-main__color);
+        text-transform: var(--menu-main__text-transform);
+        opacity: var(--menu-main__opacity);
+
+        @include breakpoint($medium-up) {
+          border-bottom: var(--menu-main__text-decoration);
+        }
+
+        &:hover {
+          font-style: var(--menu-main__hover-font-style);
+          font-weight: var(--menu-main__hover-font-weight);
+          color: var(--menu-main__hover-color);
+          text-transform: var(--menu-main__hover-text-transform);
+
+          @include breakpoint($medium-up) {
+            border-bottom: var(--menu-main__hover-text-decoration);
+            opacity: var(--menu-main__hover-opacity);
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-main__active-font-style);
+        font-weight: var(--menu-main__active-font-weight);
+        color: var(--menu-main__active-color);
+        text-transform: var(--menu-main__active-text-transform);
+        opacity: var(--menu-main__active-opacity);
+
+        @include breakpoint($medium-up) {
+          border-bottom: var(--menu-main__active-text-decoration);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      @include breakpoint($medium-up) {
+        font-size: var(--menu-main__font-size);
+      }
+    }
+  }
+}

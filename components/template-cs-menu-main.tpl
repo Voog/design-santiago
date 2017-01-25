@@ -14,14 +14,13 @@
     "pathI18n": ["main_menu", "normal"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
     "scope": "global",
     "boundVariables": [
-      "--menu-main__hover-opacity",
-      "--menu-main__active-opacity"
+      "--menu-main__hover-opacity"
     ]
   */
   --menu-main__opacity: .5;
@@ -29,21 +28,18 @@
     "pathI18n": ["main_menu", "hover"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-main__active-opacity"
-    ]
+    "scope": "global"
   */
   --menu-main__hover-opacity: .5;
   /* VoogStyle
     "pathI18n": ["main_menu", "active"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
@@ -148,46 +144,39 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
-      "off": "none"
+      "on": "2px solid",
+      "off": "2px solid transparent"
     },
     "icon": "underline",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-main__hover-text-decoration",
-      "--menu-main__active-text-decoration"
-    ]
+    "scope": "global"
   */
-  --menu-main__text-decoration: none;
+  --menu-main__text-decoration: 2px solid transparent;
   /* VoogStyle
     "pathI18n": ["main_menu", "hover"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
-      "off": "none"
+      "on": "2px solid",
+      "off": "2px solid transparent"
     },
     "icon": "underline",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-main__active-text-decoration"
-    ]
+    "scope": "global"
   */
-  --menu-main__hover-text-decoration: solid;
+  --menu-main__hover-text-decoration: 2px solid;
   /* VoogStyle
     "pathI18n": ["main_menu", "active"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
-      "off": "none"
+      "on": "2px solid",
+      "off": "2px solid transparent"
     },
     "icon": "underline",
     "scope": "global"
   */
-  --menu-main__active-text-decoration: solid;
+  --menu-main__active-text-decoration: 2px solid;
   /* VoogStyle
     "pathI18n": ["main_menu", "normal"],
     "titleI18n": "text_transform",
