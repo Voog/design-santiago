@@ -145,12 +145,15 @@
       font-style: var(--title__font-style);
       font-weight: var(--title__font-weight);
       color: var(--title__color);
-      text-align: var(--title__text-alignment);
       text-decoration: var(--title__text-decoration);
       text-transform: var(--title__text-transform);
 
       @include breakpoint($medium-up) {
         font-size: var(--title__font-size);
+      }
+
+      &:not(.content-item-title) {
+        text-align: var(--title__text-alignment);
       }
     }
   }

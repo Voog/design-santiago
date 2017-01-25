@@ -74,7 +74,6 @@
   font-style: var(--title__font-style);
   font-weight: var(--title__font-weight);
   color: var(--title__color);
-  text-align: var(--title__text-alignment);
   text-decoration: var(--title__text-decoration);
   text-transform: var(--title__text-transform);
 }
@@ -82,6 +81,9 @@
   .layout-body .content-area h1 {
     font-size: var(--title__font-size);
   }
+}
+.layout-body .content-area h1:not(.content-item-title) {
+  text-align: var(--title__text-alignment);
 }
 .content-area h2 {
   font-style: var(--heading__font-style);
