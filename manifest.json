@@ -305,6 +305,13 @@
       "content_type": "component",
       "component": true,
       "file": "components/template-cs-product-list.tpl"
+    },
+    {
+      "title": "template-cs-product",
+      "layout_name": "template-cs-product",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-product.tpl"
     }
   ],
   "assets": [

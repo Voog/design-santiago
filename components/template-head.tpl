@@ -29,6 +29,8 @@
   {% include "template-cs-headings" %}
   {% if layout_product_list %}
     {% include "template-cs-product-list" %}
+  {% elsif layout_product %}
+    {% include "template-cs-product" %}
   {% endif %}
 
 {% comment %}

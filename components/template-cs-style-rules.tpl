@@ -169,7 +169,7 @@
   border-radius: var(--content-item-box__image-radius);
 }
 
-.content-item-box .item-title {
+.item-list-page .item-title {
   font-style: var(--content-item-box__font-style);
   font-weight: var(--content-item-box__font-weight);
   text-align: var(--content-item-box__alignment);
@@ -177,7 +177,7 @@
   text-transform: var(--content-item-box__text-transform);
 }
 @media (min-width: 641px) {
-  .content-item-box .item-title {
+  .item-list-page .item-title {
     font-size: var(--content-item-box__font-size);
   }
 }
