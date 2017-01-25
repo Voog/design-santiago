@@ -69,3 +69,83 @@
     font-size: var(--menu-sub__font-size);
   }
 }
+
+.layout-body .content-area h1 {
+  font-style: var(--title__font-style);
+  font-weight: var(--title__font-weight);
+  color: var(--title__color);
+  text-align: var(--title__text-alignment);
+  text-decoration: var(--title__text-decoration);
+  text-transform: var(--title__text-transform);
+}
+@media (min-width: 641px) {
+  .layout-body .content-area h1 {
+    font-size: var(--title__font-size);
+  }
+}
+.content-area h2 {
+  font-style: var(--heading__font-style);
+  font-weight: var(--heading__font-weight);
+  color: var(--heading__color);
+  text-align: var(--heading__text-alignment);
+  text-decoration: var(--heading__text-decoration);
+  text-transform: var(--heading__text-transform);
+}
+@media (min-width: 641px) {
+  .content-area h2 {
+    font-size: var(--heading__font-size);
+  }
+}
+.content-area h3 {
+  font-style: var(--subheading__font-style);
+  font-weight: var(--subheading__font-weight);
+  text-align: var(--subheading__text-alignment);
+  text-decoration: var(--subheading__text-decoration);
+  text-transform: var(--subheading__text-transform);
+}
+@media (min-width: 641px) {
+  .content-area h3 {
+    font-size: var(--subheading__font-size);
+  }
+}
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6 {
+  color: var(--subheading__color);
+}
+.content-area p {
+  font-size: 20px;
+}
+.content-area p > code {
+  background-color: rgba(237, 28, 36, 0.05);
+}
+.content-area a {
+  color: #ed1c24;
+  text-decoration: none;
+}
+.content-area a:not(.custom-btn):hover {
+  text-decoration: underline;
+}
+.content-area pre {
+  background-color: rgba(237, 28, 36, 0.05);
+}
+.content-area > code {
+  background-color: rgba(237, 28, 36, 0.05);
+}
+.content-area .custom-btn {
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #ed1c24;
+}
+.content-area .custom-btn:hover {
+  background-color: rgba(237, 28, 36, 0.75);
+}
+.content-area table td,
+.content-area table th {
+  padding: 11.5px;
+  border-style: solid;
+}

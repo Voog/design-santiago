@@ -27,9 +27,9 @@
   {% include "template-cs-main-styles" %}
   {% include "template-cs-menu-main" %}
   {% include "template-cs-menu-sub" %}
+  {% include "template-cs-headings" %}
 
 {% comment %}
-  {% include "template-cs-headings" %}
 
   {% if layout_product_list %}
     {% include "template-cs-blog-list" %}

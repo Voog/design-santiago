@@ -135,3 +135,106 @@
     }
   }
 }
+
+// =============================================================================
+// Content area
+// =============================================================================
+.content-area {
+  h1 {
+    .layout-body & {
+      font-style: var(--title__font-style);
+      font-weight: var(--title__font-weight);
+      color: var(--title__color);
+      text-align: var(--title__text-alignment);
+      text-decoration: var(--title__text-decoration);
+      text-transform: var(--title__text-transform);
+
+      @include breakpoint($medium-up) {
+        font-size: var(--title__font-size);
+      }
+    }
+  }
+
+  h2 {
+    font-style: var(--heading__font-style);
+    font-weight: var(--heading__font-weight);
+    color: var(--heading__color);
+    text-align: var(--heading__text-alignment);
+    text-decoration: var(--heading__text-decoration);
+    text-transform: var(--heading__text-transform);
+
+    @include breakpoint($medium-up) {
+      font-size: var(--heading__font-size);
+    }
+  }
+
+  h3 {
+    font-style: var(--subheading__font-style);
+    font-weight: var(--subheading__font-weight);
+    text-align: var(--subheading__text-alignment);
+    text-decoration: var(--subheading__text-decoration);
+    text-transform: var(--subheading__text-transform);
+
+    @include breakpoint($medium-up) {
+      font-size: var(--subheading__font-size);
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--subheading__color);
+  }
+
+
+  p {
+    font-size: 20px;
+
+    > code {
+      background-color: rgba($color-secondary, .05);
+    }
+  }
+
+  a {
+    color: $color-secondary;
+    text-decoration: none;
+
+    &:not(.custom-btn) {
+      // scss-lint:disable NestingDepth
+      &:hover {
+        text-decoration: underline;
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  pre {
+    background-color: rgba($color-secondary, .05);
+  }
+
+  > code {
+    background-color: rgba($color-secondary, .05);
+  }
+
+  .custom-btn {
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.4;
+    color: $color-white;
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: rgba($color-secondary, .75);
+    }
+  }
+
+  table {
+    td,
+    th {
+      padding: 11.5px;
+      border-style: solid;
+    }
+  }
+}
