@@ -16,7 +16,6 @@
 
 // TODO: Convert to BEM component block.
 .content-item-box {
-  color: rgba($color-primary, .8);
   text-decoration: none;
 
   .item-list-page & {
@@ -35,7 +34,6 @@
     }
 
     @include breakpoint ($medium-up) {
-      width: 33.3%;
       max-width: 352px;
       min-width: 208px;
       padding-top: 16px;
@@ -231,6 +229,8 @@
     }
 
     .edy-img-drop-area-placeholder {
+      opacity: .5;
+
       @include breakpoint(max-width $medium) {
         font-size: 12px;
       }
@@ -284,17 +284,9 @@
     }
   }
 
-  .item-list-page & {
-    font-weight: 400;
-  }
-
   .content-item-box & {
     @include breakpoint(max-width $medium) {
       font-size: 12px;
-    }
-
-    @include breakpoint ($medium-up) {
-      font-size: 20px;
     }
   }
 

@@ -27,12 +27,12 @@
   {% include "template-cs-main-styles" %}
   {% include "template-cs-menus" %}
   {% include "template-cs-headings" %}
+  {% if layout_product_list %}
+    {% include "template-cs-product-list" %}
+  {% endif %}
 
 {% comment %}
 
-  {% if layout_product_list %}
-    {% include "template-cs-blog-list" %}
-  {% endif %}
 
   {% include "template-cs-content" %}
   {% include "template-cs-button" %}

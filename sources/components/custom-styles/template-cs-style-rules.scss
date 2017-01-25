@@ -238,3 +238,42 @@
     }
   }
 }
+
+
+// =============================================================================
+// Content items (products)
+// =============================================================================
+.content-item-boxes {
+  max-width: var(--main__width);
+}
+
+// TODO: Convert to BEM component block.
+.content-item-box {
+  .item-list-page & {
+    color: var(--content-item-box__color);
+
+    @include breakpoint ($medium-up) {
+      width: var(--content-item-box__width);
+    }
+  }
+}
+
+.item-top {
+  .top-inner {
+    border-radius: var(--content-item-box__image-radius);
+  }
+}
+
+.item-title {
+  .content-item-box & {
+    font-style: var(--content-item-box__font-style);
+    font-weight: var(--content-item-box__font-weight);
+    text-align: var(--content-item-box__alignment);
+    text-decoration: var(--content-item-box__text-decoration);
+    text-transform: var(--content-item-box__text-transform);
+
+    @include breakpoint ($medium-up) {
+      font-size: var(--content-item-box__font-size);
+    }
+  }
+}

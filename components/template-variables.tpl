@@ -190,14 +190,6 @@
   {% capture base_number_of_columns_set %}
     [
       {
-        "title": "1",
-        "value": "100%"
-      },
-      {
-        "title": "2",
-        "value": "50%"
-      },
-      {
         "title": "3",
         "value": "33.3%"
       },

@@ -230,13 +230,6 @@
       "title": "blog-article-tags"
     },
     {
-      "title": "template-cs-blog-list",
-      "layout_name": "template-cs-blog-list",
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-list.tpl"
-    },
-    {
       "title": "template-cs-button",
       "layout_name": "template-cs-button",
       "content_type": "component",
@@ -305,6 +298,13 @@
       "content_type": "component",
       "component": true,
       "file": "components/template-cs-table.tpl"
+    },
+    {
+      "title": "template-cs-product-list",
+      "layout_name": "template-cs-product-list",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-product-list.tpl"
     }
   ],
   "assets": [
