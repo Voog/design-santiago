@@ -14,14 +14,13 @@
     "pathI18n": ["sub_menu", "normal"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
     "scope": "global",
     "boundVariables": [
-      "--menu-sub__hover-opacity",
-      "--menu-sub__active-opacity"
+      "--menu-sub__hover-opacity"
     ]
   */
   --menu-sub__opacity: .5;
@@ -29,21 +28,18 @@
     "pathI18n": ["sub_menu", "hover"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-sub__active-opacity"
-    ]
+    "scope": "global"
   */
   --menu-sub__hover-opacity: .75;
   /* VoogStyle
     "pathI18n": ["sub_menu", "active"],
     "titleI18n": "opacity",
     "editor": "rangePicker",
-    "min": 0,
+    "min": 0.1,
     "max": 1,
     "step": 0.1,
     "unit": "",
@@ -148,7 +144,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
+      "on": "underline",
       "off": "none"
     },
     "icon": "underline",
@@ -165,7 +161,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
+      "on": "underline",
       "off": "none"
     },
     "icon": "underline",
@@ -174,20 +170,20 @@
       "--menu-sub__active-text-decoration"
     ]
   */
-  --menu-sub__hover-text-decoration: solid;
+  --menu-sub__hover-text-decoration: none;
   /* VoogStyle
     "pathI18n": ["sub_menu", "active"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "solid",
+      "on": "underline",
       "off": "none"
     },
     "icon": "underline",
     "scope": "global"
   */
-  --menu-sub__active-text-decoration: solid;
+  --menu-sub__active-text-decoration: none;
   /* VoogStyle
     "pathI18n": ["sub_menu", "normal"],
     "titleI18n": "text_transform",

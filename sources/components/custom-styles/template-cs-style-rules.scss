@@ -84,3 +84,54 @@
     }
   }
 }
+
+// =============================================================================
+// Menu sub
+// =============================================================================
+.menu-sub {
+  &__item {
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a:not(.menu-sub__link--untranslated) {
+        font-style: var(--menu-sub__font-style);
+        font-weight: var(--menu-sub__font-weight);
+        color: var(--menu-sub__color);
+        text-decoration: var(--menu-sub__text-decoration);
+        text-transform: var(--menu-sub__text-transform);
+        opacity: var(--menu-sub__opacity);
+
+        &:hover {
+          font-style: var(--menu-sub__hover-font-style);
+          font-weight: var(--menu-sub__hover-font-weight);
+          color: var(--menu-sub__hover-color);
+          text-decoration: var(--menu-sub__hover-text-decoration);
+          text-transform: var(--menu-sub__hover-text-transform);
+          opacity: var(--menu-sub__hover-opacity);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-sub__active-font-style);
+        font-weight: var(--menu-sub__active-font-weight);
+        color: var(--menu-sub__active-color);
+        text-decoration: var(--menu-sub__active-text-decoration);
+        text-transform: var(--menu-sub__active-text-transform);
+        opacity: var(--menu-sub__active-opacity);
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      @include breakpoint($medium-up) {
+        font-size: var(--menu-sub__font-size);
+      }
+    }
+  }
+}

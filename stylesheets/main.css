@@ -1021,17 +1021,8 @@ label .form_control_indicator::before {
 @media (min-width: 641px) {
   .menu-sub__item {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
   }
-}
-.menu-sub__item:not(.menu-sub__item--selected) a:not(.menu-sub__link--untranslated) {
-  opacity: .5;
-}
-.menu-sub__item:not(.menu-sub__item--selected) a:not(.menu-sub__link--untranslated):hover {
-  opacity: .75;
-}
-.menu-sub__item--selected a {
-  opacity: 1;
 }
 @media (max-width: 640px) {
   .menu-sub__item--cms {
@@ -1053,10 +1044,6 @@ label .form_control_indicator::before {
     margin-left: 8px;
   }
 }
-.menu-sub__item a {
-  color: #000;
-  text-decoration: none;
-}
 @media (max-width: 640px) {
   .menu-sub__item a {
     display: block;
@@ -1067,7 +1054,6 @@ label .form_control_indicator::before {
   .menu-sub__item a {
     padding-right: 4px;
     padding-left: 4px;
-    font-size: 20px;
   }
 }
 .menu-sub__link--untranslated {
