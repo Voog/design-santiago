@@ -208,3 +208,21 @@
     font-size: var(--content-item-box__font-size);
   }
 }
+
+.article__title {
+  font-size: var(--content-area-article-title__font-size);
+  font-style: var(--content-area-article-title__font-style);
+  font-weight: var(--content-area-article-title__font-weight);
+  color: var(--content-area-article-title__color);
+  text-decoration: var(--content-area-article-title__text-decoration);
+  text-transform: var(--content-area-article-title__text-transform);
+}
+.article__date {
+  font-size: var(--content-area-article-date__font-size);
+  font-style: var(--content-area-article-date__font-style);
+  font-weight: var(--content-area-article-date__font-weight);
+  color: var(--content-area-article-date__color);
+  text-decoration: var(--content-area-article-date__text-decoration);
+  text-transform: var(--content-area-article-date__text-transform);
+  opacity: var(--content-area-article-date__opacity);
+}

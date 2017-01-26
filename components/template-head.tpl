@@ -27,6 +27,7 @@
   {% include "template-cs-main-styles" %}
   {% include "template-cs-menus" %}
   {% include "template-cs-headings" %}
+
   {% if layout_product_list %}
     {% include "template-cs-product-list" %}
   {% elsif layout_product %}
@@ -34,6 +35,7 @@
   {% else %}
     {% include "template-cs-content" %}
   {% endif %}
+
 
 {% comment %}
   {% include "template-cs-button" %}

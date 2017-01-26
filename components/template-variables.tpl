@@ -71,6 +71,14 @@
   {% comment %}=================================================================
   | Design editor variables.
   ============================================================= {% endcomment %}
+  {% if layout_blog %}
+    {% assign content_container_title = "blog" %}
+    {% assign content_inner_title = "article" %}
+  {% else %}
+    {% assign content_container_title = "content" %}
+    {% assign content_inner_title = "content" %}
+  {% endif %}
+
   {% capture base_font_set %}
     [
       {

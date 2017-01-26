@@ -312,39 +312,16 @@
       "content_type": "component",
       "component": true,
       "file": "components/template-cs-product.tpl"
+    },
+    {
+      "title": "template-cs-blog",
+      "layout_name": "template-cs-blog",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog.tpl"
     }
   ],
   "assets": [
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/bg-search.svg",
-      "kind": "assets",
-      "filename": "bg-search.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow-white.svg",
-      "kind": "assets",
-      "filename": "ico-arrow-white.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
-      "kind": "assets",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-shopping-cart.svg",
-      "kind": "assets",
-      "filename": "ico-shopping-cart.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-check.png",
-      "kind": "images",
-      "filename": "ico-check.png"
-    },
     {
       "content_type": "text/javascript",
       "file": "javascripts/main.js",
@@ -353,21 +330,51 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/main.min.js",
       "kind": "javascripts",
+      "file": "javascripts/main.min.js",
       "filename": "main.min.js"
     },
     {
       "content_type": "text/css",
+      "kind": "stylesheets",
       "file": "stylesheets/main.css",
-      "kind": "stylesheet",
       "filename": "main.css"
     },
     {
       "content_type": "text/css",
+      "kind": "stylesheets",
       "file": "stylesheets/main.min.css",
-      "kind": "stylesheet",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/ico-check.png",
+      "filename": "ico-check.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/bg-search.svg",
+      "filename": "bg-search.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-arrow-white.svg",
+      "filename": "ico-arrow-white.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-flags.svg",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-shopping-cart.svg",
+      "filename": "ico-shopping-cart.svg"
     }
   ]
 }

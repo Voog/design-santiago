@@ -132,6 +132,23 @@ module.exports = function(grunt) {
       }
     },
 
+    replace: {
+      custom_styles: {
+        src: ['sources/components/custom-styles/tmp/*.css'],
+        overwrite: true,
+        replacements: [
+          {
+            from: '/*_LIQUID ',
+            to: ''
+          },
+          {
+            from: ' LIQUID_*/',
+            to: ''
+          }
+        ]
+      }
+    },
+
     // Copys the files from the source folders to the layout folders.
     copy: {
       assets: {
@@ -205,7 +222,7 @@ module.exports = function(grunt) {
 
       custom_styles: {
         files: 'sources/components/custom-styles/*.scss',
-        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']
+        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'replace', 'copy:custom_styles', 'clean:remove']
       },
 
       img_copy: {
@@ -239,6 +256,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
+  grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'replace', 'copy', 'clean:remove']);
 };

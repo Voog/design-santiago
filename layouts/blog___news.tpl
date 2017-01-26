@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{% include "template-variables" layout_blog: true %}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">

@@ -16,7 +16,7 @@
     "type": "button",
     "editor": "toggleIcon",
     "states": {
-      "on": "600",
+      "on": "700",
       "off": "400"
     },
     "icon": "bold",

@@ -1578,9 +1578,6 @@ label .form_control_indicator::before {
 .article__title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 28px;
-  color: #ed1c24;
-  text-transform: uppercase;
 }
 .article__link {
   color: inherit;
@@ -1588,14 +1585,6 @@ label .form_control_indicator::before {
 }
 .article__link:hover {
   text-decoration: underline;
-}
-.article__date {
-  font-size: 12px;
-  opacity: .5;
-}
-.article .article__excerpt, .article .article__body {
-  font-size: 20px;
-  line-height: 1.7;
 }
 .article__excerpt {
   margin-bottom: 24px;
