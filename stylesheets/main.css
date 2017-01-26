@@ -608,10 +608,18 @@
 }
 .content-area table td,
 .content-area table th {
-  padding: 11.5px;
-  border-color: #f7f7f7;
-  border-style: solid;
+  position: relative;
+  border: 1px solid transparent;
+}
+.content-area table td::before,
+.content-area table th::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
   border-width: 1px;
+  content: '';
 }
 .content-area table th {
   font-weight: bold;

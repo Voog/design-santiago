@@ -187,8 +187,14 @@
 }
 .content-area table td,
 .content-area table th {
-  padding: 11.5px;
-  border-style: solid;
+  padding: var(--content-area-table__padding);
+  font-size: var(--content-area-table__font-size);
+}
+.content-area table td::before,
+.content-area table th::before {
+  border-color: var(--content-area-table__border-color);
+  border-style: var(--content-area-table__border-style);
+  opacity: var(--content-area-table__border-opacity);
 }
 
 .form_submit input {

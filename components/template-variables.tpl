@@ -231,4 +231,17 @@
       }
     ]
   {% endcapture %}
+
+  {% capture base_border_style_set %}
+    [
+      {
+        "titleI18n": "solid",
+        "value": "solid"
+      },
+      {
+        "titleI18n": "none",
+        "value": "hidden"
+      }
+    ]
+  {% endcapture %}
 {% endcapture %}
