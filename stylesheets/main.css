@@ -511,7 +511,7 @@
   line-height: 1.5;
 }
 .content-area dd {
-  margin-left: 10px;
+  margin: 10px .5em;
 }
 .content-area pre,
 .content-area code {
@@ -559,7 +559,7 @@
   outline: 0;
   -webkit-appearance: none;
 }
-.publicmode .content-area .custom-btn {
+[data-view-state="publicmode"] .content-area .custom-btn {
   cursor: pointer;
 }
 .content-area .custom-btn.edy-buy-button {
