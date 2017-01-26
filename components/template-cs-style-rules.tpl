@@ -163,20 +163,53 @@
   background-color: var(--main__color-secondary);
 }
 .content-area .custom-btn {
-  padding: 10px 16px;
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #fff;
-  background-color: #ed1c24;
+  padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
+  font-size: var(--content-area-button__font-size);
+  font-style: var(--content-area-button__font-style);
+  font-weight: var(--content-area-button__font-weight);
+  color: var(--content-area-button__color);
+  text-decoration: var(--content-area-button__text-decoration);
+  text-transform: var(--content-area-button__text-transform);
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
 }
 .content-area .custom-btn:hover {
-  background-color: rgba(237, 28, 36, 0.75);
+  font-style: var(--content-area-button-hover__font-style);
+  font-weight: var(--content-area-button-hover__font-weight);
+  color: var(--content-area-button-hover__color);
+  text-decoration: var(--content-area-button-hover__text-decoration);
+  text-transform: var(--content-area-button-hover__text-transform);
+  background-color: var(--content-area-button-hover__background-color);
+  opacity: var(--content-area-button-hover__opacity);
+}
+[data-view-state="editmode"] .content-area .custom-btn.edy-buy-button {
+  padding: calc(var(--content-area-button__padding) - 7px) calc(var(--content-area-button__padding) - 1.22px);
 }
 .content-area table td,
 .content-area table th {
   padding: 11.5px;
   border-style: solid;
+}
+
+.form_submit input {
+  padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
+  font-size: var(--content-area-button__font-size);
+  font-style: var(--content-area-button__font-style);
+  font-weight: var(--content-area-button__font-weight);
+  color: var(--content-area-button__color);
+  text-decoration: var(--content-area-button__text-decoration);
+  text-transform: var(--content-area-button__text-transform);
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
+}
+.form_submit input:hover {
+  font-style: var(--content-area-button-hover__font-style);
+  font-weight: var(--content-area-button-hover__font-weight);
+  color: var(--content-area-button-hover__color);
+  text-decoration: var(--content-area-button-hover__text-decoration);
+  text-transform: var(--content-area-button-hover__text-transform);
+  background-color: var(--content-area-button-hover__background-color);
+  opacity: var(--content-area-button-hover__opacity);
 }
 
 .content-area .edy-content-social-button {

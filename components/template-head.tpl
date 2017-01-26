@@ -36,9 +36,9 @@
     {% include "template-cs-content" %}
   {% endif %}
 
+  {% include "template-cs-button" %}
 
 {% comment %}
-  {% include "template-cs-button" %}
   {% include "template-cs-list" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}

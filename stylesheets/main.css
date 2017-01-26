@@ -554,17 +554,10 @@
 }
 .content-area .custom-btn {
   display: inline-block;
-  padding: 10px 16px;
   font-family: inherit;
-  font-size: 20px;
   line-height: 1.4;
-  color: #fff;
-  background-color: #ed1c24;
   outline: 0;
   -webkit-appearance: none;
-}
-.content-area .custom-btn:hover {
-  background-color: rgba(237, 28, 36, 0.75);
 }
 .publicmode .content-area .custom-btn {
   cursor: pointer;
@@ -730,20 +723,12 @@
 
 .form_submit input {
   display: inline-block;
-  padding: 8px 15px 9px;
   font-family: inherit;
-  font-size: 20px;
   line-height: 1.4;
-  color: #fff;
   cursor: pointer;
-  background-color: #ed1c24;
   border: 0;
-  border-radius: 3px;
   outline: 0;
   -webkit-appearance: none;
-}
-.form_submit input:hover {
-  background-color: rgba(237, 28, 36, 0.75);
 }
 [data-view-state="publicmode"] .form_submit input {
   cursor: pointer;

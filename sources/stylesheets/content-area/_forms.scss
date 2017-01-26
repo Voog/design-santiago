@@ -1,6 +1,6 @@
-//==============================================================================
-// "Form" type content area.
-//==============================================================================
+// =============================================================================
+// Content area form
+// =============================================================================
 // scss-lint:disable SelectorFormat
 .content-area {
   .form,
@@ -112,21 +112,12 @@
 .form_submit {
   input {
     display: inline-block;
-    padding: 8px 15px 9px;
     font-family: inherit;
-    font-size: 20px;
     line-height: 1.4;
-    color: $color-white;
     cursor: pointer;
-    background-color: $color-secondary;
     border: 0;
-    border-radius: 3px;
     outline: 0;
     -webkit-appearance: none;
-
-    &:hover {
-      background-color: rgba($color-secondary, .75);
-    }
 
     [data-view-state="publicmode"] & {
       cursor: pointer;
