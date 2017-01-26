@@ -26,6 +26,26 @@
 @import '../../stylesheets/variables/breakpoints';
 
 // =============================================================================
+// Layout body
+// =============================================================================
+.layout-body {
+  max-width: $width-layout-wrap-item;
+
+  &__content {
+    background-color: var(--layout-body-narrow__background-color);
+
+    @include breakpoint($medium-up) {
+      padding: var(--layout-body-narrow__padding);
+    }
+  }
+
+  &--narrow {
+    max-width: var(--layout-body-narrow__max-width);
+  }
+}
+
+
+// =============================================================================
 // Menu main
 // =============================================================================
 .menu-main {
@@ -137,7 +157,15 @@
 }
 
 // =============================================================================
-// Content area
+// Content area container
+// =============================================================================
+.content-area {
+  font-size: var(--content-area-text__font-size);
+  color: var(--content-area-text__color);
+}
+
+// =============================================================================
+// Content area elements
 // =============================================================================
 .content-area {
   h1 {
@@ -152,9 +180,11 @@
         font-size: var(--title__font-size);
       }
 
+      // scss-lint:disable NestingDepth
       &:not(.content-item-title) {
         text-align: var(--title__text-alignment);
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -192,32 +222,47 @@
 
 
   p {
-    font-size: 20px;
+    font-size: var(--content-area-text__font-size);
 
     > code {
-      background-color: rgba($color-secondary, .05);
+      // scss-lint:disable NestingDepth
+      &::before {
+        background-color: var(--main__color-secondary);
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 
   a {
-    color: $color-secondary;
-    text-decoration: none;
+    font-style: var(--content-area-link__font-style);
+    font-weight: var(--content-area-link__font-weight);
+    color: var(--content-area-link__color);
+    text-decoration: var(--content-area-link__text-decoration);
+    text-transform: var(--content-area-link__text-transform);
 
     &:not(.custom-btn) {
       // scss-lint:disable NestingDepth
       &:hover {
-        text-decoration: underline;
+        font-style: var(--content-area-link__hover-font-style);
+        font-weight: var(--content-area-link__hover-font-weight);
+        color: var(--content-area-link__hover-color);
+        text-decoration: var(--content-area-link__hover-text-decoration);
+        text-transform: var(--content-area-link__hover-text-transform);
       }
       // scss-lint:enable NestingDepth
     }
   }
 
   pre {
-    background-color: rgba($color-secondary, .05);
+    &::before {
+      background-color: var(--main__color-secondary);
+    }
   }
 
   > code {
-    background-color: rgba($color-secondary, .05);
+    &::before {
+      background-color: var(--main__color-secondary);
+    }
   }
 
   .custom-btn {

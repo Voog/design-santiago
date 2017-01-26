@@ -1,3 +1,6 @@
+// =============================================================================
+// Content area elements
+// =============================================================================
 .content-area {
   h1,
   h2,
@@ -166,14 +169,29 @@
     }
   }
 
+  %code-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    opacity: .05;
+  }
 
   p {
     margin-top: .85em;
     margin-bottom: .85em;
-    font-size: 20px;
 
     > code {
-      background-color: rgba($color-secondary, .05);
+      position: relative;
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        @extend %code-background;
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -226,13 +244,9 @@
   }
 
   a {
-    color: $color-secondary;
-    text-decoration: none;
-
     &:not(.custom-btn) {
       // scss-lint:disable NestingDepth
       &:hover {
-        text-decoration: underline;
       }
       // scss-lint:enable NestingDepth
     }
@@ -254,8 +268,12 @@
   }
 
   pre {
+    position: relative;
     overflow: auto;
-    background-color: rgba($color-secondary, .05);
+
+    &::before {
+      @extend %code-background;
+    }
 
     code {
       display: inline;
@@ -274,7 +292,11 @@
   }
 
   > code {
-    background-color: rgba($color-secondary, .05);
+    position: relative;
+
+    &::before {
+      @extend %code-background;
+    }
   }
 
   blockquote {

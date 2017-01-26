@@ -1,3 +1,18 @@
+.layout-body {
+  max-width: 1270px;
+}
+.layout-body__content {
+  background-color: var(--layout-body-narrow__background-color);
+}
+@media (min-width: 641px) {
+  .layout-body__content {
+    padding: var(--layout-body-narrow__padding);
+  }
+}
+.layout-body--narrow {
+  max-width: var(--layout-body-narrow__max-width);
+}
+
 .menu-main__item:not(.menu-main__item--selected) a {
   font-style: var(--menu-main__font-style);
   font-weight: var(--menu-main__font-weight);
@@ -70,6 +85,11 @@
   }
 }
 
+.content-area {
+  font-size: var(--content-area-text__font-size);
+  color: var(--content-area-text__color);
+}
+
 .layout-body .content-area h1 {
   font-style: var(--title__font-style);
   font-weight: var(--title__font-weight);
@@ -117,23 +137,30 @@
   color: var(--subheading__color);
 }
 .content-area p {
-  font-size: 20px;
+  font-size: var(--content-area-text__font-size);
 }
-.content-area p > code {
-  background-color: rgba(237, 28, 36, 0.05);
+.content-area p > code::before {
+  background-color: var(--main__color-secondary);
 }
 .content-area a {
-  color: #ed1c24;
-  text-decoration: none;
+  font-style: var(--content-area-link__font-style);
+  font-weight: var(--content-area-link__font-weight);
+  color: var(--content-area-link__color);
+  text-decoration: var(--content-area-link__text-decoration);
+  text-transform: var(--content-area-link__text-transform);
 }
 .content-area a:not(.custom-btn):hover {
-  text-decoration: underline;
+  font-style: var(--content-area-link__hover-font-style);
+  font-weight: var(--content-area-link__hover-font-weight);
+  color: var(--content-area-link__hover-color);
+  text-decoration: var(--content-area-link__hover-text-decoration);
+  text-transform: var(--content-area-link__hover-text-transform);
 }
-.content-area pre {
-  background-color: rgba(237, 28, 36, 0.05);
+.content-area pre::before {
+  background-color: var(--main__color-secondary);
 }
-.content-area > code {
-  background-color: rgba(237, 28, 36, 0.05);
+.content-area > code::before {
+  background-color: var(--main__color-secondary);
 }
 .content-area .custom-btn {
   padding: 10px 16px;

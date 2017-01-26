@@ -21,11 +21,13 @@
           <div class="btns-container">{% addbutton %}</div>
         {% endif %}
 
-        <main class="articles-container">
-          {% for article in articles %}
-            {% include "blog-article" list_item: true %}
-          {% endfor %}
-        </main>
+        <div class="layout-body__content">
+          <main class="articles-container">
+            {% for article in articles %}
+              {% include "blog-article" list_item: true %}
+            {% endfor %}
+          </main>
+        </div>
       </div>
 
       {% include "layout-footer" %}

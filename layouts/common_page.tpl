@@ -15,7 +15,9 @@
       <div class="layout-body layout-body--narrow">
         {% include "menu-sub" %}
 
-        <main class="content-area" {{ edy_intro_edit_text }}>{% content %}</main>
+        <div class="layout-body__content">
+          <main class="content-area" {{ edy_intro_edit_text }}>{% content %}</main>
+        </div>
       </div>
 
       {% include "layout-footer" %}

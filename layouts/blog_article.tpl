@@ -12,15 +12,17 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow">
-        {% include "blog-article" %}
+        <div class="layout-body layout-body--narrow">
+          <main class="layout-body__content">
+          {% include "blog-article" %}
 
-        {% include "blog-article-tags" %}
+          {% include "blog-article-tags" %}
 
-        {% include "blog-article-navigation" %}
+          {% include "blog-article-navigation" %}
 
-        {% include "blog-article-comments" %}
-      </main>
+          {% include "blog-article-comments" %}
+        </main>
+      </div>
 
       {% include "layout-footer" %}
 

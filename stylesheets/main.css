@@ -165,9 +165,6 @@
     margin-top: 24px;
   }
 }
-.layout-body--narrow {
-  max-width: 960px;
-}
 
 .layout-footer {
   padding: 32px 16px;
@@ -246,9 +243,7 @@
 }
 
 .content-area {
-  font-size: 16px;
   line-height: 1.7;
-  color: #000;
 }
 .layout-header__title .content-area {
   font-weight: 700;
@@ -462,13 +457,22 @@
     font-size: 16px;
   }
 }
+.content-area p > code::before, .content-area pre::before, .content-area > code::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  opacity: .05;
+}
 .content-area p {
   margin-top: .85em;
   margin-bottom: .85em;
-  font-size: 20px;
 }
 .content-area p > code {
-  background-color: rgba(237, 28, 36, 0.05);
+  position: relative;
 }
 .content-area ul,
 .content-area ol,
@@ -506,13 +510,6 @@
 .content-area dd {
   margin-left: 10px;
 }
-.content-area a {
-  color: #ed1c24;
-  text-decoration: none;
-}
-.content-area a:not(.custom-btn):hover {
-  text-decoration: underline;
-}
 .content-area pre,
 .content-area code {
   padding: 10px;
@@ -520,8 +517,8 @@
   font-weight: 400;
 }
 .content-area pre {
+  position: relative;
   overflow: auto;
-  background-color: rgba(237, 28, 36, 0.05);
 }
 .content-area pre code {
   display: inline;
@@ -537,7 +534,7 @@
   box-sizing: border-box;
 }
 .content-area > code {
-  background-color: rgba(237, 28, 36, 0.05);
+  position: relative;
 }
 .content-area blockquote {
   padding-left: 16px;

@@ -31,12 +31,11 @@
     {% include "template-cs-product-list" %}
   {% elsif layout_product %}
     {% include "template-cs-product" %}
+  {% else %}
+    {% include "template-cs-content" %}
   {% endif %}
 
 {% comment %}
-
-
-  {% include "template-cs-content" %}
   {% include "template-cs-button" %}
   {% include "template-cs-list" %}
   {% include "template-cs-table" %}
