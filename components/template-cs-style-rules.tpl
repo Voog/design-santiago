@@ -197,6 +197,54 @@
   opacity: var(--content-area-table__border-opacity);
 }
 
+.edy-fe-label,
+.form_field_label {
+  font-size: var(--content-area-form-field-label__font-size);
+  font-style: var(--content-area-form-field-label__font-style);
+  font-weight: var(--content-area-form-field-label__font-weight);
+  color: var(--content-area-form-field-label__color);
+  text-decoration: var(--content-area-form-field-label__text-decoration);
+  text-transform: var(--content-area-form-field-label__text-transform);
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select,
+.form_field label {
+  font-style: var(--content-area-form-field-text__font-style);
+  font-weight: var(--content-area-form-field-text__font-weight);
+  color: var(--content-area-form-field-text__color);
+  text-decoration: var(--content-area-form-field-text__text-decoration);
+  text-transform: var(--content-area-form-field-text__text-transform);
+}
+.form_field_textfield:not([data-group="comment-field"]),
+.form_field_textarea:not([data-group="comment-field"]),
+.form_field_select:not([data-group="comment-field"]),
+.form_field label:not([data-group="comment-field"]) {
+  font-size: var(--content-area-form-field-text__font-size);
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select {
+  background-color: var(--content-area-form-field-text__background-color);
+  border-color: var(--content-area-form-field-text__border-color);
+}
+
+.form_field_checkbox + .form_control_indicator::before {
+  background-color: var(--content-area-form-field-text__background-color);
+  border-color: var(--content-area-form-field-text__border-color);
+}
+
+.form_field_radio + .form_control_indicator::before {
+  background-color: var(--content-area-form-field-text__background-color);
+  border-color: var(--content-area-form-field-text__background-color);
+  outline-color: var(--content-area-form-field-text__border-color);
+}
+.form_field_radio:checked + .form_control_indicator::before {
+  background-color: var(--content-area-form-field-text__color);
+}
+
 .form_submit input {
   padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
   font-size: var(--content-area-button__font-size);

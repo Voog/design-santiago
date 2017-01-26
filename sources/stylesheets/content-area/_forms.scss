@@ -20,8 +20,12 @@
   padding-bottom: 5px;
 }
 
-.form_field label {
-  display: block;
+.form_field {
+  label {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+  }
 }
 
 .form_field_textfield,
@@ -30,16 +34,11 @@
   width: 30%;
   padding: 4px 7px 2px;
   font-family: inherit;
-  font-size: 20px;
   line-height: 1.5;
-  color: rgba($color-primary, 1);
-  background-color: rgba($color-white, 1);
-  border-color: rgba($color-primary, .05);
   border-style: solid;
   border-width: 1px;
   border-radius: 0;
   outline: none;
-  opacity: .87;
   box-sizing: border-box;
 }
 
@@ -149,10 +148,11 @@ label {
 
   .form_field_checkbox {
     + .form_control_indicator {
+      left: -25px;
+      margin-top: -9px;
+
       // scss-lint:disable NestingDepth
       &::before {
-        background: rgba($color-white, 1);
-        border-color: rgba($color-primary, 1);
         border-style: solid;
         border-width: 1px;
 
@@ -183,16 +183,17 @@ label {
 
   .form_field_radio {
     + .form_control_indicator {
+      left: -24px;
+      margin-top: -10px;
+
       // scss-lint:disable NestingDepth
       &::before {
         width: 9px;
         height: 9px;
-        border-color: rgba($color-white, 1);
         border-style: solid;
         border-width: 3px;
         outline-width: 1px;
         outline-style: solid;
-        outline-color: rgba($color-primary, 1);
       }
       // scss-lint:enable NestingDepth
     }
@@ -201,7 +202,6 @@ label {
       // scss-lint:disable NestingDepth
       + .form_control_indicator {
         &::before {
-          background-color: rgba($color-primary, 1);
           opacity: .84;
         }
       }
@@ -210,13 +210,12 @@ label {
   }
 
   .form_control_indicator {
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 50%;
     display: inline-block;
     // display: none\9;
     width: 17px;
     height: 17px;
-    margin-right: 8px;
 
     &::before {
       position: absolute;
