@@ -3,7 +3,7 @@
     "pathI18n": ["{{ content_container_title }}"],
     "titleI18n": "maximum_width",
     "editor": "rangePicker",
-    "min": 100,
+    "min": 600,
     "max": 2000,
     "step": 5,
     "unit": "px",

@@ -1,5 +1,9 @@
+.layout-header {
+  max-width: var(--main__width);
+}
+
 .layout-body {
-  max-width: 1270px;
+  max-width: var(--main__width);
 }
 .layout-body__content {
   background-color: var(--layout-body-narrow__background-color);
@@ -342,4 +346,7 @@
   padding-top: var(--layout-footer__padding);
   padding-bottom: var(--layout-footer__padding);
   background-color: var(--layout-footer__background-color);
+}
+.layout-footer__container {
+  max-width: var(--main__width);
 }

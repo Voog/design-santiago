@@ -1,6 +1,8 @@
+// =============================================================================
+// Layout body
+// =============================================================================
 .layout-header {
   width: 100%;
-  max-width: $width-layout-wrap-item;
   box-sizing: border-box;
 
   @include breakpoint(max-width $medium) {

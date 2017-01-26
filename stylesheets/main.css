@@ -68,7 +68,6 @@
 
 .layout-header {
   width: 100%;
-  max-width: 1270px;
   box-sizing: border-box;
 }
 @media (max-width: 640px) {
@@ -149,7 +148,6 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
-  max-width: 1270px;
   margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
@@ -180,7 +178,6 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1270px;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
