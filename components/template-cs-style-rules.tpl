@@ -89,6 +89,15 @@
   font-size: var(--content-area-text__font-size);
   color: var(--content-area-text__color);
 }
+.layout-footer .content-area {
+  font-size: var(--layout-footer__font-size);
+  font-weight: var(--layout-footer__font-weight);
+  font-style: var(--layout-footer__font-style);
+  color: var(--layout-footer__color);
+  text-decoration: var(--layout-footer__text-decoration);
+  text-transform: var(--layout-footer__text-transform);
+  background-color: var(--layout-footer__background-color);
+}
 
 .layout-body .content-area h1 {
   font-style: var(--title__font-style);
@@ -327,4 +336,10 @@
 }
 .comments__title {
   color: var(--main__color-primary);
+}
+
+.layout-footer {
+  padding-top: var(--layout-footer__padding);
+  padding-bottom: var(--layout-footer__padding);
+  background-color: var(--layout-footer__background-color);
 }

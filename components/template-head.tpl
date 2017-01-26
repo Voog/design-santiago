@@ -39,10 +39,7 @@
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
-
-{% comment %}
   {% include "template-cs-footer" %}
-{% endcomment %}
 
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}

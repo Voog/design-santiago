@@ -1,6 +1,17 @@
 :root {
   /* VoogStyle
     "pathI18n": ["footer"],
+    "titleI18n": "padding",
+    "editor": "rangePicker",
+    "min": 0,
+    "max": 200,
+    "step": 1,
+    "unit": "px",
+    "scope": "global"
+  */
+  --layout-footer__padding: 32px;
+  /* VoogStyle
+    "pathI18n": ["footer"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
@@ -9,7 +20,23 @@
     "featured": true,
     "scope": "global"
   */
-  --footer-body-font-size: 13px;
+  --layout-footer__font-size: 16px;
+  /* VoogStyle
+    "pathI18n": ["footer"],
+    "titleI18n": "color",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global"
+  */
+  --layout-footer__color: #000;
+  /* VoogStyle
+    "pathI18n": ["footer"],
+    "titleI18n": "background_color",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global"
+  */
+  --layout-footer__background-color: #f7f7f7;
   /* VoogStyle
     "pathI18n": ["footer"],
     "titleI18n": "font_size",
@@ -22,7 +49,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --footer-body-font-weight: 400;
+  --layout-footer__font-weight: 400;
   /* VoogStyle
     "pathI18n": ["footer"],
     "titleI18n": "font_style",
@@ -35,7 +62,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --footer-body-font-style: normal;
+  --layout-footer__font-style: normal;
   /* VoogStyle
     "pathI18n": ["footer"],
     "titleI18n": "text_decoration",
@@ -48,7 +75,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --footer-body-text-decoration: none;
+  --layout-footer__text-decoration: none;
   /* VoogStyle
     "pathI18n": ["footer"],
     "titleI18n": "text_transform",
@@ -61,14 +88,5 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --footer-body-text-transform: none;
-  /* VoogStyle
-    "pathI18n": ["footer"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --footer-body-color: rgba(0, 0, 0, 0.8);
+  --layout-footer__text-transform: none;
 }
