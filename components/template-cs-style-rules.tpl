@@ -226,3 +226,14 @@
   text-transform: var(--content-area-article-date__text-transform);
   opacity: var(--content-area-article-date__opacity);
 }
+
+.article-nav {
+  color: var(--content-area-text__color);
+}
+
+.comments {
+  max-width: calc(var(--layout-body-narrow__max-width) - 260px);
+}
+.comments__title {
+  color: var(--main__color-primary);
+}

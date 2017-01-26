@@ -1699,7 +1699,7 @@ label .form_control_indicator::before {
   margin-left: auto;
 }
 .comments__title {
-  margin-bottom: 56px;
+  margin-bottom: 32px;
   font-size: 20px;
   font-weight: 400;
   text-align: center;

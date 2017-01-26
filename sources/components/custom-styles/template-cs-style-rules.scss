@@ -347,3 +347,21 @@
     opacity: var(--content-area-article-date__opacity);
   }
 }
+
+// =============================================================================
+// Blog article navigation
+// =============================================================================
+.article-nav {
+  color: var(--content-area-text__color);
+}
+
+// =============================================================================
+// Blog comments
+// =============================================================================
+.comments {
+  max-width: calc(var(--layout-body-narrow__max-width) - 260px);
+
+  &__title {
+    color: var(--main__color-primary);
+  }
+}
