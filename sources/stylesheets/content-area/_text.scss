@@ -240,7 +240,7 @@
   }
 
   dd {
-    margin-left: 10px;
+    margin: 10px .5em;
   }
 
   a {
@@ -322,7 +322,7 @@
     outline: 0;
     -webkit-appearance: none;
 
-    .publicmode & {
+    [data-view-state="publicmode"] & {
       cursor: pointer;
     }
 
