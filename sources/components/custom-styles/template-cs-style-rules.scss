@@ -64,14 +64,14 @@
         }
 
         &:hover {
-          font-style: var(--menu-main__hover-font-style);
-          font-weight: var(--menu-main__hover-font-weight);
-          color: var(--menu-main__hover-color);
-          text-transform: var(--menu-main__hover-text-transform);
+          font-style: var(--menu-main-hover__font-style);
+          font-weight: var(--menu-main-hover__font-weight);
+          color: var(--menu-main-hover__color);
+          text-transform: var(--menu-main-hover__text-transform);
 
           @include breakpoint($medium-up) {
-            border-bottom: var(--menu-main__hover-text-decoration);
-            opacity: var(--menu-main__hover-opacity);
+            border-bottom: var(--menu-main-hover__text-decoration);
+            opacity: var(--menu-main-hover__opacity);
           }
         }
       }
@@ -82,14 +82,14 @@
     &--selected {
       // scss-lint:disable NestingDepth
       a {
-        font-style: var(--menu-main__active-font-style);
-        font-weight: var(--menu-main__active-font-weight);
-        color: var(--menu-main__active-color);
-        text-transform: var(--menu-main__active-text-transform);
-        opacity: var(--menu-main__active-opacity);
+        font-style: var(--menu-main-active__font-style);
+        font-weight: var(--menu-main-active__font-weight);
+        color: var(--menu-main-active__color);
+        text-transform: var(--menu-main-active__text-transform);
+        opacity: var(--menu-main-active__opacity);
 
         @include breakpoint($medium-up) {
-          border-bottom: var(--menu-main__active-text-decoration);
+          border-bottom: var(--menu-main-active__text-decoration);
         }
       }
       // scss-lint:enable NestingDepth
@@ -121,12 +121,12 @@
         opacity: var(--menu-sub__opacity);
 
         &:hover {
-          font-style: var(--menu-sub__hover-font-style);
-          font-weight: var(--menu-sub__hover-font-weight);
-          color: var(--menu-sub__hover-color);
-          text-decoration: var(--menu-sub__hover-text-decoration);
-          text-transform: var(--menu-sub__hover-text-transform);
-          opacity: var(--menu-sub__hover-opacity);
+          font-style: var(--menu-sub-hover__font-style);
+          font-weight: var(--menu-sub-hover__font-weight);
+          color: var(--menu-sub-hover__color);
+          text-decoration: var(--menu-sub-hover__text-decoration);
+          text-transform: var(--menu-sub-hover__text-transform);
+          opacity: var(--menu-sub-hover__opacity);
         }
       }
       // scss-lint:enable NestingDepth
@@ -136,12 +136,12 @@
     &--selected {
       // scss-lint:disable NestingDepth
       a {
-        font-style: var(--menu-sub__active-font-style);
-        font-weight: var(--menu-sub__active-font-weight);
-        color: var(--menu-sub__active-color);
-        text-decoration: var(--menu-sub__active-text-decoration);
-        text-transform: var(--menu-sub__active-text-transform);
-        opacity: var(--menu-sub__active-opacity);
+        font-style: var(--menu-sub-active__font-style);
+        font-weight: var(--menu-sub-active__font-weight);
+        color: var(--menu-sub-active__color);
+        text-decoration: var(--menu-sub-active__text-decoration);
+        text-transform: var(--menu-sub-active__text-transform);
+        opacity: var(--menu-sub-active__opacity);
       }
       // scss-lint:enable NestingDepth
     }
@@ -242,11 +242,11 @@
     &:not(.custom-btn) {
       // scss-lint:disable NestingDepth
       &:hover {
-        font-style: var(--content-area-link__hover-font-style);
-        font-weight: var(--content-area-link__hover-font-weight);
-        color: var(--content-area-link__hover-color);
-        text-decoration: var(--content-area-link__hover-text-decoration);
-        text-transform: var(--content-area-link__hover-text-transform);
+        font-style: var(--content-area-link-hover__font-style);
+        font-weight: var(--content-area-link-hover__font-weight);
+        color: var(--content-area-link-hover__color);
+        text-decoration: var(--content-area-link-hover__text-decoration);
+        text-transform: var(--content-area-link-hover__text-transform);
       }
       // scss-lint:enable NestingDepth
     }

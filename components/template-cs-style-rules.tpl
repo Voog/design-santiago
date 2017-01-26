@@ -26,27 +26,27 @@
   }
 }
 .menu-main__item:not(.menu-main__item--selected) a:hover {
-  font-style: var(--menu-main__hover-font-style);
-  font-weight: var(--menu-main__hover-font-weight);
-  color: var(--menu-main__hover-color);
-  text-transform: var(--menu-main__hover-text-transform);
+  font-style: var(--menu-main-hover__font-style);
+  font-weight: var(--menu-main-hover__font-weight);
+  color: var(--menu-main-hover__color);
+  text-transform: var(--menu-main-hover__text-transform);
 }
 @media (min-width: 641px) {
   .menu-main__item:not(.menu-main__item--selected) a:hover {
-    border-bottom: var(--menu-main__hover-text-decoration);
-    opacity: var(--menu-main__hover-opacity);
+    border-bottom: var(--menu-main-hover__text-decoration);
+    opacity: var(--menu-main-hover__opacity);
   }
 }
 .menu-main__item--selected a {
-  font-style: var(--menu-main__active-font-style);
-  font-weight: var(--menu-main__active-font-weight);
-  color: var(--menu-main__active-color);
-  text-transform: var(--menu-main__active-text-transform);
-  opacity: var(--menu-main__active-opacity);
+  font-style: var(--menu-main-active__font-style);
+  font-weight: var(--menu-main-active__font-weight);
+  color: var(--menu-main-active__color);
+  text-transform: var(--menu-main-active__text-transform);
+  opacity: var(--menu-main-active__opacity);
 }
 @media (min-width: 641px) {
   .menu-main__item--selected a {
-    border-bottom: var(--menu-main__active-text-decoration);
+    border-bottom: var(--menu-main-active__text-decoration);
   }
 }
 @media (min-width: 641px) {
@@ -64,20 +64,20 @@
   opacity: var(--menu-sub__opacity);
 }
 .menu-sub__item:not(.menu-sub__item--selected) a:not(.menu-sub__link--untranslated):hover {
-  font-style: var(--menu-sub__hover-font-style);
-  font-weight: var(--menu-sub__hover-font-weight);
-  color: var(--menu-sub__hover-color);
-  text-decoration: var(--menu-sub__hover-text-decoration);
-  text-transform: var(--menu-sub__hover-text-transform);
-  opacity: var(--menu-sub__hover-opacity);
+  font-style: var(--menu-sub-hover__font-style);
+  font-weight: var(--menu-sub-hover__font-weight);
+  color: var(--menu-sub-hover__color);
+  text-decoration: var(--menu-sub-hover__text-decoration);
+  text-transform: var(--menu-sub-hover__text-transform);
+  opacity: var(--menu-sub-hover__opacity);
 }
 .menu-sub__item--selected a {
-  font-style: var(--menu-sub__active-font-style);
-  font-weight: var(--menu-sub__active-font-weight);
-  color: var(--menu-sub__active-color);
-  text-decoration: var(--menu-sub__active-text-decoration);
-  text-transform: var(--menu-sub__active-text-transform);
-  opacity: var(--menu-sub__active-opacity);
+  font-style: var(--menu-sub-active__font-style);
+  font-weight: var(--menu-sub-active__font-weight);
+  color: var(--menu-sub-active__color);
+  text-decoration: var(--menu-sub-active__text-decoration);
+  text-transform: var(--menu-sub-active__text-transform);
+  opacity: var(--menu-sub-active__opacity);
 }
 @media (min-width: 641px) {
   .menu-sub__item a {
@@ -150,11 +150,11 @@
   text-transform: var(--content-area-link__text-transform);
 }
 .content-area a:not(.custom-btn):hover {
-  font-style: var(--content-area-link__hover-font-style);
-  font-weight: var(--content-area-link__hover-font-weight);
-  color: var(--content-area-link__hover-color);
-  text-decoration: var(--content-area-link__hover-text-decoration);
-  text-transform: var(--content-area-link__hover-text-transform);
+  font-style: var(--content-area-link-hover__font-style);
+  font-weight: var(--content-area-link-hover__font-weight);
+  color: var(--content-area-link-hover__color);
+  text-decoration: var(--content-area-link-hover__text-decoration);
+  text-transform: var(--content-area-link-hover__text-transform);
 }
 .content-area pre::before {
   background-color: var(--main__color-secondary);

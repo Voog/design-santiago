@@ -216,7 +216,7 @@
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--content-area-link__hover-font-weight"
+      "--content-area-link-hover__font-weight"
     ]
   */
   --content-area-link__font-weight: 400;
@@ -232,7 +232,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-area-link__hover-font-weight: 400;
+  --content-area-link-hover__font-weight: 400;
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
     "titleI18n": "font_style",
@@ -245,7 +245,7 @@
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--content-area-link__hover-font-style"
+      "--content-area-link-hover__font-style"
     ]
   */
   --content-area-link__font-style: normal;
@@ -261,7 +261,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-area-link__hover-font-style: normal;
+  --content-area-link-hover__font-style: normal;
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
     "titleI18n": "text_decoration",
@@ -287,7 +287,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-area-link__hover-text-decoration: underline;
+  --content-area-link-hover__text-decoration: underline;
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
     "titleI18n": "text_transform",
@@ -300,7 +300,7 @@
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--content-area-link__hover-text-transform"
+      "--content-area-link-hover__text-transform"
     ]
   */
   --content-area-link__text-transform: none;
@@ -316,7 +316,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-area-link__hover-text-transform: none;
+  --content-area-link-hover__text-transform: none;
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
     "titleI18n": "color",
@@ -325,7 +325,7 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-area-link__hover-color"
+      "--content-area-link-hover__color"
     ]
   */
   --content-area-link__color: #ed1c24;
@@ -336,5 +336,5 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-area-link__hover-color: #ed1c24;
+  --content-area-link-hover__color: #ed1c24;
 }
