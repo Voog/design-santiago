@@ -4,7 +4,8 @@
 .content-area {
   line-height: 1.7;
 
-  .layout-header__title & { // scss-lint:disable SelectorFormat
+  // scss-lint:disable SelectorFormat
+  .layout-header__title & {
     font-weight: 700;
     color: $color-secondary;
 
@@ -16,6 +17,11 @@
       font-size: 48px;
     }
   }
+
+  .layout-footer & {
+    font-size: 16px;
+  }
+  // scss-lint:enable SelectorFormat
 
   &:empty {
     display: none;

@@ -34,10 +34,6 @@
     }
 
     &--narrow {
-      @include breakpoint(max-width $large) {
-        order: 2;
-      }
-
       @include breakpoint($large-up) {
         min-width: 145px;
       }
@@ -52,6 +48,12 @@
     &--body {
       @include breakpoint(max-width $large) {
         order: 1;
+      }
+    }
+
+    &--social-media {
+      @include breakpoint(max-width $large) {
+        order: 2;
       }
     }
   }

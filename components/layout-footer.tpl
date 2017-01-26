@@ -8,7 +8,7 @@
       <div class="content-area">{% xcontent name="footer" %}</div>
     </div>
 
-    <div class="layout-footer__section layout-footer__section--narrow">
+    <div class="layout-footer__section layout-footer__section--narrow layout-footer__section--social-media">
       <div class="content-area">{% xcontent name="footer_2" %}</div>
     </div>
   </div>
