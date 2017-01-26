@@ -179,6 +179,10 @@
   border-style: solid;
 }
 
+.content-area .edy-content-social-button {
+  color: var(--content-area-link__color);
+}
+
 .content-item-boxes {
   max-width: var(--main__width);
 }
