@@ -265,13 +265,6 @@
       "file": "components/template-cs-headings.tpl"
     },
     {
-      "title": "template-cs-list",
-      "layout_name": "template-cs-list",
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-list.tpl"
-    },
-    {
       "title": "template-cs-main-styles",
       "layout_name": "template-cs-main-styles",
       "content_type": "component",
@@ -284,20 +277,6 @@
       "content_type": "component",
       "component": true,
       "file": "components/template-cs-menus.tpl"
-    },
-    {
-      "title": "template-cs-style-rules",
-      "layout_name": "template-cs-style-rules",
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-style-rules.tpl"
-    },
-    {
-      "title": "template-cs-table",
-      "layout_name": "template-cs-table",
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-table.tpl"
     },
     {
       "title": "template-cs-product-list",
@@ -314,11 +293,18 @@
       "file": "components/template-cs-product.tpl"
     },
     {
-      "title": "template-cs-blog",
-      "layout_name": "template-cs-blog",
+      "title": "template-cs-style-rules",
+      "layout_name": "template-cs-style-rules",
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-blog.tpl"
+      "file": "components/template-cs-style-rules.tpl"
+    },
+    {
+      "title": "template-cs-table",
+      "layout_name": "template-cs-table",
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-table.tpl"
     }
   ],
   "assets": [
