@@ -572,3 +572,15 @@
     font-family: var(--main__font-family);
   }
 }
+
+// =============================================================================
+// Loading indicator
+// =============================================================================
+.loader {
+  .not-loaded &,
+  .is-loaded & {
+    &::before {
+      border-top-color: var(--main__color-primary);
+    }
+  }
+}

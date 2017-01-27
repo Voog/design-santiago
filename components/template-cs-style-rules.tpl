@@ -385,3 +385,7 @@
 .layout-root .edy-ecommerce-product-count {
   font-family: var(--main__font-family);
 }
+
+.not-loaded .loader::before, .is-loaded .loader::before {
+  border-top-color: var(--main__color-primary);
+}

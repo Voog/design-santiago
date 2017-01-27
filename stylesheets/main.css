@@ -2674,10 +2674,11 @@ label .form_control_indicator::before {
           animation: rotation .7s infinite linear;
 }
 .not-loaded .loader::before, .is-loaded .loader::before {
-  border-top: 1px solid black;
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
   border-left: 1px solid transparent;
+  border-top-style: solid;
+  border-top-width: 1px;
   border-radius: 100%;
 }
 .not-loaded .loader {
@@ -2691,8 +2692,7 @@ label .form_control_indicator::before {
   height: 30px;
   margin-top: -15px;
   margin-left: -15px;
-  background-color: rgba(237, 28, 36, 0.3);
-  opacity: 1;
+  opacity: .3;
 }
 .with-error .loader::before, .with-error .loader::after {
   position: absolute;
