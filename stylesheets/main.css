@@ -1889,7 +1889,6 @@ label .form_control_indicator::before {
   position: absolute;
   width: 26px;
   height: 3px;
-  background-color: #ed1c24;
   border-radius: 4px;
   transition-duration: .15s;
   transition-property: -webkit-transform;
@@ -2692,6 +2691,7 @@ label .form_control_indicator::before {
   height: 30px;
   margin-top: -15px;
   margin-left: -15px;
+  background-color: rgba(237, 28, 36, 0.3);
   opacity: .3;
 }
 .with-error .loader::before, .with-error .loader::after {

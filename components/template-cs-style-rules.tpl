@@ -295,6 +295,10 @@
   color: var(--content-area-link__color);
 }
 
+.menu-btn__stripes, .menu-btn__stripes::before, .menu-btn__stripes::after {
+  background-color: var(--main__color-secondary);
+}
+
 .content-item-boxes {
   max-width: var(--main__width);
 }
