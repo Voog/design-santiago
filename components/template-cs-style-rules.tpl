@@ -1,3 +1,8 @@
+.layout-wrap {
+  font-family: var(--main__font-family);
+  background-color: var(--main__background-color);
+}
+
 .layout-header {
   max-width: var(--main__width);
 }
@@ -349,4 +354,12 @@
 }
 .layout-footer__container {
   max-width: var(--main__width);
+}
+
+.layout-root .edy-ecommerce-modal {
+  font-family: var(--main__font-family);
+}
+
+.layout-root .edy-ecommerce-product-count {
+  font-family: var(--main__font-family);
 }

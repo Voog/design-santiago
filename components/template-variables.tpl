@@ -86,8 +86,12 @@
         "title": "Sans Serif",
         "list": [
           {
+            "title": "Raleway",
+            "value": "Raleway, sans-serif"
+          },
+          {
             "title": "Avenir Next",
-            "value": "\"Avenir Next\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
+            "value": "\"Avenir Next\", \"Helvetica Neue\", Helvetica, \"Segoe UI\", sans-serif"
           },
           {
             "title": "Fira Sans",
@@ -95,11 +99,11 @@
           },
           {
             "title": "Lato",
-            "value": "\"Lato\", sans-serif"
+            "value": "Lato, sans-serif"
           },
           {
             "title": "Montserrat",
-            "value": "\"Montserrat\", Helvetica, Arial, sans-serif"
+            "value": "Montserrat, Helvetica, Arial, sans-serif"
           },
           {
             "title": "Open Sans",
@@ -107,7 +111,7 @@
           },
           {
             "title": "Roboto",
-            "value": "\"Roboto\", sans-serif"
+            "value": "Roboto, sans-serif"
           },
           {
             "title": "Source Sans Pro",
@@ -115,7 +119,7 @@
           },
           {
             "title": "Ubuntu",
-            "value": "\"Ubuntu\", sans-serif"
+            "value": "Ubuntu, sans-serif"
           }
         ]
       },

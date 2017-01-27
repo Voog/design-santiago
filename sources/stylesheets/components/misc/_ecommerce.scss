@@ -1,3 +1,6 @@
+// =============================================================================
+// Ecommerce elements
+// =============================================================================
 // TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
 // These default style overrides can't be written in BEM.
 .edy-checkout-button-visible {
@@ -7,10 +10,6 @@
 }
 
 .edy-ecommerce-modal {
-  .layout-root & {
-    font-family: $font-family-primary;
-  }
-
   .edy-ecommerce-modal-wrapper {
     a {
       // scss-lint:disable NestingDepth, SelectorDepth
@@ -128,7 +127,6 @@
 
 .edy-ecommerce-product-count {
   .layout-root & {
-    font-family: $font-family-primary;
     font-size: 16px;
   }
 }

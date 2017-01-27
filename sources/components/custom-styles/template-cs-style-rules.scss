@@ -21,11 +21,18 @@
 // VARIABLES
 @import '../../stylesheets/variables/margins';
 @import '../../stylesheets/variables/colors';
-@import '../../stylesheets/variables/fonts';
 @import '../../stylesheets/variables/breakpoints';
 
 // =============================================================================
-// Layout body
+// Layout wrap
+// =============================================================================
+.layout-wrap {
+  font-family: var(--main__font-family);
+  background-color: var(--main__background-color);
+}
+
+// =============================================================================
+// Layout header
 // =============================================================================
 .layout-header {
   max-width: var(--main__width);
@@ -520,5 +527,22 @@
 
   &__container {
     max-width: var(--main__width);
+  }
+}
+
+// =============================================================================
+// Ecommerce elements
+// =============================================================================
+// TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
+// These default style overrides can't be written in BEM.
+.edy-ecommerce-modal {
+  .layout-root & {
+    font-family: var(--main__font-family);
+  }
+}
+
+.edy-ecommerce-product-count {
+  .layout-root & {
+    font-family: var(--main__font-family);
   }
 }

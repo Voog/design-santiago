@@ -47,6 +47,14 @@
           {% endif %}
 
           <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
+          <div class="content-item-box content-item-box--placeholder"></div>
         </main>
       </div>
 

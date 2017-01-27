@@ -21,7 +21,6 @@
   padding-right: 16px;
   padding-left: 16px;
   margin: 0;
-  font-family: "Raleway", sans-serif;
   transition-duration: .2s;
   transition-property: right;
 }
@@ -2446,9 +2445,6 @@ label .form_control_indicator::before {
   padding-top: 0;
 }
 
-.layout-root .edy-ecommerce-modal {
-  font-family: "Raleway", sans-serif;
-}
 .layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a {
   color: #ed1c24;
 }
@@ -2532,7 +2528,6 @@ label .form_control_indicator::before {
 }
 
 .layout-root .edy-ecommerce-product-count {
-  font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 
