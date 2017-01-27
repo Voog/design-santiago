@@ -68,50 +68,29 @@
       }
     }
 
-    &:not(&--selected) {
-      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-      // scss-lint:disable NestingDepth
-      a {
-        border-bottom-color: transparent;
+    //&:not(&--selected) {
+    //  // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    //  // scss-lint:disable NestingDepth
+    //  a {
+    //  }
+    //  // scss-lint:enable NestingDepth
+    //}
 
-        &:hover {
-          @include breakpoint(max-width $medium) {
-            opacity: .75;
-          }
+    //// TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    //&--selected {
+    //  // scss-lint:disable NestingDepth
+    //  a {
+    //  }
+    //  // scss-lint:enable NestingDepth
+    //}
 
-          @include breakpoint($medium-up) {
-            border-bottom-color: rgba($color-primary, .75);
-          }
-        }
-      }
-      // scss-lint:enable NestingDepth
-    }
-
-    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    &--selected {
-      // scss-lint:disable NestingDepth
-      a {
-        @include breakpoint(max-width $medium) {
-          font-weight: 700;
-        }
-
-        @include breakpoint($medium-up) {
-          border-bottom-color: $color-primary;
-          border-bottom-style: solid;
-          border-bottom-width: 2px;
-        }
-      }
-      // scss-lint:enable NestingDepth
-    }
-
-    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    &--current {
-      // scss-lint:disable NestingDepth
-      a {
-        border-bottom-color: rgba($color-primary, .75);
-      }
-      // scss-lint:enable NestingDepth
-    }
+    //// TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    //&--current {
+    //  // scss-lint:disable NestingDepth
+    //  //a {
+    //  //}
+    //  // scss-lint:enable NestingDepth
+    //}
 
     &--hidden {
       display: none;
@@ -120,7 +99,6 @@
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     a {
       display: block;
-      color: $color-primary;
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
@@ -131,9 +109,6 @@
       @include breakpoint($medium-up) {
         padding-bottom: 8px;
         margin-bottom: 8px;
-        font-size: 28px;
-        border-bottom-style: solid;
-        border-bottom-width: 2px;
       }
     }
 

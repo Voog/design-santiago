@@ -1,10 +1,11 @@
-// Test
+// =============================================================================
+// Content area container
+// =============================================================================
 .content-area {
-  font-size: 16px;
   line-height: 1.7;
-  color: $color-primary;
 
-  .layout-header__title & { // scss-lint:disable SelectorFormat
+  // scss-lint:disable SelectorFormat
+  .layout-header__title & {
     font-weight: 700;
     color: $color-secondary;
 
@@ -16,6 +17,7 @@
       font-size: 48px;
     }
   }
+  // scss-lint:enable SelectorFormat
 
   &:empty {
     display: none;

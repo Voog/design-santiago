@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{% include "template-variables" layout_blog: true %}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
@@ -12,15 +12,17 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-      <main class="layout-body layout-body--narrow">
-        {% include "blog-article" %}
+        <div class="layout-body layout-body--narrow">
+          <main class="layout-body__content">
+          {% include "blog-article" %}
 
-        {% include "blog-article-tags" %}
+          {% include "blog-article-tags" %}
 
-        {% include "blog-article-navigation" %}
+          {% include "blog-article-navigation" %}
 
-        {% include "blog-article-comments" %}
-      </main>
+          {% include "blog-article-comments" %}
+        </main>
+      </div>
 
       {% include "layout-footer" %}
 

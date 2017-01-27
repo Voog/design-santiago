@@ -4,7 +4,7 @@
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
-    {% include "template-head" %}
+    {% include "template-head" layout_product: true %}
   </head>
 
   <body class="layout-container item-page">

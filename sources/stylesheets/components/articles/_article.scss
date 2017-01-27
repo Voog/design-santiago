@@ -1,3 +1,6 @@
+// =============================================================================
+// Blog article
+// =============================================================================
 .article {
   @include breakpoint(max-width $medium) {
     margin-bottom: 40px;
@@ -15,9 +18,6 @@
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 28px;
-    color: $color-secondary;
-    text-transform: uppercase;
   }
 
   &__link {
@@ -29,25 +29,16 @@
     }
   }
 
-  &__date {
-    font-size: 12px;
-    opacity: .5;
-  }
+  //&__date {
+  //}
 
   //&__content {
   //}
 
-  %text {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-
   &__excerpt {
-    @extend %text;
     margin-bottom: 24px;
   }
 
-  &__body {
-    @extend %text;
-  }
+  //&__body {
+  //}
 }

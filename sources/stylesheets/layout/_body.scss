@@ -1,7 +1,9 @@
+// =============================================================================
+// Layout body
+// =============================================================================
 .layout-body {
   flex-grow: 1;
   width: 100%;
-  max-width: $width-layout-wrap;
   margin-top: 32px;
   margin-right: $margin-horizontal-layout-wrap;
   margin-left: $margin-horizontal-layout-wrap;
@@ -15,7 +17,9 @@
     margin-top: 24px;
   }
 
-  &--narrow {
-    max-width: 960px;
-  }
+  //&__content {
+  //}
+
+  //&--narrow {
+  //}
 }

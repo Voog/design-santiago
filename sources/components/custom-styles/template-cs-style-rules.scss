@@ -1,0 +1,548 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Dependencies
+// =============================================================================
+// 3RD PARTY COMPONENTS
+@import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+// Mixins
+@import '../../stylesheets/mixins/general';
+
+// VARIABLES
+@import '../../stylesheets/variables/margins';
+@import '../../stylesheets/variables/colors';
+@import '../../stylesheets/variables/breakpoints';
+
+// =============================================================================
+// Layout wrap
+// =============================================================================
+.layout-wrap {
+  font-family: var(--main__font-family);
+  background-color: var(--main__background-color);
+}
+
+// =============================================================================
+// Layout header
+// =============================================================================
+.layout-header {
+  max-width: var(--main__width);
+}
+
+// =============================================================================
+// Layout body
+// =============================================================================
+.layout-body {
+  max-width: var(--main__width);
+
+  &__content {
+    background-color: var(--layout-body-narrow__background-color);
+
+    @include breakpoint($medium-up) {
+      padding: var(--layout-body-narrow__padding);
+    }
+  }
+
+  &--narrow {
+    max-width: var(--layout-body-narrow__max-width);
+  }
+}
+
+// =============================================================================
+// Menu main
+// =============================================================================
+.menu-main {
+  &__item {
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-main__font-style);
+        font-weight: var(--menu-main__font-weight);
+        color: var(--menu-main__color);
+        text-transform: var(--menu-main__text-transform);
+        opacity: var(--menu-main__opacity);
+
+        @include breakpoint($medium-up) {
+          border-bottom: var(--menu-main__text-decoration);
+        }
+
+        &:hover {
+          font-style: var(--menu-main-hover__font-style);
+          font-weight: var(--menu-main-hover__font-weight);
+          color: var(--menu-main-hover__color);
+          text-transform: var(--menu-main-hover__text-transform);
+
+          @include breakpoint($medium-up) {
+            border-bottom: var(--menu-main-hover__text-decoration);
+            opacity: var(--menu-main-hover__opacity);
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-main-active__font-style);
+        font-weight: var(--menu-main-active__font-weight);
+        color: var(--menu-main-active__color);
+        text-transform: var(--menu-main-active__text-transform);
+        opacity: var(--menu-main-active__opacity);
+
+        @include breakpoint($medium-up) {
+          border-bottom: var(--menu-main-active__text-decoration);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      @include breakpoint($medium-up) {
+        font-size: var(--menu-main__font-size);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// Menu sub
+// =============================================================================
+.menu-sub {
+  &__item {
+    &:not(&--selected) {
+      // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+      // scss-lint:disable NestingDepth
+      a:not(.menu-sub__link--untranslated) {
+        font-style: var(--menu-sub__font-style);
+        font-weight: var(--menu-sub__font-weight);
+        color: var(--menu-sub__color);
+        text-decoration: var(--menu-sub__text-decoration);
+        text-transform: var(--menu-sub__text-transform);
+        opacity: var(--menu-sub__opacity);
+
+        &:hover {
+          font-style: var(--menu-sub-hover__font-style);
+          font-weight: var(--menu-sub-hover__font-weight);
+          color: var(--menu-sub-hover__color);
+          text-decoration: var(--menu-sub-hover__text-decoration);
+          text-transform: var(--menu-sub-hover__text-transform);
+          opacity: var(--menu-sub-hover__opacity);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        font-style: var(--menu-sub-active__font-style);
+        font-weight: var(--menu-sub-active__font-weight);
+        color: var(--menu-sub-active__color);
+        text-decoration: var(--menu-sub-active__text-decoration);
+        text-transform: var(--menu-sub-active__text-transform);
+        opacity: var(--menu-sub-active__opacity);
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      @include breakpoint($medium-up) {
+        font-size: var(--menu-sub__font-size);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// Content area container
+// =============================================================================
+.content-area {
+  font-size: var(--content-area-text__font-size);
+  color: var(--content-area-text__color);
+
+  // scss-lint:enable SelectorFormat
+  .layout-footer & {
+    font-size: var(--layout-footer__font-size);
+    font-weight: var(--layout-footer__font-weight);
+    font-style: var(--layout-footer__font-style);
+    color: var(--layout-footer__color);
+    text-decoration: var(--layout-footer__text-decoration);
+    text-transform: var(--layout-footer__text-transform);
+    background-color: var(--layout-footer__background-color);
+  }
+  // scss-lint:disable SelectorFormat
+}
+
+// =============================================================================
+// Content area elements
+// =============================================================================
+.content-area {
+  h1 {
+    .layout-body & {
+      font-style: var(--title__font-style);
+      font-weight: var(--title__font-weight);
+      color: var(--title__color);
+      text-decoration: var(--title__text-decoration);
+      text-transform: var(--title__text-transform);
+
+      @include breakpoint($medium-up) {
+        font-size: var(--title__font-size);
+      }
+
+      // scss-lint:disable NestingDepth
+      &:not(.content-item-title) {
+        text-align: var(--title__text-alignment);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  h2 {
+    font-style: var(--heading__font-style);
+    font-weight: var(--heading__font-weight);
+    color: var(--heading__color);
+    text-align: var(--heading__text-alignment);
+    text-decoration: var(--heading__text-decoration);
+    text-transform: var(--heading__text-transform);
+
+    @include breakpoint($medium-up) {
+      font-size: var(--heading__font-size);
+    }
+  }
+
+  h3 {
+    font-style: var(--subheading__font-style);
+    font-weight: var(--subheading__font-weight);
+    text-align: var(--subheading__text-alignment);
+    text-decoration: var(--subheading__text-decoration);
+    text-transform: var(--subheading__text-transform);
+
+    @include breakpoint($medium-up) {
+      font-size: var(--subheading__font-size);
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--subheading__color);
+  }
+
+
+  p {
+    font-size: var(--content-area-text__font-size);
+
+    > code {
+      // scss-lint:disable NestingDepth
+      &::before {
+        background-color: var(--main__color-secondary);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  a {
+    font-style: var(--content-area-link__font-style);
+    font-weight: var(--content-area-link__font-weight);
+    color: var(--content-area-link__color);
+    text-decoration: var(--content-area-link__text-decoration);
+    text-transform: var(--content-area-link__text-transform);
+
+    &:not(.custom-btn) {
+      // scss-lint:disable NestingDepth
+      &:hover {
+        font-style: var(--content-area-link-hover__font-style);
+        font-weight: var(--content-area-link-hover__font-weight);
+        color: var(--content-area-link-hover__color);
+        text-decoration: var(--content-area-link-hover__text-decoration);
+        text-transform: var(--content-area-link-hover__text-transform);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  pre {
+    &::before {
+      background-color: var(--main__color-secondary);
+    }
+  }
+
+  > code {
+    &::before {
+      background-color: var(--main__color-secondary);
+    }
+  }
+
+  .custom-btn {
+    padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
+    font-size: var(--content-area-button__font-size);
+    font-style: var(--content-area-button__font-style);
+    font-weight: var(--content-area-button__font-weight);
+    color: var(--content-area-button__color);
+    text-decoration: var(--content-area-button__text-decoration);
+    text-transform: var(--content-area-button__text-transform);
+    background-color: var(--content-area-button__background-color);
+    opacity: var(--content-area-button__opacity);
+
+    &:hover {
+      font-style: var(--content-area-button-hover__font-style);
+      font-weight: var(--content-area-button-hover__font-weight);
+      color: var(--content-area-button-hover__color);
+      text-decoration: var(--content-area-button-hover__text-decoration);
+      text-transform: var(--content-area-button-hover__text-transform);
+      background-color: var(--content-area-button-hover__background-color);
+      opacity: var(--content-area-button-hover__opacity);
+    }
+
+    &.edy-buy-button {
+      [data-view-state="editmode"] & {
+        padding: calc(var(--content-area-button__padding) - 7px) calc(var(--content-area-button__padding) - 1.22px);
+      }
+    }
+  }
+
+  table {
+    td,
+    th {
+      padding: var(--content-area-table__padding);
+      font-size: var(--content-area-table__font-size);
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        border-color: var(--content-area-table__border-color);
+        border-style: var(--content-area-table__border-style);
+        opacity: var(--content-area-table__border-opacity);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}
+
+// =============================================================================
+// Content area form
+// =============================================================================
+// scss-lint:disable SelectorFormat
+.edy-fe-label,
+.form_field_label {
+  font-size: var(--content-area-form-field-label__font-size);
+  font-style: var(--content-area-form-field-label__font-style);
+  font-weight: var(--content-area-form-field-label__font-weight);
+  color: var(--content-area-form-field-label__color);
+  text-decoration: var(--content-area-form-field-label__text-decoration);
+  text-transform: var(--content-area-form-field-label__text-transform);
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select,
+.form_field label {
+  font-style: var(--content-area-form-field-text__font-style);
+  font-weight: var(--content-area-form-field-text__font-weight);
+  color: var(--content-area-form-field-text__color);
+  text-decoration: var(--content-area-form-field-text__text-decoration);
+  text-transform: var(--content-area-form-field-text__text-transform);
+
+  &:not([data-group="comment-field"]) {
+    font-size: var(--content-area-form-field-text__font-size);
+  }
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_field_select {
+  background-color: var(--content-area-form-field-text__background-color);
+  border-color: var(--content-area-form-field-text__border-color);
+}
+
+.form_field_checkbox {
+  + .form_control_indicator {
+    // scss-lint:disable NestingDepth
+    &::before {
+      background-color: var(--content-area-form-field-text__background-color);
+      border-color: var(--content-area-form-field-text__border-color);
+    }
+    // scss-lint:enable NestingDepth
+  }
+}
+
+.form_field_radio {
+  + .form_control_indicator {
+    // scss-lint:disable NestingDepth
+    &::before {
+      background-color: var(--content-area-form-field-text__background-color);
+      border-color: var(--content-area-form-field-text__background-color);
+      outline-color: var(--content-area-form-field-text__border-color);
+    }
+    // scss-lint:enable NestingDepth
+  }
+
+  &:checked {
+    // scss-lint:disable NestingDepth
+    + .form_control_indicator {
+      &::before {
+        background-color: var(--content-area-form-field-text__color);
+      }
+    }
+    // scss-lint:enable NestingDepth
+  }
+}
+
+.form_submit {
+  input {
+    padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
+    font-size: var(--content-area-button__font-size);
+    font-style: var(--content-area-button__font-style);
+    font-weight: var(--content-area-button__font-weight);
+    color: var(--content-area-button__color);
+    text-decoration: var(--content-area-button__text-decoration);
+    text-transform: var(--content-area-button__text-transform);
+    background-color: var(--content-area-button__background-color);
+    opacity: var(--content-area-button__opacity);
+
+    &:hover {
+      font-style: var(--content-area-button-hover__font-style);
+      font-weight: var(--content-area-button-hover__font-weight);
+      color: var(--content-area-button-hover__color);
+      text-decoration: var(--content-area-button-hover__text-decoration);
+      text-transform: var(--content-area-button-hover__text-transform);
+      background-color: var(--content-area-button-hover__background-color);
+      opacity: var(--content-area-button-hover__opacity);
+    }
+  }
+}
+// scss-lint:enable SelectorFormat
+
+// =============================================================================
+// Content area social media
+// =============================================================================
+.content-area {
+  .edy-content-social-button {
+    color: var(--content-area-link__color);
+  }
+}
+
+// =============================================================================
+// Content items (products)
+// =============================================================================
+.content-item-boxes {
+  max-width: var(--main__width);
+}
+
+// TODO: Convert to BEM component block.
+.content-item-box {
+  .item-list-page & {
+    color: var(--content-item-box__color);
+
+    @include breakpoint ($medium-up) {
+      width: var(--content-item-box__width);
+    }
+  }
+}
+
+.item-top {
+  .top-inner {
+    border-radius: var(--content-item-box__image-radius);
+  }
+}
+
+.item-title {
+  .item-list-page & {
+    font-style: var(--content-item-box__font-style);
+    font-weight: var(--content-item-box__font-weight);
+    text-align: var(--content-item-box__alignment);
+    text-decoration: var(--content-item-box__text-decoration);
+    text-transform: var(--content-item-box__text-transform);
+
+    @include breakpoint ($medium-up) {
+      font-size: var(--content-item-box__font-size);
+    }
+  }
+}
+
+// =============================================================================
+// Blog article
+// =============================================================================
+.article {
+  &__title {
+    font-size: var(--content-area-article-title__font-size);
+    font-style: var(--content-area-article-title__font-style);
+    font-weight: var(--content-area-article-title__font-weight);
+    color: var(--content-area-article-title__color);
+    text-decoration: var(--content-area-article-title__text-decoration);
+    text-transform: var(--content-area-article-title__text-transform);
+  }
+
+  &__date {
+    font-size: var(--content-area-article-date__font-size);
+    font-style: var(--content-area-article-date__font-style);
+    font-weight: var(--content-area-article-date__font-weight);
+    color: var(--content-area-article-date__color);
+    text-decoration: var(--content-area-article-date__text-decoration);
+    text-transform: var(--content-area-article-date__text-transform);
+    opacity: var(--content-area-article-date__opacity);
+  }
+}
+
+// =============================================================================
+// Blog article navigation
+// =============================================================================
+.article-nav {
+  color: var(--content-area-text__color);
+}
+
+// =============================================================================
+// Blog comments
+// =============================================================================
+.comments {
+  max-width: calc(var(--layout-body-narrow__max-width) - 260px);
+
+  &__title {
+    color: var(--main__color-primary);
+  }
+}
+
+// =============================================================================
+// Layout footer
+// =============================================================================
+.layout-footer {
+  padding-top: var(--layout-footer__padding);
+  padding-bottom: var(--layout-footer__padding);
+  background-color: var(--layout-footer__background-color);
+
+  &__container {
+    max-width: var(--main__width);
+  }
+}
+
+// =============================================================================
+// Ecommerce elements
+// =============================================================================
+// TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
+// These default style overrides can't be written in BEM.
+.edy-ecommerce-modal {
+  .layout-root & {
+    font-family: var(--main__font-family);
+  }
+}
+
+.edy-ecommerce-product-count {
+  .layout-root & {
+    font-family: var(--main__font-family);
+  }
+}

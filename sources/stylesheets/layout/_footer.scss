@@ -1,14 +1,16 @@
+// =============================================================================
+// Layout footer
+// =============================================================================
 .layout-footer {
-  padding: 32px 16px;
+  padding-right: 16px;
+  padding-left: 16px;
   margin-top: 32px;
   margin-right: -16px;
   margin-left: -16px;
-  background-color: $color-grey;
 
   &__container {
     display: flex;
     align-items: center;
-    max-width: $width-layout-wrap;
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
     box-sizing: border-box;
@@ -34,10 +36,6 @@
     }
 
     &--narrow {
-      @include breakpoint(max-width $large) {
-        order: 2;
-      }
-
       @include breakpoint($large-up) {
         min-width: 145px;
       }
@@ -52,6 +50,12 @@
     &--body {
       @include breakpoint(max-width $large) {
         order: 1;
+      }
+    }
+
+    &--social-media {
+      @include breakpoint(max-width $large) {
+        order: 2;
       }
     }
   }

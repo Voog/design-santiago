@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{% include "template-variables" layout_blog: true %}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
@@ -21,11 +21,13 @@
           <div class="btns-container">{% addbutton %}</div>
         {% endif %}
 
-        <main class="articles-container">
-          {% for article in articles %}
-            {% include "blog-article" list_item: true %}
-          {% endfor %}
-        </main>
+        <div class="layout-body__content">
+          <main class="articles-container">
+            {% for article in articles %}
+              {% include "blog-article" list_item: true %}
+            {% endfor %}
+          </main>
+        </div>
       </div>
 
       {% include "layout-footer" %}

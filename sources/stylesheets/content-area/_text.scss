@@ -1,3 +1,6 @@
+// =============================================================================
+// Content area elements
+// =============================================================================
 .content-area {
   h1,
   h2,
@@ -56,16 +59,11 @@
     margin-top: .55em;
     margin-bottom: .55em;
     line-height: 1.1;
-    color: $color-secondary;
   }
 
   h1 {
     @include breakpoint(max-width $medium) {
       font-size: 48px;
-    }
-
-    @include breakpoint($medium-up) {
-      font-size: 72px;
     }
 
     .layout-header__title & { // scss-lint:disable SelectorFormat
@@ -77,19 +75,11 @@
         font-size: 48px;
       }
     }
-
-    .layout-body & {
-      text-align: center;
-    }
   }
 
   h2 {
     @include breakpoint(max-width $medium) {
       font-size: 32px;
-    }
-
-    @include breakpoint($medium-up) {
-      font-size: 48px;
     }
 
     .layout-header__title & { // scss-lint:disable SelectorFormat
@@ -106,10 +96,6 @@
   h3 {
     @include breakpoint(max-width $medium) {
       font-size: 28px;
-    }
-
-    @include breakpoint($medium-up) {
-      font-size: 32px;
     }
 
     .layout-header__title & { // scss-lint:disable SelectorFormat
@@ -183,14 +169,29 @@
     }
   }
 
+  %code-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    opacity: .05;
+  }
 
   p {
     margin-top: .85em;
     margin-bottom: .85em;
-    font-size: 20px;
 
     > code {
-      background-color: rgba($color-secondary, .05);
+      position: relative;
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        @extend %code-background;
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -239,17 +240,13 @@
   }
 
   dd {
-    margin-left: 10px;
+    margin: 10px .5em;
   }
 
   a {
-    color: $color-secondary;
-    text-decoration: none;
-
     &:not(.custom-btn) {
       // scss-lint:disable NestingDepth
       &:hover {
-        text-decoration: underline;
       }
       // scss-lint:enable NestingDepth
     }
@@ -271,8 +268,12 @@
   }
 
   pre {
+    position: relative;
     overflow: auto;
-    background-color: rgba($color-secondary, .05);
+
+    &::before {
+      @extend %code-background;
+    }
 
     code {
       display: inline;
@@ -291,7 +292,11 @@
   }
 
   > code {
-    background-color: rgba($color-secondary, .05);
+    position: relative;
+
+    &::before {
+      @extend %code-background;
+    }
   }
 
   blockquote {
@@ -312,20 +317,12 @@
 
   .custom-btn {
     display: inline-block;
-    padding: 10px 16px;
     font-family: inherit;
-    font-size: 20px;
     line-height: 1.4;
-    color: $color-white;
-    background-color: $color-secondary;
     outline: 0;
     -webkit-appearance: none;
 
-    &:hover {
-      background-color: rgba($color-secondary, .75);
-    }
-
-    .publicmode & {
+    [data-view-state="publicmode"] & {
       cursor: pointer;
     }
 
@@ -385,10 +382,20 @@
 
     td,
     th {
-      padding: 11.5px;
-      border-color: rgba($color-grey, 1);
-      border-style: solid;
-      border-width: 1px;
+      position: relative;
+      border: 1px solid transparent;
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        border-width: 1px;
+        content: '';
+      }
+      // scss-lint:enable NestingDepth
     }
 
     th {
