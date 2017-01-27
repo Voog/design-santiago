@@ -343,7 +343,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-area-link__text-decoration: none;
+  --content-area-link__text-decoration: underline;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -357,7 +357,7 @@
         "icon": "underline",
         "scope": "global"
       */
-      --content-area-link-hover__text-decoration: underline;
+      --content-area-link-hover__text-decoration: none;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
