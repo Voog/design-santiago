@@ -105,8 +105,8 @@
 }
 .layout-footer .content-area {
   font-size: var(--layout-footer__font-size);
-  font-weight: var(--layout-footer__font-weight);
   font-style: var(--layout-footer__font-style);
+  font-weight: var(--layout-footer__font-weight);
   color: var(--layout-footer__color);
   text-decoration: var(--layout-footer__text-decoration);
   text-transform: var(--layout-footer__text-transform);
@@ -125,8 +125,10 @@
     font-size: var(--title__font-size);
   }
 }
-.layout-body .content-area h1:not(.content-item-title) {
-  text-align: var(--title__text-alignment);
+@media (min-width: 641px) {
+  .layout-body .content-area h1:not(.content-item-title) {
+    text-align: var(--title__text-alignment);
+  }
 }
 .content-area h2 {
   font-style: var(--heading__font-style);

@@ -184,8 +184,8 @@
   // scss-lint:enable SelectorFormat
   .layout-footer & {
     font-size: var(--layout-footer__font-size);
-    font-weight: var(--layout-footer__font-weight);
     font-style: var(--layout-footer__font-style);
+    font-weight: var(--layout-footer__font-weight);
     color: var(--layout-footer__color);
     text-decoration: var(--layout-footer__text-decoration);
     text-transform: var(--layout-footer__text-transform);
@@ -212,7 +212,9 @@
 
       // scss-lint:disable NestingDepth
       &:not(.content-item-title) {
-        text-align: var(--title__text-alignment);
+        @include breakpoint($medium-up) {
+          text-align: var(--title__text-alignment);
+        }
       }
       // scss-lint:enable NestingDepth
     }

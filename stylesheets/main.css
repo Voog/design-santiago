@@ -1574,7 +1574,11 @@ label .form_control_indicator::before {
 }
 .article__header {
   margin-bottom: 24px;
-  text-align: center;
+}
+@media (min-width: 641px) {
+  .article__header {
+    text-align: center;
+  }
 }
 .article__title {
   margin-top: 0;
@@ -1752,15 +1756,26 @@ label .form_control_indicator::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
+}
+@media (max-width: 640px) {
+  .tags {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 641px) {
+  .tags {
+    margin-bottom: 40px;
+  }
 }
 [data-view-state="editmode"] .tags {
   position: relative;
 }
-.tags--centered {
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 641px) {
+  .tags--centered {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .tags__ico {
   -webkit-flex-shrink: 0;
@@ -2450,8 +2465,17 @@ label .form_control_indicator::before {
 
 .btns-container {
   margin-top: 8px;
-  margin-bottom: 40px;
-  text-align: center;
+}
+@media (max-width: 640px) {
+  .btns-container {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 641px) {
+  .btns-container {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 
 .layout-root .edy-checkout-button-visible {

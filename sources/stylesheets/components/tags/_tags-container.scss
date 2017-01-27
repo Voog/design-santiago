@@ -1,13 +1,22 @@
 .tags {
   display: flex;
-  margin-bottom: 40px;
+
+  @include breakpoint(max-width $medium) {
+    margin-bottom: 24px;
+  }
+
+  @include breakpoint($medium-up) {
+    margin-bottom: 40px;
+  }
 
   [data-view-state="editmode"] & {
     position: relative;
   }
 
   &--centered {
-    justify-content: center;
+    @include breakpoint($medium-up) {
+      justify-content: center;
+    }
   }
 
   &__ico {
