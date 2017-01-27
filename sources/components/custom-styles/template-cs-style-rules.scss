@@ -543,6 +543,24 @@
 // =============================================================================
 // TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
 // These default style overrides can't be written in BEM.
+.edy-ecommerce-shopping-cart-button {
+  .layout-root & {
+    font-family: var(--main__font-family);
+
+    @include breakpoint(max-width $medium) {
+      color: var(--main__color-secondary);
+
+      &::before {
+        background-color: var(--main__color-secondary);
+      }
+
+      &:hover {
+        background-color: var(--main__color-primary);
+      }
+    }
+  }
+}
+
 .edy-ecommerce-modal {
   .layout-root & {
     font-family: var(--main__font-family);

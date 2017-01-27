@@ -5,7 +5,13 @@
 // These default style overrides can't be written in BEM.
 .edy-checkout-button-visible {
   .layout-root & {
-    padding-top: 0;
+    @include breakpoint(max-width $medium) {
+      padding-top: 48px;
+    }
+
+    @include breakpoint($medium-up) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -81,59 +87,58 @@
 
 .edy-ecommerce-shopping-cart-button {
   .layout-root & {
-    left: auto;
-    width: 75px;
-    padding: 5px;
-    font-size: 0;
-    line-height: 1.7;
-    text-align: right;
-    background-image: url('../assets/ico-shopping-cart.svg');
-    background-position: 5px;
-    background-repeat: no-repeat;
-    background-size: 34px 28px;
-    border-width: 0;
-
     @include breakpoint(max-width $medium) {
-      position: absolute;
-      top: 27px;
+      padding: 16px;
+      border-bottom: 0;
+
+      &::before {
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        left: 16px;
+        height: 1px;
+        content: '';
+        opacity: .2;
+      }
     }
 
     @include breakpoint($medium-up) {
       top: 20px;
       right: 20px;
-    }
-  }
-
-  [data-menu-main-state="closed"] & {
-    @include breakpoint(max-width $medium) {
-      right: 70px;
-      transition-duration: 200ms;
-      transition-property: right;
-    }
-  }
-
-  [data-menu-main-state="open"] & {
-    @include breakpoint(max-width $medium) {
-      right: 270px;
-      transition-duration: 200ms;
-      transition-property: right;
+      left: auto;
+      width: 75px;
+      padding: 5px;
+      font-size: 0;
+      line-height: 1.7;
+      text-align: right;
+      background-image: url('../assets/ico-shopping-cart.svg');
+      background-position: 5px;
+      background-repeat: no-repeat;
+      background-size: 34px 28px;
+      border-width: 0;
     }
   }
 
   &:hover {
-    opacity: .75;
+    @include breakpoint($medium-up) {
+      opacity: .75;
+    }
   }
 }
 
 .edy-ecommerce-product-count {
   .layout-root & {
-    font-size: 16px;
+    @include breakpoint($medium-up) {
+      font-size: 16px;
+    }
   }
 }
 
 .edy-ecommerce-shopping-cart-button-flash {
   .layout-root & {
-    display: none;
+    @include breakpoint($medium-up) {
+      display: none;
+    }
   }
 }
 

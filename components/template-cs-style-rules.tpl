@@ -363,6 +363,21 @@
   max-width: var(--main__width);
 }
 
+.layout-root .edy-ecommerce-shopping-cart-button {
+  font-family: var(--main__font-family);
+}
+@media (max-width: 640px) {
+  .layout-root .edy-ecommerce-shopping-cart-button {
+    color: var(--main__color-secondary);
+  }
+  .layout-root .edy-ecommerce-shopping-cart-button::before {
+    background-color: var(--main__color-secondary);
+  }
+  .layout-root .edy-ecommerce-shopping-cart-button:hover {
+    background-color: var(--main__color-primary);
+  }
+}
+
 .layout-root .edy-ecommerce-modal {
   font-family: var(--main__font-family);
 }
