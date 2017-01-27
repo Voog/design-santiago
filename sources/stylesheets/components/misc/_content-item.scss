@@ -325,7 +325,7 @@
 
   @include breakpoint ($medium-up) {
     flex: 1;
-    max-width: 520px;
+    max-width: 54%;
     margin-right: 32px;
   }
 
@@ -346,6 +346,7 @@
 
     @include breakpoint ($medium-up) {
       flex: 1;
+      max-width: 46%;
     }
   }
 }

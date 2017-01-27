@@ -2431,7 +2431,7 @@ label .form_control_indicator::before {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    max-width: 520px;
+    max-width: 54%;
     margin-right: 32px;
   }
 }
@@ -2453,6 +2453,7 @@ label .form_control_indicator::before {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    max-width: 46%;
   }
 }
 
