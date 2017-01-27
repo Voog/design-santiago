@@ -5,8 +5,8 @@
     bottom: 0;
     z-index: 1;
     width: 205px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: $color-white;
     box-shadow: 0 0 5px 0 rgba($color-primary, .1);
     box-sizing: border-box;
@@ -102,7 +102,7 @@
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
-        padding: 5px 20px;
+        padding: 4px 16px;
         font-size: 20px;
       }
 

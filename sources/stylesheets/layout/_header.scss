@@ -39,16 +39,9 @@
 
   &__top {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-
-    @include breakpoint(max-width $medium) {
-      align-items: flex-start;
-    }
-
-    @include breakpoint($medium-up) {
-      align-items: center;
-    }
   }
 
   &__title {
@@ -60,6 +53,16 @@
   &__options {
     display: flex;
     align-items: center;
+
+    @include breakpoint(max-width $medium) {
+      padding-top: 1px;
+      padding-bottom: 2px;
+    }
+
+    @include breakpoint($medium-up) {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
   }
 
   &__link {

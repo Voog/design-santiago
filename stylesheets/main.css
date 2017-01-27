@@ -111,24 +111,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-}
-@media (max-width: 640px) {
-  .layout-header__top {
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-@media (min-width: 641px) {
-  .layout-header__top {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 [data-view-state="editmode"] .layout-header__title {
   -webkit-flex-grow: 1;
@@ -142,6 +131,18 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 640px) {
+  .layout-header__options {
+    padding-top: 1px;
+    padding-bottom: 2px;
+  }
+}
+@media (min-width: 641px) {
+  .layout-header__options {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
 }
 .layout-header__link {
   display: block;
@@ -256,6 +257,7 @@
 }
 .layout-header__title .content-area {
   font-weight: 700;
+  line-height: 1.1;
   color: #ed1c24;
 }
 @media (max-width: 640px) {
@@ -901,8 +903,8 @@ label .form_control_indicator::before {
     bottom: 0;
     z-index: 1;
     width: 205px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -960,7 +962,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .menu-main__item a {
-    padding: 5px 20px;
+    padding: 4px 16px;
     font-size: 20px;
   }
 }
@@ -1984,19 +1986,21 @@ label .form_control_indicator::before {
 
 .search-form {
   position: absolute;
-  right: 24px;
-  left: 24px;
   z-index: 1;
   background-color: white;
 }
 @media (max-width: 640px) {
   .search-form {
-    padding-top: 14px;
+    right: 16px;
+    left: 16px;
+    padding-top: 15px;
   }
 }
 @media (min-width: 641px) {
   .search-form {
-    padding-top: 68px;
+    right: 24px;
+    left: 24px;
+    padding-top: 58px;
   }
 }
 
@@ -2066,9 +2070,6 @@ label .form_control_indicator::before {
 }
 
 .voog-search-modal {
-  padding-right: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
   overflow: auto;
   text-align: left;
   border-left: 1px solid rgba(0, 0, 0, 0.05);
@@ -2076,14 +2077,14 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .voog-search-modal {
-    height: calc(100% - 127px);
-    padding-top: 74px;
+    height: calc(100% - 82px);
+    padding: 66px 16px 16px;
   }
 }
 @media (min-width: 641px) {
   .voog-search-modal {
-    height: calc(100% - 152px);
-    padding-top: 128px;
+    height: calc(100% - 142px);
+    padding: 118px 24px 24px;
   }
 }
 .voog-search-modal.search-results-active {
