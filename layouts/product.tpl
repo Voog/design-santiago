@@ -8,8 +8,6 @@
   </head>
 
   <body class="layout-container item-page">
-
-    {{ content_container_title }}
     {% include "template-svg-spritesheet" %}
 
     <div class="layout-wrap">
