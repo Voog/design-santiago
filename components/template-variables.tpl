@@ -77,6 +77,9 @@
   {% elsif layout_blog_article %}
     {% assign content_container_title = "blog" %}
     {% assign content_inner_title = "article" %}
+  {% elsif layout_product %}
+    {% assign content_container_title = "content" %}
+    {% assign content_inner_title = "product" %}
   {% else %}
     {% assign content_container_title = "content" %}
     {% assign content_inner_title = "content" %}

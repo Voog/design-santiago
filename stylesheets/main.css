@@ -2136,6 +2136,10 @@ label .form_control_indicator::before {
   }
 }
 
+.content-inner {
+  margin-top: 32px;
+}
+
 .content-item-box {
   text-decoration: none;
 }
@@ -2452,9 +2456,6 @@ label .form_control_indicator::before {
   }
 }
 
-.items-body {
-  padding-top: 40px;
-}
 @media (min-width: 641px) {
   .items-body {
     display: -webkit-flex;
