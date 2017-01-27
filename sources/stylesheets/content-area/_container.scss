@@ -18,6 +18,12 @@
       font-size: 48px;
     }
   }
+
+  .layout-footer__section--social-media & {
+    @include breakpoint($large-up) {
+      margin-left: 24px;
+    }
+  }
   // scss-lint:enable SelectorFormat
 
   &:empty {

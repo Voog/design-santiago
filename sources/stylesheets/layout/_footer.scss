@@ -26,13 +26,8 @@
       text-align: center;
     }
 
-    @include breakpoint($large-up) {
-
-    }
-
     &--wide {
       flex-grow: 1;
-      margin-right: 24px;
     }
 
     &--narrow {
@@ -56,6 +51,10 @@
     &--social-media {
       @include breakpoint(max-width $large) {
         order: 2;
+      }
+
+      @include breakpoint($large-up) {
+        text-align: right;
       }
     }
   }
