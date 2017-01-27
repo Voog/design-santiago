@@ -71,7 +71,9 @@
 }
 @media (max-width: 640px) {
   .layout-header {
+    position: relative;
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 @media (min-width: 641px) {
@@ -79,6 +81,17 @@
     padding-top: 48px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media (max-width: 640px) {
+  .layout-header::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    opacity: .2;
   }
 }
 @media (max-width: 640px) {

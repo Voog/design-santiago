@@ -6,13 +6,27 @@
   box-sizing: border-box;
 
   @include breakpoint(max-width $medium) {
+    position: relative;
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   @include breakpoint($medium-up) {
     padding-top: 48px;
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
+  }
+
+  &::before {
+    @include breakpoint(max-width $medium) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      content: '';
+      opacity: .2;
+    }
   }
 
   &__container {

@@ -6,6 +6,11 @@
 .layout-header {
   max-width: var(--main__width);
 }
+@media (max-width: 640px) {
+  .layout-header::before {
+    background-color: var(--main__color-secondary);
+  }
+}
 
 .layout-body {
   max-width: var(--main__width);

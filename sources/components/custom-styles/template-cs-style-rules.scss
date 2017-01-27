@@ -36,6 +36,12 @@
 // =============================================================================
 .layout-header {
   max-width: var(--main__width);
+
+  &::before {
+    @include breakpoint(max-width $medium) {
+      background-color: var(--main__color-secondary);
+    }
+  }
 }
 
 // =============================================================================
