@@ -158,6 +158,20 @@
       text-transform: none;
     }
   }
+
+  td {
+    &.actions {
+      // scss-lint:disable NestingDepth
+      button {
+        &.remove {
+          .layout-root & {
+            hyphens: initial;
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
 }
 
 .edy-ecommerce-styled-select {

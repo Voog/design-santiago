@@ -2593,6 +2593,11 @@ label .form_control_indicator::before {
   letter-spacing: 0;
   text-transform: none;
 }
+.layout-root .edy-ecommerce-order-table td.actions button.remove {
+  -webkit-hyphens: initial;
+      -ms-hyphens: initial;
+          hyphens: initial;
+}
 
 .layout-root .edy-ecommerce-styled-select.-small .edy-ecommerce-styled-select-value, .layout-root .edy-ecommerce-styled-select.-medium .edy-ecommerce-styled-select-value {
   padding-right: 21px;
