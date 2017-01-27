@@ -73,6 +73,9 @@
   ============================================================= {% endcomment %}
   {% if layout_blog %}
     {% assign content_container_title = "blog" %}
+    {% assign content_inner_title = "content" %}
+  {% elsif layout_blog_article %}
+    {% assign content_container_title = "blog" %}
     {% assign content_inner_title = "article" %}
   {% else %}
     {% assign content_container_title = "content" %}
