@@ -654,7 +654,7 @@
   position: relative;
   display: block;
 }
-[data-view-state="editmode"] .form_field label {
+.form_field label:not(.form_field_label) {
   margin-left: 25px;
 }
 

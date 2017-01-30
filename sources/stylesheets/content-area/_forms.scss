@@ -25,7 +25,7 @@
     position: relative;
     display: block;
 
-    [data-view-state="editmode"] & {
+    &:not(.form_field_label) {
       margin-left: 25px;
     }
   }
