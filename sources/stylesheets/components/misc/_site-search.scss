@@ -41,16 +41,28 @@
 
   &:hover,
   .site-search-opened & {
-    .search-ico {
+    .search-ico--small {
       opacity: .75;
-      fill: $color-secondary;
     }
   }
 }
 
-.search-ico {
+.search-ico--small {
   opacity: 1;
-  fill: $color-secondary;
+}
+
+.search-ico--large {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 136px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: .1;
 }
 
 .site-search {
@@ -58,9 +70,6 @@
   top: 0;
   bottom: 0;
   background-color: rgba($color-white, 1);
-  background-image: url('../assets/bg-search.svg');
-  background-position: center;
-  background-repeat: no-repeat;
   transition-duration: .2s;
   transition-property: right;
 
@@ -106,9 +115,26 @@
   }
 }
 
+.search-input-container {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 1px;
+    content: '';
+    opacity: .25;
+  }
+}
+
 .search-input {
   @include input-ios-reset;
   @include inherit-font;
+  position: relative;
   display: block;
   width: 100%;
   height: 36px;
@@ -116,15 +142,11 @@
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
-  color: $color-primary;
-  border-color: rgba($color-primary, .25);
+  background-color: transparent;
+  border-color: transparent;
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
-
-  @include placeholder() {
-    font-weight: 400;
-  }
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -150,7 +172,6 @@
   display: none;
   cursor: pointer;
   opacity: .2;
-  fill: $color-secondary;
 
   .not-empty & {
     display: block;
@@ -174,13 +195,31 @@
   -webkit-overflow-scrolling: touch;
 
   @include breakpoint(max-width $medium) {
-    height: calc(100% - 82px);
     padding: 66px 16px 16px;
   }
 
   @include breakpoint($medium-up) {
-    height: calc(100% - 142px);
     padding: 118px 24px 24px;
+  }
+
+  [data-view-state="editmode"] & {
+    @include breakpoint(max-width $medium) {
+      height: calc(100% - 122px);
+    }
+
+    @include breakpoint($medium-up) {
+      height: calc(100% - 182px);
+    }
+  }
+
+  [data-view-state="publicmode"] & {
+    @include breakpoint(max-width $medium) {
+      height: calc(100% - 82px);
+    }
+
+    @include breakpoint($medium-up) {
+      height: calc(100% - 142px);
+    }
   }
 
   // Search modal has the following state classes:
@@ -241,7 +280,6 @@
     a {
       font-size: 20px;
       font-weight: 500;
-      color: $color-primary;
     }
   }
 

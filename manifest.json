@@ -303,12 +303,6 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/bg-search.svg",
-      "kind": "assets",
-      "filename": "bg-search.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-white.svg",
       "kind": "assets",
       "filename": "ico-arrow-white.svg"

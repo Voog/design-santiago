@@ -458,6 +458,67 @@
   }
 }
 
+// =============================================================================
+// SITE SEARCH
+// =============================================================================
+.site-search-btn {
+  &:hover,
+  .site-search-opened & {
+    .search-ico--small {
+      fill: var(--main__color-secondary);
+    }
+  }
+}
+
+.search-form {
+  &::before {
+    border-color: var(--main__color-primary);
+  }
+}
+
+.search-ico--small {
+  fill: var(--main__color-secondary);
+}
+
+.search-ico--large {
+  fill: var(--main__color-secondary);
+}
+
+.search-input {
+  color: var(--main__color-primary);
+
+  @include placeholder() {
+    color: var(--main__color-primary);
+    opacity: .25;
+  }
+
+  &:focus {
+    border-color: var(--main__color-primary);
+  }
+}
+
+.search-clear {
+  fill: var(--main__color-secondary);
+}
+
+// Site search results modal custom styles.
+.voog-search-modal {
+  // TODO: Bind with editor
+  border-left: 1px solid rgba($color-primary, .05);
+}
+
+.voog-search-modal-result {
+  h3 {
+    a {
+      color: var(--main__color-primary);
+    }
+  }
+
+  p {
+    color: var(--main__color-primary);
+  }
+}
+
 
 // =============================================================================
 // Content items (products)

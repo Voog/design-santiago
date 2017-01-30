@@ -299,6 +299,60 @@
   background-color: var(--main__color-secondary);
 }
 
+.site-search-btn:hover .search-ico--small, .site-search-opened .site-search-btn .search-ico--small {
+  fill: var(--main__color-secondary);
+}
+
+.search-form::before {
+  border-color: var(--main__color-primary);
+}
+
+.search-ico--small {
+  fill: var(--main__color-secondary);
+}
+
+.search-ico--large {
+  fill: var(--main__color-secondary);
+}
+
+.search-input {
+  color: var(--main__color-primary);
+}
+.search-input::-webkit-input-placeholder {
+  color: var(--main__color-primary);
+  opacity: .25;
+}
+.search-input::-moz-placeholder {
+  color: var(--main__color-primary);
+  opacity: .25;
+}
+.search-input:-moz-placeholder {
+  color: var(--main__color-primary);
+  opacity: .25;
+}
+.search-input:-ms-input-placeholder {
+  color: var(--main__color-primary);
+  opacity: .25;
+}
+.search-input:focus {
+  border-color: var(--main__color-primary);
+}
+
+.search-clear {
+  fill: var(--main__color-secondary);
+}
+
+.voog-search-modal {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.voog-search-modal-result h3 a {
+  color: var(--main__color-primary);
+}
+.voog-search-modal-result p {
+  color: var(--main__color-primary);
+}
+
 .content-item-boxes {
   max-width: var(--main__width);
 }
