@@ -24,7 +24,10 @@
   label {
     position: relative;
     display: block;
-    margin-left: 25px;
+
+    [data-view-state="editmode"] & {
+      margin-left: 25px;
+    }
   }
 }
 

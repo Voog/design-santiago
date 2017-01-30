@@ -660,6 +660,8 @@
 .form_field label {
   position: relative;
   display: block;
+}
+[data-view-state="editmode"] .form_field label {
   margin-left: 25px;
 }
 
