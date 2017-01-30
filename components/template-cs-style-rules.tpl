@@ -431,9 +431,6 @@
   .layout-root .edy-ecommerce-shopping-cart-button {
     color: var(--main__color-secondary);
   }
-  .layout-root .edy-ecommerce-shopping-cart-button::before {
-    background-color: var(--main__color-primary);
-  }
   .layout-root .edy-ecommerce-shopping-cart-button::after {
     background-color: var(--main__color-secondary);
   }

@@ -23,13 +23,15 @@
       border-bottom: 0;
 
       &::after {
-        position: absolute;
-        right: 16px;
-        bottom: 0;
-        left: 16px;
-        height: 1px;
-        content: '';
-        opacity: .2;
+        @include breakpoint(max-width $medium) {
+          position: absolute;
+          right: 16px;
+          bottom: 0;
+          left: 16px;
+          height: 1px;
+          content: '';
+          opacity: .2;
+        }
       }
     }
 
@@ -37,7 +39,7 @@
       top: 20px;
       right: 20px;
       left: auto;
-      width: 75px;
+      width: auto;
       padding: 5px;
       font-size: 0;
       line-height: 1.7;
@@ -47,19 +49,51 @@
   }
 
   &:hover {
+    .layout-root & {
+      @include breakpoint(max-width $medium) {
+        color: $color-white;
+      }
+
+      @include breakpoint($medium-up) {
+        opacity: .75;
+      }
+    }
+
     &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      content: '';
-      opacity: .75;
+      @include breakpoint(max-width $medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-primary;
+        content: '';
+      }
     }
 
     &::after {
-      visibility: hidden;
+      @include breakpoint(max-width $medium) {
+        visibility: hidden;
+      }
+    }
+
+    .edy-ecommerce-product-count {
+      // scss-lint:disable NestingDepth
+      .layout-root & {
+        @include breakpoint(max-width $medium) {
+          color: $color-white;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+
+  .edy-ecommerce-shopping-cart-button-flash {
+    .layout-root & {
+      @include breakpoint(max-width $medium) {
+        line-height: 1.5;
+      }
     }
   }
 }
@@ -76,11 +110,10 @@
 }
 
 .edy-ecommerce-product-count {
-  display: inline-block;
-  vertical-align: middle;
-
   .layout-root & {
     @include breakpoint($medium-up) {
+      display: inline-block;
+      vertical-align: middle;
       font-size: 16px;
     }
   }

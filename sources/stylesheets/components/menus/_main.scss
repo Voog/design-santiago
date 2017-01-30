@@ -5,8 +5,8 @@
     bottom: 0;
     z-index: 1;
     width: 205px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: $color-white;
     box-shadow: 0 0 5px 0 rgba($color-primary, .1);
     box-sizing: border-box;
@@ -27,6 +27,12 @@
 
   [data-menu-main-state="open"] & {
     right: 0;
+  }
+
+  .edy-checkout-button-visible & {
+    @include breakpoint(max-width $medium) {
+      top: 48px;
+    }
   }
 
   &__list {

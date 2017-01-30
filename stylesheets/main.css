@@ -913,8 +913,8 @@ label .form_control_indicator::before {
     bottom: 0;
     z-index: 1;
     width: 205px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -935,6 +935,11 @@ label .form_control_indicator::before {
 }
 [data-menu-main-state="open"] .menu-main {
   right: 0;
+}
+@media (max-width: 640px) {
+  .edy-checkout-button-visible .menu-main {
+    top: 48px;
+  }
 }
 .menu-main__list {
   padding-left: 0;
@@ -2541,6 +2546,8 @@ label .form_control_indicator::before {
     background-color: #fff;
     border-bottom: 0;
   }
+}
+@media (max-width: 640px) and (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button::after {
     position: absolute;
     right: 16px;
@@ -2551,12 +2558,13 @@ label .form_control_indicator::before {
     opacity: .2;
   }
 }
+
 @media (min-width: 641px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
     top: 20px;
     right: 20px;
     left: auto;
-    width: 75px;
+    width: auto;
     padding: 5px;
     font-size: 0;
     line-height: 1.7;
@@ -2564,18 +2572,42 @@ label .form_control_indicator::before {
     border-width: 0;
   }
 }
-.edy-ecommerce-shopping-cart-button:hover::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  opacity: .75;
+@media (max-width: 640px) {
+  .layout-root .edy-ecommerce-shopping-cart-button:hover {
+    color: #fff;
+  }
 }
-.edy-ecommerce-shopping-cart-button:hover::after {
-  visibility: hidden;
+@media (min-width: 641px) {
+  .layout-root .edy-ecommerce-shopping-cart-button:hover {
+    opacity: .75;
+  }
+}
+@media (max-width: 640px) {
+  .edy-ecommerce-shopping-cart-button:hover::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    content: '';
+  }
+}
+@media (max-width: 640px) {
+  .edy-ecommerce-shopping-cart-button:hover::after {
+    visibility: hidden;
+  }
+}
+@media (max-width: 640px) {
+  .layout-root .edy-ecommerce-shopping-cart-button:hover .edy-ecommerce-product-count {
+    color: #fff;
+  }
+}
+@media (max-width: 640px) {
+  .layout-root .edy-ecommerce-shopping-cart-button .edy-ecommerce-shopping-cart-button-flash {
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2590,12 +2622,10 @@ label .form_control_indicator::before {
   }
 }
 
-.edy-ecommerce-product-count {
-  display: inline-block;
-  vertical-align: middle;
-}
 @media (min-width: 641px) {
   .layout-root .edy-ecommerce-product-count {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
   }
 }

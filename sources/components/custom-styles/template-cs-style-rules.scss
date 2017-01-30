@@ -630,17 +630,9 @@
     @include breakpoint(max-width $medium) {
       color: var(--main__color-secondary);
 
-      &::before {
-        background-color: var(--main__color-primary);
-      }
-
       &::after {
         background-color: var(--main__color-secondary);
       }
-
-      //&:hover {
-      //  background-color: var(--main__color-primary);
-      //}
     }
   }
 }
