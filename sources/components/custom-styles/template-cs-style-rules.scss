@@ -524,7 +524,8 @@
 // Content items (products)
 // =============================================================================
 .content-item-boxes {
-  max-width: var(--main__width);
+  // 16 is the sum of negative margin of that container.
+  max-width: calc(var(--main__width) + 16px);
 }
 
 // TODO: Convert to BEM component block.
