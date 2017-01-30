@@ -8,7 +8,6 @@
   .layout-header__title & {
     font-weight: 700;
     line-height: 1.1;
-    color: $color-secondary;
 
     @include breakpoint(max-width $medium) {
       font-size: 32px;

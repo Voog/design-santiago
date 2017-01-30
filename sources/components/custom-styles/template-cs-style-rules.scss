@@ -182,6 +182,10 @@
   color: var(--content-area-text__color);
 
   // scss-lint:enable SelectorFormat
+  .layout-header__title & {
+    color: var(--main__color-secondary);
+  }
+
   .layout-footer & {
     font-size: var(--layout-footer__font-size);
     font-style: var(--layout-footer__font-style);

@@ -103,6 +103,9 @@
   font-size: var(--content-area-text__font-size);
   color: var(--content-area-text__color);
 }
+.layout-header__title .content-area {
+  color: var(--main__color-secondary);
+}
 .layout-footer .content-area {
   font-size: var(--layout-footer__font-size);
   font-style: var(--layout-footer__font-style);
