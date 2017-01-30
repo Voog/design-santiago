@@ -2589,15 +2589,9 @@ label .form_control_indicator::before {
   }
 }
 
-.layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a {
-  color: #ed1c24;
-}
 .layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a:hover {
   text-decoration: underline;
   opacity: 1;
-}
-.layout-root .edy-ecommerce-modal h1 {
-  color: #ed1c24;
 }
 .layout-root .edy-ecommerce-modal h2 {
   letter-spacing: 0;
@@ -2613,14 +2607,10 @@ label .form_control_indicator::before {
   line-height: 1.4;
   color: #fff;
   cursor: pointer;
-  background-color: #ed1c24;
   outline: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-.layout-root .edy-ecommerce-modal footer button:hover {
-  background-color: rgba(237, 28, 36, 0.75);
 }
 .layout-root .edy-ecommerce-modal footer button, .layout-root .edy-ecommerce-modal footer button.-primary {
   padding: 10px 16px !important;
@@ -2630,10 +2620,10 @@ label .form_control_indicator::before {
 
 .layout-root .edy-ecommerce-form-reveal-field {
   font-size: 16px;
-  color: #ed1c24;
+  text-decoration: underline;
 }
 .layout-root .edy-ecommerce-form-reveal-field:hover {
-  text-decoration: underline;
+  text-decoration: none;
   opacity: 1;
 }
 
@@ -2652,10 +2642,10 @@ label .form_control_indicator::before {
 }
 
 .layout-root .order-review-back {
-  color: #ed1c24;
+  text-decoration: underline;
 }
 .layout-root .order-review-back:hover {
-  text-decoration: underline;
+  text-decoration: none;
   opacity: 1;
 }
 

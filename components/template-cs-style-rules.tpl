@@ -450,6 +450,51 @@
 .layout-root .edy-ecommerce-modal {
   font-family: var(--main__font-family);
 }
+.layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a {
+  color: var(--main__color-secondary);
+}
+.layout-root .edy-ecommerce-modal h1 {
+  color: var(--main__color-secondary);
+}
+.layout-root .edy-ecommerce-modal footer button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ed1c24;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.layout-root .edy-ecommerce-modal footer button, .layout-root .edy-ecommerce-modal footer button.-primary {
+  font-style: var(--content-area-button__font-style);
+  font-weight: var(--content-area-button__font-weight);
+  color: var(--content-area-button__color);
+  text-decoration: var(--content-area-button__text-decoration);
+  text-transform: var(--content-area-button__text-transform);
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
+}
+.layout-root .edy-ecommerce-modal footer button:hover, .layout-root .edy-ecommerce-modal footer button.-primary:hover {
+  font-style: var(--content-area-button-hover__font-style);
+  font-weight: var(--content-area-button-hover__font-weight);
+  color: var(--content-area-button-hover__color);
+  text-decoration: var(--content-area-button-hover__text-decoration);
+  text-transform: var(--content-area-button-hover__text-transform);
+  background-color: var(--content-area-button-hover__background-color);
+  opacity: var(--content-area-button-hover__opacity);
+}
+
+.layout-root .edy-ecommerce-form-reveal-field {
+  color: var(--main__color-secondary);
+}
+
+.layout-root .order-review-back {
+  color: var(--main__color-secondary);
+}
 
 .not-loaded .loader::before, .is-loaded .loader::before {
   border-top-color: var(--main__color-primary);

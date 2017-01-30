@@ -80,10 +80,6 @@
   .edy-ecommerce-modal-wrapper {
     a {
       // scss-lint:disable NestingDepth, SelectorDepth
-      .layout-root & {
-        color: $color-secondary;
-      }
-
       &:hover {
         .layout-root & {
           text-decoration: underline;
@@ -91,12 +87,6 @@
         }
       }
       // scss-lint:enable NestingDepth, SelectorDepth
-    }
-  }
-
-  h1 {
-    .layout-root & {
-      color: $color-secondary;
     }
   }
 
@@ -121,15 +111,8 @@
         line-height: 1.4;
         color: $color-white;
         cursor: pointer;
-        background-color: $color-secondary;
         outline: 0;
         appearance: none;
-      }
-
-      &:hover {
-        .layout-root & {
-          background-color: rgba($color-secondary, .75);
-        }
       }
 
       &,
@@ -149,12 +132,12 @@
 .edy-ecommerce-form-reveal-field {
   .layout-root & {
     font-size: 16px;
-    color: $color-secondary;
+    text-decoration: underline;
   }
 
   &:hover {
     .layout-root & {
-      text-decoration: underline;
+      text-decoration: none;
       opacity: 1;
     }
   }
@@ -173,9 +156,11 @@
       // scss-lint:disable NestingDepth
       button {
         &.remove {
+          // scss-lint:disable SelectorDepth
           .layout-root & {
             hyphens: initial;
           }
+          // scss-lint:enable SelectorDepth
         }
       }
       // scss-lint:enable NestingDepth
@@ -199,12 +184,12 @@
 
 .order-review-back {
   .layout-root & {
-    color: $color-secondary;
+    text-decoration: underline;
   }
 
   &:hover {
     .layout-root & {
-      text-decoration: underline;
+      text-decoration: none;
       opacity: 1;
     }
   }

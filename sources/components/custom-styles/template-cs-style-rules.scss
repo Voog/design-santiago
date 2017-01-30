@@ -653,6 +653,77 @@
   .layout-root & {
     font-family: var(--main__font-family);
   }
+
+  .edy-ecommerce-modal-wrapper {
+    a {
+      // scss-lint:disable NestingDepth, SelectorDepth
+      .layout-root & {
+        color: var(--main__color-secondary);
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
+    }
+  }
+
+  h1 {
+    .layout-root & {
+      color: var(--main__color-secondary);
+    }
+  }
+
+  footer {
+    button {
+      // scss-lint:disable NestingDepth, SelectorDepth
+      .layout-root & {
+        display: inline-block;
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 1.4;
+        color: $color-white;
+        cursor: pointer;
+        background-color: $color-secondary;
+        outline: 0;
+        appearance: none;
+      }
+
+      &,
+      &.-primary {
+        .layout-root & {
+          font-style: var(--content-area-button__font-style);
+          font-weight: var(--content-area-button__font-weight);
+          color: var(--content-area-button__color);
+          text-decoration: var(--content-area-button__text-decoration);
+          text-transform: var(--content-area-button__text-transform);
+          background-color: var(--content-area-button__background-color);
+          opacity: var(--content-area-button__opacity);
+        }
+
+        &:hover {
+          .layout-root & {
+            font-style: var(--content-area-button-hover__font-style);
+            font-weight: var(--content-area-button-hover__font-weight);
+            color: var(--content-area-button-hover__color);
+            text-decoration: var(--content-area-button-hover__text-decoration);
+            text-transform: var(--content-area-button-hover__text-transform);
+            background-color: var(--content-area-button-hover__background-color);
+            opacity: var(--content-area-button-hover__opacity);
+          }
+        }
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
+    }
+  }
+}
+
+.edy-ecommerce-form-reveal-field {
+  .layout-root & {
+    color: var(--main__color-secondary);
+  }
+}
+
+.order-review-back {
+  .layout-root & {
+    color: var(--main__color-secondary);
+  }
 }
 
 // =============================================================================
