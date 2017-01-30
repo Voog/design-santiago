@@ -19,9 +19,10 @@
   .layout-root & {
     @include breakpoint(max-width $medium) {
       padding: 16px;
+      background-color: $color-white;
       border-bottom: 0;
 
-      &::before {
+      &::after {
         position: absolute;
         right: 16px;
         bottom: 0;
@@ -46,15 +47,32 @@
   }
 
   &:hover {
-    @include breakpoint($medium-up) {
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
       opacity: .75;
+    }
+
+    &::after {
+      visibility: hidden;
     }
   }
 }
 
 .edy-ecommerce-custom-ico {
-  display: inline-block;
-  vertical-align: middle;
+  @include breakpoint(max-width $medium) {
+    display: none;
+  }
+
+  @include breakpoint($medium-up) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .edy-ecommerce-product-count {

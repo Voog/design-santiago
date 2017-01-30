@@ -631,12 +631,16 @@
       color: var(--main__color-secondary);
 
       &::before {
+        background-color: var(--main__color-primary);
+      }
+
+      &::after {
         background-color: var(--main__color-secondary);
       }
 
-      &:hover {
-        background-color: var(--main__color-primary);
-      }
+      //&:hover {
+      //  background-color: var(--main__color-primary);
+      //}
     }
   }
 }
@@ -646,7 +650,13 @@
 }
 
 .edy-ecommerce-product-count {
-  color: var(--main__color-primary);
+  @include breakpoint(max-width $medium) {
+    color: var(--main__color-secondary);
+  }
+
+  @include breakpoint($medium-up) {
+    color: var(--main__color-primary);
+  }
 
   .layout-root & {
     font-family: var(--main__font-family);

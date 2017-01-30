@@ -432,10 +432,10 @@
     color: var(--main__color-secondary);
   }
   .layout-root .edy-ecommerce-shopping-cart-button::before {
-    background-color: var(--main__color-secondary);
-  }
-  .layout-root .edy-ecommerce-shopping-cart-button:hover {
     background-color: var(--main__color-primary);
+  }
+  .layout-root .edy-ecommerce-shopping-cart-button::after {
+    background-color: var(--main__color-secondary);
   }
 }
 
@@ -443,8 +443,15 @@
   fill: var(--main__color-primary);
 }
 
-.edy-ecommerce-product-count {
-  color: var(--main__color-primary);
+@media (max-width: 640px) {
+  .edy-ecommerce-product-count {
+    color: var(--main__color-secondary);
+  }
+}
+@media (min-width: 641px) {
+  .edy-ecommerce-product-count {
+    color: var(--main__color-primary);
+  }
 }
 .layout-root .edy-ecommerce-product-count {
   font-family: var(--main__font-family);
