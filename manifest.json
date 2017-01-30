@@ -314,12 +314,6 @@
       "filename": "ico-flags.svg"
     },
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-shopping-cart.svg",
-      "kind": "assets",
-      "filename": "ico-shopping-cart.svg"
-    },
-    {
       "content_type": "image/png",
       "file": "images/ico-check.png",
       "kind": "images",

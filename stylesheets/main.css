@@ -2534,6 +2534,61 @@ label .form_control_indicator::before {
   }
 }
 
+@media (max-width: 640px) {
+  .layout-root .edy-ecommerce-shopping-cart-button {
+    padding: 16px;
+    border-bottom: 0;
+  }
+  .layout-root .edy-ecommerce-shopping-cart-button::before {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    height: 1px;
+    content: '';
+    opacity: .2;
+  }
+}
+@media (min-width: 641px) {
+  .layout-root .edy-ecommerce-shopping-cart-button {
+    top: 20px;
+    right: 20px;
+    left: auto;
+    width: 75px;
+    padding: 5px;
+    font-size: 0;
+    line-height: 1.7;
+    text-align: right;
+    border-width: 0;
+  }
+}
+@media (min-width: 641px) {
+  .edy-ecommerce-shopping-cart-button:hover {
+    opacity: .75;
+  }
+}
+
+.edy-ecommerce-custom-ico {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edy-ecommerce-product-count {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 641px) {
+  .layout-root .edy-ecommerce-product-count {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 641px) {
+  .layout-root .edy-ecommerce-shopping-cart-button-flash {
+    display: none;
+  }
+}
+
 .layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a {
   color: #ed1c24;
 }
@@ -2571,56 +2626,6 @@ label .form_control_indicator::before {
   padding: 10px 16px !important;
   line-height: 1.4 !important;
   border-width: 0 !important;
-}
-
-@media (max-width: 640px) {
-  .layout-root .edy-ecommerce-shopping-cart-button {
-    padding: 16px;
-    border-bottom: 0;
-  }
-  .layout-root .edy-ecommerce-shopping-cart-button::before {
-    position: absolute;
-    right: 16px;
-    bottom: 0;
-    left: 16px;
-    height: 1px;
-    content: '';
-    opacity: .2;
-  }
-}
-@media (min-width: 641px) {
-  .layout-root .edy-ecommerce-shopping-cart-button {
-    top: 20px;
-    right: 20px;
-    left: auto;
-    width: 75px;
-    padding: 5px;
-    font-size: 0;
-    line-height: 1.7;
-    text-align: right;
-    background-image: url("../assets/ico-shopping-cart.svg");
-    background-position: 5px;
-    background-repeat: no-repeat;
-    background-size: 34px 28px;
-    border-width: 0;
-  }
-}
-@media (min-width: 641px) {
-  .edy-ecommerce-shopping-cart-button:hover {
-    opacity: .75;
-  }
-}
-
-@media (min-width: 641px) {
-  .layout-root .edy-ecommerce-product-count {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 641px) {
-  .layout-root .edy-ecommerce-shopping-cart-button-flash {
-    display: none;
-  }
 }
 
 .layout-root .edy-ecommerce-form-reveal-field {

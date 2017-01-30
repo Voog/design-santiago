@@ -15,6 +15,67 @@
   }
 }
 
+.edy-ecommerce-shopping-cart-button {
+  .layout-root & {
+    @include breakpoint(max-width $medium) {
+      padding: 16px;
+      border-bottom: 0;
+
+      &::before {
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        left: 16px;
+        height: 1px;
+        content: '';
+        opacity: .2;
+      }
+    }
+
+    @include breakpoint($medium-up) {
+      top: 20px;
+      right: 20px;
+      left: auto;
+      width: 75px;
+      padding: 5px;
+      font-size: 0;
+      line-height: 1.7;
+      text-align: right;
+      border-width: 0;
+    }
+  }
+
+  &:hover {
+    @include breakpoint($medium-up) {
+      opacity: .75;
+    }
+  }
+}
+
+.edy-ecommerce-custom-ico {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edy-ecommerce-product-count {
+  display: inline-block;
+  vertical-align: middle;
+
+  .layout-root & {
+    @include breakpoint($medium-up) {
+      font-size: 16px;
+    }
+  }
+}
+
+.edy-ecommerce-shopping-cart-button-flash {
+  .layout-root & {
+    @include breakpoint($medium-up) {
+      display: none;
+    }
+  }
+}
+
 .edy-ecommerce-modal {
   .edy-ecommerce-modal-wrapper {
     a {
@@ -81,63 +142,6 @@
         }
       }
       // scss-lint:enable NestingDepth, SelectorDepth
-    }
-  }
-}
-
-.edy-ecommerce-shopping-cart-button {
-  .layout-root & {
-    @include breakpoint(max-width $medium) {
-      padding: 16px;
-      border-bottom: 0;
-
-      &::before {
-        position: absolute;
-        right: 16px;
-        bottom: 0;
-        left: 16px;
-        height: 1px;
-        content: '';
-        opacity: .2;
-      }
-    }
-
-    @include breakpoint($medium-up) {
-      top: 20px;
-      right: 20px;
-      left: auto;
-      width: 75px;
-      padding: 5px;
-      font-size: 0;
-      line-height: 1.7;
-      text-align: right;
-      background-image: url('../assets/ico-shopping-cart.svg');
-      background-position: 5px;
-      background-repeat: no-repeat;
-      background-size: 34px 28px;
-      border-width: 0;
-    }
-  }
-
-  &:hover {
-    @include breakpoint($medium-up) {
-      opacity: .75;
-    }
-  }
-}
-
-.edy-ecommerce-product-count {
-  .layout-root & {
-    @include breakpoint($medium-up) {
-      font-size: 16px;
-    }
-  }
-}
-
-.edy-ecommerce-shopping-cart-button-flash {
-  .layout-root & {
-    @include breakpoint($medium-up) {
-      display: none;
     }
   }
 }

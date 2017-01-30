@@ -637,13 +637,19 @@
   }
 }
 
-.edy-ecommerce-modal {
+.edy-ecommerce-custom-ico {
+  fill: var(--main__color-primary);
+}
+
+.edy-ecommerce-product-count {
+  color: var(--main__color-primary);
+
   .layout-root & {
     font-family: var(--main__font-family);
   }
 }
 
-.edy-ecommerce-product-count {
+.edy-ecommerce-modal {
   .layout-root & {
     font-family: var(--main__font-family);
   }
