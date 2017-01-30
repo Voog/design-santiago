@@ -169,29 +169,13 @@
     }
   }
 
-  %code-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    content: '';
-    opacity: .05;
-  }
-
   p {
     margin-top: .85em;
     margin-bottom: .85em;
 
     > code {
       position: relative;
-
-      // scss-lint:disable NestingDepth
-      &::before {
-        @extend %code-background;
-      }
-      // scss-lint:enable NestingDepth
+      background-color: rgba($color-primary, .05);
     }
   }
 
@@ -243,14 +227,14 @@
     margin: 10px .5em;
   }
 
-  a {
-    &:not(.custom-btn) {
-      // scss-lint:disable NestingDepth
-      &:hover {
-      }
-      // scss-lint:enable NestingDepth
-    }
-  }
+  //a {
+  //  &:not(.custom-btn) {
+  //    // scss-lint:disable NestingDepth
+  //    &:hover {
+  //    }
+  //    // scss-lint:enable NestingDepth
+  //  }
+  //}
 
   pre,
   code,
@@ -270,10 +254,7 @@
   pre {
     position: relative;
     overflow: auto;
-
-    &::before {
-      @extend %code-background;
-    }
+    background-color: rgba($color-primary, .05);
 
     code {
       display: inline;
@@ -293,10 +274,7 @@
 
   > code {
     position: relative;
-
-    &::before {
-      @extend %code-background;
-    }
+    background-color: rgba($color-primary, .05);
   }
 
   blockquote {

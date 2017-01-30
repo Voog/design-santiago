@@ -167,9 +167,6 @@
 .content-area p {
   font-size: var(--content-area-text__font-size);
 }
-.content-area p > code::before {
-  background-color: var(--main__color-secondary);
-}
 .content-area a {
   font-style: var(--content-area-link__font-style);
   font-weight: var(--content-area-link__font-weight);
@@ -183,12 +180,6 @@
   color: var(--content-area-link-hover__color);
   text-decoration: var(--content-area-link-hover__text-decoration);
   text-transform: var(--content-area-link-hover__text-transform);
-}
-.content-area pre::before {
-  background-color: var(--main__color-secondary);
-}
-.content-area > code::before {
-  background-color: var(--main__color-secondary);
 }
 .content-area .custom-btn {
   padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);

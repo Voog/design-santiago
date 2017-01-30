@@ -476,22 +476,13 @@
     font-size: 16px;
   }
 }
-.content-area p > code::before, .content-area pre::before, .content-area > code::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  opacity: .05;
-}
 .content-area p {
   margin-top: .85em;
   margin-bottom: .85em;
 }
 .content-area p > code {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .content-area ul,
 .content-area ol,
@@ -538,6 +529,7 @@
 .content-area pre {
   position: relative;
   overflow: auto;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .content-area pre code {
   display: inline;
@@ -554,6 +546,7 @@
 }
 .content-area > code {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .content-area blockquote {
   padding-left: 16px;

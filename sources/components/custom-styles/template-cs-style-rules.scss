@@ -259,14 +259,6 @@
 
   p {
     font-size: var(--content-area-text__font-size);
-
-    > code {
-      // scss-lint:disable NestingDepth
-      &::before {
-        background-color: var(--main__color-secondary);
-      }
-      // scss-lint:enable NestingDepth
-    }
   }
 
   a {
@@ -286,18 +278,6 @@
         text-transform: var(--content-area-link-hover__text-transform);
       }
       // scss-lint:enable NestingDepth
-    }
-  }
-
-  pre {
-    &::before {
-      background-color: var(--main__color-secondary);
-    }
-  }
-
-  > code {
-    &::before {
-      background-color: var(--main__color-secondary);
     }
   }
 
