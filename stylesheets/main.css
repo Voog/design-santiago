@@ -1980,12 +1980,8 @@ label .form_control_indicator::before {
 }
 
 .site-search-btn {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
   padding: 6px 5px 4px;
-  margin: 0 -5px 0 9px;
+  margin-left: 9px;
   vertical-align: top;
   cursor: pointer;
   background-color: transparent;
@@ -2025,7 +2021,7 @@ label .form_control_indicator::before {
   bottom: 0;
   left: 0;
   z-index: -1;
-  width: 136px;
+  width: 251px;
   height: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -2058,8 +2054,10 @@ label .form_control_indicator::before {
     width: 280px;
   }
 }
-.edy-checkout-button-visible .site-search {
-  top: 41px;
+@media (max-width: 640px) {
+  .edy-checkout-button-visible .site-search {
+    top: 48px;
+  }
 }
 .site-search-opened .site-search {
   right: 0;

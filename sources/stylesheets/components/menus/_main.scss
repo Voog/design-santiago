@@ -31,7 +31,7 @@
 
   .edy-checkout-button-visible & {
     @include breakpoint(max-width $medium) {
-      top: 48px;
+      top: 48px; // 48 is the height of the checkout button.
     }
   }
 
