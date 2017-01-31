@@ -1,4 +1,3 @@
-    {{ content_title }}
 <header class="layout-header">
   <div class="layout-header__container">
     <div class="layout-header__top">
