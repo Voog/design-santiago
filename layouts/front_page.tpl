@@ -13,7 +13,9 @@
       {% include "layout-header" %}
 
       <main class="layout-body">
-        <section class="content-area" {{ edy_intro_edit_text }}>{% content %}</section>
+        <section class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</section>
+
+        <section class="content-area">{% content name="gallery" %}</section>
       </main>
 
       {% include "layout-footer" %}
