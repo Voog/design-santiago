@@ -201,7 +201,7 @@
 .layout-footer {
   padding-right: 16px;
   padding-left: 16px;
-  margin-top: 32px;
+  margin-top: 40px;
 }
 @media (max-width: 640px) {
   .layout-footer {
