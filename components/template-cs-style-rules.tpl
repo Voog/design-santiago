@@ -345,7 +345,7 @@
 }
 
 .content-item-boxes {
-  max-width: calc(var(--main__width) + 16px);
+  max-width: calc(var(--main__width) + 40px);
 }
 
 .item-list-page .content-item-box {
