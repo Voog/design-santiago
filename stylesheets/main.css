@@ -76,12 +76,12 @@
 }
 
 .layout-header {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
 }
 @media (max-width: 640px) {
   .layout-header {
-    position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -117,22 +117,31 @@
             justify-content: space-between;
   }
 }
-.layout-header__top {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+@media (max-width: 640px) {
+  .layout-header__top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
-[data-view-state="editmode"] .layout-header__title {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+@media (min-width: 641px) {
+  .layout-header__title {
+    text-align: center;
+  }
+}
+@media (max-width: 640px) {
+  [data-view-state="editmode"] .layout-header__title {
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 .layout-header__options {
   display: -webkit-flex;
@@ -150,6 +159,8 @@
 }
 @media (min-width: 641px) {
   .layout-header__options {
+    position: fixed;
+    top: 0;
     padding-top: 11px;
     padding-bottom: 11px;
   }
@@ -2664,11 +2675,24 @@ label .form_control_indicator::before {
   }
 }
 
+.layout-root .edy-ecommerce-product-count::before, .layout-root .edy-ecommerce-product-count::after {
+  display: none;
+}
 @media (min-width: 641px) {
   .layout-root .edy-ecommerce-product-count {
-    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
     vertical-align: middle;
-    font-size: 16px;
+    border-radius: 100%;
+    box-sizing: border-box;
   }
 }
 

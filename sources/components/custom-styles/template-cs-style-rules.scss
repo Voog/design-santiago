@@ -618,12 +618,14 @@
 }
 
 .edy-ecommerce-product-count {
+
   @include breakpoint(max-width $medium) {
     color: var(--main__color-secondary);
   }
 
   @include breakpoint($medium-up) {
     color: var(--main__color-primary);
+    background-color: var(--main__color-secondary);
   }
 
   .layout-root & {

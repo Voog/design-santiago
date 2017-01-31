@@ -110,11 +110,29 @@
 }
 
 .edy-ecommerce-product-count {
+  &::before,
+  &::after {
+    .layout-root & {
+      display: none;
+    }
+  }
+
   .layout-root & {
     @include breakpoint($medium-up) {
-      display: inline-block;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 1.4;
+      color: $color-white;
+      text-align: center;
       vertical-align: middle;
-      font-size: 16px;
+
+      border-radius: 100%;
+      box-sizing: border-box;
     }
   }
 }

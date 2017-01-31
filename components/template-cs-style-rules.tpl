@@ -436,6 +436,7 @@
 @media (min-width: 641px) {
   .edy-ecommerce-product-count {
     color: var(--main__color-primary);
+    background-color: var(--main__color-secondary);
   }
 }
 .layout-root .edy-ecommerce-product-count {
