@@ -17,6 +17,9 @@
 
 .edy-ecommerce-shopping-cart-button {
   .layout-root & {
+    transition-duration: .2s;
+    transition-property: right;
+
     @include breakpoint(max-width $medium) {
       padding: 16px;
       background-color: $color-white;
@@ -37,7 +40,7 @@
 
     @include breakpoint($medium-up) {
       top: 20px;
-      right: 20px;
+      right: 40px;
       left: auto;
       width: auto;
       padding: 5px;
@@ -45,6 +48,18 @@
       line-height: 1.7;
       text-align: right;
       border-width: 0;
+    }
+  }
+
+  .site-search-enabled & {
+    @include breakpoint($medium-up) {
+      right: 78px;
+    }
+  }
+
+  .site-search-opened & {
+    @include breakpoint($medium-up) {
+      right: 280px + 78px;
     }
   }
 
@@ -102,11 +117,6 @@
   @include breakpoint(max-width $medium) {
     display: none;
   }
-
-  @include breakpoint($medium-up) {
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 
 .edy-ecommerce-product-count {
@@ -121,7 +131,7 @@
     @include breakpoint($medium-up) {
       position: absolute;
       top: 8px;
-      right: 8px;
+      right: 2px;
       display: block;
       width: 16px;
       height: 16px;

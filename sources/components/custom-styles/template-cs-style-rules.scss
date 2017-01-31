@@ -446,7 +446,7 @@
   &:hover,
   .site-search-opened & {
     .search-ico--small {
-      fill: var(--main__color-secondary);
+      fill: var(--main__color-primary);
     }
   }
 }
@@ -458,7 +458,7 @@
 }
 
 .search-ico--small {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .search-ico--large {

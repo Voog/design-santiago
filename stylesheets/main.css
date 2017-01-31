@@ -157,14 +157,6 @@
     padding-bottom: 2px;
   }
 }
-@media (min-width: 641px) {
-  .layout-header__options {
-    position: fixed;
-    top: 0;
-    padding-top: 11px;
-    padding-bottom: 11px;
-  }
-}
 .layout-header__link {
   display: block;
   text-decoration: none;
@@ -1972,12 +1964,32 @@ label .form_control_indicator::before {
 }
 
 .site-search-btn {
-  padding: 6px 5px 4px;
-  margin-left: 9px;
+  padding: 5px 5px 3px;
   vertical-align: top;
   cursor: pointer;
   background-color: transparent;
   border-style: none;
+  transition-duration: .2s;
+  transition-property: right;
+}
+@media (max-width: 640px) {
+  .site-search-btn {
+    margin-left: 9px;
+  }
+}
+@media (min-width: 641px) {
+  .site-search-btn {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 55000;
+    background-color: #fff;
+  }
+}
+@media (min-width: 641px) {
+  .site-search-opened .site-search-btn {
+    right: 320px;
+  }
 }
 .site-search-btn:focus {
   outline: none;
@@ -1998,7 +2010,7 @@ label .form_control_indicator::before {
 .header-menu-wide .site-search-btn {
   margin-left: 13px;
 }
-.site-search-btn:hover .search-ico--small, .site-search-opened .site-search-btn .search-ico--small {
+.site-search-btn:hover {
   opacity: .75;
 }
 
@@ -2583,6 +2595,10 @@ label .form_control_indicator::before {
   }
 }
 
+.layout-root .edy-ecommerce-shopping-cart-button {
+  transition-duration: .2s;
+  transition-property: right;
+}
 @media (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
     padding: 16px;
@@ -2605,7 +2621,7 @@ label .form_control_indicator::before {
 @media (min-width: 641px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
     top: 20px;
-    right: 20px;
+    right: 40px;
     left: auto;
     width: auto;
     padding: 5px;
@@ -2613,6 +2629,16 @@ label .form_control_indicator::before {
     line-height: 1.7;
     text-align: right;
     border-width: 0;
+  }
+}
+@media (min-width: 641px) {
+  .site-search-enabled .edy-ecommerce-shopping-cart-button {
+    right: 78px;
+  }
+}
+@media (min-width: 641px) {
+  .site-search-opened .edy-ecommerce-shopping-cart-button {
+    right: 358px;
   }
 }
 @media (max-width: 640px) {
@@ -2658,12 +2684,6 @@ label .form_control_indicator::before {
     display: none;
   }
 }
-@media (min-width: 641px) {
-  .edy-ecommerce-custom-ico {
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
 
 .layout-root .edy-ecommerce-product-count::before, .layout-root .edy-ecommerce-product-count::after {
   display: none;
@@ -2672,7 +2692,7 @@ label .form_control_indicator::before {
   .layout-root .edy-ecommerce-product-count {
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 2px;
     display: block;
     width: 16px;
     height: 16px;

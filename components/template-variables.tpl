@@ -63,6 +63,13 @@
     {% endif %}
   {% endif %}
 
+  {% comment %}Detects lsite search mode setting.{% endcomment %}
+  {% if site.search.enabled %}
+    {% assign site_search_mode = "site-search-enabled" %}
+  {% else %}
+    {% assign site_search_mode = "site-search-disabled" %}
+  {% endif %}
+
   {% comment %}VOOG intro popover targets. Add them where applicable popovers should appear.{% endcomment %}
   {% capture edy_intro_add_page %}{% if editmode %}data-edy-intro-popover="edy-add-page"{% endif %}{% endcapture %}
   {% capture edy_intro_add_lang %}{% if editmode %}data-edy-intro-popover="edy-add-lang"{% endif %}{% endcapture %}

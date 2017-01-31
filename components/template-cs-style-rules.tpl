@@ -291,7 +291,7 @@
 }
 
 .site-search-btn:hover .search-ico--small, .site-search-opened .site-search-btn .search-ico--small {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .search-form::before {
@@ -299,7 +299,7 @@
 }
 
 .search-ico--small {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .search-ico--large {

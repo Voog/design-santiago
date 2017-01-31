@@ -67,12 +67,12 @@
       padding-bottom: 2px;
     }
 
-    @include breakpoint($medium-up) {
-      position: fixed;
-      top: 0;
-      padding-top: 11px;
-      padding-bottom: 11px;
-    }
+    //@include breakpoint($medium-up) {
+    //  position: fixed;
+    //  top: 14px;
+    //  right: 40px;
+    //  padding: 5px 40px;
+    //}
   }
 
   &__link {
