@@ -9,7 +9,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --main__width: 1270px;
+  --main__width: 1090px;
   /* VoogStyle
     "pathI18n": ["main_styles"],
     "titleI18n": "font",

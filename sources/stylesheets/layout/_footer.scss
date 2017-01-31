@@ -5,8 +5,16 @@
   padding-right: 16px;
   padding-left: 16px;
   margin-top: 32px;
-  margin-right: -16px;
-  margin-left: -16px;
+
+  @include breakpoint(max-width $medium) {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  @include breakpoint($medium-up) {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 
   &__container {
     display: flex;

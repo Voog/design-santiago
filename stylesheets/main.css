@@ -18,11 +18,21 @@
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  padding-right: 16px;
-  padding-left: 16px;
   margin: 0;
   transition-duration: .2s;
   transition-property: right;
+}
+@media (max-width: 640px) {
+  .layout-wrap {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 641px) {
+  .layout-wrap {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 @media (max-width: 640px) {
   [data-menu-main-state="closed"] .layout-wrap {
@@ -181,8 +191,18 @@
   padding-right: 16px;
   padding-left: 16px;
   margin-top: 32px;
-  margin-right: -16px;
-  margin-left: -16px;
+}
+@media (max-width: 640px) {
+  .layout-footer {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+}
+@media (min-width: 641px) {
+  .layout-footer {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 }
 .layout-footer__container {
   display: -webkit-flex;
@@ -289,7 +309,7 @@
 }
 @media (min-width: 641px) {
   .content-area--padded {
-    padding-bottom: 48px;
+    padding-bottom: 32px;
   }
 }
 
@@ -2160,8 +2180,8 @@ label .form_control_indicator::before {
 }
 
 .content-item-boxes {
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -20px;
+  margin-left: -20px;
   font-size: 0;
 }
 @media (min-width: 241px) {
@@ -2186,8 +2206,8 @@ label .form_control_indicator::before {
   text-decoration: none;
 }
 .item-list-page .content-item-box {
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 @media (max-width: 240px) {
@@ -2204,8 +2224,8 @@ label .form_control_indicator::before {
 }
 @media (min-width: 641px) {
   .item-list-page .content-item-box {
-    max-width: 352px;
-    min-width: 208px;
+    max-width: 376px;
+    min-width: 200px;
     padding-top: 16px;
     padding-bottom: 16px;
   }

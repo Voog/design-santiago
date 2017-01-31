@@ -3,8 +3,8 @@
 // =============================================================================
 // TODO: Convert to BEM layout block.
 .content-item-boxes {
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -20px;
+  margin-left: -20px;
   font-size: 0;
 
   @include breakpoint($xx-small-up) {
@@ -23,8 +23,8 @@
   text-decoration: none;
 
   .item-list-page & {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
 
     @include breakpoint(max-width $xx-small) {
@@ -38,8 +38,8 @@
     }
 
     @include breakpoint ($medium-up) {
-      max-width: 352px;
-      min-width: 208px;
+      max-width: 376px;
+      min-width: 200px;
       padding-top: 16px;
       padding-bottom: 16px;
     }
