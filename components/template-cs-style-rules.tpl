@@ -411,6 +411,9 @@
 .layout-footer__container {
   max-width: var(--main__width);
 }
+.layout-footer__section--voog-reference a {
+  fill: var(--main__color-primary);
+}
 
 .layout-root .edy-ecommerce-shopping-cart-button {
   font-family: var(--main__font-family);

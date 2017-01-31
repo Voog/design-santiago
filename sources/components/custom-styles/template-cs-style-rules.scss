@@ -63,6 +63,7 @@
   }
 }
 
+
 // =============================================================================
 // Menu main
 // =============================================================================
@@ -591,6 +592,17 @@
 
   &__container {
     max-width: var(--main__width);
+  }
+
+  &__section {
+    &--voog-reference {
+      // This can't be written in BEM.
+      // scss-lint:disable NestingDepth
+      a {
+        fill: var(--main__color-primary);
+      }
+      // scss-lint:enable NestingDepth
+    }
   }
 }
 

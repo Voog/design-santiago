@@ -47,6 +47,11 @@
     &--voog-reference {
       @include breakpoint(max-width $large) {
         order: 3;
+        margin-top: 8px;
+      }
+
+      @include breakpoint($large-up) {
+        margin-right: 24px;
       }
     }
 
@@ -59,6 +64,7 @@
     &--social-media {
       @include breakpoint(max-width $large) {
         order: 2;
+        margin-top: 8px;
       }
 
       @include breakpoint($large-up) {

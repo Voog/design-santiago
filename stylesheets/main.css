@@ -254,6 +254,12 @@
     -webkit-order: 3;
         -ms-flex-order: 3;
             order: 3;
+    margin-top: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .layout-footer__section--voog-reference {
+    margin-right: 24px;
   }
 }
 @media (max-width: 1024px) {
@@ -268,6 +274,7 @@
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 8px;
   }
 }
 @media (min-width: 1025px) {
@@ -893,21 +900,6 @@ label .form_control_indicator::before {
 
 [data-display-state='block'] {
   display: block;
-}
-
-@media (min-width: 1025px) {
-  .voog-reference {
-    margin-right: 24px;
-  }
-}
-.voog-reference a {
-  font-size: 12px;
-  color: #000;
-  text-decoration: none;
-  opacity: .25;
-}
-.voog-reference a:hover {
-  opacity: .5;
 }
 
 .menu {
