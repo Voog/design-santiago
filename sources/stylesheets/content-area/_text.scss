@@ -331,6 +331,24 @@
     margin-left: 20px;
   }
 
+  .edy-positionable-container-maxwidth {
+    @include breakpoint(max-width $medium) {
+      // scss-lint:disable ImportantRule
+      max-width: calc(100% + 32px) !important;
+      // scss-lint:enable ImportantRule
+      margin-right: -16px;
+      margin-left: -16px;
+    }
+
+    @include breakpoint($medium-up) {
+      // scss-lint:disable ImportantRule
+      max-width: calc(100% + 80px) !important;
+      // scss-lint:enable ImportantRule
+      margin-right: -40px;
+      margin-left: -40px;
+    }
+  }
+
   .edy-image-container-with-title {
     &::after {
       display: block;
