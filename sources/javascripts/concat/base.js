@@ -616,6 +616,7 @@
   // Builds an inline svg icon for custom shopping cart button.
   // ===========================================================================
   var buildCustomShoppingCartIcon = function() {
+    console.log('bla');
     var icoElement = document.createElement('div');
 
     icoElement.classList.add('edy-ecommerce-custom-ico')
@@ -664,7 +665,7 @@
       wrapContentAreaTables();
     }
 
-    $(document).on('voog:shoppingcart:render', function() {
+    $(document).on('voog:shoppingcart:button:created', function() {
       buildCustomShoppingCartIcon();
     });
   };
