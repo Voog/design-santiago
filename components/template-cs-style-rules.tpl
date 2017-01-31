@@ -32,7 +32,6 @@
   font-weight: var(--menu-main__font-weight);
   color: var(--menu-main__color);
   text-transform: var(--menu-main__text-transform);
-  opacity: var(--menu-main__opacity);
 }
 @media (min-width: 641px) {
   .menu-main__item:not(.menu-main__item--selected) a {
@@ -48,7 +47,6 @@
 @media (min-width: 641px) {
   .menu-main__item:not(.menu-main__item--selected) a:hover {
     border-bottom: var(--menu-main-hover__text-decoration);
-    opacity: var(--menu-main-hover__opacity);
   }
 }
 .menu-main__item--selected a {
@@ -56,7 +54,6 @@
   font-weight: var(--menu-main-active__font-weight);
   color: var(--menu-main-active__color);
   text-transform: var(--menu-main-active__text-transform);
-  opacity: var(--menu-main-active__opacity);
 }
 @media (min-width: 641px) {
   .menu-main__item--selected a {

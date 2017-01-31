@@ -1002,12 +1002,12 @@ label .form_control_indicator::before {
 }
 @media (min-width: 641px) {
   .menu-main__item:not(:first-child) a {
-    margin-left: 24px;
+    margin-left: .857142em;
   }
 }
 @media (min-width: 641px) {
   .menu-main__item:not(:last-child) a {
-    margin-right: 24px;
+    margin-right: .857142em;
   }
 }
 .menu-main__item--hidden {

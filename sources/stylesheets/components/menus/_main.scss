@@ -59,7 +59,7 @@
       // scss-lint:disable NestingDepth
       a {
         @include breakpoint($medium-up) {
-          margin-left: 24px;
+          margin-left: .857142em;
         }
       }
     }
@@ -69,7 +69,7 @@
       // scss-lint:disable NestingDepth
       a {
         @include breakpoint($medium-up) {
-          margin-right: 24px;
+          margin-right: .857142em;
         }
       }
     }

@@ -70,10 +70,7 @@
     "max": 1,
     "step": 0.1,
     "unit": "",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-main-hover__opacity"
-    ]
+    "scope": "global"
   */
   --content-area-button__opacity: 1;
   /* VoogStyle
