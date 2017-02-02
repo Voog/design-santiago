@@ -88,7 +88,7 @@
 }
 @media (min-width: 641px) {
   .layout-header {
-    padding-top: 68px;
+    padding-top: 72px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -160,13 +160,40 @@
 @media (min-width: 641px) {
   .layout-header__options {
     position: fixed;
-    top: 20px;
-    right: 40px;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 55000;
-    padding: 0;
-    transition-duration: .2s;
-    transition-property: right;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 20px 40px;
+    background-color: #fff;
+    transition: top .2s, right .2s;
   }
+  .layout-header__options::after {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    left: 40px;
+    height: 1px;
+    background-color: transparent;
+    content: '';
+    opacity: .2;
+    transition: background-color .2s;
+  }
+}
+.layout-header__options.headroom--unpinned {
+  top: -78px;
+}
+.layout-header__options.headroom--pinned {
+  top: 0;
+}
+.layout-header__options.headroom--pinned.headroom--not-top {
+  transition: top .2s;
+}
+.layout-header__options.headroom--pinned.headroom--not-top::after {
+  transition: background-color .2s;
 }
 @media (min-width: 641px) {
   .edy-checkout-button-visible .layout-header__options {

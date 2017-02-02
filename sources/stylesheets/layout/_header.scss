@@ -12,7 +12,7 @@
   }
 
   @include breakpoint($medium-up) {
-    padding-top: 68px;
+    padding-top: 72px;
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
   }
@@ -69,12 +69,45 @@
 
     @include breakpoint($medium-up) {
       position: fixed;
-      top: 20px;
-      right: 40px;
+      top: 0;
+      right: 0;
+      left: 0;
       z-index: 55000;
-      padding: 0;
-      transition-duration: .2s;
-      transition-property: right;
+      justify-content: flex-end;
+      padding: 20px 40px;
+      background-color: $color-white;
+      transition: top .2s, right .2s;
+
+      &::after {
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+        left: 40px;
+        height: 1px;
+        background-color: transparent;
+        content: '';
+        opacity: .2;
+        transition: background-color .2s;
+      }
+    }
+
+    &.headroom--unpinned {
+      top: -78px;
+    }
+
+
+    &.headroom--pinned {
+      top: 0;
+    }
+
+    &.headroom--pinned.headroom--not-top {
+      transition: top .2s;
+
+      // scss-lint:disable NestingDepth
+      &::after {
+        transition: background-color .2s;
+      }
+      // scss-lint:enable NestingDepth
     }
 
     .edy-checkout-button-visible & {

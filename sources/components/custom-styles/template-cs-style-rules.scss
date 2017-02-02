@@ -42,6 +42,16 @@
       background-color: var(--main__color-secondary);
     }
   }
+
+  &__options {
+    &.headroom--pinned.headroom--not-top {
+      // scss-lint:disable NestingDepth
+      &::after {
+        background-color: var(--main__color-secondary);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
 }
 
 // =============================================================================
