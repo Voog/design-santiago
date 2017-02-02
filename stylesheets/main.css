@@ -1404,8 +1404,8 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .language-flags-enabled .ico-flags::before, .language-flags-enabled .ico-flags::after {
-    width: 22px;
-    height: 16px;
+    width: 21px;
+    height: 15px;
   }
 }
 @media (min-width: 641px) {
@@ -1422,23 +1422,36 @@ label .form_control_indicator::before {
   display: none;
 }
 .ico-flags::after {
-  padding-top: 7px;
-  padding-bottom: 7px;
   font-size: 8px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  background-position: 0 -115px;
   content: attr(data-lang-code);
   opacity: .95;
   box-sizing: border-box;
 }
-.language-flags-enabled .ico-flags::after {
-  background-image: url("../assets/ico-flags.svg");
+@media (max-width: 640px) {
+  .ico-flags::after {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-position: -210px -75px;
+  }
+}
+@media (min-width: 641px) {
+  .ico-flags::after {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-position: 0 -115px;
+  }
 }
 @media (max-width: 640px) {
   .language-flags-enabled .ico-flags::after {
-    background-size: 255px 96px;
+    background-image: url("../assets/ico-flags-medium.svg");
+  }
+}
+@media (min-width: 641px) {
+  .language-flags-enabled .ico-flags::after {
+    background-image: url("../assets/ico-flags-medium-up.svg");
   }
 }
 .language-flags-disabled .ico-flags::after {
@@ -1450,7 +1463,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-sq::after {
-    background-position: -10px 0;
+    background-position: 0 0;
   }
 }
 @media (min-width: 641px) {
@@ -1463,7 +1476,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-hy::after {
-    background-position: -33px 0;
+    background-position: -21px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1476,7 +1489,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-bn::after {
-    background-position: -57px 0;
+    background-position: -42px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1489,7 +1502,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-bg::after {
-    background-position: -104px 0;
+    background-position: -184px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1502,7 +1515,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-zh::after {
-    background-position: -128px 0;
+    background-position: -105px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1515,7 +1528,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-hr::after {
-    background-position: -151px 0;
+    background-position: -126px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1528,7 +1541,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-da::after {
-    background-position: -175px 0;
+    background-position: -147px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1541,7 +1554,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-cs::after {
-    background-position: -199px 0;
+    background-position: -168px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1554,7 +1567,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-et::after {
-    background-position: -222px 0;
+    background-position: -189px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1567,7 +1580,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-fi::after {
-    background-position: -10px -16px;
+    background-position: 0 -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1580,7 +1593,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-fr::after {
-    background-position: -33px -16px;
+    background-position: -21px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1593,7 +1606,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ka::after {
-    background-position: -57px -16px;
+    background-position: -42px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1606,7 +1619,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-de::after {
-    background-position: -81px -16px;
+    background-position: -63px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1619,7 +1632,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-el::after {
-    background-position: -104px -16px;
+    background-position: -184px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1632,7 +1645,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-hu::after {
-    background-position: -128px -16px;
+    background-position: -105px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1645,7 +1658,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-is::after {
-    background-position: -151px -16px;
+    background-position: -126px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1658,7 +1671,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-hi::after {
-    background-position: -175px -16px;
+    background-position: -147px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1671,7 +1684,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-id::after {
-    background-position: -199px -16px;
+    background-position: -168px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1684,7 +1697,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-fa::after {
-    background-position: -222px -16px;
+    background-position: -189px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1697,7 +1710,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-he::after {
-    background-position: -10px -128px;
+    background-position: 0 -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1710,7 +1723,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-it::after {
-    background-position: -33px -128px;
+    background-position: -21px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1723,7 +1736,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ja::after {
-    background-position: -57px -128px;
+    background-position: -42px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1736,7 +1749,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ko::after {
-    background-position: -81px -128px;
+    background-position: -63px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1749,7 +1762,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-lv::after {
-    background-position: -104px -128px;
+    background-position: -184px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1762,7 +1775,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-lt::after {
-    background-position: -128px -128px;
+    background-position: -105px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1775,7 +1788,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ms::after {
-    background-position: -151px -128px;
+    background-position: -126px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1788,7 +1801,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-nl::after {
-    background-position: -175px -128px;
+    background-position: -147px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1801,7 +1814,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-no::after {
-    background-position: -199px -128px;
+    background-position: -168px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1814,7 +1827,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ur::after {
-    background-position: -222px -128px;
+    background-position: -189px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1827,7 +1840,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-fil::after {
-    background-position: -10px -48px;
+    background-position: 0 549px;
   }
 }
 @media (min-width: 641px) {
@@ -1840,7 +1853,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-pl::after {
-    background-position: -33px -48px;
+    background-position: -21px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1853,7 +1866,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ro::after {
-    background-position: -57px -48px;
+    background-position: -42px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1866,7 +1879,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ru::after {
-    background-position: -81px -48px;
+    background-position: -63px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1879,7 +1892,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ar::after {
-    background-position: -104px -48px;
+    background-position: -184px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1892,7 +1905,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-sk::after {
-    background-position: -128px -48px;
+    background-position: -105px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1905,7 +1918,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-sl::after {
-    background-position: -151px -48px;
+    background-position: -126px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1918,7 +1931,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-es::after {
-    background-position: -175px -48px;
+    background-position: -147px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1931,7 +1944,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-sv::after {
-    background-position: -199px -48px;
+    background-position: -168px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1944,7 +1957,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-tr::after {
-    background-position: -222px -48px;
+    background-position: -189px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1957,7 +1970,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-uk::after {
-    background-position: -10px -64px;
+    background-position: 0 -60px;
   }
 }
 @media (min-width: 641px) {
@@ -1970,7 +1983,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-en::after {
-    background-position: -33px -64px;
+    background-position: -21px -60px;
   }
 }
 @media (min-width: 641px) {
@@ -1983,7 +1996,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-pt::after {
-    background-position: -104px -64px;
+    background-position: -184px -60px;
   }
 }
 @media (min-width: 641px) {
@@ -1991,25 +2004,12 @@ label .form_control_indicator::before {
     background-position: -136px -92px;
   }
 }
-.ico-flag::after {
-  content: '';
-}
-@media (max-width: 640px) {
-  .ico-flag::after {
-    background-position: -128px -64px;
-  }
-}
-@media (min-width: 641px) {
-  .ico-flag::after {
-    background-position: -170px -92px;
-  }
-}
 .ico-flag-sr::after {
   content: '';
 }
 @media (max-width: 640px) {
   .ico-flag-sr::after {
-    background-position: -151px -64px;
+    background-position: -126px -60px;
   }
 }
 @media (min-width: 641px) {
@@ -2022,7 +2022,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-th::after {
-    background-position: -222px -64px;
+    background-position: -189px -60px;
   }
 }
 @media (min-width: 641px) {
