@@ -14,7 +14,7 @@
   background-color: transparent;
   border: 0;
   transition-duration: .15s;
-  transition-property: opacity, filter;
+  transition-property: filter;
   transition-timing-function: linear;
 
   @include breakpoint($medium-up) {
@@ -22,7 +22,7 @@
   }
 
   &:hover {
-    opacity: .75;
+    opacity: .5;
   }
 
   &:focus {

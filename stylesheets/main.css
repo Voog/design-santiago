@@ -153,8 +153,8 @@
 }
 @media (max-width: 640px) {
   .layout-header__options {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 @media (min-width: 641px) {
@@ -167,10 +167,7 @@
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding: 23px 40px;
     background-color: #fff;
     transition: top .2s, right .2s;
   }
@@ -2506,9 +2503,9 @@ label .form_control_indicator::before {
   background-color: transparent;
   border: 0;
   transition-duration: .15s;
-  transition-property: opacity, -webkit-filter;
-  transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
+  transition-property: -webkit-filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
   transition-timing-function: linear;
 }
 @media (min-width: 641px) {
@@ -2517,7 +2514,7 @@ label .form_control_indicator::before {
   }
 }
 .menu-btn:hover {
-  opacity: .75;
+  opacity: .5;
 }
 .menu-btn:focus {
   outline: 0;
@@ -2607,7 +2604,7 @@ label .form_control_indicator::before {
   margin-left: 13px;
 }
 .site-search-btn:hover {
-  opacity: .75;
+  opacity: .5;
 }
 
 .search-ico--small {
@@ -2678,14 +2675,14 @@ label .form_control_indicator::before {
   .search-form {
     right: 16px;
     left: 16px;
-    padding-top: 15px;
+    padding-top: 16px;
   }
 }
 @media (min-width: 641px) {
   .search-form {
     right: 24px;
     left: 24px;
-    padding-top: 58px;
+    padding-top: 24px;
   }
 }
 
@@ -3221,7 +3218,7 @@ label .form_control_indicator::before {
     right: 40px;
     left: auto;
     width: auto;
-    padding: 25px 5px;
+    padding: 28px 5px;
     font-size: 0;
     line-height: 1.7;
     text-align: right;

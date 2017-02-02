@@ -63,8 +63,8 @@
     align-items: center;
 
     @include breakpoint(max-width $medium) {
-      padding-top: 4px;
-      padding-bottom: 4px;
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
 
     @include breakpoint($medium-up) {
@@ -74,10 +74,7 @@
       left: 0;
       z-index: 55000;
       justify-content: flex-end;
-      padding-top: 20px;
-      padding-right: 40px;
-      padding-bottom: 20px;
-      padding-left: 40px;
+      padding: 23px 40px;
       background-color: $color-white;
       transition: top .2s, right .2s;
 

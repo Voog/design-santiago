@@ -14,18 +14,6 @@
     margin-left: 6px;
   }
 
-  //@include breakpoint($medium-up) {
-  //  position: fixed;
-  //  top: 20px;
-  //  right: 40px;
-  //  z-index: 55000;
-  //  background-color: $color-white;
-  //}
-  //
-  //.edy-checkout-button-visible & {
-  //  right: 84px;
-  //}
-
   .site-search-opened & {
     @include breakpoint($medium-up) {
       right: 280px + 40px;
@@ -59,7 +47,7 @@
   }
 
   &:hover {
-    opacity: .75;
+    opacity: .5;
   }
 }
 
@@ -128,13 +116,13 @@
   @include breakpoint(max-width $medium) {
     right: 16px;
     left: 16px;
-    padding-top: 15px;
+    padding-top: 16px;
   }
 
   @include breakpoint($medium-up) {
     right: 24px;
     left: 24px;
-    padding-top: 58px;
+    padding-top: 24px;
   }
 }
 
