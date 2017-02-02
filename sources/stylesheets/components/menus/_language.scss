@@ -242,10 +242,10 @@
       // scss-lint:disable NestingDepth
       &::before,
       &::after {
+        top: 50%;
+
         // scss-lint:disable SelectorDepth
         .language-menu-mode-popover.language-flags-enabled & {
-          top: 50%;
-
           @include breakpoint(max-width $medium) {
             right: 8px;
             margin-top: -8px;
@@ -264,11 +264,23 @@
         }
 
         .language-menu-mode-list.language-flags-enabled.language-names-enabled & {
-          top: 6px;
+          @include breakpoint(max-width $medium) {
+            margin-top: -8px;
+          }
+
+          @include breakpoint($medium-up) {
+            margin-top: -12px;
+          }
         }
 
         .language-menu-mode-list.language-flags-enabled.language-names-disabled & {
-          top: 3px;
+          @include breakpoint(max-width $medium) {
+            margin-top: -8px;
+          }
+
+          @include breakpoint($medium-up) {
+            margin-top: -12px;
+          }
         }
         // scss-lint:enable SelectorDepth
       }
@@ -345,15 +357,33 @@
       }
 
       .language-menu-mode-list.language-flags-enabled.language-names-enabled & {
-        padding: 5px 30px 5px 3px;
+        @include breakpoint(max-width $medium) {
+          padding: 7px 32px 7px 4px;
+        }
+
+        @include breakpoint($medium-up) {
+          padding: 5px 48px 4px 8px;
+        }
       }
 
       .language-menu-mode-list.language-flags-disabled.language-names-enabled & {
-        padding: 5px;
+        @include breakpoint(max-width $medium) {
+          padding: 7px 4px;
+        }
+
+        @include breakpoint($medium-up) {
+          padding: 5px 8px 4px;
+        }
       }
 
       .language-menu-mode-list.language-flags-enabled.language-names-disabled & {
-        padding: 10px 14px 11px 15px;
+        @include breakpoint(max-width $medium) {
+          padding: 14px 14px 15px 15px;
+        }
+
+        @include breakpoint($medium-up) {
+          padding: 19px 21px;
+        }
       }
       // scss-lint:enable NestingDepth
       // scss-lint:enable SelectorDepth

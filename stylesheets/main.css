@@ -941,6 +941,7 @@ label .form_control_indicator::before {
 }
 .menu-horizontal > .menu-item {
   display: inline-block;
+  vertical-align: middle;
 }
 .page-content .menu-horizontal .menu-item:hover {
   opacity: 1;
@@ -1343,7 +1344,7 @@ label .form_control_indicator::before {
     font-size: 24px;
   }
 }
-.language-menu-mode-popover.language-flags-enabled .menu-language .menu-item a::before, .language-menu-mode-popover.language-flags-enabled .menu-language .menu-item a::after {
+.menu-language .menu-item a::before, .menu-language .menu-item a::after {
   top: 50%;
 }
 @media (max-width: 640px) {
@@ -1361,11 +1362,25 @@ label .form_control_indicator::before {
 .language-menu-mode-list.language-flags-enabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled .menu-language .menu-item a::after {
   right: 4px;
 }
-.language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::after {
-  top: 6px;
+@media (max-width: 640px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::after {
+    margin-top: -8px;
+  }
 }
-.language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::after {
-  top: 3px;
+@media (min-width: 641px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a::after {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 640px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::after {
+    margin-top: -8px;
+  }
+}
+@media (min-width: 641px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::before, .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a::after {
+    margin-top: -12px;
+  }
 }
 .menu-language .menu-item a:hover, .language-menu-mode-list .menu-language .menu-item a:hover {
   opacity: .7;
@@ -1424,14 +1439,35 @@ label .form_control_indicator::before {
 .language-menu-mode-list .menu-language .menu-item a {
   opacity: .5;
 }
-.language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
-  padding: 5px 30px 5px 3px;
+@media (max-width: 640px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
+    padding: 7px 32px 7px 4px;
+  }
 }
-.language-menu-mode-list.language-flags-disabled.language-names-enabled .menu-language .menu-item a {
-  padding: 5px;
+@media (min-width: 641px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
+    padding: 5px 48px 4px 8px;
+  }
 }
-.language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a {
-  padding: 10px 14px 11px 15px;
+@media (max-width: 640px) {
+  .language-menu-mode-list.language-flags-disabled.language-names-enabled .menu-language .menu-item a {
+    padding: 7px 4px;
+  }
+}
+@media (min-width: 641px) {
+  .language-menu-mode-list.language-flags-disabled.language-names-enabled .menu-language .menu-item a {
+    padding: 5px 8px 4px;
+  }
+}
+@media (max-width: 640px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a {
+    padding: 14px 14px 15px 15px;
+  }
+}
+@media (min-width: 641px) {
+  .language-menu-mode-list.language-flags-enabled.language-names-disabled .menu-language .menu-item a {
+    padding: 19px 21px;
+  }
 }
 .menu-language .menu-item .menu-language-btn-circle {
   right: 8px;
