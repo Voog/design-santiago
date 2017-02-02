@@ -172,6 +172,17 @@
   }
 }
 
+// TODO: Convert to BEM.
+//==============================================================================
+// LANGUAGE MENU STYLES
+// Gerneral menu styles are located in "general/_menus.scss" partial.
+//==============================================================================
+.menu-language-btn {
+  .language-menu-mode-popover & {
+    font-family: var(--main__font-family);
+  }
+}
+
 // =============================================================================
 // Content area container
 // =============================================================================

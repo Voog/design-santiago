@@ -4,10 +4,40 @@
 // Gerneral menu styles are located in "general/_menus.scss" partial.
 //==============================================================================
 .menu-language-btn {
+  //@include breakpoint(max-width $medium) {
+  //  position: relative;
+  //}
+  //
+  //@include breakpoint($medium-up) {
+  //  position: fixed;
+  //  top: 20px;
+  //  z-index: 55000;
+  //}
+
+  //.site-search-disabled & {
+  //  @include breakpoint($medium-up) {
+  //    right: 40px;
+  //  }
+  //}
+  //
+  //.site-search-enabled & {
+  //  @include breakpoint($medium-up) {
+  //    right: 78px;
+  //  }
+  //}
+  //
+  //.edy-checkout-button-visible & {
+  //  .site-search-enabled & {
+  //    @include breakpoint($medium-up) {
+  //      right: 122px;
+  //    }
+  //  }
+  //}
+
   .language-menu-mode-popover & {
     display: inline-block;
     flex-grow: 0;
-    margin: 0 0 0 10px;
+    margin: 0;
     line-height: 1.3;
     color: $color-primary;
     vertical-align: top;
@@ -30,9 +60,9 @@
   }
 
   .language-flags-enabled & {
-    width: 1px;
-    padding: 12px 16px 13px 15px;
-    margin-right: -5px;
+    width: 44px;
+    height: 33px;
+    padding: 0;
     font-size: 0;
 
     &:hover {
@@ -41,16 +71,21 @@
   }
 
   .language-flags-disabled & {
-    padding: 8px 24px 7px 8px;
+    padding: 3px 24px 4px 8px;
     font-family: inherit;
-    font-size: 12px;
-    border-color: rgba($color-primary, .25);
-    border-style: solid;
-    border-width: 1px;
+    font-size: 24px;
 
     &:hover {
       border-color: rgba($color-primary, .5);
     }
+  }
+
+  .language-flags-enabled.language-names-enabled.language-menu-mode-popover & {
+    width: auto;
+    height: auto;
+    padding: 4px 53px 3px 8px;
+    font-size: 24px;
+    white-space: nowrap;
   }
 
   .language-flags-disabled.menu-language-popover-open & {
@@ -59,11 +94,16 @@
 
   &::before,
   &::after {
-    $ico-offset: 5px;
-    top: $ico-offset;
+    top: 50%;
+    margin-top: -12px;
 
     .language-flags-enabled & {
-      left: $ico-offset;
+      left: 8px;
+    }
+
+    .language-flags-enabled.language-names-enabled.language-menu-mode-popover & {
+      right: 8px;
+      left: auto;
     }
   }
 
@@ -85,7 +125,8 @@
   stroke: $color-primary;
   fill: none;
 
-  .language-menu-mode-list & {
+  .language-menu-mode-list,
+  .language-flags-enabled & {
     display: none;
   }
 
@@ -106,26 +147,18 @@
   text-align: right;
 
   &.menu-language-popover {
-    [data-view-state="publicmode"].language-flags-disabled & {
+    .language-flags-disabled & {
       padding-top: 8px;
       padding-bottom: 8px;
+      margin-top: -51px;
       margin-right: -1px;
     }
 
-    .language-flags-disabled & {
-      margin-top: -36px;
-    }
-
-    [data-view-state="editmode"].language-flags-enabled & {
-      margin-top: -33px;
-      margin-right: -20px;
-    }
-
-    [data-view-state="publicmode"].language-flags-enabled & {
-      padding-top: 4px;
-      padding-bottom: 4px;
-      margin-top: -29px;
-      margin-right: -21px;
+    .language-flags-enabled & {
+      margin-top: -50px;
+      margin-right: -9px;
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
 
     .language-menu-mode-list & {
@@ -134,24 +167,18 @@
   }
 
   .menu-language-popover-open & {
-    z-index: 10;
+    z-index: 55001;
     display: block;
   }
 
   .menu-public {
     [data-view-state="editmode"].language-menu-mode-popover & {
-      padding-top: 8px;
+      padding-top: 12px;
     }
 
     [data-view-state="publicmode"].language-menu-mode-list.language-names-disabled & {
       padding-bottom: 2px;
     }
-
-    //[data-view-state="publicmode"].language-menu-mode-popover & {
-    //  $vertical-padding-publicmode: 8px;
-    //  padding-top: $vertical-padding-publicmode;
-    //  padding-bottom: $vertical-padding-publicmode;
-    //}
   }
 
   .menu-item {
@@ -163,7 +190,7 @@
 
     a {
       display: block;
-      font-size: 12px;
+      font-size: 24px;
       color: $color-primary;
       text-decoration: none;
 
@@ -172,8 +199,9 @@
       &::after {
         // scss-lint:disable SelectorDepth
         .language-menu-mode-popover.language-flags-enabled & {
-          top: 4px;
-          right: 24px;
+          top: 50%;
+          right: 16px;
+          margin-top: -12px;
         }
         // scss-lint:enable SelectorDepth
 
@@ -215,17 +243,17 @@
 
       // scss-lint:disable SelectorDepth
       .language-menu-mode-popover.language-flags-enabled & {
-        padding-left: 8px;
+        padding-left: 16px;
       }
 
       .language-menu-mode-popover.language-flags-disabled & {
-        padding: 4px 24px;
+        padding: 4px 24px 4px 16px;
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-enabled & {
-        padding-top: 5px;
-        padding-right: 53px;
-        padding-bottom: 5px;
+        padding-top: 4px;
+        padding-right: 61px;
+        padding-bottom: 3px;
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-disabled & {
@@ -266,28 +294,24 @@
 
   .menu-cms {
     .language-menu-mode-popover & {
-      padding-bottom: 8px;
+      padding-bottom: 12px;
     }
 
     li {
-      // scss-lint:disable NestingDepth
-      // scss-lint:disable SelectorDepth
+      // scss-lint:disable NestingDepth, SelectorDepth
       .language-menu-mode-list.language-flags-enabled & {
         padding-top: 2px;
         padding-bottom: 2px;
       }
 
-      .language-menu-mode-popover & {
-        padding: 4px 14px;
+      .language-menu-mode-popover.language-flags-enabled & {
+        padding: 6px 16px;
       }
 
-      // TODO: Remove
-      //.language-flags-disabled & {
-      //  padding-top: 3px 15px;
-      //}
-
-      // scss-lint:enable NestingDepth
-      // scss-lint:enable SelectorDepth
+      .language-menu-mode-popover.language-flags-disabled & {
+        padding: 6px 24px 6px 16px;
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 }
@@ -317,8 +341,8 @@
     .language-flags-enabled & {
       position: absolute;
       display: block;
-      width: 21px;
-      height: 15px;
+      width: 34px;
+      height: 23px;
     }
   }
 
@@ -332,13 +356,13 @@
   }
 
   &::after {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-size: 8px;
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    background-position: 0 -75px;
+    background-position: 0 -115px;
     content: attr(data-lang-code);
     opacity: .95;
     box-sizing: border-box;
@@ -351,71 +375,264 @@
       display: none;
     }
   }
+
+  //&:not(.menu-language-btn) {
+  //  position: relative;
+  //}
 }
 
-// Language flag icons positioning in the spritemap.
-// scss-lint:disable TrailingSemicolon
-$flags:
-  (sq, 0 0), // Albanian (Albania)
-  (hy, -21px 0), // Armenian (Armenia)
-  (bn, -42px 0), // Bengali (Bangladesh)
-  // (pt, -63px 0), // Brazilian Portuguese (Brazil)
-  (bg, -84px 0), // Bulgarian (Bulgaria)
-  (zh, -105px 0), // Chinese (China)
-  (hr, -126px 0), // Croatian (Croatia)
-  (da, -147px 0), // Danish (Denmark)
-  (cs, -168px 0), // Czech (Czech Republic)
-  (et, -189px 0), // Estonian (Estonia)
+.ico-flag {
+  // Albanian (Albania)
+  &-sq {
+    @include language-flag-icon-position(0, 0);
+  }
 
-  (fi, 0 -15px), // Finnish (Finland)
-  (fr, -21px -15px), // French (France)
-  (ka, -42px -15px), // Georgian (Georgia)
-  (de, -63px -15px), // German (Germany)
-  (el, -84px -15px), // Greek (Greece)
-  (hu, -105px -15px), // Hungarian (Hungary)
-  (is, -126px -15px), // Icelandic (Iceland)
-  (hi, -147px -15px), // Hindi (India)
-  (id, -168px -15px), // Indonesian (Indonesia)
-  (fa, -189px -15px), // Iranian (Iran)
+  // Armenian (Armenia)
+  &-hy {
+    @include language-flag-icon-position(-34px, 0);
+  }
 
-  (he, 0 -30px), // Hebrew (Israel)
-  (it, -21px -30px), // Italian (Italy)
-  (ja, -42px -30px), // Japanese (Japan)
-  (ko, -63px -30px), // Korean (Korea, South)
-  (lv, -84px -30px), // Latvian (Latvia)
-  (lt, -105px -30px), // Lithuanian (Lithuania)
-  (ms, -126px -30px), // Malaysian (Malaysia)
-  (nl, -147px -30px), // Dutch (Netherlands)
-  (no, -168px -30px), // Norwegian (Norway)
-  (ur, -189px -30px), // Urdu (Pakistan)
+  // Bengali (Bangladesh)
+  &-bn {
+    @include language-flag-icon-position(-68px, 0);
+  }
 
-  (fil, 0 -45px), // Filipino (Philippines)
-  (pl, -21px -45px), // Polish (Poland)
-  (ro, -42px -45px), // Romanian (Romania)
-  (ru, -63px -45px), // Russian (Russia)
-  (ar, -84px -45px), // Arabic (Saudi Arabia)
-  (sk, -105px -45px), // Slovakian (Slovakia)
-  (sl, -126px -45px), // Slovenian (Slovenia)
-  (es, -147px -45px), // Spanish (Spain)
-  (sv, -168px -45px), // Swedish (Sweden)
-  (tr, -189px -45px), // Turkish (Turkey)
+  // Brazilian Portuguese (Brazil)
+  //&-xx {
+  //  @include language-flag-icon-position(-102px, 0);
+  //}
 
-  (uk, 0 -60px), // Ukrainian (Ukraine)
-  (en, -21px -60px), // American English (United States of America)
-  // (fr, -42px -60px), // French (Ivory Coast)
-  // (en, -63px -60px), // British English (Great Britian)
-  (pt, -84px -60px), // Portuguese (Portuguese Republic)
-  // (en, -105px -60px), // Canadian English (Canada)
-  (sr, -126px -60px), // Serbian (Republic of Serbia)
-  (bn, -147px -60px), // Dutch, French, German (Kingdom of Belgium)
-  // (en, -168px -60px), // Australian English (Commonwealth of Australia)
-  (th, -189px -60px) // Thai (Thailand)
-;
-// scss-lint:enable TrailingSemicolon
+  // Bulgarian (Bulgaria)
+  &-bg {
+    @include language-flag-icon-position(-136px, 0);
+  }
 
-@each $flag, $pos in $flags {
-  .ico-flag-#{$flag}:after {
-    background-position: $pos;
-    content: '';
+  // Chinese (China)
+  &-zh {
+    @include language-flag-icon-position(-170px, 0);
+  }
+
+  // Croatian (Croatia)
+  &-hr {
+    @include language-flag-icon-position(-204px, 0);
+  }
+
+  // Danish (Denmark)
+  &-da {
+    @include language-flag-icon-position(-238px, 0);
+  }
+
+  // Czech (Czech Republic)
+  &-cs {
+    @include language-flag-icon-position(-272px, 0);
+  }
+
+  // Estonian (Estonia)
+  &-et {
+    @include language-flag-icon-position(-306px, 0);
+  }
+
+  //=============================== SEPARATOR ================================\\
+
+  // Finnish (Finland)
+  &-fi {
+    @include language-flag-icon-position(0, -23px);
+  }
+  // French (France)
+  &-fr {
+    @include language-flag-icon-position(-34px, -23px);
+  }
+
+  // Georgian (Georgia)
+  &-ka {
+    @include language-flag-icon-position(-68px, -23px);
+  }
+
+  // German (Germany)
+  &-de {
+    @include language-flag-icon-position(-102px, -23px);
+  }
+
+  // Greek (Greece)
+  &-el {
+    @include language-flag-icon-position(-136px, -23px);
+  }
+
+  // Hungarian (Hungary)
+  &-hu {
+    @include language-flag-icon-position(-170px, -23px);
+  }
+
+  // Icelandic (Iceland)
+  &-is {
+    @include language-flag-icon-position(-204px, -23px);
+  }
+
+  // Hindi (India)
+  &-hi {
+    @include language-flag-icon-position(-238px, -23px);
+  }
+
+  // Indonesian (Indonesia)
+  &-id {
+    @include language-flag-icon-position(-272px, -23px);
+  }
+
+  // Iranian (Iran)
+  &-fa {
+    @include language-flag-icon-position(-306px, -23px);
+  }
+
+  //=============================== SEPARATOR ================================\\
+
+  // Hebrew (Israel)
+  &-he {
+    @include language-flag-icon-position(0, -46px);
+  }
+  // Italian (Italy)
+  &-it {
+    @include language-flag-icon-position(-34px, -46px);
+  }
+
+  // Japanese (Japan)
+  &-ja {
+    @include language-flag-icon-position(-68px, -46px);
+  }
+
+  // Korean (Korea, South)
+  &-ko {
+    @include language-flag-icon-position(-102px, -46px);
+  }
+
+  // Latvian (Latvia)
+  &-lv {
+    @include language-flag-icon-position(-136px, -46px);
+  }
+
+  // Lithuanian (Lithuania)
+  &-lt {
+    @include language-flag-icon-position(-170px, -46px);
+  }
+
+  // Malaysian (Malaysia)
+  &-ms {
+    @include language-flag-icon-position(-204px, -46px);
+  }
+
+  // Dutch (Netherlands)
+  &-nl {
+    @include language-flag-icon-position(-238px, -46px);
+  }
+
+  // Norwegian (Norway)
+  &-no {
+    @include language-flag-icon-position(-272px, -46px);
+  }
+
+  // Urdu (Pakistan)
+  &-ur {
+    @include language-flag-icon-position(-306px, -46px);
+  }
+
+  //=============================== SEPARATOR ================================\\
+
+  // Filipino (Philippines)
+  &-fil {
+    @include language-flag-icon-position(0, -69px);
+  }
+  // Polish (Poland)
+  &-pl {
+    @include language-flag-icon-position(-34px, -69px);
+  }
+
+  // Romanian (Romania)
+  &-ro {
+    @include language-flag-icon-position(-68px, -69px);
+  }
+
+  // Russian (Russia)
+  &-ru {
+    @include language-flag-icon-position(-102px, -69px);
+  }
+
+  // Arabic (Saudi Arabia)
+  &-ar {
+    @include language-flag-icon-position(-136px, -69px);
+  }
+
+  // Slovakian (Slovakia)
+  &-sk {
+    @include language-flag-icon-position(-170px, -69px);
+  }
+
+  // Slovenian (Slovenia)
+  &-sl {
+    @include language-flag-icon-position(-204px, -69px);
+  }
+
+  // Spanish (Spain)
+  &-es {
+    @include language-flag-icon-position(-238px, -69px);
+  }
+
+  // Swedish (Sweden)
+  &-sv {
+    @include language-flag-icon-position(-272px, -69px);
+  }
+
+  // Turkish (Turkey)
+  &-tr {
+    @include language-flag-icon-position(-306px, -69px);
+  }
+
+  //=============================== SEPARATOR ================================\\
+
+  // Ukrainian (Ukraine)
+  &-uk {
+    @include language-flag-icon-position(0, -92px);
+  }
+  // American English (United States of America)
+  &-en {
+    @include language-flag-icon-position(-34px, -92px);
+  }
+
+  // French (Ivory Coast)
+  //&-fr {
+  //  @include language-flag-icon-position(-68px, -92px);
+  //}
+
+  // British English (Great Britian)
+  //&-en {
+  //  @include language-flag-icon-position(-102px, -92px);
+  //}
+
+  // Portuguese (Portuguese Republic)
+  &-pt {
+    @include language-flag-icon-position(-136px, -92px);
+  }
+
+  // Canadian English (Canada)
+  //&-en {
+  //  @include language-flag-icon-position(-170px, -92px);
+  //}
+
+  // Serbian (Republic of Serbia)
+  &-sr {
+    @include language-flag-icon-position(-204px, -92px);
+  }
+
+  // Dutch, French, German (Kingdom of Belgium)
+  &-bn {
+    @include language-flag-icon-position(-238px, -92px);
+  }
+
+  // Australian English (Commonwealth of Australia)
+  //&-en {
+  //  @include language-flag-icon-position(-272px, -92px);
+  //}
+
+  // Thai (Thailand)
+  &-th {
+    @include language-flag-icon-position(-306px, -92px);
   }
 }

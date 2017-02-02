@@ -96,6 +96,10 @@
   }
 }
 
+.language-menu-mode-popover .menu-language-btn {
+  font-family: var(--main__font-family);
+}
+
 .content-area {
   font-size: var(--content-area-text__font-size);
   color: var(--content-area-text__color);

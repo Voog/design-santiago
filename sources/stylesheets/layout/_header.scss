@@ -12,7 +12,7 @@
   }
 
   @include breakpoint($medium-up) {
-    padding-top: 48px;
+    padding-top: 72px;
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
   }
@@ -67,12 +67,35 @@
       padding-bottom: 2px;
     }
 
-    //@include breakpoint($medium-up) {
-    //  position: fixed;
-    //  top: 14px;
-    //  right: 40px;
-    //  padding: 5px 40px;
-    //}
+    @include breakpoint($medium-up) {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      z-index: 55000;
+      padding: 0;
+      transition-duration: .2s;
+      transition-property: right;
+    }
+
+    .edy-checkout-button-visible & {
+      @include breakpoint($medium-up) {
+        right: 90px;
+      }
+
+      // scss-lint:disable NestingDepth
+      .site-search-opened & {
+        @include breakpoint($medium-up) {
+          right: 280px + 90px;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    .site-search-opened & {
+      @include breakpoint($medium-up) {
+        right: 280px + 40px;
+      }
+    }
   }
 
   &__link {

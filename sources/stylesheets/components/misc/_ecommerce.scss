@@ -47,19 +47,18 @@
       font-size: 0;
       line-height: 1.7;
       text-align: right;
+      background-color: transparent;
       border-width: 0;
     }
   }
 
-  .site-search-enabled & {
-    @include breakpoint($medium-up) {
-      right: 78px;
-    }
+  @include breakpoint($medium-up) {
+    right: 40px;
   }
 
   .site-search-opened & {
     @include breakpoint($medium-up) {
-      right: 280px + 78px;
+      right: 280px + 40px;
     }
   }
 

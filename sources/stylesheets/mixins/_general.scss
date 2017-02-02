@@ -62,3 +62,10 @@
     left: 0;
   }
 }
+
+@mixin language-flag-icon-position($x, $y) {
+  &::after {
+    background-position: $x $y;
+    content: '';
+  }
+}
