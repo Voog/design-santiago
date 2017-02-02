@@ -63,9 +63,16 @@
   }
 }
 
-@mixin language-flag-icon-position($x, $y) {
+@mixin language-flag-icon-position($x-medium, $y-medium, $x-medium-up, $y-medium-up) {
   &::after {
-    background-position: $x $y;
     content: '';
+
+    @include breakpoint(max-width $medium) {
+      background-position: $x-medium $y-medium;
+    }
+
+    @include breakpoint($medium-up) {
+      background-position: $x-medium-up $y-medium-up;
+    }
   }
 }

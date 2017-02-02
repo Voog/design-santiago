@@ -2,6 +2,7 @@
 // Content area container
 // =============================================================================
 .content-area {
+  @include hyphenate();
   line-height: 1.7;
 
   // scss-lint:disable SelectorFormat

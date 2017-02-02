@@ -4,7 +4,7 @@
 .menu-btn {
   display: inline-block;
   padding: 5px;
-  margin: 0 0 0 9px;
+  margin: 0 -5px 0 0;
   overflow: visible;
   font: inherit;
   line-height: .7;
@@ -16,10 +16,6 @@
   transition-duration: .15s;
   transition-property: opacity, filter;
   transition-timing-function: linear;
-
-  @include breakpoint(max-width $medium) {
-    margin-right: -5px;
-  }
 
   @include breakpoint($medium-up) {
     display: none;

@@ -10,10 +10,6 @@
   transition-duration: .2s;
   transition-property: right;
 
-  @include breakpoint(max-width $medium) {
-    margin-left: 9px;
-  }
-
   @include breakpoint($medium-up) {
     margin-left: 6px;
   }
@@ -69,6 +65,11 @@
 
 .search-ico--small {
   opacity: 1;
+
+  @include breakpoint(max-width $medium) {
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .search-ico--large {
