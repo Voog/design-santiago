@@ -336,19 +336,18 @@
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-disabled & {
+        width: 100%;
         padding: 0;
         margin-right: 0;
         margin-left: auto;
 
-
         @include breakpoint(max-width $medium) {
-          width: 100%;
           height: 24px;
           min-width: 37px;
         }
 
         @include breakpoint($medium-up) {
-          width: 66px;
+          min-width: 66px;
           height: 35px;
         }
       }

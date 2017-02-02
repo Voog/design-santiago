@@ -79,13 +79,13 @@
   border-width: 1px;
   box-shadow: 0 2px 10px rgba($color-primary, .07);
 
-  a {
-    &.selected {
-      // scss-lint:disable NestingDepth
-      .language-flags-enabled & {
-        background-color: rgba($color-primary, .1);
-      }
-      // scss-lint:enable NestingDepth
-    }
-  }
+  //a {
+  //  &.selected {
+  //    // scss-lint:disable NestingDepth
+  //    .language-flags-enabled & {
+  //      background-color: rgba($color-primary, .1);
+  //    }
+  //    // scss-lint:enable NestingDepth
+  //  }
+  //}
 }
