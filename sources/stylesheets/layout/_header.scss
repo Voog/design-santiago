@@ -63,8 +63,8 @@
     align-items: center;
 
     @include breakpoint(max-width $medium) {
-      padding-top: 1px;
-      padding-bottom: 2px;
+      padding-top: 4px;
+      padding-bottom: 4px;
     }
 
     @include breakpoint($medium-up) {

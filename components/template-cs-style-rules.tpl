@@ -291,7 +291,7 @@
 }
 
 .menu-btn__stripes, .menu-btn__stripes::before, .menu-btn__stripes::after {
-  background-color: var(--main__color-secondary);
+  background-color: var(--main__color-primary);
 }
 
 .site-search-btn:hover .search-ico--small, .site-search-opened .site-search-btn .search-ico--small {
