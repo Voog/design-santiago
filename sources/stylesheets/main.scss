@@ -68,3 +68,10 @@
 @import 'components/misc/btns-container';
 @import 'components/misc/ecommerce';
 @import 'components/misc/loader';
+
+// TODO: Move to a separated file:
+.edy-popover.edy-settings-editor {
+  // scss-lint:disable ImportantRule
+  z-index: 55001 !important;
+  // scss-lint:enable ImportantRule
+}

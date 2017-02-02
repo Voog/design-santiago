@@ -4,10 +4,6 @@
 ||
 || Demo page available at http://santiago.voog.com
 ============================================================================= */
-.edy-popover.edy-settings-editor {
-  z-index: 55001 !important;
-}
-
 .layout-root {
   font-feature-settings: 'lnum';
 }
@@ -3391,4 +3387,8 @@ label .form_control_indicator::before {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.edy-popover.edy-settings-editor {
+  z-index: 55001 !important;
 }
