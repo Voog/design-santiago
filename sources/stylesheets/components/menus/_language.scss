@@ -41,9 +41,17 @@
   }
 
   .language-flags-disabled & {
-    padding: 3px 24px 4px 8px;
     font-family: inherit;
-    font-size: 24px;
+
+    @include breakpoint(max-width $medium) {
+      padding: 7px 24px 6px 8px;
+      font-size: 13px;
+    }
+
+    @include breakpoint($medium-up) {
+      padding: 4px 24px 4px 16px;
+      font-size: 24px;
+    }
 
     &:hover {
       border-color: rgba($color-primary, .5);
@@ -72,8 +80,15 @@
   }
 
   .language-flags-enabled.language-names-disabled.language-menu-mode-popover & {
-    width: 50px;
-    height: 38px;
+    @include breakpoint(max-width $medium) {
+      width: 35px;
+      height: 29px;
+    }
+
+    @include breakpoint($medium-up) {
+      width: 50px;
+      height: 38px;
+    }
   }
 
   .language-flags-disabled.menu-language-popover-open & {
@@ -126,7 +141,7 @@
   }
 
   .language-menu-mode-popover.language-flags-disabled & {
-    margin-top: -4px;
+    margin-top: -5px;
   }
 
   .language-menu-mode-popover.language-flags-enabled & {
@@ -145,8 +160,15 @@
     .language-flags-disabled & {
       padding-top: 8px;
       padding-bottom: 8px;
-      margin-top: -47px;
       margin-right: -1px;
+
+      @include breakpoint(max-width $medium) {
+        margin-top: -35px;
+      }
+
+      @include breakpoint($medium-up) {
+        margin-top: -47px;
+      }
     }
 
     .language-flags-enabled.language-names-enabled & {
@@ -166,10 +188,19 @@
     }
 
     .language-flags-enabled.language-names-disabled & {
-      padding-top: 8px;
-      padding-bottom: 8px;
-      margin-top: -50px;
-      margin-right: -9px;
+      @include breakpoint(max-width $medium) {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-top: -31px;
+        margin-right: -3px;
+      }
+
+      @include breakpoint($medium-up) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: -46px;
+        margin-right: -9px;
+      }
     }
 
     .language-menu-mode-list & {
@@ -178,7 +209,7 @@
   }
 
   .menu-language-popover-open & {
-    z-index: 55001;
+    z-index: 55000;
     display: block;
   }
 
@@ -293,9 +324,20 @@
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-disabled & {
-        padding-top: 17px;
-        padding-right: 45px;
-        padding-bottom: 16px;
+        padding: 0;
+        margin-right: 0;
+        margin-left: auto;
+
+
+        @include breakpoint(max-width $medium) {
+          width: 37px;
+          height: 24px;
+        }
+
+        @include breakpoint($medium-up) {
+          width: 66px;
+          height: 35px;
+        }
       }
 
       .language-menu-mode-list & {
@@ -337,7 +379,7 @@
       }
 
       .language-menu-mode-popover.language-flags-enabled & {
-        padding: 6px 16px;
+        padding: 6px 14px;
       }
 
       .language-menu-mode-popover.language-flags-disabled & {
