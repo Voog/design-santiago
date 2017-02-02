@@ -14,6 +14,9 @@
 .layout-header__options.headroom--pinned.headroom--not-top::after {
   background-color: var(--main__color-secondary);
 }
+.layout-header__options.headroom--not-top::after {
+  background-color: var(--main__color-secondary);
+}
 
 .layout-body {
   max-width: var(--main__width);
@@ -432,6 +435,9 @@
   .layout-root .edy-ecommerce-shopping-cart-button::after {
     background-color: var(--main__color-secondary);
   }
+}
+.edy-ecommerce-shopping-cart-button::after {
+  background-color: var(--main__color-secondary);
 }
 
 .edy-ecommerce-custom-ico {

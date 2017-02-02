@@ -161,13 +161,16 @@
   .layout-header__options {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 6px;
     left: 0;
     z-index: 55000;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding: 20px 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
     background-color: #fff;
     transition: top .2s, right .2s;
   }
@@ -182,22 +185,33 @@
     opacity: .2;
     transition: background-color .2s;
   }
+  .edy-checkout-button-visible .layout-header__options::after {
+    right: 0;
+  }
+  .edy-checkout-button-visible .layout-header__options {
+    padding-right: 6px;
+  }
 }
 .layout-header__options.headroom--unpinned {
   top: -78px;
 }
+.edy-checkout-button-visible .layout-header__options.headroom--unpinned {
+  top: 0;
+  transition: top 0s, right .2s;
+}
 .layout-header__options.headroom--pinned {
   top: 0;
+  transition: top .2s, right .2s;
 }
-.layout-header__options.headroom--pinned.headroom--not-top {
-  transition: top .2s;
+.layout-header__options .headroom--not-top {
+  transition: top .2s, right .2s;
 }
-.layout-header__options.headroom--pinned.headroom--not-top::after {
+.layout-header__options .headroom--not-top::after {
   transition: background-color .2s;
 }
 @media (min-width: 641px) {
   .edy-checkout-button-visible .layout-header__options {
-    right: 90px;
+    right: 84px;
   }
 }
 @media (min-width: 641px) {
@@ -3183,19 +3197,40 @@ label .form_control_indicator::before {
   }
 }
 
+@media (min-width: 641px) {
+  .edy-ecommerce-shopping-cart-button {
+    right: 40px;
+  }
+  .edy-ecommerce-shopping-cart-button::after {
+    background-color: transparent;
+  }
+}
 .layout-root .edy-ecommerce-shopping-cart-button {
-  transition-duration: .2s;
-  transition-property: right;
+  background-color: #fff;
+  transition: right, .2s, background-color .2s;
 }
 @media (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
     padding: 16px;
-    background-color: #fff;
     border-bottom: 0;
   }
 }
-@media (max-width: 640px) and (max-width: 640px) {
-  .layout-root .edy-ecommerce-shopping-cart-button::after {
+@media (min-width: 641px) {
+  .layout-root .edy-ecommerce-shopping-cart-button {
+    top: 0;
+    right: 40px;
+    left: auto;
+    width: auto;
+    padding: 25px 5px;
+    font-size: 0;
+    line-height: 1.7;
+    text-align: right;
+    background-color: #fff;
+    border-width: 0;
+  }
+}
+@media (max-width: 640px) {
+  .edy-ecommerce-shopping-cart-button::after {
     position: absolute;
     right: 16px;
     bottom: 0;
@@ -3205,29 +3240,17 @@ label .form_control_indicator::before {
     opacity: .2;
   }
 }
-
 @media (min-width: 641px) {
-  .layout-root .edy-ecommerce-shopping-cart-button {
-    top: 20px;
-    right: 40px;
-    left: auto;
-    width: auto;
-    padding: 5px;
-    font-size: 0;
-    line-height: 1.7;
-    text-align: right;
+  .edy-ecommerce-shopping-cart-button::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
     background-color: transparent;
-    border-width: 0;
-  }
-}
-@media (min-width: 641px) {
-  .edy-ecommerce-shopping-cart-button {
-    right: 40px;
-  }
-}
-@media (min-width: 641px) {
-  .site-search-opened .edy-ecommerce-shopping-cart-button {
-    right: 320px;
+    content: '';
+    opacity: .2;
+    transition: background-color .2s;
   }
 }
 @media (max-width: 640px) {
@@ -3236,8 +3259,8 @@ label .form_control_indicator::before {
   }
 }
 @media (min-width: 641px) {
-  .layout-root .edy-ecommerce-shopping-cart-button:hover {
-    opacity: .75;
+  .edy-ecommerce-shopping-cart-button:hover svg {
+    opacity: .5;
   }
 }
 @media (max-width: 640px) {
@@ -3262,6 +3285,14 @@ label .form_control_indicator::before {
     color: #fff;
   }
 }
+.edy-ecommerce-shopping-cart-button.headroom--top::after {
+  background-color: transparent;
+}
+@media (min-width: 641px) {
+  .site-search-opened .edy-ecommerce-shopping-cart-button {
+    right: 320px;
+  }
+}
 @media (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button .edy-ecommerce-shopping-cart-button-flash {
     line-height: 1.5;
@@ -3280,7 +3311,7 @@ label .form_control_indicator::before {
 @media (min-width: 641px) {
   .layout-root .edy-ecommerce-product-count {
     position: absolute;
-    top: 8px;
+    top: 28px;
     right: 2px;
     display: block;
     width: 16px;

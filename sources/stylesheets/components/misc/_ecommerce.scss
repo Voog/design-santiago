@@ -16,49 +16,58 @@
 }
 
 .edy-ecommerce-shopping-cart-button {
+  @include breakpoint($medium-up) {
+    right: 40px;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+
   .layout-root & {
-    transition-duration: .2s;
-    transition-property: right;
+    background-color: $color-white;
+    transition: right, .2s, background-color .2s;
 
     @include breakpoint(max-width $medium) {
       padding: 16px;
-      background-color: $color-white;
       border-bottom: 0;
-
-      &::after {
-        @include breakpoint(max-width $medium) {
-          position: absolute;
-          right: 16px;
-          bottom: 0;
-          left: 16px;
-          height: 1px;
-          content: '';
-          opacity: .2;
-        }
-      }
     }
 
     @include breakpoint($medium-up) {
-      top: 20px;
+      top: 0;
       right: 40px;
       left: auto;
       width: auto;
-      padding: 5px;
+      padding: 25px 5px;
       font-size: 0;
       line-height: 1.7;
       text-align: right;
-      background-color: transparent;
+      background-color: $color-white;
       border-width: 0;
     }
   }
 
-  @include breakpoint($medium-up) {
-    right: 40px;
-  }
+  &::after {
+    @include breakpoint(max-width $medium) {
+      position: absolute;
+      right: 16px;
+      bottom: 0;
+      left: 16px;
+      height: 1px;
+      content: '';
+      opacity: .2;
+    }
 
-  .site-search-opened & {
     @include breakpoint($medium-up) {
-      right: 280px + 40px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      background-color: transparent;
+      content: '';
+      opacity: .2;
+      transition: background-color .2s;
     }
   }
 
@@ -67,9 +76,11 @@
       @include breakpoint(max-width $medium) {
         color: $color-white;
       }
+    }
 
+    svg {
       @include breakpoint($medium-up) {
-        opacity: .75;
+        opacity: .5;
       }
     }
 
@@ -103,6 +114,18 @@
     }
   }
 
+  &.headroom--top {
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  .site-search-opened & {
+    @include breakpoint($medium-up) {
+      right: 280px + 40px;
+    }
+  }
+
   .edy-ecommerce-shopping-cart-button-flash {
     .layout-root & {
       @include breakpoint(max-width $medium) {
@@ -129,7 +152,7 @@
   .layout-root & {
     @include breakpoint($medium-up) {
       position: absolute;
-      top: 8px;
+      top: 28px;
       right: 2px;
       display: block;
       width: 16px;

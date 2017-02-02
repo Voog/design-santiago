@@ -666,12 +666,18 @@
 
     $(document).on('voog:shoppingcart:button:created', function() {
       buildCustomShoppingCartIcon();
+
+      (new Headroom($('.edy-ecommerce-shopping-cart-button').get(0), {
+        offset : 100,
+        tolerance : 0
+      })).init();
     });
 
     (new Headroom($('.layout-header__options').get(0), {
       offset : 100,
       tolerance : 0
     })).init();
+
   };
 
   // Enables the usage of the initiations outside this file.
