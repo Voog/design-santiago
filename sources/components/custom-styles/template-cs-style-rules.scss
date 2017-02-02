@@ -489,7 +489,7 @@
 }
 
 .search-ico--large {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .search-input {
@@ -506,7 +506,7 @@
 }
 
 .search-clear {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 // Site search results modal custom styles.
@@ -524,6 +524,12 @@
 
   p {
     color: var(--main__color-primary);
+  }
+
+  em {
+    &::before {
+      background-color: var(--main__color-primary);
+    }
   }
 }
 

@@ -313,7 +313,7 @@
 }
 
 .search-ico--large {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .search-input {
@@ -340,7 +340,7 @@
 }
 
 .search-clear {
-  fill: var(--main__color-secondary);
+  fill: var(--main__color-primary);
 }
 
 .voog-search-modal {
@@ -352,6 +352,9 @@
 }
 .voog-search-modal-result p {
   color: var(--main__color-primary);
+}
+.voog-search-modal-result em::before {
+  background-color: var(--main__color-primary);
 }
 
 .content-item-boxes {
