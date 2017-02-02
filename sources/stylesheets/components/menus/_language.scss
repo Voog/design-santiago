@@ -53,18 +53,20 @@
   .language-flags-enabled.language-names-enabled.language-menu-mode-popover & {
     width: auto;
     height: auto;
-    padding-top: 4px;
-    padding-bottom: 3px;
     padding-left: 8px;
     white-space: nowrap;
 
     @include breakpoint(max-width $medium) {
+      padding-top: 6px;
       padding-right: 37px;
-      font-size: 12px;
+      padding-bottom: 5px;
+      font-size: 13px;
     }
 
     @include breakpoint($medium-up) {
+      padding-top: 4px;
       padding-right: 53px;
+      padding-bottom: 3px;
       font-size: 24px;
     }
   }
@@ -148,10 +150,19 @@
     }
 
     .language-flags-enabled.language-names-enabled & {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      margin-top: -50px;
-      margin-right: -9px;
+      @include breakpoint(max-width $medium) {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        margin-top: -31px;
+        margin-right: -1px;
+      }
+
+      @include breakpoint($medium-up) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: -52px;
+        margin-right: -9px;
+      }
     }
 
     .language-flags-enabled.language-names-disabled & {
@@ -190,12 +201,12 @@
       text-decoration: none;
 
       @include breakpoint(max-width $medium) {
-        font-size: 12px;
+        font-size: 13px;
       }
 
-@include breakpoint($medium-up) {
-  font-size: 24px;
-}
+      @include breakpoint($medium-up) {
+        font-size: 24px;
+      }
 
       // scss-lint:disable NestingDepth
       &::before,
@@ -254,7 +265,13 @@
 
       // scss-lint:disable SelectorDepth
       .language-menu-mode-popover.language-flags-enabled & {
-        padding-left: 16px;
+        @include breakpoint(max-width $medium) {
+          padding-left: 8px;
+        }
+
+        @include breakpoint($medium-up) {
+          padding-left: 16px;
+        }
       }
 
       .language-menu-mode-popover.language-flags-disabled & {
@@ -262,14 +279,15 @@
       }
 
       .language-menu-mode-popover.language-flags-enabled.language-names-enabled & {
-        padding-top: 4px;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
 
         @include breakpoint(max-width $medium) {
-          padding-right: 38px;
+          padding-top: 5px;
+          padding-right: 37px;
         }
 
         @include breakpoint($medium-up) {
+          padding-top: 6px;
           padding-right: 61px;
         }
       }
@@ -437,7 +455,7 @@
 
   // Bulgarian (Bulgaria)
   &-bg {
-    @include language-flag-icon-position(-184px, 0, -136px, 0);
+    @include language-flag-icon-position(-84px, 0, -136px, 0);
   }
 
   // Chinese (China)
@@ -488,7 +506,7 @@
 
   // Greek (Greece)
   &-el {
-    @include language-flag-icon-position(-184px, -15px, -136px, -23px);
+    @include language-flag-icon-position(-84px, -15px, -136px, -23px);
   }
 
   // Hungarian (Hungary)
@@ -539,7 +557,7 @@
 
   // Latvian (Latvia)
   &-lv {
-    @include language-flag-icon-position(-184px, -30px, -136px, -46px);
+    @include language-flag-icon-position(-84px, -30px, -136px, -46px);
   }
 
   // Lithuanian (Lithuania)
@@ -590,7 +608,7 @@
 
   // Arabic (Saudi Arabia)
   &-ar {
-    @include language-flag-icon-position(-184px, -45px, -136px, -69px);
+    @include language-flag-icon-position(-84px, -45px, -136px, -69px);
   }
 
   // Slovakian (Slovakia)
@@ -642,7 +660,7 @@
 
   // Portuguese (Portuguese Republic)
   &-pt {
-    @include language-flag-icon-position(-184px, -60px, -136px, -92px);
+    @include language-flag-icon-position(-84px, -60px, -136px, -92px);
   }
 
   // Canadian English (Canada)

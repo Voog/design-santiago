@@ -1171,20 +1171,22 @@ label .form_control_indicator::before {
 .language-flags-enabled.language-names-enabled.language-menu-mode-popover .menu-language-btn {
   width: auto;
   height: auto;
-  padding-top: 4px;
-  padding-bottom: 3px;
   padding-left: 8px;
   white-space: nowrap;
 }
 @media (max-width: 640px) {
   .language-flags-enabled.language-names-enabled.language-menu-mode-popover .menu-language-btn {
+    padding-top: 6px;
     padding-right: 37px;
-    font-size: 12px;
+    padding-bottom: 5px;
+    font-size: 13px;
   }
 }
 @media (min-width: 641px) {
   .language-flags-enabled.language-names-enabled.language-menu-mode-popover .menu-language-btn {
+    padding-top: 4px;
     padding-right: 53px;
+    padding-bottom: 3px;
     font-size: 24px;
   }
 }
@@ -1251,11 +1253,21 @@ label .form_control_indicator::before {
   margin-top: -47px;
   margin-right: -1px;
 }
-.language-flags-enabled.language-names-enabled .menu-language.menu-language-popover {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: -50px;
-  margin-right: -9px;
+@media (max-width: 640px) {
+  .language-flags-enabled.language-names-enabled .menu-language.menu-language-popover {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: -31px;
+    margin-right: -1px;
+  }
+}
+@media (min-width: 641px) {
+  .language-flags-enabled.language-names-enabled .menu-language.menu-language-popover {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: -52px;
+    margin-right: -9px;
+  }
 }
 .language-flags-enabled.language-names-disabled .menu-language.menu-language-popover {
   padding-top: 8px;
@@ -1286,7 +1298,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .menu-language .menu-item a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (min-width: 641px) {
@@ -1327,23 +1339,31 @@ label .form_control_indicator::before {
 .menu-language .menu-item a.untranslated {
   color: #cc0000;
 }
-.language-menu-mode-popover.language-flags-enabled .menu-language .menu-item a {
-  padding-left: 16px;
+@media (max-width: 640px) {
+  .language-menu-mode-popover.language-flags-enabled .menu-language .menu-item a {
+    padding-left: 8px;
+  }
+}
+@media (min-width: 641px) {
+  .language-menu-mode-popover.language-flags-enabled .menu-language .menu-item a {
+    padding-left: 16px;
+  }
 }
 .language-menu-mode-popover.language-flags-disabled .menu-language .menu-item a {
   padding: 4px 24px 4px 16px;
 }
 .language-menu-mode-popover.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
-  padding-top: 4px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 @media (max-width: 640px) {
   .language-menu-mode-popover.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
-    padding-right: 38px;
+    padding-top: 5px;
+    padding-right: 37px;
   }
 }
 @media (min-width: 641px) {
   .language-menu-mode-popover.language-flags-enabled.language-names-enabled .menu-language .menu-item a {
+    padding-top: 6px;
     padding-right: 61px;
   }
 }
@@ -1502,7 +1522,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-bg::after {
-    background-position: -184px 0;
+    background-position: -84px 0;
   }
 }
 @media (min-width: 641px) {
@@ -1632,7 +1652,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-el::after {
-    background-position: -184px -15px;
+    background-position: -84px -15px;
   }
 }
 @media (min-width: 641px) {
@@ -1762,7 +1782,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-lv::after {
-    background-position: -184px -30px;
+    background-position: -84px -30px;
   }
 }
 @media (min-width: 641px) {
@@ -1892,7 +1912,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-ar::after {
-    background-position: -184px -45px;
+    background-position: -84px -45px;
   }
 }
 @media (min-width: 641px) {
@@ -1996,7 +2016,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .ico-flag-pt::after {
-    background-position: -184px -60px;
+    background-position: -84px -60px;
   }
 }
 @media (min-width: 641px) {
