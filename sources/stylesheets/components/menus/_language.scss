@@ -342,8 +342,9 @@
 
 
         @include breakpoint(max-width $medium) {
-          width: 37px;
+          width: 100%;
           height: 24px;
+          min-width: 37px;
         }
 
         @include breakpoint($medium-up) {
