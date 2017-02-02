@@ -184,7 +184,7 @@
   }
 }
 .layout-header__link {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 .layout-header__link:hover {
