@@ -20,6 +20,7 @@
 
   .layout-footer__section--social-media & {
     @include breakpoint($large-up) {
+      min-width: 145px;
       margin-left: 24px;
     }
   }

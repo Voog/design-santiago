@@ -262,11 +262,6 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-@media (min-width: 1025px) {
-  .layout-footer__section--narrow {
-    min-width: 145px;
-  }
-}
 @media (max-width: 1024px) {
   .layout-footer__section--voog-reference {
     -webkit-order: 3;
@@ -331,6 +326,7 @@
 }
 @media (min-width: 1025px) {
   .layout-footer__section--social-media .content-area {
+    min-width: 145px;
     margin-left: 24px;
   }
 }

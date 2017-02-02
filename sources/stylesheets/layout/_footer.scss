@@ -38,11 +38,8 @@
       flex-grow: 1;
     }
 
-    &--narrow {
-      @include breakpoint($large-up) {
-        min-width: 145px;
-      }
-    }
+    //&--narrow {
+    //}
 
     &--voog-reference {
       @include breakpoint(max-width $large) {
