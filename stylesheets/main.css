@@ -1178,7 +1178,7 @@ label .form_control_indicator::before {
 }
 @media (max-width: 640px) {
   .language-flags-enabled.language-names-enabled.language-menu-mode-popover .menu-language-btn {
-    padding-right: 39px;
+    padding-right: 37px;
     font-size: 12px;
   }
 }
