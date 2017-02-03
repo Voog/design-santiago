@@ -168,8 +168,8 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 23px 40px;
-    background-color: #fff;
-    transition: top .2s, right .2s;
+    background-color: transparent;
+    transition: top .2s, right .2s, background-color .2s;
   }
   .layout-header__options::after {
     position: absolute;
@@ -194,16 +194,21 @@
 }
 .edy-checkout-button-visible .layout-header__options.headroom--unpinned {
   top: 0;
-  transition: top 0s, right .2s;
+  transition: top 0s, right .2s, background-color .2s;
 }
 .layout-header__options.headroom--pinned {
   top: 0;
-  transition: top .2s, right .2s;
+  transition: top .2s, right .2s, background-color .2s;
 }
-.layout-header__options .headroom--not-top {
-  transition: top .2s, right .2s;
+.layout-header__options.headroom--not-top {
+  transition: top .2s, right .2s, background-color .2s;
 }
-.layout-header__options .headroom--not-top::after {
+@media (min-width: 641px) {
+  .layout-header__options.headroom--not-top {
+    background-color: #fff;
+  }
+}
+.layout-header__options.headroom--not-top::after {
   transition: background-color .2s;
 }
 @media (min-width: 641px) {
