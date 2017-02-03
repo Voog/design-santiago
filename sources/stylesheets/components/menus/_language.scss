@@ -48,7 +48,7 @@
     }
 
     @include breakpoint($medium-up) {
-      padding: 4px 24px 4px 16px;
+      padding: 3px 24px 4px 16px;
       font-size: 24px;
     }
 
@@ -345,8 +345,8 @@
         }
 
         @include breakpoint($medium-up) {
-          min-width: 66px;
           height: 35px;
+          min-width: 66px;
         }
       }
 
