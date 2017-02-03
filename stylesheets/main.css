@@ -1063,19 +1063,6 @@ label .form_control_indicator::before {
     display: inline-block;
   }
 }
-@media (min-width: 641px) {
-  .menu-main__item:not(:first-child) a {
-    margin-left: .857142em;
-  }
-}
-@media (min-width: 641px) {
-  .menu-main__item:not(:last-child) a {
-    margin-right: .857142em;
-  }
-}
-.menu-main__item--hidden {
-  display: none;
-}
 .menu-main__item a {
   display: block;
   text-decoration: none;
@@ -1096,6 +1083,24 @@ label .form_control_indicator::before {
   .menu-main__item a:hover {
     opacity: .5;
   }
+}
+@media (min-width: 641px) {
+  .menu-main__item:not(:first-child) a {
+    margin-left: .857142em;
+  }
+}
+@media (min-width: 641px) {
+  .menu-main__item:not(:last-child) a {
+    margin-right: .857142em;
+  }
+}
+@media (max-width: 640px) {
+  .menu-main__item--selected a {
+    text-decoration: underline;
+  }
+}
+.menu-main__item--hidden {
+  display: none;
 }
 .menu-main__item--cms {
   padding: 6px 20px;

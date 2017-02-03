@@ -54,6 +54,30 @@
       display: inline-block;
     }
 
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    a {
+      display: block;
+      text-decoration: none;
+
+      @include breakpoint(max-width $medium) {
+        padding: 4px 16px;
+        font-size: 20px;
+      }
+
+      @include breakpoint($medium-up) {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+      }
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        @include breakpoint(max-width $medium) {
+          opacity: .5;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
     &:not(:first-child) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
       // scss-lint:disable NestingDepth
@@ -82,13 +106,16 @@
     //  // scss-lint:enable NestingDepth
     //}
 
-    //// TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    //&--selected {
-    //  // scss-lint:disable NestingDepth
-    //  a {
-    //  }
-    //  // scss-lint:enable NestingDepth
-    //}
+    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
+    &--selected {
+      // scss-lint:disable NestingDepth
+      a {
+        @include breakpoint(max-width $medium) {
+          text-decoration: underline;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
 
     //// TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
     //&--current {
@@ -100,30 +127,6 @@
 
     &--hidden {
       display: none;
-    }
-
-    // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    a {
-      display: block;
-      text-decoration: none;
-
-      @include breakpoint(max-width $medium) {
-        padding: 4px 16px;
-        font-size: 20px;
-      }
-
-      @include breakpoint($medium-up) {
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-      }
-
-      // scss-lint:disable NestingDepth
-      &:hover {
-        @include breakpoint(max-width $medium) {
-          opacity: .5;
-        }
-      }
-      // scss-lint:enable NestingDepth
     }
 
     &--cms {
