@@ -671,13 +671,16 @@
         offset : 100,
         tolerance : 0
       })).init();
+
+      if ($(window).width() < 641 && $('body').scrollTop() < 49) {
+        $('body').scrollTop(0);
+      }
     });
 
     (new Headroom($('.layout-header__options').get(0), {
       offset : 100,
       tolerance : 0
     })).init();
-
   };
 
   // Enables the usage of the initiations outside this file.
