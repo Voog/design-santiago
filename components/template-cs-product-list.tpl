@@ -28,7 +28,7 @@
   */
   --content-item-box__alignment: left;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "font_size",
     "editor": "rangePicker",
     "min": 8,
@@ -39,7 +39,7 @@
   */
   --content-item-box__font-size: 20px;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -52,7 +52,7 @@
   */
   --content-item-box__font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -65,7 +65,7 @@
   */
   --content-item-box__font-style: normal;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -78,7 +78,7 @@
   */
   --content-item-box__text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -91,7 +91,7 @@
   */
   --content-item-box__text-transform: none;
   /* VoogStyle
-    "pathI18n": ["product_list", "product", "normal"],
+    "pathI18n": ["product_list", "product"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
