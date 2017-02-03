@@ -26,7 +26,6 @@
 
   .layout-root & {
     background-color: $color-white;
-    transition: right, .2s, background-color .2s;
 
     @include breakpoint(max-width $medium) {
       padding: 16px;
@@ -44,6 +43,7 @@
       text-align: right;
       background-color: $color-white;
       border-width: 0;
+      transition: right, .2s, background-color .2s;
     }
   }
 

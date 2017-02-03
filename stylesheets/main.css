@@ -3231,7 +3231,6 @@ label .form_control_indicator::before {
 }
 .layout-root .edy-ecommerce-shopping-cart-button {
   background-color: #fff;
-  transition: right, .2s, background-color .2s;
 }
 @media (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
@@ -3251,6 +3250,7 @@ label .form_control_indicator::before {
     text-align: right;
     background-color: #fff;
     border-width: 0;
+    transition: right, .2s, background-color .2s;
   }
 }
 @media (max-width: 640px) {
