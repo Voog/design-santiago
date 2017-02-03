@@ -11132,7 +11132,7 @@ return jQuery;
     }
 
     if (!('item_state' in languageMenuValuesObj)) {
-      languageMenuValuesObj.item_state = 'names_only';
+      languageMenuValuesObj.item_state = 'flags_and_names';
     }
 
     $('.js-menu-language-settings-toggle').each(function(index, languageMenuSettingsButton) {

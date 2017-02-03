@@ -31,12 +31,7 @@
       {% assign language_flags_mode = "language-flags-enabled" %}
     {% endif %}
   {% else %}
-    {% comment %}Fallback for older flags toggle button.{% endcomment %}
-    {% if site.data.language_flags_enabled == true %}
-      {% assign language_flags_mode = "language-flags-enabled" %}
-    {% else %}
-      {% assign language_flags_mode = "language-flags-disabled" %}
-    {% endif %}
+    {% assign language_flags_mode = "language-flags-enabled" %}
   {% endif %}
 
   {% comment %}Detects language flags visibility setting.{% endcomment %}
