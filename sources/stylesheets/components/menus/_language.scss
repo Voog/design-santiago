@@ -133,7 +133,7 @@
   opacity: .25;
   fill: none;
 
-  .language-menu-mode-list,
+  .language-menu-mode-list &,
   .language-flags-enabled & {
     display: none;
   }

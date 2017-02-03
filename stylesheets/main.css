@@ -1298,7 +1298,7 @@ label .form_control_indicator::before {
   opacity: .25;
   fill: none;
 }
-.menu-language-btn-circle .language-menu-mode-list, .language-flags-enabled .menu-language-btn-circle {
+.language-menu-mode-list .menu-language-btn-circle, .language-flags-enabled .menu-language-btn-circle {
   display: none;
 }
 .language-menu-mode-popover.language-flags-disabled .menu-language-btn-circle {
