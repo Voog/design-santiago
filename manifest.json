@@ -309,9 +309,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
+      "file": "assets/ico-flags-medium-up.svg",
       "kind": "assets",
-      "filename": "ico-flags.svg"
+      "filename": "ico-flags-medium-up.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-flags-medium.svg",
+      "kind": "assets",
+      "filename": "ico-flags-medium.svg"
     },
     {
       "content_type": "image/png",
@@ -342,18 +348,6 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/ico-flags-medium.svg",
-      "filename": "ico-flags-medium.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/ico-flags-medium-up.svg",
-      "filename": "ico-flags-medium-up.svg"
     }
   ]
 }
