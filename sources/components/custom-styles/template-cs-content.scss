@@ -66,6 +66,92 @@
 
       /*_LIQUID {% if content_inner_title == "product" %} LIQUID_*/
           /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "alignment",
+            "editor": "listPicker",
+            "list": {{ base_alignment_set }},
+            "scope": "global"
+          */
+          --content-area-product-title__text-alignment: left;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "size",
+            "editor": "rangePicker",
+            "min": 8,
+            "max": 100,
+            "unit": "px",
+            "scope": "global"
+          */
+          --content-area-product-title__font-size: 72px;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "font_size",
+            "type": "button",
+            "editor": "toggleIcon",
+            "states": {
+              "on": "700",
+              "off": "400"
+            },
+            "icon": "bold",
+            "scope": "global"
+          */
+          --content-area-product-title__font-weight: 700;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "font_style",
+            "type": "button",
+            "editor": "toggleIcon",
+            "states": {
+              "on": "italic",
+              "off": "normal"
+            },
+            "icon": "italic",
+            "scope": "global"
+          */
+          --content-area-product-title__font-style: normal;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "text_decoration",
+            "type": "button",
+            "editor": "toggleIcon",
+            "states": {
+              "on": "underline",
+              "off": "none"
+            },
+            "icon": "underline",
+            "scope": "global"
+          */
+          --content-area-product-title__text-decoration: none;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "text_transform",
+            "type": "button",
+            "editor": "toggleIcon",
+            "states": {
+              "on": "uppercase",
+              "off": "none"
+            },
+            "icon": "uppercase",
+            "scope": "global"
+          */
+          --content-area-product-title__text-transform: none;
+
+          /* VoogStyle
+            "pathI18n": ["{{ content_inner_title }}", "title"],
+            "titleI18n": "color",
+            "type": "button",
+            "editor": "colorPicker",
+            "featured": true,
+            "scope": "global"
+          */
+          --content-area-product-title__color: #{$color-secondary};
+
+          /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}"],
             "titleI18n": "image_radius",
             "editor": "rangePicker",

@@ -238,21 +238,19 @@
 // =============================================================================
 // Content area elements
 // =============================================================================
+// scss-lint:disable MergeableSelector
 .content-area {
   h1 {
     .layout-body & {
-      font-style: var(--title__font-style);
-      font-weight: var(--title__font-weight);
-      color: var(--title__color);
-      text-decoration: var(--title__text-decoration);
-      text-transform: var(--title__text-transform);
-
-      @include breakpoint($medium-up) {
-        font-size: var(--title__font-size);
-      }
-
       // scss-lint:disable NestingDepth
       &:not(.content-item-title) {
+        font-size: var(--title__font-size);
+        font-style: var(--title__font-style);
+        font-weight: var(--title__font-weight);
+        color: var(--title__color);
+        text-decoration: var(--title__text-decoration);
+        text-transform: var(--title__text-transform);
+
         @include breakpoint($medium-up) {
           text-align: var(--title__text-alignment);
         }
@@ -344,6 +342,7 @@
       }
     }
   }
+  // scss-lint:enable MergeableSelector
 
   table {
     td,
@@ -360,6 +359,19 @@
       // scss-lint:enable NestingDepth
     }
   }
+}
+
+// =============================================================================
+// Product layout specific content
+// =============================================================================
+.content-item-title {
+  font-size: var(--content-area-product-title__font-size);
+  font-style: var(--content-area-product-title__font-style);
+  font-weight: var(--content-area-product-title__font-weight);
+  color: var(--content-area-product-title__color);
+  text-align: var(--content-area-product-title__text-alignment);
+  text-decoration: var(--content-area-product-title__text-decoration);
+  text-transform: var(--content-area-product-title__text-transform);
 }
 
 // =============================================================================
@@ -459,11 +471,13 @@
 // =============================================================================
 // Content area social media
 // =============================================================================
+// scss-lint:disable MergeableSelector
 .content-area {
   .edy-content-social-button {
     color: var(--content-area-link__color);
   }
 }
+// scss-lint:enable MergeableSelector
 
 // =============================================================================
 // Menu toggle button

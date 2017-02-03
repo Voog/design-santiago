@@ -49,6 +49,7 @@
       "--heading__color",
       "--subheading__color",
       "--content-area-article-title__color",
+      "--content-area-product-title__color",
       "--content-area-link__color",
       "--content-area-button__background-color"
     ]

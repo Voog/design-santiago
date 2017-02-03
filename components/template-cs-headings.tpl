@@ -29,7 +29,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --title__font-weight: 600;
+  --title__font-weight: 700;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_style",
@@ -108,7 +108,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --heading__font-weight: 600;
+  --heading__font-weight: 700;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_style",
@@ -187,7 +187,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --subheading__font-weight: 600;
+  --subheading__font-weight: 700;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_style",

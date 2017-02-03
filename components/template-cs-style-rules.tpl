@@ -132,17 +132,13 @@
   background-color: var(--layout-footer__background-color);
 }
 
-.layout-body .content-area h1 {
+.layout-body .content-area h1:not(.content-item-title) {
+  font-size: var(--title__font-size);
   font-style: var(--title__font-style);
   font-weight: var(--title__font-weight);
   color: var(--title__color);
   text-decoration: var(--title__text-decoration);
   text-transform: var(--title__text-transform);
-}
-@media (min-width: 641px) {
-  .layout-body .content-area h1 {
-    font-size: var(--title__font-size);
-  }
 }
 @media (min-width: 641px) {
   .layout-body .content-area h1:not(.content-item-title) {
@@ -230,6 +226,16 @@
   border-color: var(--content-area-table__border-color);
   border-style: var(--content-area-table__border-style);
   opacity: var(--content-area-table__border-opacity);
+}
+
+.content-item-title {
+  font-size: var(--content-area-product-title__font-size);
+  font-style: var(--content-area-product-title__font-style);
+  font-weight: var(--content-area-product-title__font-weight);
+  color: var(--content-area-product-title__color);
+  text-align: var(--content-area-product-title__text-alignment);
+  text-decoration: var(--content-area-product-title__text-decoration);
+  text-transform: var(--content-area-product-title__text-transform);
 }
 
 .edy-fe-label,

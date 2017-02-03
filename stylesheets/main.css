@@ -662,7 +662,7 @@
 }
 .content-area b,
 .content-area strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 .content-area .custom-btn {
   display: inline-block;
@@ -2413,7 +2413,7 @@ label .form_control_indicator::before {
   font-size: 16px;
 }
 .comment-list__author {
-  font-weight: 600;
+  font-weight: 700;
 }
 .comment-list__date {
   font-style: italic;
