@@ -9,7 +9,6 @@
     flex-grow: 0;
     margin: 0;
     line-height: 1.3;
-    color: $color-primary;
     vertical-align: top;
     cursor: pointer;
     background-color: transparent;
@@ -132,7 +131,6 @@
   position: absolute;
   top: 50%;
   opacity: .25;
-  stroke: $color-primary;
   fill: none;
 
   .language-menu-mode-list,
@@ -209,7 +207,7 @@
   }
 
   .menu-language-popover-open & {
-    z-index: 55000;
+    z-index: 2;
     display: block;
   }
 
