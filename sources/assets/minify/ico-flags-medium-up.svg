@@ -22,58 +22,58 @@
             </g>
             <g id="ISL" transform="translate(204.000000, 23.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#425091" stroke-width="22.95"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-2" stroke="#FFFFFF" stroke-width="7.65"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#DD505E" stroke-width="4.25"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-2" stroke="#FFFFFF" stroke-width="9"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#DD505E" stroke-width="5"></path>
             </g>
             <g id="NOR" transform="translate(272.000000, 46.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#DC505E" stroke-width="22.95"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-2" stroke="#FFFFFF" stroke-width="7.65"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#425091" stroke-width="4.25"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-2" stroke="#FFFFFF" stroke-width="9"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#425091" stroke-width="5"></path>
             </g>
             <g id="DAN" transform="translate(238.000000, 0.000000)">
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#DC505E" stroke-width="22.95"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFFFFF" stroke-width="4.25"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#DC505E" stroke-width="23"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFFFFF" stroke-width="5"></path>
             </g>
             <g id="SWE" transform="translate(272.000000, 69.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#4A89DC" stroke-width="22.95"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFCE54" stroke-width="4.25"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFCE54" stroke-width="5"></path>
             </g>
             <g id="FIN" transform="translate(0.000000, 23.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="22.95"></path>
-                <path d="M10.625,0 L10.625,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#4A89DC" stroke-width="4.25"></path>
+                <path d="M10.5,0 L10.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#4A89DC" stroke-width="5"></path>
             </g>
             <g id="GEO" transform="translate(68.000000, 23.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="22.95"></path>
-                <path d="M16.575,0 L16.575,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#DC515E" stroke-width="4.25"></path>
-                <path d="M7.225,1.7037037 L7.225,7.66666667 M4.25,4.68518519 L10.2,4.68518519" id="Stroke-4" stroke="#DC515E" stroke-width="1.7"></path>
-                <path d="M26.775,1.7037037 L26.775,7.66666667 M23.8,4.68518519 L29.75,4.68518519" id="Stroke-5" stroke="#DC515E" stroke-width="1.7"></path>
-                <path d="M7.225,15.3333333 L7.225,21.2962963 M4.25,18.3148148 L10.2,18.3148148" id="Stroke-5" stroke="#DC515E" stroke-width="1.7"></path>
-                <path d="M26.775,15.3333333 L26.775,21.2962963 M23.8,18.3148148 L29.75,18.3148148" id="Stroke-6" stroke="#DC515E" stroke-width="1.7"></path>
+                <path d="M16.5,0 L16.5,23 M0,11.5 L34,11.5" id="Stroke-3" stroke="#DC515E" stroke-width="5"></path>
+                <path d="M7,1 L7,7 M4,4 L10,4" id="Stroke-4" stroke="#DC515E" stroke-width="1.7"></path>
+                <path d="M25.9934783,1 L25.9934783,7 M23,4 L28.9869565,4" id="Stroke-5" stroke="#DC515E" stroke-width="1.7"></path>
+                <path d="M6.99347826,16 L6.99347826,22 M4,19 L9.98695652,19" id="Stroke-5" stroke="#DC515E" stroke-width="1.7"></path>
+                <path d="M25.9934783,16 L25.9934783,22 M23,19 L28.9869565,19" id="Stroke-6" stroke="#DC515E" stroke-width="1.7"></path>
             </g>
-            <g id="NED" transform="translate(238.000000, 46.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-3" stroke="#4A89DC"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-2" stroke="#DD505E"></path>
+            <g id="NED" transform="translate(238.000000, 46.000000)">
+                <path d="M0,19 L34,19" id="Stroke-3" stroke="#4A89DC" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-2" stroke="#DD505E" stroke-width="8"></path>
             </g>
-            <g id="HUN" transform="translate(170.000000, 23.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-3" stroke="#509F5D"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-2" stroke="#DD505E"></path>
+            <g id="HUN" transform="translate(170.000000, 23.000000)">
+                <path d="M0,19 L34,19" id="Stroke-3" stroke="#509F5D" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-2" stroke="#DD505E" stroke-width="8"></path>
             </g>
-            <g id="LIT" transform="translate(170.000000, 46.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#DD505E"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#509F5D"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-1" stroke="#FFCE54"></path>
+            <g id="LIT" transform="translate(170.000000, 46.000000)">
+                <path d="M0,19 L34,19" id="Stroke-2" stroke="#DD505E" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#509F5D" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-1" stroke="#FFCE54" stroke-width="8"></path>
             </g>
-            <g id="GER" transform="translate(102.000000, 23.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#FFCE54"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#DC515E"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-1" stroke="#000000"></path>
+            <g id="GER" transform="translate(102.000000, 23.000000)">
+                <path d="M0,19 L34,19" id="Stroke-2" stroke="#FFCE54" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#DC515E" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-1" stroke="#000000" stroke-width="8"></path>
             </g>
-            <g id="BLG" transform="translate(136.000000, 0.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#DC515E"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#509F5D"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-1" stroke="#FFFFFF"></path>
+            <g id="BLG" transform="translate(136.000000, 0.000000)">
+                <path d="M0,19 L34,19" id="Stroke-2" stroke="#DC515E" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#509F5D" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-1" stroke="#FFFFFF" stroke-width="8"></path>
             </g>
             <g id="IRN" transform="translate(306.000000, 23.000000)">
                 <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#DC515E" stroke-width="7.65"></path>
@@ -118,9 +118,9 @@
                 <path d="M8.50339321,8.0398832 C7.4005988,8.0398832 6.80508982,7.24074074 6.80508982,7.24074074 C6.80508982,7.24074074 6.20618762,8.0398832 5.10169661,8.0398832 C4.08542914,8.0398832 3.4,7.37676499 3.4,7.37676499 L3.4,11.7176388 C3.43053892,14.5775486 6.8,15.7592593 6.8,15.7592593 C6.8,15.7592593 10.2,14.5775486 10.2,11.7176388 L10.2,7.37676499 C10.2,7.37676499 9.51966068,8.0398832 8.50339321,8.0398832" id="Fill-2" fill="#DD505E"></path>
             </g>
             <g id="CRO" transform="translate(204.000000, 0.000000)">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-3" stroke="#425091" stroke-width="7.65"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="7.65"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-2" stroke="#DC515E" stroke-width="7.65"></path>
+                <path d="M0,19 L34,19" id="Stroke-3" stroke="#425091" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-2" stroke="#DC515E" stroke-width="8"></path>
                 <path d="M19.1303169,6.73501077 C17.7507506,6.73501077 17.0049625,5.53703704 17.0049625,5.53703704 C17.0049625,5.53703704 16.2563386,6.73501077 14.8767723,6.73501077 C13.6063803,6.73501077 12.75,5.73974296 12.75,5.73974296 L12.75,12.251899 C12.7882819,16.5415945 16.9992911,18.3148148 16.9992911,18.3148148 C16.9992911,18.3148148 21.25,16.5415945 21.25,12.251899 L21.25,5.73974296 C21.25,5.73974296 20.4007089,6.73501077 19.1303169,6.73501077" id="Fill-1" fill="#FFFFFF"></path>
                 <path d="M18.7033932,7.77378576 C17.6005988,7.77378576 17.0050898,6.81481481 17.0050898,6.81481481 C17.0050898,6.81481481 16.4061876,7.77378576 15.3016966,7.77378576 C14.2854291,7.77378576 13.6,6.97804391 13.6,6.97804391 L13.6,12.1870925 C13.6305389,15.6189843 17,17.037037 17,17.037037 C17,17.037037 20.4,15.6189843 20.4,12.1870925 L20.4,6.97804391 C20.4,6.97804391 19.7196607,7.77378576 18.7033932,7.77378576" id="Fill-2" fill="#DD505E"></path>
             </g>
@@ -132,20 +132,20 @@
                 <path d="M8.07754491,5.75042508 C7.2504491,5.75042508 6.80381737,5.11111111 6.80381737,5.11111111 C6.80381737,5.11111111 6.35464072,5.75042508 5.52627246,5.75042508 C4.76407186,5.75042508 4.25,5.21993051 4.25,5.21993051 L4.25,8.69262956 C4.27290419,10.9805574 6.8,11.9259259 6.8,11.9259259 C6.8,11.9259259 9.35,10.9805574 9.35,8.69262956 L9.35,5.21993051 C9.35,5.21993051 8.83974551,5.75042508 8.07754491,5.75042508" id="Fill-3" fill="#425191"></path>
             </g>
             <g id="IND" transform="translate(238.000000, 23.000000)">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#509F5D" stroke-width="7.65"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFFFFF" stroke-width="7.65"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-1" stroke="#DC9551" stroke-width="7.65"></path>
+                <path d="M0,19 L34,19" id="Stroke-2" stroke="#509F5D" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#FFFFFF" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-1" stroke="#DC9551" stroke-width="8"></path>
                 <path d="M16.575,8.94444444 C17.9826,8.94444444 19.125,10.0893333 19.125,11.5 C19.125,12.9106667 17.9826,14.0555556 16.575,14.0555556 C15.1657,14.0555556 14.025,12.9106667 14.025,11.5 C14.025,10.0893333 15.1657,8.94444444 16.575,8.94444444" id="Fill-4" stroke="#425191" stroke-width="0.85"></path>
             </g>
-            <g id="RUS" transform="translate(102.000000, 69.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-2" stroke="#DC515E"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#4A89DC"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-1" stroke="#FFFFFF"></path>
+            <g id="RUS" transform="translate(102.000000, 69.000000)">
+                <path d="M0,19 L34,19" id="Stroke-2" stroke="#DC515E" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-3" stroke="#4A89DC" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-1" stroke="#FFFFFF" stroke-width="8"></path>
             </g>
-            <g id="EST" transform="translate(306.000000, 0.000000)" stroke-width="7.65">
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-3" stroke="#FFFFFF"></path>
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#000000"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-2" stroke="#4A89DC"></path>
+            <g id="EST" transform="translate(306.000000, 0.000000)">
+                <path d="M0,19 L34,19" id="Stroke-3" stroke="#FFFFFF" stroke-width="8"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#000000" stroke-width="7"></path>
+                <path d="M0,4 L34,4" id="Stroke-2" stroke="#4A89DC" stroke-width="8"></path>
             </g>
             <g id="ALB">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="7.65"></path>
@@ -163,10 +163,10 @@
                 <ellipse id="Oval-31" fill="#FFCE54" cx="11.05" cy="7.66666667" rx="0.85" ry="0.851851852"></ellipse>
                 <ellipse id="Oval-32" fill="#FFCE54" cx="9.35" cy="10.2222222" rx="0.85" ry="0.851851852"></ellipse>
             </g>
-            <g id="ARM" transform="translate(34.000000, 0.000000)" stroke-width="7.65">
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#425091"></path>
-                <path d="M0,3.83333333 L34,3.83333333" id="Stroke-2" stroke="#DD505E"></path>
-                <path d="M0,19.1666667 L34,19.1666667" id="Stroke-3" stroke="#FACA5A"></path>
+            <g id="ARM" transform="translate(33.000000, 0.000000)">
+                <path d="M1,11.5 L35,11.5" id="Stroke-1" stroke="#425091" stroke-width="7"></path>
+                <path d="M1,4 L35,4" id="Stroke-2" stroke="#DD505E" stroke-width="8"></path>
+                <path d="M1,19 L35,19" id="Stroke-3" stroke="#FACA5A" stroke-width="8"></path>
             </g>
             <g id="ESP" transform="translate(237.000000, 69.000000)">
                 <path d="M1,19.9333333 L35,19.9333333" id="Stroke-3" stroke="#DC505E" stroke-width="5.95"></path>
@@ -197,13 +197,13 @@
                 </g>
             </g>
             <g id="LAT" transform="translate(135.000000, 46.000000)">
-                <path d="M1,19 L35,19" id="Stroke-3" stroke="#B42B39" stroke-width="8.5"></path>
-                <path d="M1,11.390625 L35,11.390625" id="Stroke-1" stroke="#FFFFFF" stroke-width="5.95"></path>
-                <path d="M1,4.21875 L35,4.21875" id="Stroke-2" stroke="#B42B39" stroke-width="8.5"></path>
+                <path d="M1,18.5 L35,18.5" id="Stroke-3" stroke="#B42B39" stroke-width="9"></path>
+                <path d="M1,11.5 L35,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="5"></path>
+                <path d="M1,4.5 L35,4.5" id="Stroke-2" stroke="#B42B39" stroke-width="9"></path>
             </g>
-            <g id="UKR" transform="translate(0.000000, 92.000000)">
-                <path d="M0,17.4852941 L34,17.4852941" id="Stroke-3" stroke="#FACA5A" stroke-width="11.05"></path>
-                <path d="M0,5.97058824 L34,5.97058824" id="Stroke-2" stroke="#4A89DC" stroke-width="11.9"></path>
+            <g id="UKR" transform="translate(-1.000000, 92.000000)">
+                <path d="M1,17.4852941 L35,17.4852941" id="Stroke-3" stroke="#FACA5A" stroke-width="11.05"></path>
+                <path d="M1,5.97058824 L35,5.97058824" id="Stroke-2" stroke="#4A89DC" stroke-width="11.9"></path>
             </g>
             <g id="POL" transform="translate(34.000000, 69.000000)">
                 <path d="M0,17.4852941 L34,17.4852941" id="Stroke-3" stroke="#DC505E" stroke-width="11.05"></path>
@@ -220,9 +220,9 @@
                 <polyline id="arrow" fill="#FFFFFF" points="-0.0033203125 0.426470588 12.1397797 11.9773655 -0.0033203125 22.6432731 -0.0033203125 0.426470588"></polyline>
                 <ellipse id="Oval-1" fill="#FACA5A" cx="4.24667969" cy="11.9411765" rx="2.55" ry="2.55882353"></ellipse>
             </g>
-            <g id="IDN" transform="translate(272.000000, 23.000000)">
-                <path d="M0,17.4852941 L34,17.4852941" id="Stroke-3" stroke="#FFFFFF" stroke-width="11.05"></path>
-                <path d="M0,5.97058824 L34,5.97058824" id="Stroke-2" stroke="#DC505E" stroke-width="11.9"></path>
+            <g id="IDN" transform="translate(271.000000, 23.000000)">
+                <path d="M1,17 L35,17" id="Stroke-3" stroke="#FFFFFF" stroke-width="11"></path>
+                <path d="M1,6 L35,6" id="Stroke-2" stroke="#DC505E" stroke-width="12"></path>
             </g>
             <g id="ITA" transform="translate(34.000000, 46.000000)">
                 <path d="M5.525,0 L5.525,23" id="Stroke-1" stroke="#509F5D" stroke-width="11.05"></path>
@@ -240,8 +240,8 @@
                 <path d="M6.525,0 L6.525,23" id="Stroke-1" stroke="#4A89DC" stroke-width="11.05"></path>
             </g>
             <g id="BAN" transform="translate(68.000000, 0.000000)">
-                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#509F5D" stroke-width="22.95"></path>
-                <path d="M17,5.41607407 C20.3524,5.41607407 23.0707,8.1402963 23.0707,11.5 C23.0707,14.8597037 20.3524,17.5839259 17,17.5839259 C13.6476,17.5839259 10.9293,14.8597037 10.9293,11.5 C10.9293,8.1402963 13.6476,5.41607407 17,5.41607407" id="Fill-2" fill="#DC505E"></path>
+                <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#509F5D" stroke-width="23"></path>
+                <path d="M16.5,5.5 C19.8133576,5.5 22.5,8.1866424 22.5,11.5 C22.5,14.8133576 19.8133576,17.5 16.5,17.5 C13.1866424,17.5 10.5,14.8133576 10.5,11.5 C10.5,8.1866424 13.1866424,5.5 16.5,5.5" id="Fill-2" fill="#DC505E"></path>
             </g>
             <g id="KOR" transform="translate(102.000000, 46.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-2" stroke="#FFFFFF" stroke-width="22.95"></path>
@@ -251,55 +251,48 @@
             </g>
             <g id="JPN" transform="translate(68.000000, 46.000000)">
                 <path d="M0,11.5 L34,11.5" id="Stroke-1" stroke="#FFFFFF" stroke-width="22.95"></path>
-                <path d="M17,5.41607407 C20.3524,5.41607407 23.0707,8.1402963 23.0707,11.5 C23.0707,14.8597037 20.3524,17.5839259 17,17.5839259 C13.6476,17.5839259 10.9293,14.8597037 10.9293,11.5 C10.9293,8.1402963 13.6476,5.41607407 17,5.41607407" id="Fill-2" fill="#DC505E"></path>
+                <path d="M16.5,5.5 C19.8133576,5.5 22.5,8.1866424 22.5,11.5 C22.5,14.8133576 19.8133576,17.5 16.5,17.5 C13.1866424,17.5 10.5,14.8133576 10.5,11.5 C10.5,8.1866424 13.1866424,5.5 16.5,5.5" id="Fill-2" fill="#DC505E"></path>
             </g>
             <g id="USA" transform="translate(34.000000, 92.000000)">
                 <g id="Reds" fill="#CC4B57">
-                    <polygon id="Fill-8" points="16.9812531 0 34.0221554 0 34.0221554 1.76923077 16.9812531 1.76923077"></polygon>
-                    <polygon id="Fill-9" points="16.9812531 3.53846154 34.0221554 3.53846154 34.0221554 5.30769231 16.9812531 5.30769231"></polygon>
-                    <polygon id="Fill-10" points="16.9812531 7.07692308 34.0221554 7.07692308 34.0221554 8.84615385 16.9812531 8.84615385"></polygon>
-                    <polygon id="Fill-11" points="16.9812531 10.6153846 34.0221554 10.6153846 34.0221554 12.3846154 16.9812531 12.3846154"></polygon>
-                    <polygon id="Fill-12" points="0 14.1538462 34 14.1538462 34 15.9230769 0 15.9230769"></polygon>
-                    <polygon id="Fill-13" points="0 17.6923077 34 17.6923077 34 19.4615385 0 19.4615385"></polygon>
-                    <polygon id="Fill-14" points="0 21.2307692 34 21.2307692 34 23 0 23"></polygon>
+                    <polygon id="Fill-8" points="16 0 34 0 34 2 16 2"></polygon>
+                    <polygon id="Fill-9" points="16 4 34 4 34 6 16 6"></polygon>
+                    <polygon id="Fill-10" points="16 8 34.0433083 8 34.0433083 10 16 10"></polygon>
+                    <polygon id="Fill-11" points="16 12 34.0433083 12 34.0433083 14 16 14"></polygon>
+                    <polygon id="Fill-13" points="0 16 34 16 34 18 0 18"></polygon>
+                    <polygon id="Fill-14" points="0 20 34 20 34 22 0 22"></polygon>
                 </g>
-                <g id="Whites" transform="translate(0.000000, 1.769231)" fill="#FFFFFF">
-                    <polygon id="Fill-8" points="16.9812531 0 34.0221554 0 34.0221554 1.76923077 16.9812531 1.76923077"></polygon>
-                    <polygon id="Fill-9" points="16.9812531 3.53846154 34.0221554 3.53846154 34.0221554 5.30769231 16.9812531 5.30769231"></polygon>
-                    <polygon id="Fill-10" points="16.9812531 7.07692308 34.0221554 7.07692308 34.0221554 8.84615385 16.9812531 8.84615385"></polygon>
-                    <polygon id="Fill-11" points="0 10.6153846 34.0630125 10.6153846 34.0630125 12.3846154 0 12.3846154"></polygon>
-                    <polygon id="Fill-12" points="0 14.1538462 34 14.1538462 34 15.9230769 0 15.9230769"></polygon>
-                    <polygon id="Fill-13" points="0 17.6923077 34 17.6923077 34 19.4615385 0 19.4615385"></polygon>
+                <g id="Whites" transform="translate(0.000000, 2.000000)" fill="#FFFFFF">
+                    <polygon id="Fill-8" points="16 0 34 0 34 2 16 2"></polygon>
+                    <polygon id="Fill-9" points="16 4 34 4 34 6 16 6"></polygon>
+                    <polygon id="Fill-10" points="16 8 34.0433083 8 34.0433083 10 16 10"></polygon>
+                    <polygon id="Fill-11" points="0 12 34.0818045 12 34.0818045 14 0 14"></polygon>
+                    <polygon id="Fill-12" points="0 16 34 16 34 18 0 18"></polygon>
+                    <polygon id="Fill-13" points="0 20 34 20 34 21 0 21"></polygon>
                 </g>
-                <polygon id="Blue" fill="#3C497D" points="0 0 17 0 17 12.3846154 0 12.3846154"></polygon>
-                <g id="Stars" transform="translate(0.850000, 0.884615)" fill="#FFFFFF">
-                    <ellipse id="Oval-2" cx="0.85" cy="0.884615385" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-3" cx="4.25" cy="0.884615385" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-4" cx="7.65" cy="0.884615385" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-5" cx="11.05" cy="0.884615385" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-6" cx="14.45" cy="0.884615385" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-11" cx="2.55" cy="2.65384615" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-7" cx="5.95" cy="2.65384615" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-8" cx="9.35" cy="2.65384615" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-9" cx="12.75" cy="2.65384615" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-19" cx="0.85" cy="4.42307692" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-10" cx="4.25" cy="4.42307692" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-12" cx="7.65" cy="4.42307692" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-13" cx="11.05" cy="4.42307692" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-14" cx="14.45" cy="4.42307692" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-15" cx="2.55" cy="6.19230769" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-16" cx="5.95" cy="6.19230769" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-17" cx="9.35" cy="6.19230769" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-18" cx="12.75" cy="6.19230769" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-28" cx="0.85" cy="7.96153846" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-20" cx="4.25" cy="7.96153846" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-21" cx="7.65" cy="7.96153846" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-22" cx="11.05" cy="7.96153846" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-23" cx="14.45" cy="7.96153846" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-24" cx="2.55" cy="9.73076923" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-25" cx="5.95" cy="9.73076923" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-26" cx="9.35" cy="9.73076923" rx="0.85" ry="0.884615385"></ellipse>
-                    <ellipse id="Oval-27" cx="12.75" cy="9.73076923" rx="0.85" ry="0.884615385"></ellipse>
+                <polygon id="Blue" fill="#3C497D" points="0 0 16 0 16 14 0 14"></polygon>
+                <g id="Stars" transform="translate(1.000000, 1.000000)" fill="#FFFFFF">
+                    <circle id="Oval-2" cx="1" cy="1" r="1"></circle>
+                    <circle id="Oval-2-Copy" cx="5" cy="1" r="1"></circle>
+                    <circle id="Oval-2-Copy-2" cx="9" cy="1" r="1"></circle>
+                    <circle id="Oval-2-Copy-3" cx="13" cy="1" r="1"></circle>
+                    <circle id="Oval-2-Copy-6" cx="3" cy="3" r="1"></circle>
+                    <circle id="Oval-2-Copy-5" cx="7" cy="3" r="1"></circle>
+                    <circle id="Oval-2-Copy-4" cx="11" cy="3" r="1"></circle>
+                    <circle id="Oval-2-Copy-13" cx="1" cy="5" r="1"></circle>
+                    <circle id="Oval-2-Copy-12" cx="5" cy="5" r="1"></circle>
+                    <circle id="Oval-2-Copy-11" cx="9" cy="5" r="1"></circle>
+                    <circle id="Oval-2-Copy-10" cx="13" cy="5" r="1"></circle>
+                    <circle id="Oval-2-Copy-9" cx="3" cy="7" r="1"></circle>
+                    <circle id="Oval-2-Copy-8" cx="7" cy="7" r="1"></circle>
+                    <circle id="Oval-2-Copy-7" cx="11" cy="7" r="1"></circle>
+                    <circle id="Oval-2-Copy-20" cx="1" cy="9" r="1"></circle>
+                    <circle id="Oval-2-Copy-19" cx="5" cy="9" r="1"></circle>
+                    <circle id="Oval-2-Copy-18" cx="9" cy="9" r="1"></circle>
+                    <circle id="Oval-2-Copy-17" cx="13" cy="9" r="1"></circle>
+                    <circle id="Oval-2-Copy-16" cx="3" cy="11" r="1"></circle>
+                    <circle id="Oval-2-Copy-15" cx="7" cy="11" r="1"></circle>
+                    <circle id="Oval-2-Copy-14" cx="11" cy="11" r="1"></circle>
                 </g>
             </g>
             <g id="MLY" transform="translate(204.000000, 46.000000)">
