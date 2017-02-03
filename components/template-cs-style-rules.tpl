@@ -251,7 +251,7 @@
 .form_field_textfield,
 .form_field_textarea,
 .form_field_select,
-.form_field label {
+.form_field label:not(.form_field_label) {
   font-style: var(--content-area-form-field-text__font-style);
   font-weight: var(--content-area-form-field-text__font-weight);
   color: var(--content-area-form-field-text__color);
@@ -261,7 +261,7 @@
 .form_field_textfield:not([data-group="comment-field"]),
 .form_field_textarea:not([data-group="comment-field"]),
 .form_field_select:not([data-group="comment-field"]),
-.form_field label:not([data-group="comment-field"]) {
+.form_field label:not(.form_field_label):not([data-group="comment-field"]) {
   font-size: var(--content-area-form-field-text__font-size);
 }
 
