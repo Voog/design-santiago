@@ -313,6 +313,9 @@
     margin-right: 24px;
   }
 }
+.layout-footer__section--voog-reference a:hover {
+  opacity: .5;
+}
 @media (max-width: 1024px) {
   .layout-footer__section--body {
     -webkit-order: 1;

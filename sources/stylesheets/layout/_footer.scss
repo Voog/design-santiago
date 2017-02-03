@@ -50,6 +50,14 @@
       @include breakpoint($large-up) {
         margin-right: 24px;
       }
+
+      // scss-lint:disable NestingDepth
+      a {
+        &:hover {
+          opacity: .5;
+        }
+      }
+      // scss-lint:enable NestingDepth
     }
 
     &--body {
