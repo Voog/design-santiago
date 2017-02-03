@@ -104,6 +104,15 @@
 
 .language-menu-mode-popover .menu-language-btn {
   font-family: var(--main__font-family);
+  color: var(--main__color-primary);
+}
+
+.menu-language-btn-circle {
+  stroke: var(--main__color-primary);
+}
+
+.menu-language .menu-item a {
+  color: var(--main__color-primary);
 }
 
 .content-area {
