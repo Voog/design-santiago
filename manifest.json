@@ -312,6 +312,13 @@
       "content_type": "component",
       "component": true,
       "file": "components/menu-breadcrumbs-buttons-loop.tpl"
+    },
+    {
+      "title": "product-list-loop",
+      "layout_name": "product-list-loop",
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-loop.tpl"
     }
   ],
   "assets": [

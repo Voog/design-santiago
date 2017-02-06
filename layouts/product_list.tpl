@@ -26,25 +26,7 @@
                 {% endif %}
               {% endfor %}
             {% else %}
-              {% for level_1 in site.visible_menuitems %}
-                {% if level_1.selected? %}
-                  {% for level_2 in level_1.visible_children_with_data %}
-                    {% if level_1.current? %}
-                      {% if level_2.layout_title == product_list_layout or level_2.layout_title == product_layout %}
-                        {% include "product-list-item" menu_level: level_2 %}
-                      {% endif %}
-                    {% else %}
-                      {% if level_2.selected? %}
-                        {% for level_3 in level_2.visible_children_with_data %}
-                          {% if level_3.layout_title == product_list_layout or level_3.layout_title == product_layout %}
-                            {% include "product-list-item" menu_level: level_3 %}
-                          {% endif %}
-                        {% endfor %}
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
+              {% include "product-list-loop" menu_items: site.visible_menuitems %}
             {% endif %}
 
             <div class="content-item-box content-item-box--placeholder"></div>
