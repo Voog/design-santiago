@@ -7,6 +7,10 @@
 
   &__separator {
     opacity: .5;
+
+    &:first-child {
+      display: none;
+    }
   }
 
   &__item {

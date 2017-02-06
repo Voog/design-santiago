@@ -2194,6 +2194,9 @@ label .form_control_indicator::before {
 .menu-breadcrumbs__separator {
   opacity: .5;
 }
+.menu-breadcrumbs__separator:first-child {
+  display: none;
+}
 .menu-breadcrumbs__item {
   display: inline-block;
 }

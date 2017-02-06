@@ -298,6 +298,20 @@
       "file": "components/blog-article-tags.tpl",
       "layout_name": "blog-article-tags",
       "title": "blog-article-tags"
+    },
+    {
+      "title": "menu-breadcrumbs-items-loop",
+      "layout_name": "menu-breadcrumbs-items-loop",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-items-loop.tpl"
+    },
+    {
+      "title": "menu-breadcrumbs-buttons-loop",
+      "layout_name": "menu-breadcrumbs-buttons-loop",
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-buttons-loop.tpl"
     }
   ],
   "assets": [
