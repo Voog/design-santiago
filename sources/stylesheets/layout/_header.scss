@@ -70,13 +70,13 @@
     @include breakpoint($medium-up) {
       position: fixed;
       top: 0;
-      right: 6px;
+      right: 0;
       left: 0;
       z-index: 2;
       justify-content: flex-end;
       padding: 23px 40px;
       background-color: transparent;
-      transition: top .2s, right .2s, background-color .2s;
+      transition: top .2s, right .2s, padding-right .2s, background-color .2s;
 
       &::after {
         position: absolute;
@@ -88,16 +88,6 @@
         content: '';
         opacity: .2;
         transition: background-color .2s;
-
-        // scss-lint:disable NestingDepth
-        .edy-checkout-button-visible & {
-          right: 0;
-        }
-        // scss-lint:disable NestingDepth
-      }
-
-      .edy-checkout-button-visible & {
-        padding-right: 6px;
       }
     }
 
@@ -107,7 +97,7 @@
       // scss-lint:disable NestingDepth
       .edy-checkout-button-visible & {
         top: 0;
-        transition: top 0s, right .2s, background-color .2s;
+        transition: top 0s, right .2s, padding-right .2s, background-color .2s;
       }
       // scss-lint:enable NestingDepth
     }
@@ -115,11 +105,11 @@
 
     &.headroom--pinned {
       top: 0;
-      transition: top .2s, right .2s, background-color .2s;
+      transition: top .2s, right .2s, padding-right .2s, background-color .2s;
     }
 
     &.headroom--not-top {
-      transition: top .2s, right .2s, background-color .2s;
+      transition: top .2s, right .2s, padding-right .2s, background-color .2s;
 
       @include breakpoint($medium-up) {
         background-color: $color-white;
@@ -134,13 +124,13 @@
 
     .edy-checkout-button-visible & {
       @include breakpoint($medium-up) {
-        right: 84px;
+        padding-right: 90px;
       }
 
       // scss-lint:disable NestingDepth
       .site-search-opened & {
         @include breakpoint($medium-up) {
-          right: 280px + 90px;
+          right: 280px;
         }
       }
       // scss-lint:enable NestingDepth
@@ -148,7 +138,7 @@
 
     .site-search-opened & {
       @include breakpoint($medium-up) {
-        right: 280px + 40px;
+        right: 280px;
       }
     }
   }

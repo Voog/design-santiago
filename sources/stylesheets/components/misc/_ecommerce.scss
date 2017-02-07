@@ -33,17 +33,24 @@
     }
 
     @include breakpoint($medium-up) {
-      top: 0;
+      top: -84px;
       right: 40px;
       left: auto;
       width: auto;
-      padding: 28px 5px;
+      padding: 28px 5px 27px;
       font-size: 0;
       line-height: 1.7;
       text-align: right;
       background-color: $color-white;
       border-width: 0;
-      transition: right, .2s, background-color .2s;
+      transition: top .2s, right .2s, background-color .2s;
+    }
+  }
+
+  .edy-checkout-button-visible & {
+    @include breakpoint($medium-up) {
+      top: 0;
+      transition: top .2s, right .2s, background-color .2s;
     }
   }
 
@@ -56,18 +63,6 @@
       height: 1px;
       content: '';
       opacity: .2;
-    }
-
-    @include breakpoint($medium-up) {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 1px;
-      background-color: transparent;
-      content: '';
-      opacity: .2;
-      transition: background-color .2s;
     }
   }
 
@@ -114,9 +109,11 @@
     }
   }
 
-  &.headroom--top {
-    &::after {
-      background-color: transparent;
+  &.-hidden {
+    .layout-root & {
+      @include breakpoint($medium-up) {
+        display: block;
+      }
     }
   }
 

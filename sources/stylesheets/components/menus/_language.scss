@@ -65,7 +65,7 @@
 
     @include breakpoint(max-width $medium) {
       padding-top: 6px;
-      padding-right: 37px;
+      padding-right: 34px;
       padding-bottom: 5px;
       font-size: 13px;
     }
@@ -111,8 +111,15 @@
     }
 
     .language-flags-enabled.language-names-enabled.language-menu-mode-popover & {
-      right: 8px;
       left: auto;
+
+      @include breakpoint(max-width $medium) {
+        right: 5px;
+      }
+
+      @include breakpoint($medium-up) {
+        right: 8px;
+      }
     }
   }
 
@@ -174,7 +181,7 @@
         padding-top: 4px;
         padding-bottom: 4px;
         margin-top: -31px;
-        margin-right: -1px;
+        margin-right: -4px;
       }
 
       @include breakpoint($medium-up) {
