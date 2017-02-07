@@ -167,8 +167,10 @@
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    min-height: 84px;
     padding: 23px 40px;
     background-color: transparent;
+    box-sizing: border-box;
     transition: top .2s, right .2s, padding-right .2s, background-color .2s;
   }
   .layout-header__options::after {
