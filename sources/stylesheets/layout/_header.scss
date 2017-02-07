@@ -95,13 +95,6 @@
 
     &.headroom--unpinned {
       top: -84px;
-
-      // scss-lint:disable NestingDepth
-      .edy-checkout-button-visible & {
-        top: 0;
-        transition: top 0s, right .2s, padding-right .2s, background-color .2s;
-      }
-      // scss-lint:enable NestingDepth
     }
 
 
@@ -124,8 +117,16 @@
       // scss-lint:enable NestingDepth
     }
 
+    [data-lingual-mode="monolingual"].site-search-disabled & {
+      top: -84px;
+      transition: top .2s, right .2s, padding-right .2s, background-color .2s;
+    }
+
     .edy-checkout-button-visible & {
       @include breakpoint($medium-up) {
+        // scss-lint:disable ImportantRule
+        top: 0 !important;
+        // scss-lint:enable ImportantRule
         padding-right: 90px;
       }
 

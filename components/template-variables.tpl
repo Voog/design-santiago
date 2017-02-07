@@ -23,6 +23,13 @@
     {% endif %}
   {% endfor %}
 
+  {% comment %}Detects language menu mode setting.{% endcomment %}
+  {% if editmode or site.has_many_languages? %}
+    {% assign site_lingual_mode = "multilingual" %}
+  {% else %}
+    {% assign site_lingual_mode = "monolingual" %}
+  {% endif %}
+
   {% comment %}Detects language flags visibility setting.{% endcomment %}
   {% if site.data.settings_language_menu.item_state %}
     {% if site.data.settings_language_menu.item_state == "names_only" %}
