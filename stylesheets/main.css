@@ -256,18 +256,20 @@
 }
 
 .layout-footer {
-  padding-right: 16px;
-  padding-left: 16px;
   margin-top: 40px;
 }
 @media (max-width: 640px) {
   .layout-footer {
+    padding-right: 16px;
+    padding-left: 16px;
     margin-right: -16px;
     margin-left: -16px;
   }
 }
 @media (min-width: 641px) {
   .layout-footer {
+    padding-right: 40px;
+    padding-left: 40px;
     margin-right: -40px;
     margin-left: -40px;
   }
@@ -282,6 +284,18 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
+}
+@media (max-width: 640px) {
+  .layout-footer__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media (min-width: 641px) {
+  .layout-footer__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 @media (max-width: 1024px) {
   .layout-footer__container {

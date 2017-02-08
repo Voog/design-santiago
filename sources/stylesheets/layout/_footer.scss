@@ -2,16 +2,18 @@
 // Layout footer
 // =============================================================================
 .layout-footer {
-  padding-right: 16px;
-  padding-left: 16px;
   margin-top: 40px;
 
   @include breakpoint(max-width $medium) {
+    padding-right: 16px;
+    padding-left: 16px;
     margin-right: -16px;
     margin-left: -16px;
   }
 
   @include breakpoint($medium-up) {
+    padding-right: 40px;
+    padding-left: 40px;
     margin-right: -40px;
     margin-left: -40px;
   }
@@ -22,6 +24,16 @@
     margin-right: $margin-horizontal-layout-wrap;
     margin-left: $margin-horizontal-layout-wrap;
     box-sizing: border-box;
+
+    @include breakpoint(max-width $medium) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @include breakpoint($medium-up) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
     @include breakpoint(max-width $large) {
       flex-wrap: wrap;
