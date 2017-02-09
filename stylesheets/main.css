@@ -188,10 +188,6 @@
 .layout-header__options.headroom--unpinned {
   top: -84px;
 }
-.edy-checkout-button-visible .layout-header__options.headroom--unpinned {
-  top: 0;
-  transition: top 0s, right .2s, padding-right .2s, background-color .2s;
-}
 .layout-header__options.headroom--pinned {
   top: 0;
   transition: top .2s, right .2s, padding-right .2s, background-color .2s;
@@ -207,8 +203,13 @@
 .layout-header__options.headroom--not-top::after {
   transition: background-color .2s;
 }
+[data-lingual-mode="monolingual"].site-search-disabled .layout-header__options {
+  top: -84px;
+  transition: top .2s, right .2s, padding-right .2s, background-color .2s;
+}
 @media (min-width: 641px) {
   .edy-checkout-button-visible .layout-header__options {
+    top: 0 !important;
     padding-right: 90px;
   }
 }
