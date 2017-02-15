@@ -14,7 +14,7 @@
 
       <div class="layout-body">
         <div class="layout-body__content">
-          <div class="content-area content-area--padded" {{ edy_intro_edit_text }}>{% content %}</div>
+          <div class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content %}</div>
 
           {% include "menu-breadcrumbs" layout_product_list: true %}
 

@@ -16,7 +16,7 @@
         {% include "menu-sub" %}
 
         <div class="layout-body__content">
-          <main class="content-area" {{ edy_intro_edit_text }}>{% content %}</main>
+          <main class="content-area content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content %}</main>
         </div>
       </div>
 
