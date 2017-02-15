@@ -51,10 +51,8 @@
       text-align: center;
     }
 
-    [data-view-state="editmode"] & {
-      @include breakpoint(max-width $medium) {
-        flex-grow: 1;
-      }
+    @include breakpoint(max-width $medium) {
+      flex-grow: 1;
     }
   }
 

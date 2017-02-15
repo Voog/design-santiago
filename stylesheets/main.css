@@ -137,7 +137,7 @@
   }
 }
 @media (max-width: 640px) {
-  [data-view-state="editmode"] .layout-header__title {
+  .layout-header__title {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
