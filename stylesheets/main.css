@@ -1157,18 +1157,23 @@ label .form_control_indicator::before {
   }
 }
 @media (min-width: 641px) {
-  .menu-sub__item--cms {
-    margin-right: 8px;
-  }
-}
-@media (min-width: 641px) {
   .menu-sub__item--cms:first-child {
     margin-left: 0;
   }
 }
 @media (min-width: 641px) {
+  .menu-sub__item--cms:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 641px) {
   .menu-sub__item--cms:not(:first-child) {
     margin-left: 8px;
+  }
+}
+@media (min-width: 641px) {
+  .menu-sub__item--cms:not(:last-child) {
+    margin-right: 8px;
   }
 }
 @media (max-width: 640px) {

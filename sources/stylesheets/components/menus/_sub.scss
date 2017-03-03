@@ -57,10 +57,6 @@
         padding: 8px 10px 11px;
       }
 
-      @include breakpoint($medium-up) {
-        margin-right: 8px;
-      }
-
       // scss-lint:disable NestingDepth
       &:first-child {
         @include breakpoint($medium-up) {
@@ -68,9 +64,21 @@
         }
       }
 
+      &:last-child {
+        @include breakpoint($medium-up) {
+          margin-right: 0;
+        }
+      }
+
       &:not(:first-child) {
         @include breakpoint($medium-up) {
           margin-left: 8px;
+        }
+      }
+
+      &:not(:last-child) {
+        @include breakpoint($medium-up) {
+          margin-right: 8px;
         }
       }
       // scss-lint:enable NestingDepth
