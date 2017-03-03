@@ -18,7 +18,11 @@
 
     {% unless list_item %}
       <div class="article__body">
-        <div class="content-area content-area--overflowed-images">{% if list_item %}{{ article.body }}{% else %}{% editable article.body %}{% endif %}</div>
+        <div class="content-area content-area--overflowed-images">{% editable article.body %}</div>
+      </div>
+
+      <div class="article__body article__body--additional">
+        <div class="content-area content-area--overflowed-images">{% content name="additional_body" bind="Article" %}</div>
       </div>
     {% endunless %}
   </div>

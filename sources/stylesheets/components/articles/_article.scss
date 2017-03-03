@@ -42,6 +42,13 @@
     margin-bottom: 24px;
   }
 
-  //&__body {
-  //}
+  &__body {
+    &:empty {
+      display: none;
+    }
+
+    &--additional {
+      margin-top: 24px;
+    }
+  }
 }
