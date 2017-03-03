@@ -38,17 +38,5 @@
   //&__content {
   //}
 
-  &__excerpt {
-    margin-bottom: 24px;
-  }
-
-  &__body {
-    &:empty {
-      display: none;
-    }
-
-    &--additional {
-      margin-top: 24px;
-    }
-  }
+  // NOTE: Article content area modifiers are located in "sources/stylesheets/content-area/_container.scss".
 }

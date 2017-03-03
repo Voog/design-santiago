@@ -12,18 +12,12 @@
   </header>
 
   <div class="article__content" data-search-indexing-allowed="true">
-    <div class="article__excerpt">
-      <div class="content-area content-area--overflowed-images"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
-    </div>
+    <div class="content-area content-area--article-excerpt content-area--overflowed-images"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
 
     {% unless list_item %}
-      <div class="article__body">
-        <div class="content-area content-area--overflowed-images">{% editable article.body %}</div>
-      </div>
+      <div class="content-area content-area--article-body content-area--overflowed-images">{% editable article.body %}</div>
 
-      <div class="article__body article__body--additional">
-        <div class="content-area content-area--overflowed-images">{% content name="additional_body" bind="Article" %}</div>
-      </div>
+      <div class="content-area content-area--article-additional-body content-area--overflowed-images">{% content name="additional_body" bind="Article" %}</div>
     {% endunless %}
   </div>
 </article>

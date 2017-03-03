@@ -19,6 +19,8 @@
     }
   }
 
+
+
   .layout-footer__section--social-media & {
     @include breakpoint($large-up) {
       min-width: 145px;
@@ -40,5 +42,16 @@
     @include breakpoint($medium-up) {
       padding-bottom: 32px;
     }
+  }
+
+  &--article-excerpt {
+    margin-bottom: 24px;
+  }
+
+  //&--article-body {
+  //}
+
+  &--article-additional-body {
+    margin-top: 24px;
   }
 }

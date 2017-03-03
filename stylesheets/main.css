@@ -406,6 +406,12 @@
     padding-bottom: 32px;
   }
 }
+.content-area--article-excerpt {
+  margin-bottom: 24px;
+}
+.content-area--article-additional-body {
+  margin-top: 24px;
+}
 
 @media (max-width: 640px) {
   .content-area--overflowed-images .edy-positionable-container-maxwidth {
@@ -2296,15 +2302,6 @@ label .form_control_indicator::before {
 }
 .article__link:hover {
   text-decoration: underline;
-}
-.article__excerpt {
-  margin-bottom: 24px;
-}
-.article__body:empty {
-  display: none;
-}
-.article__body--additional {
-  margin-top: 24px;
 }
 
 .article-nav {
