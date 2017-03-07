@@ -12,7 +12,15 @@
   </header>
 
   <div class="article__content" data-search-indexing-allowed="true">
-    <div class="content-area content-area--article-excerpt content-area--overflowed-images"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
+    <div class="content-area content-area--article-excerpt content-area--overflowed-images"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>
+      {% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}
+    </div>
+
+    <div class="content-area">
+      {% if list_item %}
+        <a class="readmore-link" href="{{ article.url }}">{{ "read_more" | lc }}</a>
+      {% endif %}
+    </div>
 
     {% unless list_item %}
       <div class="content-area content-area--article-body content-area--overflowed-images">{% editable article.body %}</div>

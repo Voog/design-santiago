@@ -313,7 +313,8 @@
     font-weight: 700;
   }
 
-  .custom-btn {
+  .custom-btn,
+  .readmore-link {
     display: inline-block;
     font-family: inherit;
     line-height: 1.4;
@@ -328,6 +329,12 @@
       margin-top: 24px;
       margin-bottom: 24px;
     }
+  }
+
+  .readmore-link {
+    padding: 5px 7px;
+    font-size: 14px;
+    line-height: 1;
   }
 
   .edy-positionable-container-center,
