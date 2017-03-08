@@ -186,30 +186,13 @@
   text-decoration: var(--content-area-link__text-decoration);
   text-transform: var(--content-area-link__text-transform);
 }
-.content-area a:not(.custom-btn, .readmore-link):hover {
+.content-area a:not(.custom-btn,
+.article__read-more):hover {
   font-style: var(--content-area-link-hover__font-style);
   font-weight: var(--content-area-link-hover__font-weight);
   color: var(--content-area-link-hover__color);
   text-decoration: var(--content-area-link-hover__text-decoration);
   text-transform: var(--content-area-link-hover__text-transform);
-}
-.content-area .readmore-link {
-  font-style: var(--content-area-button__font-style);
-  font-weight: var(--content-area-button__font-weight);
-  color: var(--content-area-button__color);
-  text-decoration: var(--content-area-button__text-decoration);
-  text-transform: var(--content-area-button__text-transform);
-  background-color: var(--content-area-button__background-color);
-  opacity: var(--content-area-button__opacity);
-}
-.content-area .readmore-link:hover {
-  font-style: var(--content-area-button-hover__font-style);
-  font-weight: var(--content-area-button-hover__font-weight);
-  color: var(--content-area-button-hover__color);
-  text-decoration: var(--content-area-button-hover__text-decoration);
-  text-transform: var(--content-area-button-hover__text-transform);
-  background-color: var(--content-area-button-hover__background-color);
-  opacity: var(--content-area-button-hover__opacity);
 }
 .content-area .custom-btn {
   padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
@@ -431,6 +414,24 @@
   text-decoration: var(--content-area-article-date__text-decoration);
   text-transform: var(--content-area-article-date__text-transform);
   opacity: var(--content-area-article-date__opacity);
+}
+.article__read-more {
+  font-style: var(--content-area-button__font-style);
+  font-weight: var(--content-area-button__font-weight);
+  color: var(--content-area-button__color);
+  text-decoration: var(--content-area-button__text-decoration);
+  text-transform: var(--content-area-button__text-transform);
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
+}
+.article__read-more:hover {
+  font-style: var(--content-area-button-hover__font-style);
+  font-weight: var(--content-area-button-hover__font-weight);
+  color: var(--content-area-button-hover__color);
+  text-decoration: var(--content-area-button-hover__text-decoration);
+  text-transform: var(--content-area-button-hover__text-transform);
+  background-color: var(--content-area-button-hover__background-color);
+  opacity: var(--content-area-button-hover__opacity);
 }
 
 .article-nav {

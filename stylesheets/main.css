@@ -695,27 +695,19 @@
 .content-area strong {
   font-weight: 700;
 }
-.content-area .custom-btn,
-.content-area .readmore-link {
+.content-area .custom-btn {
   display: inline-block;
   font-family: inherit;
   line-height: 1.4;
   outline: 0;
   -webkit-appearance: none;
 }
-[data-view-state="publicmode"] .content-area .custom-btn, [data-view-state="publicmode"]
-.content-area .readmore-link {
+[data-view-state="publicmode"] .content-area .custom-btn {
   cursor: pointer;
 }
-.content-area .custom-btn.edy-buy-button,
-.content-area .readmore-link.edy-buy-button {
+.content-area .custom-btn.edy-buy-button {
   margin-top: 24px;
   margin-bottom: 24px;
-}
-.content-area .readmore-link {
-  padding: 5px 7px;
-  font-size: 14px;
-  line-height: 1;
 }
 .content-area .edy-positionable-container-center,
 .content-area .edy-positionable-container-left-block,
@@ -2310,6 +2302,18 @@ label .form_control_indicator::before {
 }
 .article__link:hover {
   text-decoration: underline;
+}
+.article__read-more {
+  display: inline-block;
+  padding: 5px 7px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1;
+  outline: 0;
+  -webkit-appearance: none;
+}
+[data-view-state="publicmode"] .article__read-more {
+  cursor: pointer;
 }
 
 .article-nav {

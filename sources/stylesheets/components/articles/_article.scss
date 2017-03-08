@@ -32,6 +32,20 @@
     }
   }
 
+  &__read-more {
+    display: inline-block;
+    padding: 5px 7px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1;
+    outline: 0;
+    -webkit-appearance: none;
+
+    [data-view-state="publicmode"] & {
+      cursor: pointer;
+    }
+  }
+
   //&__date {
   //}
 
