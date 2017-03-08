@@ -2314,9 +2314,6 @@ label .form_control_indicator::before {
      -moz-appearance: none;
           appearance: none;
 }
-[data-view-state="publicmode"] .article__read-more-btn {
-  cursor: pointer;
-}
 
 .article-nav {
   position: relative;
