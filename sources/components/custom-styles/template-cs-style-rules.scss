@@ -302,8 +302,7 @@
     text-decoration: var(--content-area-link__text-decoration);
     text-transform: var(--content-area-link__text-transform);
 
-    &:not(.custom-btn,
-    .article__read-more) {
+    &:not(.custom-btn) {
       // scss-lint:disable NestingDepth
       &:hover {
         font-style: var(--content-area-link-hover__font-style);

@@ -186,8 +186,7 @@
   text-decoration: var(--content-area-link__text-decoration);
   text-transform: var(--content-area-link__text-transform);
 }
-.content-area a:not(.custom-btn,
-.article__read-more):hover {
+.content-area a:not(.custom-btn):hover {
   font-style: var(--content-area-link-hover__font-style);
   font-weight: var(--content-area-link-hover__font-weight);
   color: var(--content-area-link-hover__color);
