@@ -15,7 +15,7 @@
     <div class="content-area content-area--article-excerpt content-area--overflowed-images"{% unless list_item %} {{ edy_intro_edit_text }}{% endunless %}>{% if list_item %}{{ article.excerpt }}{% else %}{% editable article.excerpt %}{% endif %}</div>
 
     {% if list_item %}
-      <a class="article__read-more" href="{{ article.url }}">{{ "read_more" | lc }}</a>
+      <a class="article__read-more-btn" href="{{ article.url }}">{{ "read_more" | lc }}</a>
     {% endif %}
 
     {% unless list_item %}

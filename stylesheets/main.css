@@ -2303,7 +2303,7 @@ label .form_control_indicator::before {
 .article__link:hover {
   text-decoration: underline;
 }
-.article__read-more {
+.article__read-more-btn {
   display: inline-block;
   padding: 8px;
   font-family: inherit;
@@ -2314,7 +2314,7 @@ label .form_control_indicator::before {
      -moz-appearance: none;
           appearance: none;
 }
-[data-view-state="publicmode"] .article__read-more {
+[data-view-state="publicmode"] .article__read-more-btn {
   cursor: pointer;
 }
 

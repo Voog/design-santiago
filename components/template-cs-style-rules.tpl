@@ -414,7 +414,7 @@
   text-transform: var(--content-area-article-date__text-transform);
   opacity: var(--content-area-article-date__opacity);
 }
-.article__read-more {
+.article__read-more-btn {
   font-style: var(--content-area-button__font-style);
   font-weight: var(--content-area-button__font-weight);
   color: var(--content-area-button__color);
@@ -423,7 +423,7 @@
   background-color: var(--content-area-button__background-color);
   opacity: var(--content-area-button__opacity);
 }
-.article__read-more:hover {
+.article__read-more-btn:hover {
   font-style: var(--content-area-button-hover__font-style);
   font-weight: var(--content-area-button-hover__font-weight);
   color: var(--content-area-button-hover__color);
