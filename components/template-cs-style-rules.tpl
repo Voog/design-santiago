@@ -414,6 +414,24 @@
   text-transform: var(--content-area-article-date__text-transform);
   opacity: var(--content-area-article-date__opacity);
 }
+.article__read-more-btn {
+  font-style: var(--content-area-button__font-style);
+  font-weight: var(--content-area-button__font-weight);
+  color: var(--content-area-button__color);
+  text-decoration: var(--content-area-button__text-decoration);
+  text-transform: var(--content-area-button__text-transform);
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
+}
+.article__read-more-btn:hover {
+  font-style: var(--content-area-button-hover__font-style);
+  font-weight: var(--content-area-button-hover__font-weight);
+  color: var(--content-area-button-hover__color);
+  text-decoration: var(--content-area-button-hover__text-decoration);
+  text-transform: var(--content-area-button-hover__text-transform);
+  background-color: var(--content-area-button-hover__background-color);
+  opacity: var(--content-area-button-hover__opacity);
+}
 
 .article-nav {
   color: var(--content-area-text__color);

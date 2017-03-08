@@ -2303,6 +2303,17 @@ label .form_control_indicator::before {
 .article__link:hover {
   text-decoration: underline;
 }
+.article__read-more-btn {
+  display: inline-block;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
 
 .article-nav {
   position: relative;
