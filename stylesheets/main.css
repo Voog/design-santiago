@@ -769,14 +769,14 @@
 }
 
 @media (max-width: 640px) {
-  .content-area .edys-gallery-slider {
+  .content-area--overflowed-images .edys-gallery-slider {
     max-width: calc(100% + 32px);
     margin-right: -16px;
     margin-left: -16px;
   }
 }
 @media (min-width: 641px) {
-  .content-area .edys-gallery-slider {
+  .content-area--overflowed-images .edys-gallery-slider {
     max-width: calc(100% + 80px);
     margin-right: -40px;
     margin-left: -40px;
