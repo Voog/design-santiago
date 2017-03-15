@@ -201,8 +201,6 @@
   color: var(--content-area-button__color);
   text-decoration: var(--content-area-button__text-decoration);
   text-transform: var(--content-area-button__text-transform);
-  background-color: var(--content-area-button__background-color);
-  opacity: var(--content-area-button__opacity);
 }
 .content-area .custom-btn:hover {
   font-style: var(--content-area-button-hover__font-style);
@@ -210,6 +208,12 @@
   color: var(--content-area-button-hover__color);
   text-decoration: var(--content-area-button-hover__text-decoration);
   text-transform: var(--content-area-button-hover__text-transform);
+}
+.content-area .custom-btn:not(.custom-btn-disabled) {
+  background-color: var(--content-area-button__background-color);
+  opacity: var(--content-area-button__opacity);
+}
+.content-area .custom-btn:not(.custom-btn-disabled):hover {
   background-color: var(--content-area-button-hover__background-color);
   opacity: var(--content-area-button-hover__opacity);
 }

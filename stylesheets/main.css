@@ -701,13 +701,15 @@
   line-height: 1.4;
   outline: 0;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 [data-view-state="publicmode"] .content-area .custom-btn {
   cursor: pointer;
 }
-.content-area .custom-btn.edy-buy-button {
-  margin-top: 24px;
-  margin-bottom: 24px;
+[data-view-state="publicmode"] .content-area .custom-btn-disabled {
+  cursor: default;
+  background-color: #ccc;
 }
 .content-area .edy-positionable-container-center,
 .content-area .edy-positionable-container-left-block,
@@ -799,6 +801,12 @@
   padding-bottom: 5px;
 }
 
+.form_field:first-child {
+  margin-top: 0;
+}
+.form_field:last-child {
+  margin-bottom: 0;
+}
 .form_field label {
   position: relative;
   display: block;
@@ -974,6 +982,10 @@ label .form_control_indicator::before {
 }
 .content-area .edy-content-social-button:hover {
   opacity: .75;
+}
+
+.content-area .edy-buy-button-variations {
+  margin-bottom: 12px;
 }
 
 [data-display-state='none'] {
