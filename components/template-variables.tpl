@@ -101,10 +101,6 @@
         "title": "Sans Serif",
         "list": [
           {
-            "title": "Raleway",
-            "value": "Raleway, sans-serif"
-          },
-          {
             "title": "Avenir Next",
             "value": "\"Avenir Next\", \"Helvetica Neue\", Helvetica, \"Segoe UI\", sans-serif"
           },
@@ -123,6 +119,10 @@
           {
             "title": "Open Sans",
             "value": "\"Open Sans\", sans-serif"
+          },
+          {
+            "title": "Raleway",
+            "value": "Raleway, sans-serif"
           },
           {
             "title": "Roboto",
