@@ -900,6 +900,9 @@
   background-color: rgba(204, 0, 0, 0.2);
 }
 
+.form_submit {
+  padding-top: 24px;
+}
 .form_submit input {
   display: inline-block;
   font-family: inherit;
