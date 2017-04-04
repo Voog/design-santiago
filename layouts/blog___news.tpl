@@ -23,6 +23,7 @@
 
         <div class="layout-body__content">
           <main class="articles-container">
+            {% assign current_year = 'now' | date: "%Y" | to_num %}
             {% for article in articles %}
               {% include "blog-article" list_item: true %}
             {% endfor %}

@@ -14,6 +14,8 @@
 
         <div class="layout-body layout-body--narrow">
           <main class="layout-body__content">
+            
+          {% assign current_year = 'now' | date: "%Y" | to_num %}
           {% include "blog-article" %}
 
           {% include "blog-article-tags" %}
