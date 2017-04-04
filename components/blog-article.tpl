@@ -9,6 +9,7 @@
     </h1>
 
     {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+
     <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{% if article_year < current_year %}{{ article.created_at | format_date: "long" }}{% else %}{{ article.created_at | format_date: "long_without_year" }}{% endif %}</time>
   </header>
 

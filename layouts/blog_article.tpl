@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% include "template-variables" layout_blog_article: true %}
+{% include "blog-article-variables" %}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }} {{ site_search_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-lingual-mode="{{ site_lingual_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
@@ -12,10 +13,10 @@
     <div class="layout-wrap">
       {% include "layout-header" %}
 
-        <div class="layout-body layout-body--narrow">
-          <main class="layout-body__content">
-            
-          {% assign current_year = 'now' | date: "%Y" | to_num %}
+      <div class="layout-body layout-body--narrow">
+        <main class="layout-body__content">
+          {% include "blog-article-variables" %}
+
           {% include "blog-article" %}
 
           {% include "blog-article-tags" %}

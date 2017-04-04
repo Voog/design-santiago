@@ -1,6 +1,6 @@
 <div class="comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
   {% commentform %}
-    {% include "blog-article-variables" %}
+    {% include "blog-comment-form-variables" %}
 
     <div class="comment-form__field{% if comment_body_error %} form_field_with_errors{% endif %}">
       <textarea id="comment-form__body" class="form_field_textarea form_field_size_large" data-group="comment-field" data-init="auto-resize" data-behavior="toggle-comment-form-fields" name="comment[body]" rows="1" placeholder="{% if article.comments_count == 0 %}{{ 'write_first_comment' | lc }}{% else %}{{ 'comment' | lc }}{% endif %}">{{ comment.body }}</textarea>
