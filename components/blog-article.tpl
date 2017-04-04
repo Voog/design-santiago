@@ -10,7 +10,7 @@
 
     {% assign current_year = 'now' | date: "%Y" | to_num %}
     {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
-    <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: "short" }}{% if article_year < current_year %}, {{ article.created_at | format_date: "%Y" }}{% endif %}</time>
+    <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: "long_without_year" }}{% if article_year < current_year %}, {{ article.created_at | format_date: "%Y" }}{% endif %}</time>
   </header>
 
   <div class="article__content" data-search-indexing-allowed="true">
