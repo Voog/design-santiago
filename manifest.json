@@ -8,13 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/product_list.tpl",
       "layout_name": "product_list",
       "title": "Product list"
@@ -32,6 +25,13 @@
       "file": "layouts/front_page.tpl",
       "layout_name": "page_front",
       "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
     },
     {
       "content_type": "blog",
@@ -60,6 +60,13 @@
       "file": "components/blog-article.tpl",
       "layout_name": "blog-article",
       "title": "blog-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-comment-form-variables.tpl",
+      "layout_name": "blog-comment-form-variables",
+      "title": "blog-comment-form-variables"
     },
     {
       "content_type": "component",

@@ -8,7 +8,9 @@
       {% endif %}
     </h1>
 
-    <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: "long" }}</time>
+    {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+
+    <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{% if article_year == current_year %}{{ article.created_at | format_date: "long_without_year" }}{% else %}{{ article.created_at | format_date: "long" }}{% endif %}</time>
   </header>
 
   <div class="article__content" data-search-indexing-allowed="true">

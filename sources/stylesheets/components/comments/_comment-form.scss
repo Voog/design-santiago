@@ -9,7 +9,7 @@
   &__field {
     &--inline {
       display: inline-block;
-      width: calc(50% - 10px);
+      width: calc(50% - 8px);
       margin-top: 8px;
       vertical-align: top;
 
@@ -29,7 +29,12 @@
     }
   }
 
+  &__textarea {
+    padding: 6px 8px 3px;
+  }
+
+
   &__btns {
-    margin-top: 24px;
+    margin-top: 16px;
   }
 }
