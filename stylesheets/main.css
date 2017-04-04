@@ -819,7 +819,6 @@
 .form_field_textarea,
 .form_field_select {
   width: 30%;
-  padding: 4px 7px 2px;
   font-family: inherit;
   line-height: 1.5;
   border-style: solid;
@@ -836,13 +835,21 @@
   max-width: 100%;
 }
 
+.form_field_textfield {
+  padding: 6px 8px 4px;
+}
+
+.form_field_textarea {
+  padding: 8px 8px 6px;
+}
+
 .form_field_select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   border-radius: 0;
   position: relative;
-  padding: 5px 7px 4px;
+  padding: 5px 22px 5px 8px;
   font-size: inherit;
   font-weight: 300;
   line-height: 1.5;
@@ -854,8 +861,8 @@
 }
 
 .comment-form .form_field_textarea {
-  height: 32px;
-  min-height: 32px;
+  height: 36px;
+  min-height: 36px;
   resize: none;
 }
 
@@ -986,6 +993,9 @@ label .form_control_indicator::before {
 
 .content-area .edy-buy-button-variants {
   margin-bottom: 12px;
+}
+.content-area .edy-buy-button-variants .form_field_select {
+  width: initial;
 }
 
 [data-display-state='none'] {
@@ -2447,7 +2457,7 @@ label .form_control_indicator::before {
 }
 .comment-form__field--inline {
   display: inline-block;
-  width: calc(50% - 10px);
+  width: calc(50% - 8px);
   margin-top: 8px;
   vertical-align: top;
 }
@@ -2460,8 +2470,11 @@ label .form_control_indicator::before {
 .comment-form__field__btn {
   font-size: 20px;
 }
+.comment-form__textarea {
+  padding: 6px 8px 3px;
+}
 .comment-form__btns {
-  margin-top: 24px;
+  margin-top: 16px;
 }
 
 .comment-list__item {

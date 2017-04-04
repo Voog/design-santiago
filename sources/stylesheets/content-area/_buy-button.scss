@@ -1,8 +1,14 @@
 // =============================================================================
 // Content area buy button
 // =============================================================================
+// This can't be written in BEM.
 .content-area {
   .edy-buy-button-variants {
     margin-bottom: 12px;
+
+    // sass-lint:disable class-name-format
+    .form_field_select {
+      width: initial;
+    }
   }
 }
