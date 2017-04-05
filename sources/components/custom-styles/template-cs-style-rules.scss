@@ -217,6 +217,7 @@
 // =============================================================================
 .content-area {
   font-size: var(--content-area-text__font-size);
+  line-height: var(--content-area-text__line-height);
   color: var(--content-area-text__color);
 
   // scss-lint:enable SelectorFormat
@@ -294,6 +295,7 @@
 
   p {
     font-size: var(--content-area-text__font-size);
+    line-height: var(--content-area-text__line-height);
   }
 
   a {

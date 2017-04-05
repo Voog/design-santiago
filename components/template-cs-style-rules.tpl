@@ -117,6 +117,7 @@
 
 .content-area {
   font-size: var(--content-area-text__font-size);
+  line-height: var(--content-area-text__line-height);
   color: var(--content-area-text__color);
 }
 .layout-header__title .content-area {
@@ -178,6 +179,7 @@
 }
 .content-area p {
   font-size: var(--content-area-text__font-size);
+  line-height: var(--content-area-text__line-height);
 }
 .content-area a {
   font-style: var(--content-area-link__font-style);
