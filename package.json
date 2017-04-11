@@ -3,7 +3,7 @@
   "description": "The custom e-commerce design template for Voog",
   "repository": {
     "type": "git",
-    "url": "git://github.com/voog/design-sapporo.git"
+    "url": "git://github.com/voog/design-santiago.git"
   },
   "license": "MIT",
   "devDependencies": {
