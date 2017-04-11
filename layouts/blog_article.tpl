@@ -15,7 +15,6 @@
 
       <div class="layout-body layout-body--narrow">
         <main class="layout-body__content">
-
           {% include "blog-article" %}
 
           {% include "blog-article-tags" %}
