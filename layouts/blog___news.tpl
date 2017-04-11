@@ -24,7 +24,6 @@
 
         <div class="layout-body__content">
           <main class="articles-container">
-            {% include "blog-article-variables" %}
 
             {% for article in articles %}
               {% include "blog-article" list_item: true %}
