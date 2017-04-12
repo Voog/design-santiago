@@ -57,9 +57,7 @@
 
               <div class="content-body-inner">
                 <header class="content-header">
-                  <div class="content-area">
-                    <h1 class="content-item-title">{% contentblock name="content_header" publish_default_content="true" single="plaintext" %}{{ page.title }}{% endcontentblock %}</h1>
-                  </div>
+                  <h1 class="content-item-title">{% contentblock name="content_header" publish_default_content="true" single="plaintext" %}{{ page.title }}{% endcontentblock %}</h1>
                 </header>
 
                 <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc }}{% endcontentblock %}</div>
