@@ -2,15 +2,15 @@
   {% if item.selected? %}
     {% if item.current? and editmode %}
       {% if item.untranslated_children.size > 0 %}
-        <li class="menu-breadcrumbs__item menu-breadcrumbs__item--cms">{% menubtn item.untranslated_children %}</li>
+        <li class="menu-sub__item menu-sub__item--cms">{% menubtn item.untranslated_children %}</li>
       {% endif %}
 
       {% if item.hidden_children.size > 0 %}
-        <li class="menu-breadcrumbs__item menu-breadcrumbs__item--cms">{% menubtn item.hidden_children %}</li>
+        <li class="menu-sub__item menu-sub__item--cms">{% menubtn item.hidden_children %}</li>
       {% endif %}
 
       {% unless item.layout_title == product_layout %}
-        <li class="menu-breadcrumbs__item menu-breadcrumbs__item--cms">{% menuadd parent="item" %}</li>
+        <li class="menu-sub__item menu-sub__item--cms">{% menuadd parent="item" %}</li>
       {% endunless %}
     {% endif %}
   {% endif %}

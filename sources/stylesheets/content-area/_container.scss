@@ -34,7 +34,6 @@
 
   &--padded {
     @include breakpoint(max-width $medium) {
-      padding-top: 8px;
       padding-bottom: 24px;
     }
 

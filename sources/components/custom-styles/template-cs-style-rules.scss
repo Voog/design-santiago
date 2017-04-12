@@ -84,6 +84,10 @@
 // Menu main
 // =============================================================================
 .menu-main {
+  @include breakpoint($medium-up) {
+      text-align: var(--menu-main__text-alignment);
+    }
+
   &__item {
     &:not(&--selected) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
@@ -141,8 +145,10 @@
 // Menu sub
 // =============================================================================
 .menu-sub {
+  text-align: var(--menu-sub__text-alignment);
+
   &__item {
-    &:not(&--selected) {
+    &:not(&--current) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
       // scss-lint:disable NestingDepth
       a:not(.menu-sub__link--untranslated) {
@@ -166,7 +172,7 @@
     }
 
     // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
-    &--selected {
+    &--current {
       // scss-lint:disable NestingDepth
       a {
         font-style: var(--menu-sub-active__font-style);

@@ -1,6 +1,14 @@
 :root {
   /* VoogStyle
     "pathI18n": ["menus", "main_menu", "normal"],
+    "titleI18n": "alignment",
+    "editor": "listPicker",
+    "list": {{ base_alignment_set }},
+    "scope": "global"
+  */
+  --menu-main__text-alignment: center;
+  /* VoogStyle
+    "pathI18n": ["menus", "main_menu", "normal"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
@@ -216,6 +224,14 @@
     "scope": "global"
   */
   --menu-main-active__color: #000;
+  /* VoogStyle
+    "pathI18n": ["menus", "sub_menu", "normal"],
+    "titleI18n": "alignment",
+    "editor": "listPicker",
+    "list": {{ base_alignment_set }},
+    "scope": "global"
+  */
+  --menu-sub__text-alignment: center;
   /* VoogStyle
     "pathI18n": ["menus", "sub_menu", "normal"],
     "titleI18n": "size",
