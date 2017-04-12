@@ -14,9 +14,8 @@
   }
 }
 
-.content-inner {
-  margin-top: 32px;
-}
+// .content-inner {
+// }
 
 // TODO: Convert to BEM component block.
 .content-item-box {
@@ -340,10 +339,6 @@
 
 .content-body-inner {
   .item-page & {
-    @include breakpoint(max-width $medium) {
-      padding-top: 40px;
-    }
-
     @include breakpoint ($medium-up) {
       flex: 1;
       max-width: 46%;

@@ -2246,6 +2246,17 @@ label .form_control_indicator::before {
   margin-bottom: 0;
   text-align: center;
 }
+@media (max-width: 640px) {
+  .menu-breadcrumbs {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 641px) {
+  .menu-breadcrumbs {
+    padding-bottom: 32px;
+  }
+}
 .menu-breadcrumbs__separator {
   opacity: .5;
 }
@@ -2935,10 +2946,6 @@ label .form_control_indicator::before {
   }
 }
 
-.content-inner {
-  margin-top: 32px;
-}
-
 .content-item-box {
   text-decoration: none;
 }
@@ -3242,11 +3249,6 @@ label .form_control_indicator::before {
   text-align: left;
 }
 
-@media (max-width: 640px) {
-  .item-page .content-body-inner {
-    padding-top: 40px;
-  }
-}
 @media (min-width: 641px) {
   .item-page .content-body-inner {
     -webkit-flex: 1;

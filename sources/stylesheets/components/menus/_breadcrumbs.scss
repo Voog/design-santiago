@@ -6,6 +6,15 @@
   margin-bottom: 0;
   text-align: center;
 
+  @include breakpoint(max-width $medium) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @include breakpoint($medium-up) {
+    padding-bottom: 32px;
+  }
+
   &__separator {
     opacity: .5;
 
