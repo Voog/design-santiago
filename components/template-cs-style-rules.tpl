@@ -80,6 +80,17 @@
 .menu-sub {
   text-align: var(--menu-sub__text-alignment);
 }
+.menu-sub__separator {
+  font-style: var(--menu-sub__font-style);
+  color: var(--menu-sub__color);
+  text-transform: var(--menu-sub__text-transform);
+  opacity: var(--menu-sub__opacity);
+}
+@media (min-width: 641px) {
+  .menu-sub__separator {
+    font-size: var(--menu-sub__font-size);
+  }
+}
 .menu-sub__item:not(.menu-sub__item--current) a:not(.menu-sub__link--untranslated) {
   font-style: var(--menu-sub__font-style);
   font-weight: var(--menu-sub__font-weight);

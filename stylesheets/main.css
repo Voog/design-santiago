@@ -1165,8 +1165,8 @@ label .form_control_indicator::before {
   list-style-type: none;
 }
 .menu-sub__separator {
-  font-size: 20px;
-  opacity: .5;
+  display: inline-block;
+  vertical-align: middle;
 }
 .menu-sub__separator:first-child {
   display: none;
@@ -1186,6 +1186,7 @@ label .form_control_indicator::before {
 @media (min-width: 641px) {
   .menu-sub__item {
     display: inline-block;
+    vertical-align: middle;
   }
 }
 @media (max-width: 640px) {

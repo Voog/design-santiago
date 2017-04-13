@@ -15,8 +15,8 @@
   }
 
   &__separator {
-    font-size: 20px;
-    opacity: .5;
+    display: inline-block;
+    vertical-align: middle;
 
     &:first-child {
       display: none;
@@ -37,6 +37,7 @@
 
     @include breakpoint($medium-up) {
       display: inline-block;
+      vertical-align: middle;
     }
 
     //&:not(&--selected) {

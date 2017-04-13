@@ -147,6 +147,17 @@
 .menu-sub {
   text-align: var(--menu-sub__text-alignment);
 
+  &__separator {
+    font-style: var(--menu-sub__font-style);
+    color: var(--menu-sub__color);
+    text-transform: var(--menu-sub__text-transform);
+    opacity: var(--menu-sub__opacity);
+
+    @include breakpoint($medium-up) {
+      font-size: var(--menu-sub__font-size);
+    }
+  }
+
   &__item {
     &:not(&--current) {
       // TODO: Convert to BEM syntax if CMS adds support for {% menulink %} classes.
