@@ -36,7 +36,7 @@
       padding-bottom: 8px;
     }
 
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       max-width: 376px;
       min-width: 200px;
       padding-top: 16px;
@@ -238,7 +238,7 @@
         font-size: 12px;
       }
 
-      @include breakpoint ($medium-up) {
+      @include breakpoint($medium-up) {
         font-size: 20px;
       }
     }
@@ -298,7 +298,7 @@
       font-size: 20px;
     }
 
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       font-size: 32px;
     }
   }
@@ -308,7 +308,7 @@
       font-size: 32px;
     }
 
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       font-size: 52px;
     }
   }
@@ -322,7 +322,7 @@
 .content-illustrations {
   font-size: 0;
 
-  @include breakpoint ($medium-up) {
+  @include breakpoint($medium-up) {
     flex: 1;
     max-width: 54%;
     margin-right: 32px;
@@ -341,7 +341,7 @@
 
 .content-body-inner {
   .item-page & {
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       flex: 1;
       max-width: 46%;
     }
@@ -349,7 +349,7 @@
 }
 
 .items-body {
-  @include breakpoint ($medium-up) {
+  @include breakpoint($medium-up) {
     display: flex;
   }
 }
