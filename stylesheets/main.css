@@ -3190,9 +3190,18 @@ label .form_control_indicator::before {
 }
 
 .content-item-title {
-  margin-top: 0;
   margin-bottom: .55em;
   line-height: 1.1;
+}
+@media (max-width: 640px) {
+  .content-item-title {
+    margin-top: .55em;
+  }
+}
+@media (min-width: 641px) {
+  .content-item-title {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 641px) {
