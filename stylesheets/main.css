@@ -1189,6 +1189,16 @@ label .form_control_indicator::before {
     vertical-align: middle;
   }
 }
+@media (min-width: 641px) {
+  .menu-sub__item:not(:first-of-type) a {
+    padding-left: 4px;
+  }
+}
+@media (min-width: 641px) {
+  .menu-sub__item:not(:last-child) a {
+    padding-right: 4px;
+  }
+}
 @media (max-width: 640px) {
   .menu-sub__item--cms {
     padding: 9px 10px 10px;
@@ -1218,12 +1228,6 @@ label .form_control_indicator::before {
   .menu-sub__item a {
     display: block;
     padding: 10px;
-  }
-}
-@media (min-width: 641px) {
-  .menu-sub__item a {
-    padding-right: 4px;
-    padding-left: 4px;
   }
 }
 .menu-sub__link--untranslated {
