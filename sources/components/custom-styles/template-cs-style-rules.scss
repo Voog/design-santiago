@@ -598,7 +598,7 @@
   .item-list-page & {
     color: var(--content-item-box__color);
 
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       width: var(--content-item-box__width);
     }
   }
@@ -618,7 +618,7 @@
     text-decoration: var(--content-item-box__text-decoration);
     text-transform: var(--content-item-box__text-transform);
 
-    @include breakpoint ($medium-up) {
+    @include breakpoint($medium-up) {
       font-size: var(--content-item-box__font-size);
     }
   }
