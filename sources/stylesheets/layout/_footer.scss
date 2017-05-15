@@ -10,7 +10,6 @@
     margin-right: -16px;
     margin-left: -16px;
   }
-
   @include breakpoint($medium-up) {
     padding-right: 40px;
     padding-left: 40px;
@@ -29,12 +28,10 @@
       padding-top: 16px;
       padding-bottom: 16px;
     }
-
     @include breakpoint($medium-up) {
       padding-top: 40px;
       padding-bottom: 40px;
     }
-
     @include breakpoint(max-width $large) {
       flex-wrap: wrap;
     }
@@ -58,7 +55,6 @@
         order: 3;
         margin-top: 8px;
       }
-
       @include breakpoint($large-up) {
         margin-right: 24px;
       }
@@ -83,7 +79,6 @@
         order: 2;
         margin-top: 8px;
       }
-
       @include breakpoint($large-up) {
         text-align: right;
       }
@@ -94,7 +89,6 @@
     @include breakpoint(max-width $medium) {
       display: block;
     }
-
     @include breakpoint($medium-up) {
       margin-right: 24px;
       margin-left: 24px;

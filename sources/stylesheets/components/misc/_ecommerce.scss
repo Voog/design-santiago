@@ -8,7 +8,6 @@
     @include breakpoint(max-width $medium) {
       padding-top: 48px;
     }
-
     @include breakpoint($medium-up) {
       padding-top: 0;
     }
@@ -31,7 +30,6 @@
       padding: 16px;
       border-bottom: 0;
     }
-
     @include breakpoint($medium-up) {
       top: -84px;
       right: 40px;
@@ -159,7 +157,6 @@
       color: $color-white;
       text-align: center;
       vertical-align: middle;
-
       border-radius: 100%;
       box-sizing: border-box;
     }

@@ -12,7 +12,6 @@
   @include breakpoint(max-width $medium) {
     margin-top: 8px;
   }
-
   @include breakpoint($medium-up) {
     margin-top: 24px;
   }

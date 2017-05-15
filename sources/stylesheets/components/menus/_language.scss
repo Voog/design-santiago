@@ -46,7 +46,6 @@
       padding: 7px 24px 6px 8px;
       font-size: 13px;
     }
-
     @include breakpoint($medium-up) {
       padding: 3px 24px 4px 16px;
       font-size: 24px;
@@ -69,7 +68,6 @@
       padding-bottom: 5px;
       font-size: 13px;
     }
-
     @include breakpoint($medium-up) {
       padding-top: 4px;
       padding-right: 53px;
@@ -83,7 +81,6 @@
       width: 35px;
       height: 29px;
     }
-
     @include breakpoint($medium-up) {
       width: 50px;
       height: 38px;
@@ -101,7 +98,6 @@
     @include breakpoint(max-width $medium) {
       margin-top: -8px;
     }
-
     @include breakpoint($medium-up) {
       margin-top: -12px;
     }
@@ -116,7 +112,6 @@
       @include breakpoint(max-width $medium) {
         right: 5px;
       }
-
       @include breakpoint($medium-up) {
         right: 8px;
       }
@@ -137,8 +132,8 @@
 .menu-language-btn-circle {
   position: absolute;
   top: 50%;
-  opacity: .25;
   fill: none;
+  opacity: .25;
 
   .language-menu-mode-list &,
   .language-flags-enabled & {
@@ -170,7 +165,6 @@
       @include breakpoint(max-width $medium) {
         margin-top: -35px;
       }
-
       @include breakpoint($medium-up) {
         margin-top: -47px;
       }
@@ -183,7 +177,6 @@
         margin-top: -31px;
         margin-right: -4px;
       }
-
       @include breakpoint($medium-up) {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -199,7 +192,6 @@
         margin-top: -31px;
         margin-right: -3px;
       }
-
       @include breakpoint($medium-up) {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -219,7 +211,7 @@
   }
 
   .menu-public {
-    [data-view-state="publicmode"].language-menu-mode-list.language-names-disabled & {
+    [data-view-state='publicmode'].language-menu-mode-list.language-names-disabled & {
       padding-bottom: 2px;
     }
   }
@@ -239,7 +231,6 @@
       @include breakpoint(max-width $medium) {
         font-size: 13px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 24px;
       }
@@ -255,7 +246,6 @@
             right: 8px;
             margin-top: -8px;
           }
-
           @include breakpoint($medium-up) {
             right: 16px;
             margin-top: -12px;
@@ -272,7 +262,6 @@
           @include breakpoint(max-width $medium) {
             margin-top: -8px;
           }
-
           @include breakpoint($medium-up) {
             margin-top: -12px;
           }
@@ -282,7 +271,6 @@
           @include breakpoint(max-width $medium) {
             margin-top: -8px;
           }
-
           @include breakpoint($medium-up) {
             margin-top: -12px;
           }
@@ -316,7 +304,6 @@
         @include breakpoint(max-width $medium) {
           padding-left: 8px;
         }
-
         @include breakpoint($medium-up) {
           padding-left: 16px;
         }
@@ -333,7 +320,6 @@
           padding-top: 5px;
           padding-right: 37px;
         }
-
         @include breakpoint($medium-up) {
           padding-top: 6px;
           padding-right: 61px;
@@ -350,7 +336,6 @@
           height: 24px;
           min-width: 37px;
         }
-
         @include breakpoint($medium-up) {
           height: 35px;
           min-width: 66px;
@@ -365,7 +350,6 @@
         @include breakpoint(max-width $medium) {
           padding: 7px 32px 7px 4px;
         }
-
         @include breakpoint($medium-up) {
           padding: 5px 48px 4px 8px;
         }
@@ -375,7 +359,6 @@
         @include breakpoint(max-width $medium) {
           padding: 7px 4px;
         }
-
         @include breakpoint($medium-up) {
           padding: 5px 8px 4px;
         }
@@ -385,7 +368,6 @@
         @include breakpoint(max-width $medium) {
           padding: 14px 14px 15px 15px;
         }
-
         @include breakpoint($medium-up) {
           padding: 19px 21px;
         }
@@ -455,7 +437,6 @@
         width: 21px;
         height: 15px;
       }
-
       @include breakpoint($medium-up) {
         width: 34px;
         height: 23px;
@@ -486,7 +467,6 @@
       padding-bottom: 3px;
       background-position: -210px -75px;
     }
-
     @include breakpoint($medium-up) {
       padding-top: 7px;
       padding-bottom: 7px;
@@ -497,7 +477,6 @@
       @include breakpoint(max-width $medium) {
         background-image: url('../assets/ico-flags-medium.svg');
       }
-
       @include breakpoint($medium-up) {
         background-image: url('../assets/ico-flags-medium-up.svg');
       }

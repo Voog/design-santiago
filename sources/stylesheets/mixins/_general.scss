@@ -17,9 +17,9 @@
 // BUTTON ELEMENT RESET
 @mixin button {
   margin: 0;
+  cursor: pointer;
   background-color: transparent;
   border-style: none;
-  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -32,10 +32,8 @@
 }
 
 @mixin input-ios-reset {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   border-radius: 0;
+  appearance: none;
 }
 
 @mixin inherit-font {
@@ -70,7 +68,6 @@
     @include breakpoint(max-width $medium) {
       background-position: $x-medium $y-medium;
     }
-
     @include breakpoint($medium-up) {
       background-position: $x-medium-up $y-medium-up;
     }

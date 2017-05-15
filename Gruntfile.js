@@ -45,6 +45,22 @@ module.exports = function(grunt) {
       }
     },
 
+    // Combs the stylesheet files.
+    csscomb: {
+      comb_main_scss: {
+        expand: true,
+        cwd: 'sources/stylesheets/',
+        src: ['**/*.scss', '!**/variables/*.scss'],
+        dest: 'sources/stylesheets/',
+      },
+      comb_main_css: {
+        expand: true,
+        cwd: 'stylesheets/',
+        src: ['**/*.css'],
+        dest: 'stylesheets/',
+      }
+    },
+
     // Compiles the stylesheet files.
     sass: {
       build_main: {
@@ -218,7 +234,7 @@ module.exports = function(grunt) {
           'sources/stylesheets/*/*.scss',
           'sources/stylesheets/*/*/*.scss'
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build']
+        tasks: ['csscomb:comb_main_scss', 'sass:build_main', 'postcss', 'csscomb:comb_main_css', 'cssmin:build']
       },
 
       custom_styles: {
@@ -255,9 +271,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-text-replace');
 
-  grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'replace', 'copy', 'clean:remove']);
+  grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'csscomb:comb_main_scss', 'sass', 'postcss:main_styles', 'csscomb:comb_main_css', 'cssmin', 'imagemin', 'postcss:custom_styles', 'replace', 'copy', 'clean:remove']);
 };

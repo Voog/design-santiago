@@ -13,18 +13,17 @@
     transition-duration: 200ms;
     transition-property: right;
   }
-
   @include breakpoint($medium-up) {
     margin-top: 48px;
   }
 
-  [data-menu-main-state="closed"] & {
+  [data-menu-main-state='closed'] & {
     @include breakpoint(max-width $medium) {
       right: -205px;
     }
   }
 
-  [data-menu-main-state="open"] & {
+  [data-menu-main-state='open'] & {
     right: 0;
   }
 
@@ -36,7 +35,6 @@
 
   &__list {
     $whitespace: 0;
-
     padding-left: $whitespace;
     margin-top: $whitespace;
     margin-bottom: $whitespace;
@@ -48,7 +46,6 @@
     @include breakpoint(max-width $medium) {
       display: block;
     }
-
     @include breakpoint($medium-up) {
       display: inline-block;
     }
@@ -62,7 +59,6 @@
         padding: 4px 16px;
         font-size: 20px;
       }
-
       @include breakpoint($medium-up) {
         padding-bottom: 8px;
         margin-bottom: 8px;

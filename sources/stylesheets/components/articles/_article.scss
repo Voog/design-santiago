@@ -5,7 +5,6 @@
   @include breakpoint(max-width $medium) {
     margin-bottom: 40px;
   }
-
   @include breakpoint($medium-up) {
     margin-bottom: 80px;
   }

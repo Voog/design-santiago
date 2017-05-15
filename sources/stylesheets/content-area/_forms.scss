@@ -66,7 +66,6 @@
 }
 
 .form_field_select {
-  @include input-ios-reset;
   position: relative;
   padding: 5px 26px 5px 8px;
   font-size: inherit;
@@ -77,6 +76,8 @@
   background-position: right 10px center;
   background-repeat: no-repeat;
   border-radius: 0;
+
+  @include input-ios-reset;
 }
 
 .form_field_textarea {
@@ -134,9 +135,9 @@
     cursor: pointer;
     border: 0;
     outline: 0;
-    -webkit-appearance: none;
+    appearance: none;
 
-    [data-view-state="publicmode"] & {
+    [data-view-state='publicmode'] & {
       cursor: pointer;
     }
   }

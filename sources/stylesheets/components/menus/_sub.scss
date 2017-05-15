@@ -7,7 +7,6 @@
 
   &__list {
     $whitespace: 0;
-
     padding-left: $whitespace;
     margin-top: $whitespace;
     margin-bottom: $whitespace;
@@ -18,11 +17,11 @@
     display: inline-block;
     vertical-align: middle;
 
-    &:first-child {
+    @include breakpoint(max-width $medium) {
       display: none;
     }
 
-    @include breakpoint(max-width $medium) {
+    &:first-child {
       display: none;
     }
   }
@@ -34,7 +33,6 @@
       border-bottom-style: solid;
       border-bottom-width: 1px;
     }
-
     @include breakpoint($medium-up) {
       display: inline-block;
       vertical-align: middle;

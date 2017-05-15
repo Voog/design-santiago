@@ -4,12 +4,11 @@
   @include breakpoint(max-width $medium) {
     margin-bottom: 24px;
   }
-
   @include breakpoint($medium-up) {
     margin-bottom: 40px;
   }
 
-  [data-view-state="editmode"] & {
+  [data-view-state='editmode'] & {
     position: relative;
   }
 

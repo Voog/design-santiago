@@ -11,7 +11,6 @@
         margin-right: -16px;
         margin-left: -16px;
       }
-
       @include breakpoint($medium-up) {
         // scss-lint:disable ImportantRule
         max-width: calc(100% + 80px) !important;
@@ -86,11 +85,11 @@
       font-size: 48px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 32px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 48px;
       }
@@ -102,11 +101,11 @@
       font-size: 32px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 28px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 32px;
       }
@@ -118,11 +117,11 @@
       font-size: 28px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 24px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 28px;
       }
@@ -133,16 +132,15 @@
     @include breakpoint(max-width $medium) {
       font-size: 24px;
     }
-
     @include breakpoint($medium-up) {
       font-size: 28px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 20px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 24px;
       }
@@ -153,16 +151,15 @@
     @include breakpoint(max-width $medium) {
       font-size: 20px;
     }
-
     @include breakpoint($medium-up) {
       font-size: 24px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 16px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 20px;
       }
@@ -173,16 +170,15 @@
     @include breakpoint(max-width $medium) {
       font-size: 16px;
     }
-
     @include breakpoint($medium-up) {
       font-size: 20px;
     }
 
-    .layout-header__title & { // scss-lint:disable SelectorFormat
+    .layout-header__title & {
+      // scss-lint:disable SelectorFormat
       @include breakpoint(max-width $medium) {
         font-size: 12px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 16px;
       }
@@ -320,14 +316,14 @@
     outline: 0;
     appearance: none;
 
-    [data-view-state="publicmode"] & {
+    [data-view-state='publicmode'] & {
       cursor: pointer;
     }
 
     // This can't be written in BEM.
     &-disabled {
       // scss-lint:disable NestingDepth
-      [data-view-state="publicmode"] & {
+      [data-view-state='publicmode'] & {
         cursor: default;
         background-color: $color-disabled;
       }
@@ -377,7 +373,7 @@
   table {
     border-collapse: collapse;
 
-    [data-view-state="editmode"] & {
+    [data-view-state='editmode'] & {
       margin-top: .875em;
       margin-bottom: .875em;
       line-height: 1.75;

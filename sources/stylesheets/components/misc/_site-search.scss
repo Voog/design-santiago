@@ -86,12 +86,10 @@
     right: -200px;
     width: 200px;
   }
-
   @include breakpoint(($small-up) (max-width $medium)) {
     right: -50%;
     width: 50%;
   }
-
   @include breakpoint($medium-up) {
     right: -280px;
     width: 280px;
@@ -118,7 +116,6 @@
     left: 16px;
     padding-top: 16px;
   }
-
   @include breakpoint($medium-up) {
     right: 24px;
     left: 24px;
@@ -149,8 +146,6 @@
 }
 
 .search-input {
-  @include input-ios-reset;
-  @include inherit-font;
   position: relative;
   display: block;
   width: 100%;
@@ -164,6 +159,9 @@
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
+
+  @include input-ios-reset;
+  @include inherit-font;
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -208,31 +206,28 @@
   overflow: auto;
   text-align: left;
   border-left: 1px solid rgba($color-primary, .05);
-  -webkit-overflow-scrolling: touch;
 
+  -webkit-overflow-scrolling: touch;
   @include breakpoint(max-width $medium) {
     padding: 66px 16px 16px;
   }
-
   @include breakpoint($medium-up) {
     padding: 118px 24px 24px;
   }
 
-  [data-view-state="editmode"] & {
+  [data-view-state='editmode'] & {
     @include breakpoint(max-width $medium) {
       height: calc(100% - 122px);
     }
-
     @include breakpoint($medium-up) {
       height: calc(100% - 182px);
     }
   }
 
-  [data-view-state="publicmode"] & {
+  [data-view-state='publicmode'] & {
     @include breakpoint(max-width $medium) {
       height: calc(100% - 82px);
     }
-
     @include breakpoint($medium-up) {
       height: calc(100% - 142px);
     }

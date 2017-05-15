@@ -29,13 +29,11 @@
     @include breakpoint(max-width $xx-small) {
       display: block;
     }
-
     @include breakpoint(($xx-small-up) (max-width $medium)) {
       width: 50%;
       padding-top: 8px;
       padding-bottom: 8px;
     }
-
     @include breakpoint($medium-up) {
       max-width: 376px;
       min-width: 200px;
@@ -67,7 +65,7 @@
   &:hover {
     .top-inner {
       // scss-lint:disable NestingDepth
-      [data-view-state="editmode"] &,
+      [data-view-state='editmode'] &,
       .item-list-page & {
         opacity: .75;
       }
@@ -114,16 +112,17 @@
   }
 
   .bg-crop-btn {
-    @include size(45px);
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
     margin-top: 8px;
     margin-right: 8px;
+    fill: rgba($color-white, 1);
     cursor: pointer;
     border-radius: 100%;
-    fill: rgba($color-white, 1);
+
+    @include size(45px);
 
     &.is-visible {
       display: block;
@@ -135,7 +134,6 @@
   }
 
   .top-inner {
-    @include hyphenate;
     display: flex !important; // scss-lint:disable ImportantRule
     align-items: center;
     justify-content: center;
@@ -143,27 +141,24 @@
     line-height: 1.2;
     text-align: center;
 
+    @include hyphenate;
     @include breakpoint(max-width $xx-small) {
       font-size: 16px;
     }
-
     @include breakpoint($xx-small-up) {
       font-size: 12px;
     }
-
     @include breakpoint($x-small-up) {
       font-size: 16px;
     }
-
     @include breakpoint($small-up) {
       font-size: 20px;
     }
-
     @include breakpoint($large-up) {
       font-size: 32px;
     }
 
-    [data-view-state="publicmode"] & {
+    [data-view-state='publicmode'] & {
       overflow: hidden;
 
       // scss-lint:disable SelectorDepth, NestingDepth
@@ -237,7 +232,6 @@
       @include breakpoint(max-width $medium) {
         font-size: 12px;
       }
-
       @include breakpoint($medium-up) {
         font-size: 20px;
       }
@@ -248,7 +242,7 @@
 .item-image {
   border: 0;
 
-  [data-view-state="publicmode"] & {
+  [data-view-state='publicmode'] & {
     &.is-cropped {
       position: absolute;
       top: -100%;
@@ -273,10 +267,11 @@
 }
 
 .item-title {
-  @include hyphenate;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2;
+
+  @include hyphenate;
 
   .item-link {
     color: inherit;
@@ -297,7 +292,6 @@
     @include breakpoint(max-width $medium) {
       font-size: 20px;
     }
-
     @include breakpoint($medium-up) {
       font-size: 32px;
     }
@@ -307,7 +301,6 @@
     @include breakpoint(max-width $medium) {
       font-size: 32px;
     }
-
     @include breakpoint($medium-up) {
       font-size: 52px;
     }
@@ -340,7 +333,6 @@
   @include breakpoint(max-width $medium) {
     margin-top: .55em;
   }
-
   @include breakpoint($medium-up) {
     margin-top: 0;
   }
