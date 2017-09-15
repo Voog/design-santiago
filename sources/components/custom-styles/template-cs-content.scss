@@ -41,7 +41,7 @@
         "unit": "px",
         "scope": "global"
       */
-      --layout-body-narrow__max-width: 960px;
+      #{--layout-body-narrow__max-width}: 960px;
   /*_LIQUID {% endunless %} LIQUID_*/
 
   /* VoogStyle
@@ -54,7 +54,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --layout-body-narrow__padding: 0;
+  #{--layout-body-narrow__padding}: 0;
 
   /* VoogStyle
     "pathI18n": ["{{ content_container_title }}"],
@@ -62,7 +62,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --layout-body-narrow__background-color: transparent;
+  #{--layout-body-narrow__background-color}: transparent;
 
       /*_LIQUID {% if content_inner_title == "product" %} LIQUID_*/
           /* VoogStyle
@@ -72,7 +72,7 @@
             "list": {{ base_alignment_set }},
             "scope": "global"
           */
-          --content-area-product-title__text-alignment: left;
+          #{--content-area-product-title__text-alignment}: left;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -83,7 +83,7 @@
             "unit": "px",
             "scope": "global"
           */
-          --content-area-product-title__font-size: 72px;
+          #{--content-area-product-title__font-size}: 72px;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -97,7 +97,7 @@
             "icon": "bold",
             "scope": "global"
           */
-          --content-area-product-title__font-weight: 700;
+          #{--content-area-product-title__font-weight}: 700;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -111,7 +111,7 @@
             "icon": "italic",
             "scope": "global"
           */
-          --content-area-product-title__font-style: normal;
+          #{--content-area-product-title__font-style}: normal;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -125,7 +125,7 @@
             "icon": "underline",
             "scope": "global"
           */
-          --content-area-product-title__text-decoration: none;
+          #{--content-area-product-title__text-decoration}: none;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -139,7 +139,7 @@
             "icon": "uppercase",
             "scope": "global"
           */
-          --content-area-product-title__text-transform: none;
+          #{--content-area-product-title__text-transform}: none;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -149,7 +149,7 @@
             "featured": true,
             "scope": "global"
           */
-          --content-area-product-title__color: #{$color-secondary};
+          #{--content-area-product-title__color}: $color-secondary;
 
           /* VoogStyle
             "pathI18n": ["{{ content_inner_title }}"],
@@ -161,7 +161,7 @@
             "unit": "%",
             "scope": "global"
           */
-          --content-item-box__image-radius: 0;
+          #{--content-item-box__image-radius}: 0;
       /*_LIQUID {% endif %} LIQUID_*/
 
       /*_LIQUID {% if content_container_title == "blog" or content_container_title == "article" %} LIQUID_*/
@@ -175,7 +175,7 @@
         "featured": true,
         "scope": "global"
       */
-      --content-area-article-title__font-size: 28px;
+      #{--content-area-article-title__font-size}: 28px;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -189,7 +189,7 @@
         "icon": "bold",
         "scope": "global"
       */
-      --content-area-article-title__font-weight: 700;
+      #{--content-area-article-title__font-weight}: 700;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -203,7 +203,7 @@
         "icon": "italic",
         "scope": "global"
       */
-      --content-area-article-title__font-style: normal;
+      #{--content-area-article-title__font-style}: normal;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -217,7 +217,7 @@
         "icon": "underline",
         "scope": "global"
       */
-      --content-area-article-title__text-decoration: none;
+      #{--content-area-article-title__text-decoration}: none;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -231,7 +231,7 @@
         "icon": "uppercase",
         "scope": "global"
       */
-      --content-area-article-title__text-transform: uppercase;
+      #{--content-area-article-title__text-transform}: uppercase;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "title"],
@@ -241,7 +241,7 @@
         "featured": true,
         "scope": "global"
       */
-      --content-area-article-title__color: #{$color-secondary};
+      #{--content-area-article-title__color}: $color-secondary;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -253,7 +253,7 @@
         "featured": true,
         "scope": "global"
       */
-      --content-area-article-date__font-size: 12px;
+      #{--content-area-article-date__font-size}: 12px;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -265,7 +265,7 @@
         "unit": "",
         "scope": "global"
       */
-      --content-area-article-date__opacity: .5;
+      #{--content-area-article-date__opacity}: .5;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -279,7 +279,7 @@
         "icon": "bold",
         "scope": "global"
       */
-      --content-area-article-date__font-weight: 400;
+      #{--content-area-article-date__font-weight}: 400;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -293,7 +293,7 @@
         "icon": "italic",
         "scope": "global"
       */
-      --content-area-article-date__font-style: normal;
+      #{--content-area-article-date__font-style}: normal;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -307,7 +307,7 @@
         "icon": "underline",
         "scope": "global"
       */
-      --content-area-article-date__text-decoration: none;
+      #{--content-area-article-date__text-decoration}: none;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -321,7 +321,7 @@
         "icon": "uppercase",
         "scope": "global"
       */
-      --content-area-article-date__text-transform: none;
+      #{--content-area-article-date__text-transform}: none;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "date"],
@@ -331,7 +331,7 @@
         "featured": true,
         "scope": "global"
       */
-      --content-area-article-date__color: #{$color-primary};
+      #{--content-area-article-date__color}: $color-primary;
   /*_LIQUID {% endif %} LIQUID_*/
 
   /* VoogStyle
@@ -344,7 +344,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-area-text__font-size: 20px;
+  #{--content-area-text__font-size}: 20px;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "text"],
@@ -356,7 +356,7 @@
     "unit": "",
     "scope": "global"
   */
-  --content-area-text__line-height: 1.7;
+  #{--content-area-text__line-height}: 1.7;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "text"],
@@ -365,7 +365,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-area-text__color: #{$color-primary};
+  #{--content-area-text__color}: $color-primary;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
@@ -382,7 +382,7 @@
       "--content-area-link-hover__font-weight"
     ]
   */
-  --content-area-link__font-weight: 400;
+  #{--content-area-link__font-weight}: 400;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -396,7 +396,7 @@
         "icon": "bold",
         "scope": "global"
       */
-      --content-area-link-hover__font-weight: 400;
+      #{--content-area-link-hover__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
@@ -413,7 +413,7 @@
       "--content-area-link-hover__font-style"
     ]
   */
-  --content-area-link__font-style: normal;
+  #{--content-area-link__font-style}: normal;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -427,7 +427,7 @@
         "icon": "italic",
         "scope": "global"
       */
-      --content-area-link-hover__font-style: normal;
+      #{--content-area-link-hover__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
@@ -441,7 +441,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-area-link__text-decoration: underline;
+  #{--content-area-link__text-decoration}: underline;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -455,7 +455,7 @@
         "icon": "underline",
         "scope": "global"
       */
-      --content-area-link-hover__text-decoration: none;
+      #{--content-area-link-hover__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
@@ -472,7 +472,7 @@
       "--content-area-link-hover__text-transform"
     ]
   */
-  --content-area-link__text-transform: none;
+  #{--content-area-link__text-transform}: none;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -486,7 +486,7 @@
         "icon": "uppercase",
         "scope": "global"
       */
-      --content-area-link-hover__text-transform: none;
+      #{--content-area-link-hover__text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "link", "normal"],
@@ -499,7 +499,7 @@
       "--content-area-link-hover__color"
     ]
   */
-  --content-area-link__color: #{$color-secondary};
+  #{--content-area-link__color}: $color-secondary;
 
       /* VoogStyle
         "pathI18n": ["{{ content_inner_title }}", "link", "hover"],
@@ -508,6 +508,6 @@
         "editor": "colorPicker",
         "scope": "global"
       */
-      --content-area-link-hover__color: #{$color-secondary};
+      #{--content-area-link-hover__color}: $color-secondary;
   // scss-lint:enable Comment, Indentation
 }

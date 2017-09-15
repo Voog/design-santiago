@@ -38,7 +38,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-item-box__width: 33.3%;
+  #{--content-item-box__width}: 33.3%;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -50,7 +50,7 @@
     "unit": "%",
     "scope": "global"
   */
-  --content-item-box__image-radius: 0;
+  #{--content-item-box__image-radius}: 0;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -59,7 +59,7 @@
     "list": {{ base_alignment_set }},
     "scope": "global"
   */
-  --content-item-box__alignment: left;
+  #{--content-item-box__alignment}: left;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -71,7 +71,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-item-box__font-size: 20px;
+  #{--content-item-box__font-size}: 20px;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -85,7 +85,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-item-box__font-weight: 400;
+  #{--content-item-box__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -99,7 +99,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-item-box__font-style: normal;
+  #{--content-item-box__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -113,7 +113,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-item-box__text-decoration: none;
+  #{--content-item-box__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -127,7 +127,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-item-box__text-transform: none;
+  #{--content-item-box__text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["product_list", "product"],
@@ -137,5 +137,5 @@
     "featured": true,
     "scope": "global"
   */
-  --content-item-box__color: #{$color-primary};
+  #{--content-item-box__color}: $color-primary;
 }

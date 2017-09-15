@@ -40,7 +40,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-area-form-field-label__font-size: 16px;
+  #{--content-area-form-field-label__font-size}: 16px;
 
   /* VoogStyle
     "pathI18n": ["form", "label"],
@@ -54,7 +54,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-area-form-field-label__font-weight: 400;
+  #{--content-area-form-field-label__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["form", "label"],
@@ -68,7 +68,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-area-form-field-label__font-style: normal;
+  #{--content-area-form-field-label__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["form", "label"],
@@ -82,7 +82,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-area-form-field-label__text-decoration: none;
+  #{--content-area-form-field-label__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["form", "label"],
@@ -96,7 +96,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-area-form-field-label__text-transform: none;
+  #{--content-area-form-field-label__text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["form", "label"],
@@ -106,7 +106,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-area-form-field-label__color: #{$color-primary};
+  #{--content-area-form-field-label__color}: $color-primary;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -118,7 +118,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-area-form-field-text__font-size: 16px;
+  #{--content-area-form-field-text__font-size}: 16px;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -127,7 +127,7 @@
     "scope": "global",
     "featured": true
   */
-  --content-area-form-field-text__color: #{$color-primary};
+  #{--content-area-form-field-text__color}: $color-primary;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -135,7 +135,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-area-form-field-text__background-color: #{$color-white};
+  #{--content-area-form-field-text__background-color}: $color-white;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -143,7 +143,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-area-form-field-text__border-color: #{rgba($color-primary, .5)};
+  #{--content-area-form-field-text__border-color}: rgba($color-primary, .5);
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -157,7 +157,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --content-area-form-field-text__font-weight: 400;
+  #{--content-area-form-field-text__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -171,7 +171,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --content-area-form-field-text__font-style: normal;
+  #{--content-area-form-field-text__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -185,7 +185,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --content-area-form-field-text__text-decoration: none;
+  #{--content-area-form-field-text__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -199,7 +199,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --content-area-form-field-text__text-transform: none;
+  #{--content-area-form-field-text__text-transform}: none;
 
   // scss-lint:enable Comment, Indentation
 }

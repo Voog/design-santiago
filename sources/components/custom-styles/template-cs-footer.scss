@@ -40,7 +40,7 @@
     "unit": "px",
     "scope": "global"
   */
-  --layout-footer__padding: 32px;
+  #{--layout-footer__padding}: 32px;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -52,7 +52,7 @@
     "featured": true,
     "scope": "global"
   */
-  --layout-footer__font-size: 16px;
+  #{--layout-footer__font-size}: 16px;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -61,7 +61,7 @@
     "featured": true,
     "scope": "global"
   */
-  --layout-footer__color: #{$color-primary};
+  #{--layout-footer__color}: $color-primary;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -70,7 +70,7 @@
     "featured": true,
     "scope": "global"
   */
-  --layout-footer__background-color: #{$color-grey};
+  #{--layout-footer__background-color}: $color-grey;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -84,7 +84,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --layout-footer__font-weight: 400;
+  #{--layout-footer__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -98,7 +98,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --layout-footer__font-style: normal;
+  #{--layout-footer__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -112,7 +112,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --layout-footer__text-decoration: none;
+  #{--layout-footer__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["footer"],
@@ -126,7 +126,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --layout-footer__text-transform: none;
+  #{--layout-footer__text-transform}: none;
 
   // scss-lint:enable Comment, Indentation
 }
