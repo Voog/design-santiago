@@ -374,15 +374,11 @@
   color: var(--main__color-primary);
   opacity: .25;
 }
-.search-input::-moz-placeholder {
-  color: var(--main__color-primary);
-  opacity: .25;
-}
-.search-input:-moz-placeholder {
-  color: var(--main__color-primary);
-  opacity: .25;
-}
 .search-input:-ms-input-placeholder {
+  color: var(--main__color-primary);
+  opacity: .25;
+}
+.search-input::placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }

@@ -546,7 +546,7 @@
 .search-input {
   color: var(--main__color-primary);
 
-  @include placeholder() {
+  &::placeholder {
     color: var(--main__color-primary);
     opacity: .25;
   }
