@@ -261,20 +261,16 @@
 .content-area {
   h1 {
     .layout-body & {
-      // scss-lint:disable NestingDepth
-      &:not(.content-item-title) {
-        font-size: var(--title__font-size);
-        font-style: var(--title__font-style);
-        font-weight: var(--title__font-weight);
-        color: var(--title__color);
-        text-decoration: var(--title__text-decoration);
-        text-transform: var(--title__text-transform);
+      font-size: var(--title__font-size);
+      font-style: var(--title__font-style);
+      font-weight: var(--title__font-weight);
+      color: var(--title__color);
+      text-decoration: var(--title__text-decoration);
+      text-transform: var(--title__text-transform);
 
-        @include breakpoint($medium-up) {
-          text-align: var(--title__text-alignment);
-        }
+      @include breakpoint($medium-up) {
+        text-align: var(--title__text-alignment);
       }
-      // scss-lint:enable NestingDepth
     }
   }
 
@@ -393,13 +389,17 @@
 // Product layout specific content
 // =============================================================================
 .content-item-title {
-  font-size: var(--content-area-product-title__font-size);
-  font-style: var(--content-area-product-title__font-style);
-  font-weight: var(--content-area-product-title__font-weight);
-  color: var(--content-area-product-title__color);
-  text-align: var(--content-area-product-title__text-alignment);
-  text-decoration: var(--content-area-product-title__text-decoration);
-  text-transform: var(--content-area-product-title__text-transform);
+  h1 {
+    .layout-body & {
+      font-size: var(--content-area-product-title__font-size);
+      font-style: var(--content-area-product-title__font-style);
+      font-weight: var(--content-area-product-title__font-weight);
+      color: var(--content-area-product-title__color);
+      text-align: var(--content-area-product-title__text-alignment);
+      text-decoration: var(--content-area-product-title__text-decoration);
+      text-transform: var(--content-area-product-title__text-transform);
+    }
+  }
 }
 
 // =============================================================================

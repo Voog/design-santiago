@@ -3254,7 +3254,6 @@ label .form_control_indicator::before {
 
 .content-item-title {
   margin-bottom: .55em;
-  line-height: 1.1;
 }
 @media (max-width: 640px) {
   .content-item-title {
