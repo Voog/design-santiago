@@ -46,7 +46,10 @@
     "min": 8,
     "max": 100,
     "unit": "px",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-size"
+    ]
   */
   #{--title__font-size}: 72px;
 
@@ -60,7 +63,10 @@
       "off": "400"
     },
     "icon": "bold",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-weight"
+    ]
   */
   #{--title__font-weight}: 700;
 
@@ -74,7 +80,10 @@
       "off": "normal"
     },
     "icon": "italic",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-style"
+    ]
   */
   #{--title__font-style}: normal;
 
@@ -88,7 +97,10 @@
       "off": "none"
     },
     "icon": "underline",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__text-decoration"
+    ]
   */
   #{--title__text-decoration}: none;
 
@@ -102,7 +114,10 @@
       "off": "none"
     },
     "icon": "uppercase",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__text-transform"
+    ]
   */
   #{--title__text-transform}: none;
 
@@ -112,7 +127,10 @@
     "type": "button",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__color"
+    ]
   */
   #{--title__color}: $color-secondary;
 
