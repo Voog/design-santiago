@@ -1,4 +1,4 @@
-{% comment %}FACEBOOK OPEN GRAPH META TAGS{% endcomment%}
+{% comment %}TEMPLATE META DATA{% endcomment %}
 {% comment %}https://developers.facebook.com/tools/debug - Debug after each modification{% endcomment %}
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{% if article %}{{ article.url | remove_first: "/" }}{% elsif element %}{{ element.url | remove_first: "/" }}{% else %}{{ page.url | remove_first: "/" }}{% endif %}">
@@ -41,4 +41,15 @@
 {% if description != nil and description != "" %}
   <meta property="og:description" content="{{ description | escape }}">
   <meta name="description" content="{{ description | escape }}">
+{% endif %}
+
+{% comment %}SEO pagination for blog articles.{% endcomment %}
+{% if article %}
+  {% if article.older %}
+    <link rel="prev" href="{{ article.older.url }}">
+  {% endif %}
+
+  {% if article.newer %}
+    <link rel="next" href="{{ article.newer.url }}">
+  {% endif %}
 {% endif %}
