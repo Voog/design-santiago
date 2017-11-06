@@ -14,7 +14,10 @@
     "min": 8,
     "max": 100,
     "unit": "px",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-size"
+    ]
   */
   --title__font-size: 72px;
   /* VoogStyle
@@ -27,7 +30,10 @@
       "off": "400"
     },
     "icon": "bold",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-weight"
+    ]
   */
   --title__font-weight: 700;
   /* VoogStyle
@@ -40,7 +46,10 @@
       "off": "normal"
     },
     "icon": "italic",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__font-style"
+    ]
   */
   --title__font-style: normal;
   /* VoogStyle
@@ -53,7 +62,10 @@
       "off": "none"
     },
     "icon": "underline",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__text-decoration"
+    ]
   */
   --title__text-decoration: none;
   /* VoogStyle
@@ -66,7 +78,10 @@
       "off": "none"
     },
     "icon": "uppercase",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__text-transform"
+    ]
   */
   --title__text-transform: none;
   /* VoogStyle
@@ -75,7 +90,10 @@
     "type": "button",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-area-product-title__color"
+    ]
   */
   --title__color: #ed1c24;
   /* VoogStyle
