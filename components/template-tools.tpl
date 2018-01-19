@@ -29,6 +29,6 @@ Adds template specific JS tools.
     //==========================================================================
     // Binds custom styles under wysihtml editor.
     //==========================================================================
-    template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+    template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale | escape }}');
   </script>
 {% endeditorjsblock %}

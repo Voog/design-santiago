@@ -2,7 +2,7 @@
 {% comment %}Adds template specific JS tools.{% endcomment %}
 {% editorjsblock %}
   <script>
-    template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
+    template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc | escape }}');
     template.bindContentItemImageCropToggle();
 
     {%if site.data.settings_root_item %}
