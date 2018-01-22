@@ -16,7 +16,7 @@
         <div class="layout-body__content">
           {% include "menu-breadcrumbs" %}
 
-          <div class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content %}</div>
+          <div class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}  data-search-indexing-allowed="true">{% content %}</div>
 
           <main class="content-item-boxes">
             {% if site.root_item.selected? %}
