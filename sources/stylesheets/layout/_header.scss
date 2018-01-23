@@ -56,7 +56,7 @@
     }
   }
 
-  &__title .image-container{
+  &__title .image-container {
     @include breakpoint(max-width $medium) {
       width: auto !important;
     }
