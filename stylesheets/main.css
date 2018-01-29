@@ -3585,7 +3585,7 @@ label .form_control_indicator::before {
 .not-loaded .loader, .is-loaded .loader {
   margin-top: calc((20px / 2) * -1);
   margin-left: calc((20px / 2) * -1);
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
   -webkit-animation: rotation .7s infinite linear;
           animation: rotation .7s infinite linear;
 }

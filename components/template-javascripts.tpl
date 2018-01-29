@@ -2,8 +2,8 @@
 TEMPLATE'S JAVASCRIPTS
 =============================================================== {% endcomment %}
 {% comment %}Main template functionality.{% endcomment %}
-{% comment %}TODO: Use minified verion when going to live.{% endcomment %}
-<script src="{{ javascripts_path }}/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="{{ javascripts_path }}/main.min.js"></script>   
 
 {% comment %}Site search related javascript components.{% endcomment %}
 {% if site.search.enabled %}
@@ -12,4 +12,5 @@ TEMPLATE'S JAVASCRIPTS
 {% endif %}
 
 {% comment %}Google analytics initiation.{% endcomment %}
-{{ site.analytics }}
+{{ site.analytics }}  
+         
