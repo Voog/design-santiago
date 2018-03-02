@@ -200,6 +200,25 @@ module.exports = function(grunt) {
       }
     },
 
+    // Executes the Voog Kit toolkit manifest generation and file upload commands.
+    exec: {
+      kitmanifest: {
+        cmd: function(file) {
+          return 'kit manifest';
+        }
+      },
+
+      kit: {
+        cmd: function(file) {
+          if (grunt.option('site')) {
+            return 'kit push -s ' + grunt.option('site') + ' ' + file;
+          } else {
+            return 'kit push ' + file;
+          }
+        }
+      }
+    },
+
     // Watches the project for changes and recompiles the output files.
     watch: {
       js_copy: {
@@ -209,7 +228,7 @@ module.exports = function(grunt) {
 
       js_concat: {
         files: 'sources/javascripts/concat/*.js',
-        tasks: ['concat:build', 'uglify:build']
+        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
       css_main: {
@@ -218,32 +237,39 @@ module.exports = function(grunt) {
           'sources/stylesheets/*/*.scss',
           'sources/stylesheets/*/*/*.scss'
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
       },
 
       custom_styles: {
         files: 'sources/components/custom-styles/*.scss',
-        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'replace', 'copy:custom_styles', 'clean:remove']
+        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'replace', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
       },
 
       img_copy: {
         files: 'sources/images/copy/*',
-        tasks: [ 'copy:images']
+        tasks: [ 'copy:images', 'exec:kitmanifest', 'exec:kit:images/*']
       },
 
       img_minify: {
         files: 'sources/images/minify/*',
-        tasks: ['imagemin:build_images']
+        tasks: ['imagemin:build_images', , 'exec:kitmanifest', 'exec:kit:images/*']
       },
 
       assets_copy: {
         files: 'sources/assets/copy/*',
-        tasks: ['copy:assets']
+        tasks: ['copy:assets', 'exec:kitmanifest', 'exec:kit:assets/*']
       },
 
       assets_minify: {
         files: 'sources/assets/minify/*',
-        tasks: ['imagemin:build_assets']
+        tasks: ['imagemin:build_assets', 'exec:kitmanifest', 'exec:kit:assets/*']
+      },
+
+      voog: {
+        files: ['layouts/*.tpl', 'components/*.tpl'],
+        options: {
+          spawn: false
+        }
       }
     }
   });
@@ -258,6 +284,20 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', ['clean:reset', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'replace', 'copy', 'clean:remove']);
+
+  grunt.event.on('watch', function(action, filepath, target) {
+    if (target == 'voog') {
+      if (action == 'added' || action == 'deleted') {
+        grunt.task.run(['exec:kitmanifest']);
+      }
+      if (grunt.file.exists('.voog')) {
+        if (action != 'deleted') {
+          grunt.task.run(['exec:kit:' + filepath]);
+        }
+      }
+    }
+  });
 };
