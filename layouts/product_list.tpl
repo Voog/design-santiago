@@ -32,7 +32,7 @@
                 {% assign productListMenuItem = site.visible_menuitems %}
               {% endif %}
 
-              {% include "product-list-loop" menu_items: productListMenuItem %}
+                {% include "product-list-loop" %}
             {% endif %}
 
             <div class="content-item-box content-item-box--placeholder"></div>
