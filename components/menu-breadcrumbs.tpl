@@ -33,7 +33,7 @@
         {% assign breadcrumbsMenuItem = site.visible_menuitems %}
       {% endif %}
 
-      {% include "menu-breadcrumbs-buttons-loop" menu_items: breadcrumbsMenuItem %}
+      {% include "menu-breadcrumbs-buttons-loop" %}
     {% endif %}
   </ul>
 </nav>
