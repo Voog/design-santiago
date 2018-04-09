@@ -97,7 +97,8 @@
 }
 @media (max-width: 640px) {
   .layout-header {
-    padding: 70px 25px 16px 25px;
+    padding-top: 70px;
+    padding-bottom: 16px;
   }
 }
 @media (min-width: 641px) {
