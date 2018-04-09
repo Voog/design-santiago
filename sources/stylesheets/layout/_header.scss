@@ -7,8 +7,7 @@
   box-sizing: border-box;
 
   @include breakpoint(max-width $medium) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 70px 25px 16px 25px;
   }
 
   @include breakpoint($medium-up) {
@@ -47,9 +46,7 @@
   }
 
   &__title {
-    @include breakpoint($medium-up) {
-      text-align: center;
-    }
+    text-align: center;
 
     @include breakpoint(max-width $medium) {
       flex-grow: 1;
@@ -67,8 +64,12 @@
     align-items: center;
 
     @include breakpoint(max-width $medium) {
-      padding-top: 2px;
-      padding-bottom: 2px;
+      padding-top: 20px;
+      margin-left: -10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      justify-content: flex-end;
     }
 
     @include breakpoint($medium-up) {
