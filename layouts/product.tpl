@@ -72,6 +72,7 @@
       {% endif %}
     </div>
 
+    {% include "site-signout" %} 
     {% include "template-javascripts" %}
     {% include "template-tools" %}
     {% include "content-item-tools" %}
