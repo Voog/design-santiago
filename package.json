@@ -22,7 +22,6 @@
     "grunt-postcss": "^0.9.0",
     "grunt-text-replace": "^0.4.0",
     "headroom.js": "^0.9.4",
-    "jquery": "^3.2.1",
     "jquery-lazyload": "^1.9.7",
     "textarea-autosize": "^0.4.2"
   },

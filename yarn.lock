@@ -1419,7 +1419,7 @@ jquery-lazyload@^1.9.7:
   version "1.9.7"
   resolved "https://registry.yarnpkg.com/jquery-lazyload/-/jquery-lazyload-1.9.7.tgz#9982b388c533c0b611214b3c5aaa0b9fede071f7"
 
-jquery@>=1.8, jquery@^3.2.1:
+jquery@>=1.8:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
