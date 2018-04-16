@@ -27,6 +27,7 @@
       {% endif %}
     </div>
 
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
     {% include "template-tools" %}
   </body>
