@@ -19,8 +19,6 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
-          'node_modules/jquery/dist/jquery.js',
-          'node_modules/jquery-lazyload/jquery.lazyload.js',
           'node_modules/textarea-autosize/dist/jquery.textarea_autosize.js',
           'node_modules/headroom.js/dist/headroom.js',
           'sources/javascripts/concat/*.js'
