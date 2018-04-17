@@ -50,15 +50,15 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="content-gallery content-area">{% content name="gallery" %}</div>
+                <div class="content-gallery content-area" data-search-indexing-allowed="true">{% content name="gallery" %}</div>
               </div>
 
               <div class="content-body-inner">
                 <header class="content-header">
-                  <div class="content-item-title content-area">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
+                  <div class="content-item-title content-area" data-search-indexing-allowed="true">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
                 </header>
 
-                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc }}{% endcontentblock %}</div>
+                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}</div>
               </div>
             </div>
           </div>
@@ -72,6 +72,7 @@
       {% endif %}
     </div>
 
+    {% include "site-signout" %} 
     {% include "template-javascripts" %}
     {% include "template-tools" %}
     {% include "content-item-tools" %}
