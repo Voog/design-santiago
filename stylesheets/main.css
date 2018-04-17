@@ -174,7 +174,7 @@
     padding-top: 20px;
     margin-left: -10px;
     position: absolute;
-    top: 0;
+    top: 0 !important;
     right: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1405,6 +1405,9 @@ label .form_control_indicator::before {
 }
 .menu-language-btn .menu-language-btn-circle {
   right: 8px;
+}
+[data-lingual-mode="monolingual"].site-search-disabled .menu-language-btn {
+  display: none;
 }
 
 .menu-language-btn-circle {
@@ -3594,7 +3597,7 @@ label .form_control_indicator::before {
 .not-loaded .loader, .is-loaded .loader {
   margin-top: calc((20px / 2) * -1);
   margin-left: calc((20px / 2) * -1);
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
   -webkit-animation: rotation .7s infinite linear;
           animation: rotation .7s infinite linear;
 }
