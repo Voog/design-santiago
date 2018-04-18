@@ -1406,9 +1406,6 @@ label .form_control_indicator::before {
 .menu-language-btn .menu-language-btn-circle {
   right: 8px;
 }
-[data-lingual-mode="monolingual"].site-search-disabled .menu-language-btn {
-  display: none;
-}
 
 .menu-language-btn-circle {
   position: absolute;
