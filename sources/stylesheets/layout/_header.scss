@@ -29,23 +29,6 @@
     }
   }
 
-  &__container {
-    @include breakpoint(max-width $medium) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-
-  &__top {
-    @include breakpoint(max-width $medium) {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-
   &__title {
     text-align: center;
 
