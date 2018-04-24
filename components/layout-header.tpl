@@ -1,15 +1,5 @@
 <header class="layout-header">
-  <div class="layout-header__container">
-    <div class="layout-header__top">
-      <div class="layout-header__title">
-        {% if editmode %}
-          <div class="content-area">{% editable site.header %}</div>
-        {% else %}
-          <a class="layout-header__link" href="{{ site.root_item.url }}">
-            <div class="content-area">{{ site.header }}</div>
-          </a>
-        {% endif %}
-      </div>
+
 
       <div class="layout-header__options">
         {% if show_language_menu_popover %}
@@ -31,8 +21,18 @@
           </span>
         </button>
       </div>
-    </div>
+
+      <div class="layout-header__title">
+        {% if editmode %}
+          <div class="content-area">{% editable site.header %}</div>
+        {% else %}
+          <a class="layout-header__link" href="{{ site.root_item.url }}">
+            <div class="content-area">{{ site.header }}</div>
+          </a>
+        {% endif %}
+      </div>
+
 
     {% include "menu-main" %}
-  </div>
+
 </header>
