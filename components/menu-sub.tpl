@@ -1,4 +1,4 @@
-{% for level_1 in site.visible_menuitems %}
+{% for level_1 in site.menuitems %}
   {% if level_1.selected? and level_1.children? or editmode %}
     <nav class="menu-sub">
       <ul class="menu-sub__list">
