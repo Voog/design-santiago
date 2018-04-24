@@ -97,7 +97,7 @@
 }
 @media (max-width: 640px) {
   .layout-header {
-    padding-top: 70px;
+    padding-top: 18px;
     padding-bottom: 16px;
   }
 }
@@ -144,11 +144,7 @@
 }
 @media (max-width: 640px) {
   .layout-header__options {
-    padding-top: 20px;
-    margin-left: -10px;
-    position: absolute;
-    top: 0 !important;
-    right: 0;
+    padding-bottom: 10px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
