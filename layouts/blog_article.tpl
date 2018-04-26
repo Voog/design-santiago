@@ -32,6 +32,7 @@
       {% endif %}
     </div>
 
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
   </body>
 </html>
