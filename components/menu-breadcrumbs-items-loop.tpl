@@ -1,17 +1,17 @@
-{% for item in menu_items %}
-  {% if site.root_item.layout_title == product_list_layout %}
-    {% assign page_Lvl = 0 %}
-  {% else %}
-    {% assign page_Lvl = 1 %}
-  {% endif %}
+{% for i in (1..5) %}
+  {% assign level_str = 'menuitems_with_hidden_on_level_' | append: i %}
+  {% for item in site[level_str] %}
 
-  {% if item.selected? and page.level > page_Lvl %}
-    <span class="menu-sub__separator">/</span>
+    {% if site.root_item.layout_title == product_list_layout %}
+      {% assign page_Lvl = 0 %}
+    {% else %}
+      {% assign page_Lvl = 1 %}
+    {% endif %}
 
-    {% menulink item wrapper-tag="li" wrapper-class="menu-sub__item" selected-class="menu-sub__item--selected" current-class="menu-sub__item--current" %}
-  {% endif %}
+    {% if item.selected? and page.level > page_Lvl %}
+      <span class="menu-separator">/</span>
 
-  {% if item.children_with_hidden.size > 0 %}
-    {% include "menu-breadcrumbs-items-loop" menu_items: item.children_with_hidden  %}
-  {% endif %}
+      {% menulink item wrapper-tag="li" wrapper-class="menu-item" %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
