@@ -9,9 +9,9 @@
     {% endif %}
 
     {% if item.selected? and page.level > page_Lvl %}
-      <span class="menu-separator">/</span>
+      <span class="menu-sub__separator">/</span>
 
-      {% menulink item wrapper-tag="li" wrapper-class="menu-item" %}
+      {% menulink item wrapper-tag="li" wrapper-class="menu-sub__item" selected-class="menu-sub__item--selected" current-class="menu-sub__item--current" %}
     {% endif %}
   {% endfor %}
 {% endfor %}
