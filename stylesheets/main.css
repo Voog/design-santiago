@@ -1496,6 +1496,11 @@ label .form_control_indicator::before {
     font-size: 16px;
   }
 }
+@media (max-width: 640px) {
+  .menu-language .menu-item .language-name-resize {
+    display: none;
+  }
+}
 .language-menu-mode-list.language-flags-enabled .menu-language .menu-item {
   vertical-align: middle;
 }
