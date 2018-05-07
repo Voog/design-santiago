@@ -4,10 +4,10 @@
   // ===========================================================================
   var languageNameResize = document.getElementsByClassName('menu-language-name');
 
-  if (languageNameResize.length > 3) {
-    $('.menu-language-name').addClass('name-font-small');
+  if (languageNameResize.length > 2) {
+    $('.menu-language-name').addClass('language-name-resize');
   } else {
-    $('.menu-language-name').removeClass('name-font-small');
+    $('.menu-language-name').removeClass('language-name-resize');
   };
 
   // ===========================================================================

@@ -228,7 +228,7 @@
   .menu-item {
     position: relative;
 
-    .name-font-small {
+    .language-name-resize {
       @include breakpoint($medium-up) {
         font-size: 16px;
       }

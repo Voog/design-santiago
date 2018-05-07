@@ -1492,7 +1492,7 @@ label .form_control_indicator::before {
   position: relative;
 }
 @media (min-width: 641px) {
-  .menu-language .menu-item .name-font-small {
+  .menu-language .menu-item .language-name-resize {
     font-size: 16px;
   }
 }
