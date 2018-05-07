@@ -24,5 +24,8 @@
     "headroom.js": "^0.9.4",
     "jquery-lazyload": "^1.9.7",
     "textarea-autosize": "^0.4.2"
+  },
+  "dependencies": {
+    "grunt-exec": "^3.0.0"
   }
 }

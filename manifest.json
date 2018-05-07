@@ -50,9 +50,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-tools.tpl",
-      "layout_name": "template-tools",
-      "title": "template-tools"
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
     },
     {
       "content_type": "component",
@@ -88,6 +88,13 @@
       "file": "components/blog-article-comment-form.tpl",
       "layout_name": "blog-article-comment-form",
       "title": "blog-article-comment-form"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
     },
     {
       "content_type": "component",
@@ -162,16 +169,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
+      "file": "components/template-tools.tpl",
+      "layout_name": "template-tools",
+      "title": "template-tools"
     },
     {
       "content_type": "component",
@@ -337,36 +344,6 @@
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-arrow-white.svg",
-      "kind": "assets",
-      "filename": "ico-arrow-white.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags-medium-up.svg",
-      "kind": "assets",
-      "filename": "ico-flags-medium-up.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags-medium.svg",
-      "kind": "assets",
-      "filename": "ico-flags-medium.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-check.png",
-      "kind": "images",
-      "filename": "ico-check.png"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/main.min.js",
-      "kind": "javascripts",
-      "filename": "main.min.js"
-    },
-    {
       "content_type": "text/javascript",
       "file": "javascripts/main.js",
       "kind": "javascript",
@@ -374,15 +351,45 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
-      "filename": "main.min.css"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "application/javascript",
+      "kind": "javascripts",
+      "file": "javascripts/main.min.js",
+      "filename": "main.min.js"
+    },
+    {
+      "content_type": "text/css",
+      "kind": "stylesheets",
+      "file": "stylesheets/main.min.css",
+      "filename": "main.min.css"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/ico-check.png",
+      "filename": "ico-check.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-arrow-white.svg",
+      "filename": "ico-arrow-white.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-flags-medium-up.svg",
+      "filename": "ico-flags-medium-up.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-flags-medium.svg",
+      "filename": "ico-flags-medium.svg"
     }
   ]
 }
