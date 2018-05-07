@@ -2,12 +2,15 @@
   // ===========================================================================
   // Function to change menu language name font size or hide it.
   // ===========================================================================
-  var languageNameResize = document.getElementsByClassName('menu-language-name');
+  var changeMenuLanguageName = function () {
 
-  if (languageNameResize.length > 2) {
-    $('.menu-language-name').addClass('language-name-resize');
-  } else {
-    $('.menu-language-name').removeClass('language-name-resize');
+    var menuLanguageName = document.querySelectorAll('.menu-language-name');
+
+    if (menuLanguageName.length > 2) {
+      $('.menu-language-name').addClass('language-name-resize');
+    } else {
+      $('.menu-language-name').removeClass('language-name-resize');
+    }
   };
 
   // ===========================================================================
@@ -619,6 +622,7 @@
     autoResizeFormTextArea();
     focusFormMessages();
     removeFormInputErrorHighlight();
+    changeMenuLanguageName();
 
     if (!editmode()) {
       wrapContentAreaTables();
