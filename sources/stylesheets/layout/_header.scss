@@ -59,6 +59,10 @@
   &__title .image-container {
     @include breakpoint(max-width $medium) {
       width: auto !important;
+      min-width: 120px;
+    }
+    @include breakpoint (max-width $small) {
+      min-width: 0px;
     }
   }
 
