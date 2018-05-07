@@ -228,6 +228,12 @@
   .menu-item {
     position: relative;
 
+    .name-font-small {
+      @include breakpoint($medium-up) {
+        font-size: 16px;
+      }
+    }
+
     .language-menu-mode-list.language-flags-enabled & {
       vertical-align: middle;
     }

@@ -1458,6 +1458,11 @@ label .form_control_indicator::before {
 .menu-language .menu-item {
   position: relative;
 }
+@media (min-width: 641px) {
+  .menu-language .menu-item .name-font-small {
+    font-size: 16px;
+  }
+}
 .language-menu-mode-list.language-flags-enabled .menu-language .menu-item {
   vertical-align: middle;
 }

@@ -522,6 +522,17 @@
 }));
 ;(function($) {
   // ===========================================================================
+  // Function to change menu language name font size.
+  // ===========================================================================
+  var languageNameResize = document.getElementsByClassName('menu-language-name');
+
+  if (languageNameResize.length > 3) {
+    $('.menu-language-name').addClass('name-font-small');
+  } else {
+    $('.menu-language-name').removeClass('name-font-small');
+  };
+
+  // ===========================================================================
   // Function to detect if site is displayed in editmode.
   // ===========================================================================
   var editmode = function () {
