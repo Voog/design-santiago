@@ -522,7 +522,7 @@
 }));
 ;(function($) {
   // ===========================================================================
-  // Function to change menu language name font size.
+  // Function to change menu language name font size or hide it.
   // ===========================================================================
   var languageNameResize = document.getElementsByClassName('menu-language-name');
 
