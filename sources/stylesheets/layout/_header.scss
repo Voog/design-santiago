@@ -61,7 +61,7 @@
       width: auto !important;
       min-width: 120px;
     }
-    @include breakpoint (max-width $small) {
+    @include breakpoint (max-width $small-down) {
       min-width: 0px;
     }
   }

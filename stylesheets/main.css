@@ -164,7 +164,7 @@
     min-width: 120px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 319px) {
   .layout-header__title .image-container {
     min-width: 0px;
   }
