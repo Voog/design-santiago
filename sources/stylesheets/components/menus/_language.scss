@@ -232,9 +232,6 @@
       @include breakpoint($medium-up) {
         font-size: 16px;
       }
-      @include breakpoint(max-width $medium) {
-        display: none;
-      }
     }
 
     .language-menu-mode-list.language-flags-enabled & {
