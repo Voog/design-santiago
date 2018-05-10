@@ -158,6 +158,17 @@
             flex-grow: 1;
   }
 }
+@media (max-width: 640px) {
+  .layout-header__title .image-container {
+    width: auto !important;
+    min-width: 120px;
+  }
+}
+@media (max-width: 319px) {
+  .layout-header__title .image-container {
+    min-width: 0px;
+  }
+}
 .layout-header__options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1479,6 +1490,11 @@ label .form_control_indicator::before {
 }
 .menu-language .menu-item {
   position: relative;
+}
+@media (min-width: 641px) {
+  .menu-language .menu-item .language-name-resize {
+    font-size: 16px;
+  }
 }
 .language-menu-mode-list.language-flags-enabled .menu-language .menu-item {
   vertical-align: middle;
