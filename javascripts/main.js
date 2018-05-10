@@ -524,17 +524,21 @@
   // ===========================================================================
   // Function to change menu language name font size or hide it.
   // ===========================================================================
-  var changeMenuLanguageName = function () {
+  var changeMenuLanguageName = function() {
 
     var menuLanguageName = document.querySelectorAll('.menu-language-name');
+    if (!menuLanguageName) { return; }
 
     if (menuLanguageName.length > 2) {
-      $('.menu-language-name').addClass('language-name-resize');
+      menuLanguageName.forEach(function(el) {
+        el.classList.add('language-name-resize');
+      })
     } else {
-      $('.menu-language-name').removeClass('language-name-resize');
+      menuLanguageName.forEach(function(el) {
+        el.classList.remove('language-name-resize');
+      })
     }
   };
-
   // ===========================================================================
   // Function to detect if site is displayed in editmode.
   // ===========================================================================
