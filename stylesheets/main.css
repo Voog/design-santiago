@@ -899,6 +899,9 @@
   background-repeat: no-repeat;
   border-radius: 0;
 }
+.form_field_select::-ms-expand {
+  display: none;
+}
 
 .comment-form .form_field_textarea {
   height: 36px;
