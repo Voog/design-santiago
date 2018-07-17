@@ -77,6 +77,10 @@
   background-position: right 10px center;
   background-repeat: no-repeat;
   border-radius: 0;
+
+  &::-ms-expand {
+    display: none;
+  }
 }
 
 .form_field_textarea {
