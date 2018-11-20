@@ -13,7 +13,7 @@
 
       <div class="layout-header__options">
         {% if show_language_menu_popover %}
-          <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-menu-language-popover-btn" data-lang-code="{{ page.language_code }}" data-sideclick="prevent" {{ edy_intro_add_lang }}>
+          <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-menu-language-popover-btn" data-lang-code="{{ page.language_locale }}" data-sideclick="prevent" {{ edy_intro_add_lang }}>
             <span>{{ current_language_title }}</span>
             <svg class="menu-language-btn-circle" width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#ico-circle"></use>
