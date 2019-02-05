@@ -8,13 +8,13 @@
     if (!menuLanguageName) { return; }
 
     if (menuLanguageName.length > 2) {
-      menuLanguageName.forEach(function(el) {
-        el.classList.add('language-name-resize');
-      })
+      for (i = 0; i < menuLanguageName.length; ++i) {
+        menuLanguageName[i].classList.add('language-name-resize');
+      }
     } else {
-      menuLanguageName.forEach(function(el) {
-        el.classList.remove('language-name-resize');
-      })
+      for (i = 0; i < menuLanguageName.length; ++i) {
+        menuLanguageName[i].classList.remove('language-name-resize');
+      }
     }
   };
 
