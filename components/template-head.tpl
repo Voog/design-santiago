@@ -47,6 +47,9 @@
 {% comment %}MISC{% endcomment %}
 {% include "template-meta" %}
 
+{% comment %}BREADCRUMBS{% endcomment %}
+{% sd_breadcrumbs %}
+
 {% if blog %}{{ blog.rss_link }}{% endif %}
 
 {{ site.stats_header }}
