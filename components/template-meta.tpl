@@ -2,7 +2,7 @@
 {% comment %}https://developers.facebook.com/tools/debug - Debug after each modification{% endcomment %}
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{% if article %}{{ article.url | remove_first: "/" }}{% elsif element %}{{ element.url | remove_first: "/" }}{% else %}{{ page.url | remove_first: "/" }}{% endif %}">
-<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:title" content="{% title %}">
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
