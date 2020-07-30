@@ -20,12 +20,14 @@
 
         {% if editmode %}
           <div class="btns-container">{% addbutton %}</div>
+          <div class="btns-container">{% include "blog-settings-editor" %}</div>
         {% endif %}
 
         <div class="layout-body__content">
           <main class="articles-container">
 
             {% for article in articles %}
+              {% include "blog-settings-variables" %}
               {% include "blog-article" list_item: true %}
             {% endfor %}
           </main>
