@@ -333,27 +333,6 @@
       "file": "components/menu-language-popover.tpl",
       "layout_name": "menu-language-popover",
       "title": "menu-language-popover"
-    },
-    {
-      "title": "article-settings-editor",
-      "layout_name": "article-settings-editor",
-      "content_type": "component",
-      "component": true,
-      "file": "components/article-settings-editor.tpl"
-    },
-    {
-      "title": "blog-settings-editor",
-      "layout_name": "blog-settings-editor",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-settings-editor.tpl"
-    },
-    {
-      "title": "blog-settings-variables",
-      "layout_name": "blog-settings-variables",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-settings-variables.tpl"
     }
   ],
   "assets": [

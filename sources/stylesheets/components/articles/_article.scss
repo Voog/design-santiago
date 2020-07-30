@@ -42,21 +42,6 @@
     appearance: none;
   }
 
-}  
-  .post-date {
-  
-    &.hide-article-date {
-      display: none;
-    }
-  }
-
-  .post-bottom {
-    padding: 20px 0 0;
-
-    &.hide-article-comments {
-      display: none;
-    }
-  }
   //&__date {
   //}
 
@@ -64,4 +49,4 @@
   //}
 
   // NOTE: Article content area modifiers are located in "sources/stylesheets/content-area/_container.scss".
-
+}
