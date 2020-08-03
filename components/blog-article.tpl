@@ -1,3 +1,4 @@
+{% include "blog-settings-variables" %}
 <article class="article">
   <header class="article__header">
     <h1 class="article__title">
@@ -16,7 +17,8 @@
       {% assign article_date_format = "long" %}
     {% endif %}
 
-    <time class="article__date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+    <time class="post-date formatted cfx{% if article_data_show_date_defined != true %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+ 
   </header>
 
   <div class="article__content" data-search-indexing-allowed="true">

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" layout_blog: true %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }} {{ site_search_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-lingual-mode="{{ site_lingual_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
@@ -20,12 +21,14 @@
 
         {% if editmode %}
           <div class="btns-container">{% addbutton %}</div>
+          <div class="btns-container">{% include "blog-settings-editor" %}</div>
         {% endif %}
 
         <div class="layout-body__content">
           <main class="articles-container">
 
             {% for article in articles %}
+              
               {% include "blog-article" list_item: true %}
             {% endfor %}
           </main>
