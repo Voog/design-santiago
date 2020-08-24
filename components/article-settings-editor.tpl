@@ -1,7 +1,7 @@
 {% if editmode %}
-<div class="article-settings-wrap">
-  <button class="article-settings-editor"></button>
-</div>
+  <div class="btns-container">
+    <button class="article-settings-editor"></button>
+  </div>
 {% endif %}
 
 {% editorjsblock %}
@@ -34,7 +34,7 @@
     if (articleDataValues.show_comments !== null && articleDataValues.show_comments !== '') {
       show_comments = Boolean(articleDataValues.show_comments)
     } else if (globalDataValues.show_comments !== null && globalDataValues.show_comments !== '') {
-      show_comments = Boolean(globalDataValues.show_comments)
+      show_comments = Boolean(globalDataValues.show_comments);
     } else {
       show_comments = true;
     }
@@ -42,7 +42,7 @@
     if (articleDataValues.show_date !== null && articleDataValues.show_date !== '') {
       show_date = Boolean(articleDataValues.show_date)
     } else if (globalDataValues.show_dates !== null && globalDataValues.show_dates !== '') {
-      show_date = Boolean(globalDataValues.show_dates)
+      show_date = Boolean(globalDataValues.show_dates);
     } else {
       show_date = true;
     }
@@ -63,7 +63,7 @@
           "states": {
             "on": true,
             "off": false
-          },
+          }
         },
       {
         "titleI18n": "publishing_date",
@@ -73,8 +73,8 @@
         "states": {
           "on": true,
           "off": false
-        },
-      },
+        }
+      }
       ],
 
       // Binded data object which should contain custom data object.
@@ -102,11 +102,9 @@
         }
 
         if (data.show_comments == true) {
-          $articleComment.removeClass('hide-article-comments');
-          $articleComment.addClass('show-article-comments');
+          $articleComment.show();
         } else if (data.show_comments == false) {
-          $articleComment.removeClass('show-article-comments');
-          $articleComment.addClass('hide-article-comments');
+          $articleComment.hide();
         }
       },
 

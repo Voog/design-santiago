@@ -1,7 +1,7 @@
 {% if editmode %}
-<div class="blog-settings-wrap">
-  <button class="blog-settings-editor"></button>
-</div>
+  <div class="btns-container">
+    <button class="blog-settings-editor"></button>
+  </div>
 {% endif %}
 
 {% editorjsblock %}
@@ -13,7 +13,7 @@
   <!-- Setings popover initiation. -->
   <script>
     var siteData = new Edicy.CustomData({
-      type: 'site',
+      type: 'site'
     });
 
     {% if site.data.article_settings %}
@@ -25,13 +25,13 @@
     var show_comments, show_dates;
 
     if (globalDataValues.show_comments !== null && globalDataValues.show_comments !== '') {
-      show_comments = Boolean(globalDataValues.show_comments)
+      show_comments = Boolean(globalDataValues.show_comments);
     } else {
       show_comments = true;
     }
 
     if (globalDataValues.show_dates !== null && globalDataValues.show_dates !== '') {
-      show_dates = Boolean(globalDataValues.show_dates)
+      show_dates = Boolean(globalDataValues.show_dates);
     } else {
       show_dates = true;
     }
@@ -54,7 +54,7 @@
           "states": {
             "on": true,
             "off": false
-          },
+          }
         },
         {
           "titleI18n": "publishing_date",
@@ -64,8 +64,8 @@
           "states": {
             "on": true,
             "off": false
-          },
-        },
+          }
+        }
       ],
        
       // Binded data object which should contain custom data object.

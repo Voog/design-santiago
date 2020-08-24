@@ -45,11 +45,8 @@
 
 }  
 
-.post-date {
-  
-  &.hide-article-date {
-    display: none;
-  }
+.post-date.hide-article-date {
+  display: none;
 }
 
 .post-bottom {

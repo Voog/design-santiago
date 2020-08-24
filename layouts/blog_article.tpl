@@ -16,11 +16,10 @@
       
 
       <div class="layout-body layout-body--narrow">
-        <div class="btns-container">
+        
           {% if editmode %}
             {% include "article-settings-editor" %}
           {% endif %}
-        </div>
         <main class="layout-body__content">
           {% include "blog-article" %}
 
@@ -28,10 +27,11 @@
 
           {% include "blog-article-navigation" %}
 
-          <section class="post-bottom formatted cfx{% if show_article_comments == false %} hide-article-comments{% endif %}">
-            {% include "blog-article-comments" %}
-          </section>
-          
+          {% if editmode or show_article_comments == true %}
+            <section class="post-bottom formatted cfx"{% if editmode and show_article_comments == false %} style="display: none;"{% endif %}>
+              {% include "blog-article-comments" %}
+            </section>
+          {% endif %}  
         </main>
       </div>
 
