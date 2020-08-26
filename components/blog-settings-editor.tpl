@@ -19,8 +19,8 @@
     {% if site.data.article_settings %}
       var globalDataValues = {{ site.data.article_settings | json }};
     {% else %}
-       var globalDataValues = {}
-    {% endif %};
+       var globalDataValues = {};
+    {% endif %}
 
     var show_comments, show_dates;
 
@@ -77,7 +77,7 @@
       buttonTitleI18n: "blog_settings",
 
        preview: function(data) {
-       var $articleDate = $('.post-date.site-data');
+        var $articleDate = $('.post-date.site-data');
         if (data.show_dates == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');

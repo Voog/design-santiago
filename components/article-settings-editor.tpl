@@ -20,14 +20,14 @@
     {% if article.data.article_settings %}
       var articleDataValues = {{ article.data.article_settings | json }};
     {% else %}
-      var articleDataValues = {}
-    {% endif %};
+      var articleDataValues = {};
+    {% endif %}
 
     {% if site.data.article_settings %}
       var globalDataValues = {{ site.data.article_settings | json }};
     {% else %}
-       var globalDataValues = {}
-    {% endif %};
+       var globalDataValues = {};
+    {% endif %}
 
     var show_comments, show_date;
 
@@ -65,16 +65,16 @@
             "off": false
           }
         },
-      {
-        "titleI18n": "publishing_date",
-        "type": "toggle",
-        "key": "show_date",
-        "tooltipI18n": "toggle_current_article_date",
-        "states": {
-          "on": true,
-          "off": false
+        {
+          "titleI18n": "publishing_date",
+          "type": "toggle",
+          "key": "show_date",
+          "tooltipI18n": "toggle_current_article_date",
+          "states": {
+            "on": true,
+            "off": false
+          }
         }
-      }
       ],
 
       // Binded data object which should contain custom data object.
@@ -87,16 +87,11 @@
 
       preview: function(data) {
        var $articleDate = $('.post-date'),
-        $articleHeader = $('.post-header'),
         $articleComment =$('.post-bottom');
         if (data.show_date == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');
-          $articleHeader.removeClass('hide-article-date');
-          $articleHeader.addClass('show-article-date');
         } else if (data.show_date == false) {
-          $articleHeader.removeClass('show-article-date');
-          $articleHeader.addClass('hide-article-date');
           $articleDate.removeClass('show-article-date');
           $articleDate.addClass('hide-article-date');
         }
