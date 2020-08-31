@@ -2493,6 +2493,17 @@ label .form_control_indicator::before {
           appearance: none;
 }
 
+.post-date.hide-article-date {
+  display: none;
+}
+
+.post-bottom {
+  padding: 20px 0 0;
+}
+.post-bottom.hide-article-comments {
+  display: none;
+}
+
 .article-nav {
   position: relative;
   margin-right: auto;
@@ -3488,7 +3499,7 @@ label .form_control_indicator::before {
 }
 @media (min-width: 641px) {
   .btns-container {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }

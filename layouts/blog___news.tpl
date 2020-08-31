@@ -20,6 +20,7 @@
 
         {% if editmode %}
           <div class="btns-container">{% addbutton %}</div>
+          {% include "blog-settings-editor" %}
         {% endif %}
 
         <div class="layout-body__content">
