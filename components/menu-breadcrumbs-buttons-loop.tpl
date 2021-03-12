@@ -13,13 +13,7 @@
 
         {% unless item.layout_title == product_layout %}
           <li class="menu-sub__item menu-sub__item--cms">
-            {% assign add_product_label = 'add_product' | lce %}
-            {% assign add_product_title = 'add_product_page' | lce %}
-            {% if item.layout_title == product_list_layout %}
-              {% menuadd parent=item label=add_product_label lable=add_product_title layout_title="Product" %}
-            {% else %}
-              {% menuadd parent=item %}
-            {% endif %}
+            {% include 'add-page-button', _menuItem: item %}
           </li>
         {% endunless %}
       {% endif %}
