@@ -12,9 +12,7 @@
         {% endif %}
 
         {% unless item.layout_title == product_layout %}
-          <li class="menu-sub__item menu-sub__item--cms">
-            {% include 'add-page-button', _menuItem: item %}
-          </li>
+            {%- include 'add-page-button', _menuItem: item -%}
         {% endunless %}
       {% endif %}
     {% endif %}
