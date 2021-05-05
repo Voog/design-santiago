@@ -6,14 +6,17 @@
 .layout-header {
   max-width: var(--main__width);
 }
+
 @media (max-width: 640px) {
   .layout-header::before {
     background-color: var(--main__color-secondary);
   }
 }
+
 .layout-header__options.headroom--pinned.headroom--not-top::after {
   background-color: var(--main__color-secondary);
 }
+
 .layout-header__options.headroom--not-top::after {
   background-color: var(--main__color-secondary);
 }
@@ -21,14 +24,17 @@
 .layout-body {
   max-width: var(--main__width);
 }
+
 .layout-body__content {
   background-color: var(--layout-body-narrow__background-color);
 }
+
 @media (min-width: 641px) {
   .layout-body__content {
     padding: var(--layout-body-narrow__padding);
   }
 }
+
 .layout-body--narrow {
   max-width: var(--layout-body-narrow__max-width);
 }
@@ -38,39 +44,46 @@
     text-align: var(--menu-main__text-alignment);
   }
 }
+
 .menu-main__item:not(.menu-main__item--selected) a {
   font-style: var(--menu-main__font-style);
   font-weight: var(--menu-main__font-weight);
   color: var(--menu-main__color);
   text-transform: var(--menu-main__text-transform);
 }
+
 @media (min-width: 641px) {
   .menu-main__item:not(.menu-main__item--selected) a {
     border-bottom: var(--menu-main__text-decoration);
   }
 }
+
 .menu-main__item:not(.menu-main__item--selected) a:hover {
   font-style: var(--menu-main-hover__font-style);
   font-weight: var(--menu-main-hover__font-weight);
   color: var(--menu-main-hover__color);
   text-transform: var(--menu-main-hover__text-transform);
 }
+
 @media (min-width: 641px) {
   .menu-main__item:not(.menu-main__item--selected) a:hover {
     border-bottom: var(--menu-main-hover__text-decoration);
   }
 }
+
 .menu-main__item--selected a {
   font-style: var(--menu-main-active__font-style);
   font-weight: var(--menu-main-active__font-weight);
   color: var(--menu-main-active__color);
   text-transform: var(--menu-main-active__text-transform);
 }
+
 @media (min-width: 641px) {
   .menu-main__item--selected a {
     border-bottom: var(--menu-main-active__text-decoration);
   }
 }
+
 @media (min-width: 641px) {
   .menu-main__item a {
     font-size: var(--menu-main__font-size);
@@ -80,17 +93,20 @@
 .menu-sub {
   text-align: var(--menu-sub__text-alignment);
 }
+
 .menu-sub__separator {
   font-style: var(--menu-sub__font-style);
   color: var(--menu-sub__color);
   text-transform: var(--menu-sub__text-transform);
   opacity: var(--menu-sub__opacity);
 }
+
 @media (min-width: 641px) {
   .menu-sub__separator {
     font-size: var(--menu-sub__font-size);
   }
 }
+
 .menu-sub__item:not(.menu-sub__item--current) a:not(.menu-sub__link--untranslated) {
   font-style: var(--menu-sub__font-style);
   font-weight: var(--menu-sub__font-weight);
@@ -100,6 +116,7 @@
   text-transform: var(--menu-sub__text-transform);
   opacity: var(--menu-sub__opacity);
 }
+
 .menu-sub__item:not(.menu-sub__item--current) a:not(.menu-sub__link--untranslated):hover {
   font-style: var(--menu-sub-hover__font-style);
   font-weight: var(--menu-sub-hover__font-weight);
@@ -109,6 +126,7 @@
   text-transform: var(--menu-sub-hover__text-transform);
   opacity: var(--menu-sub-hover__opacity);
 }
+
 .menu-sub__item--current a {
   font-style: var(--menu-sub-active__font-style);
   font-weight: var(--menu-sub-active__font-weight);
@@ -118,6 +136,7 @@
   text-transform: var(--menu-sub-active__text-transform);
   opacity: var(--menu-sub-active__opacity);
 }
+
 @media (min-width: 641px) {
   .menu-sub__item a {
     font-size: var(--menu-sub__font-size);
@@ -142,9 +161,11 @@
   line-height: var(--content-area-text__line-height);
   color: var(--content-area-text__color);
 }
+
 .layout-header__title .content-area {
   color: var(--main__color-secondary);
 }
+
 .layout-footer .content-area {
   font-size: var(--layout-footer__font-size);
   font-style: var(--layout-footer__font-style);
@@ -165,11 +186,13 @@
           text-decoration: var(--title__text-decoration);
   text-transform: var(--title__text-transform);
 }
+
 @media (min-width: 641px) {
   .layout-body .content-area h1 {
     text-align: var(--title__text-alignment);
   }
 }
+
 .content-area h2 {
   font-style: var(--heading__font-style);
   font-weight: var(--heading__font-weight);
@@ -179,11 +202,13 @@
           text-decoration: var(--heading__text-decoration);
   text-transform: var(--heading__text-transform);
 }
+
 @media (min-width: 641px) {
   .content-area h2 {
     font-size: var(--heading__font-size);
   }
 }
+
 .content-area h3 {
   font-style: var(--subheading__font-style);
   font-weight: var(--subheading__font-weight);
@@ -192,21 +217,25 @@
           text-decoration: var(--subheading__text-decoration);
   text-transform: var(--subheading__text-transform);
 }
+
 @media (min-width: 641px) {
   .content-area h3 {
     font-size: var(--subheading__font-size);
   }
 }
+
 .content-area h3,
 .content-area h4,
 .content-area h5,
 .content-area h6 {
   color: var(--subheading__color);
 }
+
 .content-area p {
   font-size: var(--content-area-text__font-size);
   line-height: var(--content-area-text__line-height);
 }
+
 .content-area a {
   font-style: var(--content-area-link__font-style);
   font-weight: var(--content-area-link__font-weight);
@@ -215,6 +244,7 @@
           text-decoration: var(--content-area-link__text-decoration);
   text-transform: var(--content-area-link__text-transform);
 }
+
 .content-area a:not(.custom-btn):hover {
   font-style: var(--content-area-link-hover__font-style);
   font-weight: var(--content-area-link-hover__font-weight);
@@ -223,6 +253,7 @@
           text-decoration: var(--content-area-link-hover__text-decoration);
   text-transform: var(--content-area-link-hover__text-transform);
 }
+
 .content-area .custom-btn {
   padding: calc(var(--content-area-button__padding) - 6px) var(--content-area-button__padding);
   font-size: var(--content-area-button__font-size);
@@ -233,6 +264,7 @@
           text-decoration: var(--content-area-button__text-decoration);
   text-transform: var(--content-area-button__text-transform);
 }
+
 .content-area .custom-btn:hover {
   font-style: var(--content-area-button-hover__font-style);
   font-weight: var(--content-area-button-hover__font-weight);
@@ -241,22 +273,27 @@
           text-decoration: var(--content-area-button-hover__text-decoration);
   text-transform: var(--content-area-button-hover__text-transform);
 }
+
 .content-area .custom-btn:not(.custom-btn-disabled) {
   background-color: var(--content-area-button__background-color);
   opacity: var(--content-area-button__opacity);
 }
+
 .content-area .custom-btn:not(.custom-btn-disabled):hover {
   background-color: var(--content-area-button-hover__background-color);
   opacity: var(--content-area-button-hover__opacity);
 }
+
 [data-view-state="editmode"] .content-area .custom-btn.edy-buy-button {
   padding: calc(var(--content-area-button__padding) - 7px) calc(var(--content-area-button__padding) - 1.22px);
 }
+
 .content-area table td,
 .content-area table th {
   padding: var(--content-area-table__padding);
   font-size: var(--content-area-table__font-size);
 }
+
 .content-area table td::before,
 .content-area table th::before {
   border-color: var(--content-area-table__border-color);
@@ -316,6 +353,7 @@
   border-color: var(--content-area-form-field-text__background-color);
   outline-color: var(--content-area-form-field-text__border-color);
 }
+
 .form_field_radio:checked + .form_control_indicator::before {
   background-color: var(--content-area-form-field-text__color);
 }
@@ -332,6 +370,7 @@
   background-color: var(--content-area-button__background-color);
   opacity: var(--content-area-button__opacity);
 }
+
 .form_submit input:hover {
   font-style: var(--content-area-button-hover__font-style);
   font-weight: var(--content-area-button-hover__font-weight);
@@ -351,7 +390,8 @@
   background-color: var(--main__color-secondary);
 }
 
-.site-search-btn:hover .search-ico--small, .site-search-opened .site-search-btn .search-ico--small {
+.site-search-btn:hover .search-ico--small,
+.site-search-opened .site-search-btn .search-ico--small {
   fill: var(--main__color-primary);
 }
 
@@ -370,22 +410,27 @@
 .search-input {
   color: var(--main__color-primary);
 }
+
 .search-input::-webkit-input-placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }
+
 .search-input:-ms-input-placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }
+
 .search-input::-ms-input-placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }
+
 .search-input::placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }
+
 .search-input:focus {
   border-color: var(--main__color-primary);
 }
@@ -401,9 +446,11 @@
 .voog-search-modal-result h3 a {
   color: var(--main__color-primary);
 }
+
 .voog-search-modal-result p {
   color: var(--main__color-primary);
 }
+
 .voog-search-modal-result em::before {
   background-color: var(--main__color-primary);
 }
@@ -415,6 +462,7 @@
 .item-list-page .content-item-box {
   color: var(--content-item-box__color);
 }
+
 @media (min-width: 641px) {
   .item-list-page .content-item-box {
     width: var(--content-item-box__width);
@@ -433,6 +481,7 @@
           text-decoration: var(--content-item-box__text-decoration);
   text-transform: var(--content-item-box__text-transform);
 }
+
 @media (min-width: 641px) {
   .item-list-page .item-title {
     font-size: var(--content-item-box__font-size);
@@ -448,6 +497,7 @@
           text-decoration: var(--content-area-article-title__text-decoration);
   text-transform: var(--content-area-article-title__text-transform);
 }
+
 .article__date {
   font-size: var(--content-area-article-date__font-size);
   font-style: var(--content-area-article-date__font-style);
@@ -458,6 +508,7 @@
   text-transform: var(--content-area-article-date__text-transform);
   opacity: var(--content-area-article-date__opacity);
 }
+
 .article__read-more-btn {
   font-style: var(--content-area-button__font-style);
   font-weight: var(--content-area-button__font-weight);
@@ -468,6 +519,7 @@
   background-color: var(--content-area-button__background-color);
   opacity: var(--content-area-button__opacity);
 }
+
 .article__read-more-btn:hover {
   font-style: var(--content-area-button-hover__font-style);
   font-weight: var(--content-area-button-hover__font-weight);
@@ -486,6 +538,7 @@
 .comments {
   max-width: calc(var(--layout-body-narrow__max-width) - 260px);
 }
+
 .comments__title {
   color: var(--main__color-primary);
 }
@@ -495,9 +548,11 @@
   padding-bottom: var(--layout-footer__padding);
   background-color: var(--layout-footer__background-color);
 }
+
 .layout-footer__container {
   max-width: var(--main__width);
 }
+
 .layout-footer__section--voog-reference a {
   fill: var(--main__color-primary);
 }
@@ -505,6 +560,7 @@
 .layout-root .edy-ecommerce-shopping-cart-button {
   font-family: var(--main__font-family);
 }
+
 @media (max-width: 640px) {
   .layout-root .edy-ecommerce-shopping-cart-button {
     color: var(--main__color-secondary);
@@ -513,6 +569,7 @@
     background-color: var(--main__color-secondary);
   }
 }
+
 .edy-ecommerce-shopping-cart-button::after {
   background-color: var(--main__color-secondary);
 }
@@ -526,12 +583,14 @@
     color: var(--main__color-secondary);
   }
 }
+
 @media (min-width: 641px) {
   .edy-ecommerce-product-count {
     color: var(--main__color-primary);
     background-color: var(--main__color-secondary);
   }
 }
+
 .layout-root .edy-ecommerce-product-count {
   font-family: var(--main__font-family);
 }
@@ -539,12 +598,15 @@
 .layout-root .edy-ecommerce-modal {
   font-family: var(--main__font-family);
 }
+
 .layout-root .edy-ecommerce-modal .edy-ecommerce-modal-wrapper a {
   color: var(--main__color-secondary);
 }
+
 .layout-root .edy-ecommerce-modal h1 {
   color: var(--main__color-secondary);
 }
+
 .layout-root .edy-ecommerce-modal footer button {
   display: inline-block;
   font-family: inherit;
@@ -558,6 +620,7 @@
      -moz-appearance: none;
           appearance: none;
 }
+
 .layout-root .edy-ecommerce-modal footer button, .layout-root .edy-ecommerce-modal footer button.-primary {
   font-style: var(--content-area-button__font-style);
   font-weight: var(--content-area-button__font-weight);
@@ -568,6 +631,7 @@
   background-color: var(--content-area-button__background-color);
   opacity: var(--content-area-button__opacity);
 }
+
 .layout-root .edy-ecommerce-modal footer button:hover, .layout-root .edy-ecommerce-modal footer button.-primary:hover {
   font-style: var(--content-area-button-hover__font-style);
   font-weight: var(--content-area-button-hover__font-weight);
@@ -587,6 +651,7 @@
   color: var(--main__color-secondary);
 }
 
-.not-loaded .loader::before, .is-loaded .loader::before {
+.not-loaded .loader::before,
+.is-loaded .loader::before {
   border-top-color: var(--main__color-primary);
 }

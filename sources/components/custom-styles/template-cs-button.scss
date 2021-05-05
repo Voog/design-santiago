@@ -69,14 +69,14 @@
   */
   #{--content-area-button__color}: $color-white;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "text_color",
-        "editor": "colorPicker",
-        "featured": true,
-        "scope": "global"
-      */
-      #{--content-area-button-hover__color}: $color-white;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "text_color",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global"
+  */
+  #{--content-area-button-hover__color}: $color-white;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -90,14 +90,14 @@
   */
   #{--content-area-button__background-color}: $color-secondary;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "background_color",
-        "editor": "colorPicker",
-        "featured": true,
-        "scope": "global"
-      */
-      #{--content-area-button-hover__background-color}: $color-secondary;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "background_color",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global"
+  */
+  #{--content-area-button-hover__background-color}: $color-secondary;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -111,17 +111,17 @@
   */
   #{--content-area-button__opacity}: 1;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "opacity",
-        "editor": "rangePicker",
-        "min": 0.1,
-        "max": 1,
-        "step": 0.1,
-        "unit": "",
-        "scope": "global"
-      */
-      #{--content-area-button-hover__opacity}: .75;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "opacity",
+    "editor": "rangePicker",
+    "min": 0.1,
+    "max": 1,
+    "step": 0.1,
+    "unit": "",
+    "scope": "global"
+  */
+  #{--content-area-button-hover__opacity}: .75;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -140,19 +140,19 @@
   */
   #{--content-area-button__font-weight}: 400;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "font_size",
-        "type": "button",
-        "editor": "toggleIcon",
-        "states": {
-          "on": "700",
-          "off": "400"
-        },
-        "icon": "bold",
-        "scope": "global"
-      */
-      #{--content-area-button-hover__font-weight}: 400;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "font_size",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "700",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  #{--content-area-button-hover__font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -171,19 +171,19 @@
   */
   #{--content-area-button__font-style}: normal;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "font_style",
-        "type": "button",
-        "editor": "toggleIcon",
-        "states": {
-          "on": "italic",
-          "off": "normal"
-        },
-        "icon": "italic",
-        "scope": "global"
-      */
-      #{--content-area-button-hover__font-style}: normal;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "font_style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  #{--content-area-button-hover__font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -202,19 +202,19 @@
   */
   #{--content-area-button__text-decoration}: none;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "text_decoration",
-        "type": "button",
-        "editor": "toggleIcon",
-        "states": {
-          "on": "underline",
-          "off": "none"
-        },
-        "icon": "underline",
-        "scope": "global"
-      */
-      #{--content-area-button-hover__text-decoration}: none;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "text_decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  #{--content-area-button-hover__text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["button", "normal"],
@@ -233,19 +233,19 @@
   */
   #{--content-area-button__text-transform}: none;
 
-      /* VoogStyle
-        "pathI18n": ["button", "hover"],
-        "titleI18n": "text_transform",
-        "type": "button",
-        "editor": "toggleIcon",
-        "states": {
-          "on": "uppercase",
-          "off": "none"
-        },
-        "icon": "uppercase",
-        "scope": "global"
-      */
-      #{--content-area-button-hover__text-transform}: none;
+  /* VoogStyle
+    "pathI18n": ["button", "hover"],
+    "titleI18n": "text_transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  #{--content-area-button-hover__text-transform}: none;
 
   // scss-lint:enable Comment, Indentation
 }

@@ -50,9 +50,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
+      "file": "components/blog-settings-variables.tpl",
+      "layout_name": "blog-settings-variables",
+      "title": "blog-settings-variables"
     },
     {
       "content_type": "component",
@@ -134,6 +134,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/add-page-button.tpl",
+      "layout_name": "add-page-button",
+      "title": "add-page-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/layout-header.tpl",
       "layout_name": "layout-header",
       "title": "layout-header"
@@ -165,6 +172,13 @@
       "file": "components/layout-footer.tpl",
       "layout_name": "layout-footer",
       "title": "layout-footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
     },
     {
       "content_type": "component",
@@ -309,6 +323,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/article-settings-editor.tpl",
+      "layout_name": "article-settings-editor",
+      "title": "article-settings-editor"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/menu-breadcrumbs-items-loop.tpl",
       "layout_name": "menu-breadcrumbs-items-loop",
       "title": "menu-breadcrumbs-items-loop"
@@ -330,30 +351,16 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/blog-settings-editor.tpl",
+      "layout_name": "blog-settings-editor",
+      "title": "blog-settings-editor"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/menu-language-popover.tpl",
       "layout_name": "menu-language-popover",
       "title": "menu-language-popover"
-    },
-    {
-      "title": "article-settings-editor",
-      "layout_name": "article-settings-editor",
-      "content_type": "component",
-      "component": true,
-      "file": "components/article-settings-editor.tpl"
-    },
-    {
-      "title": "blog-settings-editor",
-      "layout_name": "blog-settings-editor",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-settings-editor.tpl"
-    },
-    {
-      "title": "blog-settings-variables",
-      "layout_name": "blog-settings-variables",
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-settings-variables.tpl"
     }
   ],
   "assets": [
