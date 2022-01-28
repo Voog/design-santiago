@@ -58,11 +58,15 @@
                 </header>
 
                 <div class="content-area area-normal" data-search-indexing-allowed="true">
-                  {%- editable product.description -%}
+                  {%- if editmode or product.description != blank -%}
+                    <div class="content-product-description">
+                      {%- editable product.description -%}
+                    </div>
+                  {% endif %}
+
                   {% content bind=product %}
 
                   {% include "buy-button" %}
-
                 </div>
               </div>
             </div>
@@ -82,8 +86,5 @@
     {% include "template-tools" %}
     {% include "content-item-tools" %}
 
-     <script>
-      site.handleProductPageContent();
-    </script>
   </body>
 </html>
