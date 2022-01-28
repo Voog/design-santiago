@@ -17,6 +17,10 @@
 // .content-inner {
 // }
 
+.product-content {
+  margin-top: 32px;
+}
+
 // TODO: Convert to BEM component block.
 .content-item-box {
   text-decoration: none;
@@ -242,6 +246,7 @@
 
     .with-image & {
       background-color: rgba($color-primary, .02);
+      width: 100%;
     }
 
     .without-image & {
