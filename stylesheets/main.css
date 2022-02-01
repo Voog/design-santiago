@@ -3872,14 +3872,6 @@ label .form_control_indicator::before {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-.with-image .item-top .top-inner.image-portrait {
-  height: 100%;
-}
-
-.with-image .item-top .top-inner.image-square, .with-image .item-top .top-inner.image-landscape {
-  width: 100%;
-}
-
 .without-image .item-top .top-inner {
   border-color: rgba(0, 0, 0, 0.1);
   border-style: solid;
@@ -3937,6 +3929,13 @@ label .form_control_indicator::before {
 
 .item-list-page .item-image {
   display: block;
+}
+
+.product-page .item-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .item-placeholder {

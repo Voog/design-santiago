@@ -29,14 +29,6 @@
 
                 {% if productImage != blank %}
                   {% assign item_image_state = "with-image" %}
-
-                  {% if productImage.width > productImage.height %}
-                    {% assign product_image_orientation = "image-landscape" %}
-                  {% elsif productImage.width == productImage.height %}
-                    {% assign product_image_orientation = "image-square" %}
-                  {% else %}
-                    {% assign product_image_orientation = "image-portrait" %}
-                  {% endif %}
                 {% else %}
                   {% assign item_image_state = "without-image" %}
                 {% endif %}
@@ -46,7 +38,7 @@
                     {%- if productImage != blank -%}
                       <div class="loader js-loader"></div>
                       <div class="top-inner aspect-ratio-inner product-page">
-                        {%- assign imageClass = "item-image not-cropped top-inner " | append: product_image_orientation -%}
+                        {%- assign imageClass = "item-image not-cropped" -%}
                         {% image productImage target_width: "1280" class: imageClass loading: "lazy" %}
                       </div>
                     {%- endif -%}
@@ -114,6 +106,6 @@
     <script>
       template.handleProductPageContent();
     </script>
-    
+
   </body>
 </html>
