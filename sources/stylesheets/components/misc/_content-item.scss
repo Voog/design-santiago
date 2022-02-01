@@ -20,13 +20,21 @@
 .product-content {
   margin-top: 32px;
 
+  .edy-buy-button-container {
+    padding-top: 24px;
+  }
+
   .without-image .item-top {
     background-image: url("../assets/ico-placeholder.svg");
-    background-color: rgba(0,0,0,0.05);
+    background-color: #F2F2F2;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.content-product-description {
+  opacity: 0.4;
 }
 
 // TODO: Convert to BEM component block.
@@ -337,11 +345,15 @@
 .product-price {
   font-weight: 700;
   font-size: 24px;
-  padding: 10px 0 20px 0;
+  padding: 12px 0 24px 0;
 }
 
 .product-price-divider {
   margin: 4px;
+}
+
+.content-product-wide {
+  padding-top: 32px;
 }
 
 .item-title {

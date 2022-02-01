@@ -7,6 +7,12 @@
     {% include "template-head" layout_product: true %}
   </head>
 
+  {% capture bottom_content_html %}{% unless editmode %}{% content bind=product name="content" %}{% endunless %}{% endcapture %}
+  {% capture bottom_content_size %}{{ bottom_content_html | size | minus: 1 }}{% endcapture %}
+  {% unless bottom_content_size contains "-" %}
+    {% assign bottom_content_has_content = true %}
+  {% endunless %}
+
   <body class="layout-container item-page">
     {% include "template-svg-spritesheet" %}
 
@@ -81,6 +87,15 @@
             </div>
           </div>
         </div>
+
+        {%- if bottom_content_has_content == true or editmode -%}
+          <section
+            class="content-product-wide"
+            data-search-indexing-allowed="true">
+            {% content bind=product name="content" %}
+          </section>
+        {%- endif -%}
+
       </main>
 
       {% include "layout-footer" %}
