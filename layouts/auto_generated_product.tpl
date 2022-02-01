@@ -52,12 +52,12 @@
                     {%- endif -%}
                   </div>
                 </div>
-                <div class="content-gallery content-area" data-search-indexing-allowed="true">
+                <div class="content-gallery content-area js-product-gallery" data-search-indexing-allowed="true">
                   {% content bind=product name="gallery" %}
                 </div>
               </div>
 
-              <div class="content-body-inner">
+              <div class="content-body-inner js-product-name-area">
                 <header class="content-header">
                   <div class="content-item-title content-area" data-search-indexing-allowed="true">
                     <h1>{%- editable product.name -%}</h1>
@@ -80,8 +80,9 @@
                   {% endif %}
 
                   {% content bind=product %}
-
-                  {% include "buy-button" %}
+                  <div class="js-buy-btn-content">
+                    {% include "buy-button" %}
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,5 +111,9 @@
     {% include "template-tools" %}
     {% include "content-item-tools" %}
 
+    <script>
+      template.handleProductPageContent();
+    </script>
+    
   </body>
 </html>

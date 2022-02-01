@@ -3599,7 +3599,7 @@ label .form_control_indicator::before {
 }
 
 .product-content .edy-buy-button-container {
-  padding-top: 24px;
+  padding: 24px 0;
 }
 
 .product-content .without-image .item-top {
