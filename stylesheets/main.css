@@ -3955,6 +3955,10 @@ label .form_control_indicator::before {
   margin: 4px;
 }
 
+.content-product-description {
+  padding-bottom: 12px;
+}
+
 .content-product-wide {
   padding-top: 32px;
 }
