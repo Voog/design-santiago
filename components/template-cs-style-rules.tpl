@@ -284,14 +284,9 @@
   opacity: var(--content-area-button-hover__opacity);
 }
 
-[data-view-state="editmode"] .content-area .custom-btn.edy-buy-button {
+[data-view-state="editmode"] .content-area .custom-btn.edy-buy-button:not(.custom-btn-disabled) {
   padding: calc(var(--content-area-button__padding) - 7px) calc(var(--content-area-button__padding) - 1.22px);
   background-color: var(--content-area-button__background-color);
-}
-
-[data-view-state="editmode"] .content-area .custom-btn.edy-buy-button:hover {
-  background-color: var(--content-area-button-hover__background-color);
-  opacity: var(--content-area-button-hover__opacity);
 }
 
 .content-area table td,

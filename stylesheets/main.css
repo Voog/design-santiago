@@ -857,6 +857,11 @@
   background-color: #ccc;
 }
 
+[data-view-state="editmode"] .content-area .custom-btn-disabled.edy-buy-button {
+  cursor: default;
+  background-color: #ccc;
+}
+
 .content-area .edy-positionable-container-center,
 .content-area .edy-positionable-container-left-block,
 .content-area .edy-positionable-container-right-block,

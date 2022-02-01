@@ -331,6 +331,13 @@
         cursor: default;
         background-color: $color-disabled;
       }
+
+      &.edy-buy-button {
+        [data-view-state="editmode"] & {
+          cursor: default;
+          background-color: $color-disabled;
+        }
+      }
       // scss-lint:enable NestingDepth
     }
   }
