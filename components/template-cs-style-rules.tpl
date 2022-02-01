@@ -313,6 +313,11 @@
   text-transform: var(--content-area-product-title__text-transform);
 }
 
+.product-price {
+  color: var(--main__color-primary);
+  font-family: var(--main__font-family);
+}
+
 .edy-fe-label,
 .form_field_label {
   font-size: var(--content-area-form-field-label__font-size);
@@ -417,7 +422,7 @@
   opacity: .25;
 }
 
-.search-input:-ms-input-placeholder {
+.search-input::-moz-placeholder {
   color: var(--main__color-primary);
   opacity: .25;
 }

@@ -19,6 +19,14 @@
 
 .product-content {
   margin-top: 32px;
+
+  .without-image .item-top {
+    background-image: url("../assets/ico-placeholder.svg");
+    background-color: rgba(0,0,0,0.05);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 // TODO: Convert to BEM component block.
