@@ -7,8 +7,16 @@
     {% include "template-head" layout_product: true %}
   </head>
 
-  {% capture bottom_content_html %}{% unless editmode %}{% content bind=product name="content" %}{% endunless %}{% endcapture %}
-  {% capture bottom_content_size %}{{ bottom_content_html | size | minus: 1 }}{% endcapture %}
+  {% capture bottom_content_html %}
+    {% unless editmode %}
+      {% content bind=product name="content" %}
+    {% endunless %}
+  {% endcapture %}
+
+  {% capture bottom_content_size %}
+    {{ bottom_content_html | size | minus: 1 }}
+  {% endcapture %}
+
   {% unless bottom_content_size contains "-" %}
     {% assign bottom_content_has_content = true %}
   {% endunless %}
@@ -25,9 +33,9 @@
           <div class="layout-body__content">
             <div class=" items-body">
               <div class="content-illustrations">
-                {% assign productImage = product.image %}
+                {% assign product_image = product.image %}
 
-                {% if productImage != blank %}
+                {% if product_image != blank %}
                   {% assign item_image_state = "with-image" %}
                 {% else %}
                   {% assign item_image_state = "without-image" %}
@@ -35,11 +43,11 @@
 
                 <div class="content-item-box {{ item_image_state }} js-content-item-box">
                   <div class="item-top">
-                    {%- if productImage != blank -%}
+                    {%- if product_image != blank -%}
                       <div class="loader js-loader"></div>
                       <div class="top-inner aspect-ratio-inner product-page">
-                        {%- assign imageClass = "item-image not-cropped" -%}
-                        {% image productImage target_width: "1280" class: imageClass loading: "lazy" %}
+                        {%- assign image_class = "item-image not-cropped" -%}
+                        {% image product_image target_width: "1280" class: image_class loading: "lazy" %}
                       </div>
                     {%- endif -%}
                   </div>
@@ -53,7 +61,7 @@
                 <header class="content-header">
                   <div class="content-item-title content-area" data-search-indexing-allowed="true">
                     <h1>{%- editable product.name -%}</h1>
-                    </div>
+                  </div>
                 </header>
 
                 <div class="product-price">

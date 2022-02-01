@@ -1077,8 +1077,6 @@
       var productImageContentBox = $('.js-content-item-box');
       var buyBtnContent = $('.js-buy-btn-content');
 
-      console.log($('.js-buy-btn-content .edy-buy-button-container').length)
-
       if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
         if ($(window).width() <= 640) {
           if ($('.js-buy-btn-content + .js-product-gallery').length <= 0) {
