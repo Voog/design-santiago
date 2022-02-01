@@ -3925,6 +3925,16 @@ label .form_control_indicator::before {
           box-sizing: border-box;
 }
 
+.product-price {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px 0 20px 0;
+}
+
+.product-price-divider {
+  margin: 4px;
+}
+
 .item-title {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
