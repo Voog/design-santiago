@@ -91,7 +91,7 @@
 
         {%- if bottom_content_has_content == true or editmode -%}
           <section
-            class="content-product-wide"
+            class="content-product-wide content-area"
             data-search-indexing-allowed="true">
             {% content bind=product name="content" %}
           </section>
