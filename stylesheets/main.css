@@ -3847,8 +3847,15 @@ label .form_control_indicator::before {
   height: auto;
 }
 
-.with-image .item-top .top-inner {
+.with-image .item-top .top-inner:not(.product-page) {
   background-color: rgba(0, 0, 0, 0.02);
+}
+
+.with-image .item-top .top-inner.image-portrait {
+  height: 100%;
+}
+
+.with-image .item-top .top-inner.image-square, .with-image .item-top .top-inner.image-landscape {
   width: 100%;
 }
 

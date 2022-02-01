@@ -245,8 +245,17 @@
     }
 
     .with-image & {
-      background-color: rgba($color-primary, .02);
-      width: 100%;
+      &:not(.product-page) {
+        background-color: rgba($color-primary, .02);
+      }
+
+      &.image-portrait {
+        height: 100%;
+      }
+      &.image-square,
+      &.image-landscape {
+        width: 100%;
+      }
     }
 
     .without-image & {
