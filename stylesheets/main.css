@@ -3610,10 +3610,6 @@ label .form_control_indicator::before {
   background-position: center;
 }
 
-.content-product-description {
-  opacity: 0.4;
-}
-
 .content-item-box {
   text-decoration: none;
 }
