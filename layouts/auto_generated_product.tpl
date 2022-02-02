@@ -62,7 +62,7 @@
               </div>
 
               <div class="flex-col w-46">
-                <div class="content-body-inner w-100 js-product-name-area">
+                <div class="content-body-inner w-100 js-product-content-right">
                   <header class="content-header">
                     <div class="content-item-title content-area" data-search-indexing-allowed="true">
                       <h1>{%- editable product.name -%}</h1>
