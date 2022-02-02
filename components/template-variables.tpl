@@ -89,11 +89,6 @@
   {% elsif layout_product %}
     {% assign content_container_title = "content" %}
     {% assign content_inner_title = "product" %}
-    {% assign auto_rendered = false %} 
-  {% elsif layout_auto_rendered_product %}
-    {% assign content_container_title = "content" %}
-    {% assign content_inner_title = "product" %}
-    {% assign auto_rendered = true %} 
   {% else %}
     {% assign content_container_title = "content" %}
     {% assign content_inner_title = "content" %}

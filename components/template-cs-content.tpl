@@ -110,7 +110,6 @@
     "scope": "global"
   */
   --content-area-product-title__color: #ed1c24;
-  {% if auto_rendered == true %}
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "price"],
     "titleI18n": "size",
@@ -227,7 +226,6 @@
     "scope": "global"
   */
   --content-area-product-description__color: #8D9091;
-  {% endif %}
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}"],
     "titleI18n": "image_radius",

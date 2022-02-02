@@ -150,7 +150,7 @@
     "scope": "global"
   */
   #{--content-area-product-title__color}: $color-secondary;
-  /*_LIQUID {% if auto_rendered == true %} LIQUID_*/
+  
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "price"],
     "titleI18n": "size",
@@ -276,8 +276,6 @@
     "scope": "global"
   */
   #{--content-area-product-description__color}: #8D9091;
-
-  /*_LIQUID {% endif %} LIQUID_*/
 
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}"],
