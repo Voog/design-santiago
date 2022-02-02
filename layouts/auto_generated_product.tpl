@@ -13,13 +13,15 @@
     {% endunless %}
   {% endcapture %}
 
-  {% capture bottom_content_size %}
-    {{ bottom_content_html | size | minus: 1 }}
+  {% assign bottom_content_size = bottom_content_html | strip | size %}
+
+  {% capture gallery_content_html %}
+    {% unless editmode %}
+      {% content bind=product name="gallery" %}
+    {% endunless %}
   {% endcapture %}
 
-  {% unless bottom_content_size contains "-" %}
-    {% assign bottom_content_has_content = true %}
-  {% endunless %}
+  {% assign gallery_content_size = gallery_content_html | strip | size %}
 
   <body class="layout-container item-page">
     {% include "template-svg-spritesheet" %}
@@ -50,9 +52,11 @@
                     {%- endif -%}
                   </div>
                 </div>
-                <div class="content-gallery content-area js-product-gallery" data-search-indexing-allowed="true">
-                  {% content bind=product name="gallery" %}
-                </div>
+                {%- if gallery_content_size > 0 or editmode -%}
+                  <div class="content-gallery content-area js-product-gallery" data-search-indexing-allowed="true">
+                    {% content bind=product name="gallery" %}
+                  </div>
+                {%- endif -%}
               </div>
 
               <div class="content-body-inner js-product-name-area">
@@ -87,7 +91,7 @@
           </div>
         </div>
 
-        {%- if bottom_content_has_content == true or editmode -%}
+        {%- if bottom_content_size > 0 or editmode -%}
           <section
             class="content-product-wide content-area"
             data-search-indexing-allowed="true">
