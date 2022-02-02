@@ -33,9 +33,8 @@
           <div class="layout-body__content">
             <div class=" items-body">
               <div class="content-illustrations">
-                {% assign product_image = product.image %}
 
-                {% if product_image != blank %}
+                {% if product.image != blank %}
                   {% assign item_image_state = "with-image" %}
                 {% else %}
                   {% assign item_image_state = "without-image" %}
@@ -43,11 +42,10 @@
 
                 <div class="content-item-box {{ item_image_state }} js-content-item-box">
                   <div class="item-top">
-                    {%- if product_image != blank -%}
-                      <div class="loader js-loader"></div>
+                    {%- if product.image != blank -%}
                       <div class="top-inner aspect-ratio-inner product-page">
                         {%- assign image_class = "item-image not-cropped" -%}
-                        {% image product_image target_width: "1280" class: image_class loading: "lazy" %}
+                        {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
                       </div>
                     {%- endif -%}
                   </div>
