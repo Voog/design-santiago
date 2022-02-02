@@ -1078,8 +1078,8 @@
       var buyBtnContent = $('.js-buy-btn-content');
 
       if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
-        if ($(window).width() <= 640) {
-          if ($('.js-buy-btn-content + .js-product-gallery').length <= 0) {
+        if ($(window).width() <= 639) {
+          if ($('.js-buy-btn-content + .js-product-gallery').length === 0) {
             buyBtnContent.append(productGallery);
           }
         } else {
