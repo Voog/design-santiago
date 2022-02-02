@@ -84,10 +84,10 @@
                       </div>
                     {% endif %}
 
-                    {% content bind=product %}
                     <div class="js-buy-btn-content">
                       {% include "buy-button" %}
                     </div>
+                    {% content bind=product %}
                   </div>
                 </div>
               </div>
