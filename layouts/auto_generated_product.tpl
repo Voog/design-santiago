@@ -30,7 +30,7 @@
       {% include "layout-header" %}
 
       <main class="layout-body layout-body--narrow">
-
+        {% include "menu-breadcrumbs-sd" %}
         <div class="content-inner product-content">
           <div class="layout-body__content">
             <div class=" items-body">
