@@ -33,7 +33,7 @@
         {% include "menu-breadcrumbs-sd" %}
         <div class="content-inner product-content">
           <div class="layout-body__content">
-            <div class=" items-body">
+            <div class="items-body">
               <div class="flex-col w-54">
                 <div class="content-illustrations">
 
