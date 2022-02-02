@@ -71,7 +71,7 @@
                     {{ product.price_min_with_tax | money_with_currency: product.currency -}}
                     <span class="product-price-divider">–</span>
                   {%- endif -%}
-                  {{ product.price_max_with_tax | money_with_currency: product.currency }}
+                  {{ product.price_max_with_tax | money_with_currency: product.currency -}}
                 </div>
 
                 <div class="content-area area-normal" data-search-indexing-allowed="true">
@@ -118,6 +118,5 @@
        template.handleProductPageContent();
       }
     </script>
-
   </body>
 </html>
