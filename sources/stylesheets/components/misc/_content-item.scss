@@ -33,6 +33,32 @@
   }
 }
 
+.flex-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($medium-up) {
+    &.w-54 {
+      max-width: 54%;
+    }
+
+    &.w-46 {
+      max-width: 46%;
+    }
+  }
+
+  & .content-illustrations,
+  & .content-body-inner {
+    max-width: 100%;
+  }
+
+  .content-body-inner {
+    position: sticky;
+    top: 104px;
+  }
+}
+
 // TODO: Convert to BEM component block.
 .content-item-box {
   text-decoration: none;
@@ -427,7 +453,7 @@
   }
 }
 
-.content-body-inner {
+.content-body-inner:not(.w-100) {
   .item-page & {
     @include breakpoint($medium-up) {
       flex: 1;
