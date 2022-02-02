@@ -110,7 +110,9 @@
     {% include "content-item-tools" %}
 
     <script>
-      template.handleProductPageContent();
+      if (template) {
+       template.handleProductPageContent();
+      }
     </script>
 
   </body>
