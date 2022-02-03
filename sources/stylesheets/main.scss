@@ -71,6 +71,9 @@
 @import 'components/misc/loader';
 @import 'components/misc/site-signout';
 
+// CSS HACKS
+@import 'browser-hacks';
+
 // TODO: Move to a separated file:
 .edy-popover.edy-settings-editor {
   // scss-lint:disable ImportantRule
