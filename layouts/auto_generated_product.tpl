@@ -119,7 +119,8 @@
 
     <script>
       if (template) {
-       template.handleProductPageContent();
+        template.handleProductPageContent();
+        template.handleProductImageClick("{{ product.id }}");
       }
     </script>
   </body>

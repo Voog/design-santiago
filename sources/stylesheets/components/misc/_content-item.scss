@@ -31,6 +31,12 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .item-top {
+    [data-view-state="editmode"] & {
+      cursor: pointer;
+    }
+  }
 }
 
 .flex-col {

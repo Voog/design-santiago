@@ -570,6 +570,18 @@
   };
 
   // ===========================================================================
+  // Opens product admin view on product image click
+  // ===========================================================================
+
+  var handleProductImageClick = function(url) {
+    if (editmode()) {
+      $('.product-content .item-top').click(function() {
+        window.open('/admin/ecommerce/products/' + url, '_blank').focus();
+      });
+    }
+  };
+
+  // ===========================================================================
   // Toggles product categories visibility in main menu.
   // ===========================================================================
   var bindRootItemSettings = function(rootItemValuesObj) {
@@ -698,7 +710,8 @@
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
     bindRootItemSettings: bindRootItemSettings,
-    handleProductPageContent: handleProductPageContent
+    handleProductPageContent: handleProductPageContent,
+    handleProductImageClick: handleProductImageClick
 
     // Initiations for specific functions.
   });
