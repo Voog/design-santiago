@@ -1095,10 +1095,10 @@
   // Opens product admin view on product image click
   // ===========================================================================
 
-  var handleProductImageClick = function(url) {
+  var handleProductImageClick = function(product_id) {
     if (editmode()) {
-      $('.product-content .item-top').click(function() {
-        window.open('/admin/ecommerce/products/' + url, '_blank').focus();
+      $('.product-content .product-image').click(function() {
+        window.open('/admin/ecommerce/products/' + product_id, '_blank').focus();
       });
     }
   };
