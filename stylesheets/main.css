@@ -3610,6 +3610,10 @@ label .form_control_indicator::before {
   background-position: center;
 }
 
+[data-view-state="editmode"] .product-content .item-top {
+  cursor: pointer;
+}
+
 .flex-col {
   width: 100%;
   display: -webkit-box;
