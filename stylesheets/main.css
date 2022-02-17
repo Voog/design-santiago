@@ -3642,6 +3642,7 @@ label .form_control_indicator::before {
 .flex-col .content-body-inner {
   position: sticky;
   top: 104px;
+  z-index: 10601;
 }
 
 .content-item-box {
