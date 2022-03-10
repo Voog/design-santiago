@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-{% include "template-variables" layout_product: true %}
-{% include "product-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" layout_product: true -%}
+{%- include "product-variables" -%}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }} {{ site_search_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-lingual-mode="{{ site_lingual_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
@@ -48,7 +49,7 @@
                       {%- if product.image != blank -%}
                         <div class="top-inner aspect-ratio-inner product-page">
                           {%- assign image_class = "item-image not-cropped" -%}
-                          {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                          {% image product.image target_width: "600" class: image_class loading: "lazy" %}
                         </div>
                       {%- endif -%}
                     </div>

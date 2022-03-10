@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-{% include "template-variables" layout_blog_article: true %}
-{% include "blog-article-variables" %}
-{% include "blog-settings-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" layout_blog_article: true -%}
+{%- include "blog-article-variables" -%}
+{%- include "blog-settings-variables" -%}
 
 <html class="layout-root {{ language_flags_mode }} {{ language_names_mode }} {{ language_menu_mode }} {{ site_search_mode }}" lang="{{ page.language_code }}" data-view-state="{{ view_mode }}" data-lingual-mode="{{ site_lingual_mode }}" data-menu-main-state="closed">
   <head prefix="og: http://ogp.me/ns#">
