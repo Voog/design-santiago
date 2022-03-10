@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-  {% if og_obj.image? %}
-    {% assign og_image = og_obj.image.for-width-1200 %}
-  {% endif %}
+{% if og_obj.image? %}
+  {% assign og_image = og_obj.image.for-width-1200 %}
+{% endif %}
 
 {% if og_image %}
   {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
