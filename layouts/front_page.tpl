@@ -14,7 +14,9 @@
       {% include "layout-header" %}
 
       <main class="layout-body">
-        <section class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content %}</section>
+        {%- assign page_title_content_title = "title" | lce -%}
+        {%- assign page_title_content_title_tooltip = "content_tooltip_current_page_title" | lce -%}
+        <section class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content title=page_title_content_title title_tooltip=page_title_content_title_tooltip %}</section>
 
         <section class="content-area content-area--overflowed-images">{% content name="gallery" %}</section>
       </main>
@@ -25,7 +27,7 @@
         {% include "menu-language-popover" %}
       {% endif %}
     </div>
-   
+
     {% include "site-signout" %}
     {% include "template-javascripts" %}
     {% include "template-tools" %}
