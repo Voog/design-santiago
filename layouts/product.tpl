@@ -51,7 +51,9 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="content-gallery content-area" data-search-indexing-allowed="true">{% content name="gallery" %}</div>
+                {%- assign gallery_title = "gallery" | lce -%}
+                {%- assign gallery_title_tooltip = "content_tooltip_additional_images" | lce -%}
+                <div class="content-gallery content-area" data-search-indexing-allowed="true">{% content name="gallery" title=gallery_title title_tooltip=gallery_title_tooltip %}</div>
               </div>
 
               <div class="content-body-inner">
@@ -59,7 +61,9 @@
                   <div class="content-item-title content-area" data-search-indexing-allowed="true">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
                 </header>
 
-                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}</div>
+                {%- assign content_default_title = "content" | lce -%}
+                {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock title=content_default_title title_tooltip=content_default_title_tooltip %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}</div>
               </div>
             </div>
           </div>
@@ -73,7 +77,7 @@
       {% endif %}
     </div>
 
-    {% include "site-signout" %} 
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
     {% include "template-tools" %}
     {% include "content-item-tools" %}

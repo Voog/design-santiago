@@ -15,9 +15,9 @@
       {% include "layout-header" %}
 
       <div class="layout-body layout-body--narrow">
-        {%- assign page_title_content_title = "title" | lce -%}
-        {%- assign page_title_content_title_tooltip = "content_tooltip_current_page_title" | lce -%}
-        <div class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}>{% content title=page_title_content_title title_tooltip=page_title_content_title_tooltip %}</div>
+        {%- assign content_default_title = "content" | lce -%}
+        {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+        <div class="content-area content-area--padded content-area--overflowed-images">{% content title=content_default_title title_tooltip=content_default_title_tooltip %}</div>
 
         {% include "blog-list-tags" %}
 

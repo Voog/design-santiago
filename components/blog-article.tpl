@@ -16,9 +16,9 @@
     {% else %}
       {% assign article_date_format = "long" %}
     {% endif %}
-    
+
     {% if editmode or show_article_date != false %}
-    <div>  
+    <div>
       <time class="post-date formatted cfx{% if article_data_show_date_defined != true %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
     </div>
     {% endif %}
@@ -34,7 +34,9 @@
     {% unless list_item %}
       <div class="content-area content-area--article-body content-area--overflowed-images">{% editable article.body %}</div>
 
-      <div class="content-area content-area--article-additional-body content-area--overflowed-images">{% content name="additional_body" bind="Article" %}</div>
+      {%- assign bottom_content_title = "additional_content" | lce -%}
+      {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+      <div class="content-area content-area--article-additional-body content-area--overflowed-images">{% content name="additional_body" bind="Article" title=bottom_content_title title_tooltip=bottom_content_title_tooltip %}</div>
     {% endunless %}
   </div>
 </article>
