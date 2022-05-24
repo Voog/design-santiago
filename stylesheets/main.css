@@ -3614,6 +3614,10 @@ label .form_control_indicator::before {
   cursor: pointer;
 }
 
+.product-content .product-cross-page-info {
+  margin-bottom: 32px;
+}
+
 .flex-col {
   width: 100%;
   display: -webkit-box;

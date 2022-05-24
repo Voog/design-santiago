@@ -17,7 +17,9 @@
         <div class="layout-body__content">
           {% include "menu-breadcrumbs" %}
 
-          <div class="content-area content-area--padded content-area--overflowed-images" {{ edy_intro_edit_text }}  data-search-indexing-allowed="true">{% content %}</div>
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          <div class="content-area content-area--padded content-area--overflowed-images" data-search-indexing-allowed="true">{% content title=content_default_title title_tooltip=content_default_title_tooltip %}</div>
 
           <main class="content-item-boxes">
             {% if site.root_item.selected? %}
