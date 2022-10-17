@@ -74,6 +74,9 @@
 // CSS HACKS
 @import 'browser-hacks';
 
+// Self-hosted fonts
+@import 'fonts';
+
 // TODO: Move to a separated file:
 .edy-popover.edy-settings-editor {
   // scss-lint:disable ImportantRule
