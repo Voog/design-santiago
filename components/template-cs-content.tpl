@@ -332,7 +332,7 @@
     "unit": "",
     "scope": "global"
   */
-  --content-area-article-date__opacity: .5;
+  --content-area-article-date__opacity: 0.5;
   /* VoogStyle
     "pathI18n": ["{{ content_inner_title }}", "date"],
     "titleI18n": "font_size",

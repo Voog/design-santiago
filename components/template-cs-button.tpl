@@ -83,7 +83,7 @@
     "unit": "",
     "scope": "global"
   */
-  --content-area-button-hover__opacity: .75;
+  --content-area-button-hover__opacity: 0.75;
   /* VoogStyle
     "pathI18n": ["button", "normal"],
     "titleI18n": "font_size",

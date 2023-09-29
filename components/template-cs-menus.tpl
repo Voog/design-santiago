@@ -256,7 +256,7 @@
       "--menu-sub-hover__opacity"
     ]
   */
-  --menu-sub__opacity: .5;
+  --menu-sub__opacity: 0.5;
   /* VoogStyle
     "pathI18n": ["menus", "sub_menu", "hover"],
     "titleI18n": "opacity",
@@ -267,7 +267,7 @@
     "unit": "",
     "scope": "global"
   */
-  --menu-sub-hover__opacity: .75;
+  --menu-sub-hover__opacity: 0.75;
   /* VoogStyle
     "pathI18n": ["menus", "sub_menu", "active"],
     "titleI18n": "opacity",
