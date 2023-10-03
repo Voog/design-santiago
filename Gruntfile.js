@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     sass: {
       build_main: {
         options: {
-          implementation: require('node-sass'),
+          implementation: require('sass'),
           sourceMap: false,
           fiber: require('fibers'),
           outputStyle: 'expanded'
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
       // Builds custom style components to temporary folder.
       build_custom_styles: {
         options: {
-          implementation: require('node-sass'),
+          implementation: require('sass'),
           sourceMap: false,
           fiber: require('fibers'),
           outputStyle: 'expanded'

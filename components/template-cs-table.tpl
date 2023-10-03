@@ -47,5 +47,5 @@
     "unit": "",
     "scope": "global"
   */
-  --content-area-table__border-opacity: .1;
+  --content-area-table__border-opacity: 0.1;
 }
