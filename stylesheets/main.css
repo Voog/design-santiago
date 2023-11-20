@@ -3577,6 +3577,26 @@ label .form_control_indicator::before {
   }
 }
 
+.product-price-original {
+  padding-right: 4px;
+  opacity: 0.4;
+  display: inline-block;
+}
+
+.product-price-final {
+  display: inline-block;
+}
+
+.dark-background .edy-product-widget-item-price-original {
+  opacity: 0.4;
+}
+.dark-background .edy-product-widget-item-price-final {
+  opacity: 0.7;
+}
+.dark-background .edy-product-widget-grid .edy-product-widget-item:hover .edy-product-widget-item-price {
+  opacity: 0;
+}
+
 @media (max-width: 640px) {
   .layout-root .edy-checkout-button-visible {
     padding-top: 48px;

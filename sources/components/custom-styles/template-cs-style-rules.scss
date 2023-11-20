@@ -251,6 +251,12 @@
     text-transform: var(--layout-footer__text-transform);
     background-color: var(--layout-footer__background-color);
   }
+
+  .edy-buy-button-price-container .edy-buy-button-effective-price,
+  .edy-buy-button-price-container .edy-buy-button-price-original {
+    color: var(--content-area-text__color);
+  }
+
   // scss-lint:disable SelectorFormat
 }
 
@@ -408,6 +414,7 @@
 // Content area form
 // =============================================================================
 // scss-lint:disable SelectorFormat
+
 .edy-fe-label,
 .form_field_label {
   font-size: var(--content-area-form-field-label__font-size);
@@ -621,6 +628,7 @@
     font-style: var(--content-area-product-price__font-style);
     text-decoration: var(--content-area-product-price__text-decoration);
   }
+
   .content-product-description {
     color: var(--content-area-product-description__color);
     font-size: var(--content-area-product-description__font-size);
