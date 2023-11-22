@@ -3,6 +3,16 @@
 // =============================================================================
 // TODO: Remove ".layout-root & {}" from selectors when stylesheet location in DOM is improved.
 // These default style overrides can't be written in BEM.
+.product-price-original {
+  padding-right: 4px;
+  opacity: .4;
+  display: inline-block;
+}
+
+.product-price-final {
+  display: inline-block;
+}
+
 .edy-checkout-button-visible {
   .layout-root & {
     @include breakpoint(max-width $medium) {

@@ -155,6 +155,10 @@
   text-transform: var(--layout-footer__text-transform);
   background-color: var(--layout-footer__background-color);
 }
+.content-area .edy-buy-button-price-container .edy-buy-button-effective-price,
+.content-area .edy-buy-button-price-container .edy-buy-button-price-original {
+  color: var(--content-area-text__color);
+}
 
 .layout-body .content-area h1 {
   font-size: var(--title__font-size);
