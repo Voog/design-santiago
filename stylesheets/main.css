@@ -3129,15 +3129,15 @@ label .form_control_indicator::before {
 .product-content .edy-buy-button-container {
   padding: 24px 0;
 }
-.product-content .without-image .item-top {
+.product-content .without-images .item-top {
   background-image: url("../assets/ico-placeholder.svg");
   background-color: #F2F2F2;
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
 }
-[data-view-state=editmode] .product-content .item-top {
-  cursor: pointer;
+.product-content .product-gallery {
+  font-size: initial;
 }
 .product-content .product-cross-page-info {
   margin-bottom: 32px;
