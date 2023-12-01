@@ -1,3 +1,3 @@
 {
-  "version": "santiago-1.3.0"
+  "version": "santiago-1.3.1"
 }
