@@ -34,9 +34,9 @@
   {% assign description = page.description %}
 {% endif %}
 
-{%- if og_obj.description != blank -%}
-  <meta property="og:description" content="{{ og_obj.description | strip_html | escape_once }}">
-  <meta name="description" content="{{ og_obj.description | strip_html | escape_once }}">
+{%- if og_obj.og_description != blank -%}
+  <meta property="og:description" content="{{ og_obj.og_description | strip_html | escape_once }}">
+  <meta name="description" content="{{ og_obj.og_description | strip_html | escape_once }}">
 {%- endif -%}
 
 {% comment %}SEO pagination for blog articles.{% endcomment %}
