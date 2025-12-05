@@ -527,7 +527,7 @@
   max-width: var(--main__width);
 }
 .layout-footer__section--voog-reference a {
-  fill: var(--main__color-primary);
+  color: var(--layout-footer__color);
 }
 
 .layout-root .edy-ecommerce-shopping-cart-button {

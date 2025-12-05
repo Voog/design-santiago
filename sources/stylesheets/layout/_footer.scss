@@ -65,6 +65,8 @@
 
       // scss-lint:disable NestingDepth
       a {
+        text-decoration: none;
+
         &:hover {
           opacity: .5;
         }
